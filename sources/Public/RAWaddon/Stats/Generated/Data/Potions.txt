@@ -1,0 +1,139 @@
+new entry "Toxin_SerpentVenom_Passive"
+type "PassiveData"
+using "Toxin_SerpentVenom_Passive"
+data "DescriptionParams" "DealDamage(3d6,Poison)"
+
+new entry "Toxin_Wyvern_Passive"
+type "PassiveData"
+using "Toxin_Wyvern_Passive"
+data "DescriptionParams" "DealDamage(7d6,Poison)"
+
+new entry "Toxin_PurpleWorm_Passive"
+type "PassiveData"
+using "Toxin_PurpleWorm_Passive"
+data "DescriptionParams" "DealDamage(12d6,Poison)"
+
+new entry "_Potion"
+type "Object"
+using "_Potion"
+data "UseCosts" "ActionPoint:1"
+
+new entry "_Poison"
+type "Object"
+using "_Poison"
+data "UseCosts" "ActionPoint:1"
+
+new entry "OBJ_Potion_Healing"
+type "Object"
+using "OBJ_Potion_Healing"
+data "ValueOverride" "50"
+
+new entry "OBJ_Potion_Healing_Greater"
+type "Object"
+using "OBJ_Potion_Healing_Greater"
+data "ValueOverride" "150"
+
+new entry "OBJ_Potion_Healing_Superior"
+type "Object"
+using "OBJ_Potion_Healing_Superior"
+data "ValueOverride" "450"
+
+new entry "OBJ_Potion_Healing_Supreme"
+type "Object"
+using "OBJ_Potion_Healing_Supreme"
+data "ValueOverride" "1350"
+
+new entry "OBJ_Potion_Of_Animal_Speaking"
+type "Object"
+using "OBJ_Potion_Of_Animal_Speaking"
+data "ValueOverride" "200"
+
+new entry "OBJ_Potion_Elixir_Of_Health"
+type "Object"
+using "OBJ_Potion_Elixir_Of_Health"
+data "ValueOverride" "120"
+
+new entry "OBJ_Potion_Of_Hill_Giant_Strength"
+type "Object"
+using "OBJ_Potion_Of_Hill_Giant_Strength"
+data "ValueOverride" "500"
+
+new entry "OBJ_Potion_Of_Cloud_Giant_Strength"
+type "Object"
+using "OBJ_Potion_Of_Cloud_Giant_Strength"
+data "ValueOverride" "5000"
+
+new entry "OBJ_Potion_Of_Shrinking"
+type "Object"
+using "OBJ_Potion_Of_Shrinking"
+data "ValueOverride" "270"
+
+new entry "OBJ_Potion_Of_Heroism"
+type "Object"
+using "OBJ_Potion_Of_Heroism"
+data "ValueOverride" "180"
+
+new entry "OBJ_Potion_Of_Speed"
+type "Object"
+using "OBJ_Potion_Of_Speed"
+data "ValueOverride" "400"
+
+new entry "OBJ_Potion_Of_Vitality"
+type "Object"
+using "OBJ_Potion_Of_Vitality"
+data "ValueOverride" "960"
+
+new entry "OBJ_Potion_Of_Invulnerability"
+type "Object"
+using "OBJ_Potion_Of_Invulnerability"
+data "ValueOverride" "3840"
+
+new entry "OBJ_Oil_Of_Slipperiness"
+type "Object"
+using "OBJ_Oil_Of_Slipperiness"
+data "ValueOverride" "480"
+
+new entry "OBJ_Oil_Of_Sharpness"
+type "Object"
+using "OBJ_Oil_Of_Sharpness"
+data "ValueOverride" "3200"
+
+new entry "OBJ_Potion_Of_Invisibility"
+type "Object"
+using "OBJ_Potion_Of_Invisibility"
+data "ValueOverride" "600"
+
+new entry "_Potion_Of_Resistance"
+type "Object"
+using "_Potion_Of_Resistance"
+data "ValueOverride" "300"
+
+new entry "OBJ_SerpentVenom"
+type "Object"
+using "OBJ_SerpentVenom"
+data "ValueOverride" "200"
+
+new entry "OBJ_WyvernPoison"
+type "Object"
+using "OBJ_WyvernPoison"
+data "ValueOverride" "1200"
+
+new entry "OBJ_PurpleWormPoison"
+type "Object"
+using "OBJ_PurpleWormPoison"
+data "ValueOverride" "2000"
+
+new entry "OBJ_AssassinsBlood"
+type "Object"
+using "OBJ_AssassinsBlood"
+data "ValueOverride" "150"
+
+new entry "OBJ_DrowPoison"
+type "Object"
+using "OBJ_DrowPoison"
+data "ValueOverride" "200"
+
+new entry "OBJ_EssenceOfEther"
+type "Object"
+using "OBJ_EssenceOfEther"
+data "ValueOverride" "300"

@@ -1,0 +1,38 @@
+key "ThrowDistanceMax","6"
+key "ThrowWeightMultiplier","1.25"
+
+new entry "WPN_Dart"
+type "Weapon"
+using "WPN_Dart"
+data "WeaponRange" "600"
+data "Damage Range" "1800"
+
+new entry "WPN_Sling"
+type "Weapon"
+using "WPN_Sling"
+data "WeaponRange" "900"
+
+new entry "WPN_HandCrossbow"
+type "Weapon"
+using "WPN_HandCrossbow"
+data "WeaponRange" "900"
+
+new entry "WPN_LightCrossbow"
+type "Weapon"
+using "WPN_LightCrossbow"
+data "WeaponRange" "1800"
+
+new entry "WPN_Shortbow"
+type "Weapon"
+using "WPN_Shortbow"
+data "WeaponRange" "1800"
+
+new entry "WPN_HeavyCrossbow"
+type "Weapon"
+using "WPN_HeavyCrossbow"
+data "WeaponRange" "2200"
+
+new entry "WPN_Longbow"
+type "Weapon"
+using "WPN_Longbow"
+data "WeaponRange" "3000"

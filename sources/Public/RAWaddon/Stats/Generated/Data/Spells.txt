@@ -1,0 +1,91 @@
+// Mage Hand
+new entry "Target_MageHand"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MageHand"
+data "Cooldown" ""
+data "SpellProperties" "GROUND:IF(not HasPassive('MageHandLegerdemain', context.Source)):Summon(eddf2b83-21d3-4d6f-b958-c30f00dbbb92,10,,,'MageHandStack',UNSUMMON_ABLE_MAGEHAND,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(HasPassive('MageHandLegerdemain', context.Source)):Summon(eddf2b83-21d3-4d6f-b958-c30f00dbbb92,10,,,'MageHandStack',INVISIBLE,UNSUMMON_ABLE_MAGEHAND,SHADOWCURSE_SUMMON_CHECK);"
+
+new entry "Target_MageHand_GithyankiPsionics"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MageHand_GithyankiPsionics"
+data "Cooldown" ""
+data "SpellProperties" "GROUND:Summon(eddf2b83-21d3-4d6f-b958-c30f00dbbb92,10,,,'MageHandStack',UNSUMMON_ABLE_MAGEHAND,INVISIBLE,SHADOWCURSE_SUMMON_CHECK);"
+
+// Flame Blade
+new entry "Shout_FlameBlade"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_FlameBlade"
+data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration"
+
+// Tempestuous Magic, fly up to 3m
+new entry "Projectile_Fly_TempestuousMagic"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_Fly_TempestuousMagic"
+data "TargetRadius" "3"
+
+// Conjure Minor Elemental
+new entry "Target_ConjureElementals_Minor_Container"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ConjureElementals_Minor_Container"
+data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;IsLinkedSpellContainer;CannotTargetCharacter;CannotTargetItems;IsConcentration"
+
+new entry "Target_ConjureElementals_Minor_Azer"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ConjureElementals_Minor_Azer"
+data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;CannotTargetItems;CannotTargetCharacter;IsConcentration"
+
+new entry "Target_ConjureElementals_Minor_IceMephit"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ConjureElementals_Minor_IceMephit"
+data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;CannotTargetItems;CannotTargetCharacter;IsConcentration"
+
+new entry "Target_ConjureElementals_Minor_MudMephit"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ConjureElementals_Minor_MudMephit"
+data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;CannotTargetItems;CannotTargetCharacter;IsConcentration"
+
+// Conjure Woodland Being
+new entry "Target_ConjureWoodlandBeings"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ConjureWoodlandBeings"
+data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;CannotTargetItems;CannotTargetCharacter;IsConcentration"
+
+// Conjure Elemental
+new entry "Target_ConjureElemental_Container"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ConjureElemental_Container"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;IsLinkedSpellContainer;IsConcentration"
+
+new entry "Target_ConjureElemental_Elemental_Air"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ConjureElemental_Elemental_Air"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration"
+
+new entry "Target_ConjureElemental_Elemental_Earth"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ConjureElemental_Elemental_Earth"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration"
+
+new entry "Target_ConjureElemental_Elemental_Fire"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ConjureElemental_Elemental_Fire"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration"
+
+new entry "Target_ConjureElemental_Elemental_Water"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ConjureElemental_Elemental_Water"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration"

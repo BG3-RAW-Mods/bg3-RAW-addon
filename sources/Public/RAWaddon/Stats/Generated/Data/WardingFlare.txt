@@ -1,0 +1,11 @@
+// You can use Warding Flare a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.
+new entry "Interrupt_WardingFlare"
+type "InterruptData"
+using "Interrupt_WardingFlare"
+data "Cost" "ReactionActionPoint:1;WardingFlareUse:1"
+
+new entry "WardingFlareScaling"
+type "PassiveData"
+data "Boosts" "IF(WisdomModifier(1)):ActionResource(WardingFlareUse,1,0);IF(WisdomModifier(2)):ActionResource(WardingFlareUse,2,0);IF(WisdomModifier(3)):ActionResource(WardingFlareUse,3,0);IF(WisdomModifier(4)):ActionResource(WardingFlareUse,4,0);IF(WisdomModifier(5)):ActionResource(WardingFlareUse,5,0);IF(WisdomModifier(6)):ActionResource(WardingFlareUse,6,0);IF(WisdomModifier(7)):ActionResource(WardingFlareUse,7,0);IF(WisdomModifier(8)):ActionResource(WardingFlareUse,8,0);IF(WisdomModifier(9)):ActionResource(WardingFlareUse,9,0);IF(WisdomModifier(10)):ActionResource(WardingFlareUse,10,0)"
+data "BoostContext" "OnStatusApply;OnStatusRemove;OnEquip;OnShortRest;OnCreate;OnLongRest;OnInventoryChanged"
+data "Properties" "IsHidden"

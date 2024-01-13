@@ -1,0 +1,4 @@
+new entry "Actor"
+type "PassiveData"
+using "Actor"
+data "Boosts" "Advantage(Skill,Deception);Advantage(Skill,Performance);Ability(Charisma, 1)"

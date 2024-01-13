@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="302"/>
+    <region id="ActionResourceDefinitions">
+        <node id="root">
+            <children>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="535775a1-af4f-4b51-b039-e722d3b7f478" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h273b4326gc65fg4830g879bgfc9392c1b89a" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="WardingFlareUse"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="5bbd070d-da70-4177-9146-65a3707b19dd"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h5eb3f559g13d8g4a7ag91cbg3f7c75ec6688" version="1"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Flourish_Charge"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="bfaaebe7-0cbc-401a-a2df-14c00d0a945c"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

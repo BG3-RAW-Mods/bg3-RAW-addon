@@ -1,0 +1,332 @@
+key "CarryWeightBase","0"
+key "CarryLimitMultiplier","6.8"
+// key "CarryWeightPerStr","10000"
+
+key "EncumberedMultiplier","2.27"
+key "HeavilyEncumberedMultiplier","4.54"
+
+new entry "ENCUMBERED_LIGHT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ENCUMBERED_LIGHT"
+data "Description" "h04852025ga3c0g47b2gbe02g7d22a3d12ab8;4"
+data "DescriptionParams" "Distance(3)"
+data "Boosts" "ActionResource(Movement,-3,0)"
+
+new entry "ENCUMBERED_HEAVY"
+type "StatusData"
+data "StatusType" "BOOST"
+using "ENCUMBERED_HEAVY"
+data "DisplayName" "h18065f0dg0169g4560gaff3g46fea09fd366;1"
+data "Description" "hde40b598g2937g47f5ga342g2480628c8106;3"
+data "DescriptionParams" "Distance(6)"
+data "Boosts" "ActionResource(Movement,-6,0);Disadvantage(AllAbilities);Disadvantage(AttackRoll);Disadvantage(SavingThrow,Dexterity);Disadvantage(SavingThrow,Strength);Disadvantage(SavingThrow,Constitution);MovementSpeedLimit(Walk)"
+
+new entry "ARM_Padded_Body"
+type "Armor"
+using "ARM_Padded_Body"
+data "Weight" "3.63"
+
+new entry "ARM_Leather_Body"
+type "Armor"
+using "ARM_Leather_Body"
+data "Weight" "4.54"
+
+new entry "ARM_StuddedLeather_Body"
+type "Armor"
+using "ARM_StuddedLeather_Body"
+data "Weight" "5.9"
+
+new entry "ARM_Hide_Body"
+type "Armor"
+using "ARM_Hide_Body"
+data "Weight" "5.44"
+
+new entry "ARM_ChainShirt_Body"
+type "Armor"
+using "ARM_ChainShirt_Body"
+data "Weight" "9.07"
+
+new entry "ARM_ScaleMail_Body"
+type "Armor"
+using "ARM_ScaleMail_Body"
+data "Weight" "20.41"
+
+new entry "ARM_Breastplate_Body"
+type "Armor"
+using "ARM_Breastplate_Body"
+data "Weight" "9.07"
+
+new entry "ARM_HalfPlate_Body"
+type "Armor"
+using "ARM_HalfPlate_Body"
+data "Weight" "18.14"
+
+new entry "ARM_RingMail_Body"
+type "Armor"
+using "ARM_RingMail_Body"
+data "Weight" "18.14"
+
+new entry "ARM_ChainMail_Body"
+type "Armor"
+using "ARM_ChainMail_Body"
+data "Weight" "24.94"
+
+new entry "ARM_Splint_Body"
+type "Armor"
+using "ARM_Splint_Body"
+data "Weight" "27.21"
+
+new entry "ARM_Plate_Body"
+type "Armor"
+using "ARM_Plate_Body"
+data "Weight" "29.48"
+
+new entry "_Shield"
+type "Armor"
+using "_Shield"
+data "Weight" "2.72"
+
+new entry "ARM_Shield"
+type "Armor"
+using "ARM_Shield"
+data "Weight" "2.72"
+
+new entry "ARM_Toy_Shield"
+type "Armor"
+using "ARM_Toy_Shield"
+data "Weight" "1.3"
+
+new entry "WPN_Battleaxe"
+type "Weapon"
+using "WPN_Battleaxe"
+data "Weight" "1.81"
+
+new entry "WPN_Club"
+type "Weapon"
+using "WPN_Club"
+data "Weight" "0.91"
+
+new entry "WPN_Dagger"
+type "Weapon"
+using "WPN_Dagger"
+data "Weight" "0.45"
+
+new entry "WPN_Dart"
+type "Weapon"
+using "WPN_Dart"
+data "Weight" "0.11"
+
+new entry "WPN_Flail"
+type "Weapon"
+using "WPN_Flail"
+data "Weight" "0.91"
+
+new entry "WPN_Glaive"
+type "Weapon"
+using "WPN_Glaive"
+data "Weight" "2.72"
+
+new entry "WPN_Greataxe"
+type "Weapon"
+using "WPN_Greataxe"
+data "Weight" "3.17"
+
+new entry "WPN_Greatclub"
+type "Weapon"
+using "WPN_Greatclub"
+data "Weight" "4.54"
+
+new entry "WPN_Greatsword"
+type "Weapon"
+using "WPN_Greatsword"
+data "Weight" "2.72"
+
+new entry "WPN_Halberd"
+type "Weapon"
+using "WPN_Halberd"
+data "Weight" "2.72"
+
+new entry "WPN_Handaxe"
+type "Weapon"
+using "WPN_Handaxe"
+data "Weight" "0.91"
+
+new entry "WPN_HandCrossbow"
+type "Weapon"
+using "WPN_HandCrossbow"
+data "Weight" "1.36"
+
+new entry "WPN_HeavyCrossbow"
+type "Weapon"
+using "WPN_HeavyCrossbow"
+data "Weight" "8.16"
+
+new entry "WPN_Javelin"
+type "Weapon"
+using "WPN_Javelin"
+data "Weight" "0.91"
+
+new entry "WPN_LightCrossbow"
+type "Weapon"
+using "WPN_LightCrossbow"
+data "Weight" "2.27"
+
+new entry "WPN_LightHammer"
+type "Weapon"
+using "WPN_LightHammer"
+data "Weight" "0.91"
+
+new entry "WPN_Longbow"
+type "Weapon"
+using "WPN_Longbow"
+data "Weight" "0.91"
+
+new entry "WPN_Longsword"
+type "Weapon"
+using "WPN_Longsword"
+data "Weight" "1.36"
+
+new entry "WPN_Mace"
+type "Weapon"
+using "WPN_Mace"
+data "Weight" "1.81"
+
+new entry "WPN_Maul"
+type "Weapon"
+using "WPN_Maul"
+data "Weight" "4.54"
+
+new entry "WPN_Morningstar"
+type "Weapon"
+using "WPN_Morningstar"
+data "Weight" "1.81"
+
+new entry "WPN_Pike"
+type "Weapon"
+using "WPN_Pike"
+data "Weight" "8.16"
+
+new entry "WPN_Quarterstaff"
+type "Weapon"
+using "WPN_Quarterstaff"
+data "Weight" "1.81"
+
+new entry "WPN_Rapier"
+type "Weapon"
+using "WPN_Rapier"
+data "Weight" "0.91"
+
+new entry "WPN_Scimitar"
+type "Weapon"
+using "WPN_Scimitar"
+data "Weight" "1.36"
+
+new entry "WPN_Shortbow"
+type "Weapon"
+using "WPN_Shortbow"
+data "Weight" "0.91"
+
+new entry "WPN_Shortsword"
+type "Weapon"
+using "WPN_Shortsword"
+data "Weight" "0.91"
+
+new entry "WPN_Sickle"
+type "Weapon"
+using "WPN_Sickle"
+data "Weight" "0.91"
+
+new entry "WPN_Spear"
+type "Weapon"
+using "WPN_Spear"
+data "Weight" "1.36"
+
+new entry "WPN_Trident"
+type "Weapon"
+using "WPN_Trident"
+data "Weight" "1.81"
+
+new entry "WPN_Warhammer"
+type "Weapon"
+using "WPN_Warhammer"
+data "Weight" "0.91"
+
+new entry "WPN_WarPick"
+type "Weapon"
+using "WPN_WarPick"
+data "Weight" "0.91"
+
+new entry "WPN_ToySword"
+type "Weapon"
+using "WPN_ToySword"
+data "Weight" "0.68"
+
+new entry "WPN_Scimitar_FlameBlade"
+type "Weapon"
+using "WPN_Scimitar_FlameBlade"
+data "Weight" "1.36"
+
+new entry "WPN_Minotaur_Greatclub"
+type "Weapon"
+using "WPN_Minotaur_Greatclub"
+data "Weight" "9.08"
+
+new entry "WPN_Ogre_Club"
+type "Weapon"
+using "WPN_Ogre_Club"
+data "Weight" "3.64"
+
+new entry "WPN_Ogre_Greatclub"
+type "Weapon"
+using "WPN_Ogre_Greatclub"
+data "Weight" "9.08"
+
+new entry "_PactWeapon"
+type "Weapon"
+using "_BaseWeapon"
+
+new entry "_Arrow"
+type "Object"
+using "_Arrow"
+data "Weight" "0.23"
+
+new entry "_Grenade"
+type "Object"
+using "_Grenade"
+data "Weight" "0.23"
+
+new entry "OBJ_Kit_ThievesTools"
+type "Object"
+using "OBJ_Kit_ThievesTools"
+data "Weight" "0.45"
+
+new entry "OBJ_Kit_TrapDisarm"
+type "Object"
+using "OBJ_Kit_TrapDisarm"
+data "Weight" "0.45"
+
+new entry "OBJ_Metalbar_Bronze"
+type "Object"
+using "OBJ_Metalbar_Bronze"
+data "Weight" "1.81"
+
+new entry "OBJ_Metalbar_Silver"
+type "Object"
+using "OBJ_Metalbar_Silver"
+data "Weight" "4.54"
+
+new entry "OBJ_Metalbar_Gold"
+type "Object"
+using "OBJ_Metalbar_Gold"
+data "Weight" "0.91"
+
+new entry "_Potion"
+type "Object"
+using "_Potion"
+data "Weight" "0.23"
+
+new entry "_Poison"
+type "Object"
+using "_Poison"
+data "Weight" "0.23"

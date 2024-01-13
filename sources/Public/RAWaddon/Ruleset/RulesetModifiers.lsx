@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="302"/>
+    <region id="RulesetModifiers">
+        <node id="root">
+            <children>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="false"/>
+                    <attribute id="Description" type="TranslatedString" handle="h465dc37dg304dg4745gbd0eg81f210051ab8" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc46a669cgdbedg4bb4g8bfbg7940e7dd74d1" version="5"/>
+                    <attribute id="EditableDuringGame" type="bool" value="false"/>
+                    <attribute id="Name" type="LSString" value="IRONMAN_MODE"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="4"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="338450d9-d77d-4950-9e1e-0e7f12210bb3"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="AILETHALITY_BRUTAL"/>
+                    <attribute id="Description" type="TranslatedString" handle="h591d2075ge7adg470egb69eg0ec6f512e603" version="6"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h52916cfdgd802g4d0dg8270g225befb06327" version="4"/>
+                    <attribute id="Name" type="LSString" value="AI_LETHALITY"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="3"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="968ce114-d656-407c-88c2-0c071fe2181b"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="STATUS_MEDIUM"/>
+                    <attribute id="Description" type="TranslatedString" handle="hf41151d4g9cc1g4023gb6d7g2c8216884b9d" version="4"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb012bdedga319g497agab7fgc34b720b827e" version="3"/>
+                    <attribute id="Name" type="LSString" value="CHARACTER_STATS_DIFFICULTY"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="3"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="7d788f28-1df5-474b-b106-4f8d0b6de928"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="MEDIUM"/>
+                    <attribute id="Description" type="TranslatedString" handle="h50c74f0fg0c0ag42a1g8bffg1d20ca554db1" version="3"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0008176cg650cg4c4eg9aafg016f4dfd9345" version="3"/>
+                    <attribute id="Name" type="LSString" value="NPC_LOADOUT"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="3"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="4a8d7b18-b6ed-42f0-b542-c06ec11ceaea"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="MEDIUM"/>
+                    <attribute id="Description" type="TranslatedString" handle="h6eebd7f2g7e00g464ag8fafgafcdda72f4c0" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="he7f351aeg7b50g4220g88e8g87de967eacbd" version="3"/>
+                    <attribute id="Name" type="LSString" value="SCRIPTED_COMBAT_MECHANICS"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="3"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="cac2d8bd-c197-4a84-9df1-f86f54ad4521"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="1.5"/>
+                    <attribute id="Description" type="TranslatedString" handle="heeadf224gf0fcg441ag9081gb6b9e5119ccb" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h4f31922fgc9bdg45fdga3f8gc819ba1ca245" version="1"/>
+                    <attribute id="Max" type="float" value="3"/>
+                    <attribute id="Min" type="float" value="0.5"/>
+                    <attribute id="Name" type="LSString" value="CAMP_COST_MULTIPLIER"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="2"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="Step" type="float" value="0.5"/>
+                    <attribute id="UUID" type="guid" value="f6fa6955-80a8-4b26-b8f4-1e39ff4cd9ed"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="3"/>
+                    <attribute id="Description" type="TranslatedString" handle="hc3d2e083g1f6dg4c9cg8655gc597ee0dd488" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h6d69bd4bg2ae8g4765g9492g745d2b12af5b" version="3"/>
+                    <attribute id="Max" type="float" value="4"/>
+                    <attribute id="Min" type="float" value="1"/>
+                    <attribute id="Name" type="LSString" value="TRADE_PRICE_MODIFIER"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="2"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="Step" type="float" value="0.1"/>
+                    <attribute id="UUID" type="guid" value="f52ca62e-e7ee-435a-853f-454b2303c278"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="true"/>
+                    <attribute id="Description" type="TranslatedString" handle="h02ad053dg990fg46a1ga917g45ebb7e2d6ca" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc12a21dfg200cg46a6gb46fgdd38fce23678" version="1"/>
+                    <attribute id="Name" type="LSString" value="HIDE_NPC_HP"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="4"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="9b349f94-e520-4c49-83e1-c0a8e0543710"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="true"/>
+                    <attribute id="Description" type="TranslatedString" handle="h0c205e68g0e2cg4e8egb948g7978e86aa4ca" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0b2cf95eg7b6cg465bg8591g22c6a1a2ba07" version="1"/>
+                    <attribute id="Name" type="LSString" value="HIDE_FAILED_PERCEPTION_ROLLS"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="4"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="19e33ff1-76fc-4447-a5ff-09a001e9544f"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="true"/>
+                    <attribute id="Description" type="TranslatedString" handle="h4e258f7fg9718g476eg8cc3gb5782c3ee2b6" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h2bd6cd55g0256g4678ga29fg1955d5444c99" version="1"/>
+                    <attribute id="Name" type="LSString" value="DIALOGUE_PASSIVE_ROLL_HIDE"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="4"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="38fc0d10-ee64-40d6-b1d9-35f8de95b972"/>
+                </node>
+                <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="true"/>
+                    <attribute id="Description" type="TranslatedString" handle="hb2c6a58agb249g4460g813bgd80f1103778c" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="he8c44b69g7f0ag4718ga7d0g45d048c22c8b" version="4"/>
+                    <attribute id="Name" type="LSString" value="DIALOGUE_DC_HIDE"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="4"/>
+                    <attribute id="ShowInCustom" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="743a3998-636a-4b39-951b-f742a56b07fc"/>
+                </node>
+                <!-- <node id="RulesetModifier">
+                    <attribute id="Default" type="LSString" value="true"/>
+                    <attribute id="Description" type="TranslatedString" handle="h1e1a0a55g26c9g4293g92f4g78e81338098b" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hb46396b3gecfeg496fgb097g270324794f8b" version="1"/>
+                    <attribute id="Name" type="LSString" value="SCROLL_CLASS_RESTRICTION"/>
+                    <attribute id="RulesetModifierType" type="uint8" value="4"/>
+                    <attribute id="UUID" type="guid" value="33bd456b-e716-4ff7-aca7-04b61aaf5d9a"/>
+                </node> -->
+            </children>
+        </node>
+    </region>
+</save>

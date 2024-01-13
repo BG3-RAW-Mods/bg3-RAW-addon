@@ -1,0 +1,4 @@
+function CharismaModifier(value, entity)
+    entity = entity or context.Source
+    return ConditionResult(GetModifier(entity.Charisma) == value)
+end

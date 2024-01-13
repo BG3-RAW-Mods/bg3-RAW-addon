@@ -1,0 +1,15 @@
+﻿<contentList date="29/12/2023 11:20">
+	<!-- Jump -->
+	<content contentuid="51bcb59d-133a-44df-8d68-bf8cd65fc69d" version="1">When you are &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, standing up uses only [1] of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;.&lt;br&gt;Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance is increased by [1].</content>
+
+	<!-- Feats -->
+	<content contentuid="hda771f3fg22ebg4abbgb98bg29d12cac62c0" version="3">Skilled at mimicry and dramatics, you gain the following benefits:&lt;br&gt;- your &lt;LSTag Tooltip="Charisma"&gt;Charisma&lt;/LSTag&gt; increases by [1], to a maximum of [2].&lt;br&gt;- you have an advantage on Deception and Performance &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+
+	<!-- Warding Flare -->
+	<content contentuid="535775a1-af4f-4b51-b039-e722d3b7f478" version="1">The number of times you can use your warding flare's reaction. It is equal to your Wisdom modifier.</content>
+	
+	<!-- Encumbrance -->
+	<content contentuid="h04852025ga3c0g47b2gbe02g7d22a3d12ab8" version="4">Carrying too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is reduced by [1].</content>
+	<content contentuid="hde40b598g2937g47f5ga342g2480628c8106" version="3">Carrying far too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; heavily reduced by [2], and you can no longer climb or Jump. You also have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, as well as Strength, Dexterity, and Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	
+</contentList>

@@ -1,0 +1,427 @@
+{
+    "FileVersion": 1,
+    "Progressions": [
+        {
+            "UUID": "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "HumanVersatility"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "a1729574-2f7b-4561-91d8-3766cf940420",
+                "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276"
+            ],
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "HumanMilitia"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUID": "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276",
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "SelectSkills",
+                    "UUID": "f974ebd6-3725-4b90-bb5c-2b647d41615d"
+                }
+            ]
+        },
+        {
+            "UUID": "dbde4d66-d3e4-4c3f-ae87-fd6e2d1cd276",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Strength,1)",
+                        "Ability(Dexterity,1)",
+                        "Ability(Constitution,1)",
+                        "Ability(Intelligence,1)",
+                        "Ability(Wisdom,1)",
+                        "Ability(Charisma,1)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "3576f8c6-e515-49c5-808c-b68b77154ffd",
+                "f653d537-bc14-4fea-b7d2-25734ec928a2",
+                "cabc4d46-f08e-4a48-8937-0bd1067ab43d",
+                "816fa8c7-7648-48f7-8309-cb4e7383e45f"
+            ],
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Strength,2)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "bd012f5b-0a0b-424e-ab7c-186dbd82ab30",
+                "89d57acd-85ff-4da6-b989-9b82d0241e46"
+            ],
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Strength,1)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "496486a4-b5f2-4f91-90ea-6cad9023952e",
+                "963edcba-c572-4f51-b447-8810bbb43a8e",
+                "4a634f24-bdcb-4559-b8be-7847133ad1c3"
+            ],
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Dexterity,2)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "938b6f72-18a6-4af0-924b-5292251d32bf",
+                "a63bbb3c-c37c-4578-94e6-7d1c4c063d5c"
+            ],
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Dexterity,1)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUID": "3c9a0bd8-bb0f-4a42-b77f-7a9a1cff2e5d",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Constitution,2)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "aa2257a9-1779-4d8b-be65-8a08eede07fa",
+                "b7a39730-2820-40c7-be96-2c134fead68a",
+                "816fa8c7-7648-48f7-8309-cb4e7383e45f"
+            ],
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Constitution,1)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUID": "d48f8fb3-4351-4b5d-a28c-946fd33be726",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Intelligence,2)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "db13a1fb-7d64-4309-a1c8-e2a5c752ded5",
+                "a8b18f0c-fe70-4f13-9dbc-23f4dbc3d648",
+                "bdd1cf22-1b3c-4bc6-8313-898a49fcfe49",
+                "f653d537-bc14-4fea-b7d2-25734ec928a2"
+            ],
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Intelligence,1)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "207d038e-1add-4335-81d1-b0861f524c19",
+                "b262db2c-7a80-4c76-a1e8-0efdb9c1db13"
+            ],
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Wisdom,1)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "a1729574-2f7b-4561-91d8-3766cf940420",
+                "a8b18f0c-fe70-4f13-9dbc-23f4dbc3d648",
+                "bdd1cf22-1b3c-4bc6-8313-898a49fcfe49",
+                "89d57acd-85ff-4da6-b989-9b82d0241e46"
+            ],
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Charisma,2)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "4a634f24-bdcb-4559-b8be-7847133ad1c3",
+                "bc2d257b-a405-4f58-891e-3083c5f71127",
+                "cabc4d46-f08e-4a48-8937-0bd1067ab43d"
+            ],
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "Ability(Charisma,1)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUID": "a1729574-2f7b-4561-91d8-3766cf940420",
+            "Selectors": [
+                {
+                    "Action": "Insert",
+                    "Function": "SelectAbilityBonus",
+                    "Params": {
+                        "Guid": "b9149c8e-52c8-46e5-9cb6-fc39301c05fe",
+                        "BonusType": "AbilityBonus",
+                        "Amounts": [
+                            "1",
+                            "1"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "UUID": "a8b18f0c-fe70-4f13-9dbc-23f4dbc3d648",
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "a3366430-2f63-495c-be14-408d9facfd3b"
+                }
+            ]
+        },
+        {
+            "UUID": "a8b18f0c-fe70-4f13-9dbc-23f4dbc3d648",
+            "Selectors": [
+                {
+                    "Action": "Insert",
+                    "Function": "AddSpells",
+                    "Params": {
+                        "Guid": "5eada6b7-d9a2-4ef2-8872-0dce047e458c",
+                        "Ability": "Charisma",
+                        "PrepareType": "AlwaysPrepared"
+                    }
+                }
+            ]
+        },
+        {
+            "UUID": "f653d537-bc14-4fea-b7d2-25734ec928a2",
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "5216169f-6b32-4860-8664-61348d970e48"
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "a2198ee9-ea4c-468e-b6b4-22b32d37806e",
+                "374c3aae-828b-44d8-b4e3-51ba802977dd",
+                "1dbce574-fff1-49be-b7da-704f9b73cad9",
+                "b499258c-2823-42f1-b8ca-0a5ee8455e11",
+                "dfb2fd83-9849-4c2d-be84-adedb81a867a",
+                "c091d27e-009b-4841-8bde-5e63e5ca8f4e",
+                "b60618d1-c262-42b5-9fdd-2c0f7aa5e5af",
+                "ad1084b1-b99f-6720-cfdd-cf82ad44345b",
+                "16f00e7f-12f6-4cff-b610-4ee738b02d62",
+                "42af9bda-9ac0-4564-920b-f9ca1588d6ee",
+                "a7767dc5-e6ab-4e05-96fd-f0424256121c",
+                "c201c736-3717-4c3c-9e36-2ae7387597a3"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "SelectAbilityBonus",
+                    "UUID": "b9149c8e-52c8-46e5-9cb6-fc39301c05fe"
+                }
+            ]
+        },
+        {
+            "UUID": "374c3aae-828b-44d8-b4e3-51ba802977dd",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "ActionResource(BardicInspiration,3,0)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUID": "cb0f84ec-1b1d-4ecc-9ab5-76261e332f5a",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "ProficiencyBonus(Skill,Stealth)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUID": "374c3aae-828b-44d8-b4e3-51ba802977dd",
+            "Selectors": [
+                {
+                    "Action": "Insert",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "BardicInspirationScaling"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUID": "647925f6-a7de-44a8-834c-1bc6e496921a",
+            "Strings": [
+                {
+                    "Action": "Insert",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "ActionResource(Flourish_Charge,1,0)"
+                    ]
+                },
+                {
+                    "Action": "Insert",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "Blade_Flourish_Movement_Speed",
+                        "Flourish_Interrupt_Unlock"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUID": "3ca383a7-d545-4e01-8d00-00c965d3e604",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "Boosts",
+                    "Strings": [
+                        "ActionResource(BardicInspiration,1,0)"
+                    ]
+                }
+            ]
+        },
+        {
+            "UUIDs": [
+                "706a869d-7894-453d-b6ac-9428f617649c",
+                "e60b351e-aa26-4c5e-bbdc-ce5c8af03b5a"
+            ],
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "SelectPassives",
+                    "UUID": "49704931-e47b-4ce6-abc6-dfa7ba640752"
+                },
+                {
+                    "Action": "Remove",
+                    "Function": "SelectPassives",
+                    "UUID": "c3506532-36eb-4d18-823e-497a537a9619"
+                }
+            ]
+        },
+        {
+            "UUID": "e60b351e-aa26-4c5e-bbdc-ce5c8af03b5a",
+            "Selectors": [
+                {
+                    "Action": "Insert",
+                    "Function": "SelectPassives",
+                    "Params": {
+                        "Guid": "49704931-e47b-4ce6-abc6-dfa7ba640752",
+                        "Amount": "2",
+                        "Amount2": "Metamagic"
+                    }
+                }
+            ]
+        },
+        {
+            "UUID": "1c091ba4-d911-4c48-99ed-da58463f2ed3",
+            "Selectors": [
+                {
+                    "Action": "Insert",
+                    "Function": "SelectPassives",
+                    "Params": {
+                        "Guid": "49704931-e47b-4ce6-abc6-dfa7ba640752",
+                        "Amount": "1",
+                        "Amount2": "Metamagic"
+                    }
+                }
+            ]
+        },
+        {
+            "UUID": "18b60150-3f77-4f5d-9c67-b25c3b7ce404",
+            "Selectors": [
+                {
+                    "Action": "Insert",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "WardingFlareScaling"
+                    ]
+                }
+            ]
+        }
+    ]
+}
