@@ -1,6 +1,6 @@
 # BG3 RAW addon
 
-This mod is an addon to Zerd's Rules As Written for Baldur's Gate 3.
+This mod is an addon to [Zerd's Rules As Written](https://github.com/ZerdBG3/RAW) for Baldur's Gate 3.
 Every changes will be proposed as a pull request to Zerd's repository.
 
 It follow the same principles than Zerd's RAW and tries to be as close as possible to D&D 5th edition ruleset.
@@ -8,9 +8,9 @@ While it can be used without the former, it is highly encouraged to use it.
 
 ## Requirement
 
-- (Norbyte's Baldur's Gate 3 Script Extender)[https://www.nexusmods.com/baldursgate3/mods/2172]
-- (Community Library)[https://www.nexusmods.com/baldursgate3/mods/1333]
-- (Compatibility Framework)[https://www.nexusmods.com/baldursgate3/mods/1933]
+- [Norbyte's Baldur's Gate 3 Script Extender](https://www.nexusmods.com/baldursgate3/mods/2172)
+- [Community Library](https://www.nexusmods.com/baldursgate3/mods/1333)
+- [Compatibility Framework](https://www.nexusmods.com/baldursgate3/mods/1933)
 
 I'm doing my best to improve compatibility with other mods. CF is fantastic way to prevent mod conflicts.
 
