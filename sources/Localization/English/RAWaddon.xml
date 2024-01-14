@@ -11,5 +11,4 @@
 	<!-- Encumbrance -->
 	<content contentuid="h04852025ga3c0g47b2gbe02g7d22a3d12ab8" version="4">Carrying too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is reduced by [1].</content>
 	<content contentuid="hde40b598g2937g47f5ga342g2480628c8106" version="3">Carrying far too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; heavily reduced by [2], and you can no longer climb or Jump. You also have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, as well as Strength, Dexterity, and Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
-	
 </contentList>

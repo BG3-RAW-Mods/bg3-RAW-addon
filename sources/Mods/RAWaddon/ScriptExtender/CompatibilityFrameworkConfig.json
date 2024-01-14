@@ -334,26 +334,6 @@
             ]
         },
         {
-            "UUID": "647925f6-a7de-44a8-834c-1bc6e496921a",
-            "Strings": [
-                {
-                    "Action": "Insert",
-                    "Type": "Boosts",
-                    "Strings": [
-                        "ActionResource(Flourish_Charge,1,0)"
-                    ]
-                },
-                {
-                    "Action": "Insert",
-                    "Type": "PassivesAdded",
-                    "Strings": [
-                        "Blade_Flourish_Movement_Speed",
-                        "Flourish_Interrupt_Unlock"
-                    ]
-                }
-            ]
-        },
-        {
             "UUID": "3ca383a7-d545-4e01-8d00-00c965d3e604",
             "Strings": [
                 {
