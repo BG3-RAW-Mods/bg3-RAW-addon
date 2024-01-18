@@ -154,3 +154,5 @@ Other changes:
 ## Credits
 
 - BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats)
+- Zerd, for RAW which gave me inspiration, and its config system.
+- Community Library and Compatibility Framework
