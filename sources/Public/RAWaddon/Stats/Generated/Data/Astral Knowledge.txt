@@ -1,0 +1,5 @@
+// Astral Knowledge 
+// Whenever you finish a long rest, you gain proficiency in one skill of your choice and with one weapon of your choice, 
+// as you momentarily project your consciousness into the Astral Plane. These proficiencies last until the end of your next long rest.
+
+//TODO:

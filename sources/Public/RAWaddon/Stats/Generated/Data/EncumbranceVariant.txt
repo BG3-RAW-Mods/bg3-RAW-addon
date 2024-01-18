@@ -1,0 +1,4 @@
+// Encumbrance at 33% of Carry Weight
+key "EncumberedMultiplier","2.27"
+// Heavy Encumbrance is 66% of Carry Weight
+key "HeavilyEncumberedMultiplier","4.54"

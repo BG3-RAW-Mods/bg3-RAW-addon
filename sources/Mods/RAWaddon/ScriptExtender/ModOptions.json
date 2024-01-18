@@ -1,0 +1,142 @@
+{
+    "ItemWeight": {
+        "displayName": "Item Weights",
+        "description": "",
+        "enabled": true,
+        "value": null,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": [
+                {
+                    "from": "Public/RAWaddon/Stats/Generated/Data/ItemWeight.txt",
+                    "to": "Public/RAWaddon/Stats/Generated/Data/Empty.txt"
+                }
+            ]
+        }
+    },
+    "EncumbranceCore": {
+        "displayName": "Encumbrance (Core)",
+        "description": "RAW Carry Weight and Encumbrance effects",
+        "enabled": true,
+        "value": null,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": [
+                {
+                    "from": "Public/RAWaddon/Stats/Generated/Data/EncumbranceCore.txt",
+                    "to": "Public/RAWaddon/Stats/Generated/Data/Empty.txt"
+                }
+            ]
+        }
+    },
+    "EncumbranceVariant": {
+        "displayName": "Variant Encumbrance",
+        "description": "Use the controversial variant encumbrance",
+        "enabled": false,
+        "value": null,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": [
+                {
+                    "from": "Public/RAWaddon/Stats/Generated/Data/EncumbranceVariant.txt",
+                    "to": "Public/RAWaddon/Stats/Generated/Data/Empty.txt"
+                },
+                {
+                    "from": "Public/RAWaddon/Stats/Generated/Data/EncumbranceHeavyArmor.txt",
+                    "to": "Public/RAWaddon/Stats/Generated/Data/Empty.txt"
+                }
+            ]
+        }
+    },
+    "EncumbranceStandard": {
+        "displayName": "Standard Encumbrance",
+        "description": "Use RAW encumbrance (only Heavy Armor requirement)",
+        "enabled": false,
+        "value": null,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": [
+                {
+                    "from": "Public/RAWaddon/Stats/Generated/Data/EncumbranceStandard.txt",
+                    "to": "Public/RAWaddon/Stats/Generated/Data/Empty.txt"
+                }
+            ]
+        }
+    },
+    "EncumbranceMix": {
+        "displayName": "Mix Encumbrance (between standard and variant rule)",
+        "description": "",
+        "enabled": true,
+        "value": null,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": [
+                {
+                    "from": "Public/RAWaddon/Stats/Generated/Data/EncumbranceMix.txt",
+                    "to": "Public/RAWaddon/Stats/Generated/Data/Empty.txt"
+                }
+            ]
+        }
+    },
+    "EncumbranceHeavyArmor": {
+        "displayName": "Heavy Armor Strength Requirement",
+        "description": "",
+        "enabled": true,
+        "value": null,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": [
+                {
+                    "from": "Public/RAWaddon/Stats/Generated/Data/EncumbranceHeavyArmor.txt",
+                    "to": "Public/RAWaddon/Stats/Generated/Data/Empty.txt"
+                }
+            ]
+        }
+    },
+    "Jump": {
+        "displayName": "RAW Jump",
+        "description": "Implements RAW Jump and everything linked to Jump",
+        "enabled": true,
+        "value": null,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": [
+                {
+                    "from": "Public/RAWaddon/Stats/Generated/Data/Jump.txt",
+                    "to": "Public/RAWaddon/Stats/Generated/Data/Empty.txt"
+                }
+            ]
+        }
+    },
+    "WeaponRange": {
+        "displayName": "Weapon Ranges adjustments",
+        "description": "Very close to RAW",
+        "enabled": true,
+        "value": null,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": [
+                {
+                    "from": "Public/RAWaddon/Stats/Generated/Data/WeaponRange.txt",
+                    "to": "Public/RAWaddon/Stats/Generated/Data/Empty.txt"
+                }
+            ]
+        }
+    }
+}

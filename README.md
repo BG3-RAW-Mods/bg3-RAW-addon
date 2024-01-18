@@ -68,43 +68,10 @@ Last columns show chosen values.
 
 Maximum range will be kept at 30 to prevent AI issue.
 
-### Carry weight and item weights
+### Item weights
 
-BG3 is very far from RAW and I think it was for QoL reason. Still, I was choked to see how easy it is to wear heavy armor, even for a 8 strength mage with one dip into any heavy armor class.
-Your party can loot a whole dungeon without any carrying issue so carry weight almost become a non issue.
+I have adjusted most items to RAW valuess:
 
-I have implemented **Variant: Encumbrance** rule:
-- if you carry weight in excess of 5 times your Strength score, you are encumbered, which means your speed drops by 10 feet.
-- if you carry weight in excess of 10 times your Strength score, up to your maximum carrying capacity, you are instead heavily encumbered, which means your speed drops by 20 feet and you have disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.
-
-System measurement Metric (in BG3 option) is the most accurate because Imperial conversion is wrong.
-
-| Stength | BG3 | New game value      | Light encumbrance      | Heavy encumbrance      |
-| ------- | --- | ------------------- | ---------------------- | ---------------------- |
-| 8       | 120 | 54                  | 18                     | 36                     |
-| 9       | 130 | 61                  | 20                     | 41                     |
-| 10      | 140 | 68                  | 23                     | 45                     |
-| 11      | 150 | 75                  | 25                     | 50                     |
-| 12      | 160 | 82                  | 27                     | 54                     |
-| 13      | 170 | 88                  | 30                     | 59                     |
-| 14      | 180 | 95                  | 32                     | 64                     |
-| 15      | 190 | 102                 | 34                     | 68                     |
-| 16      | 200 | 109                 | 36                     | 73                     |
-| 17      | 210 | 116                 | 39                     | 77                     |
-| 18      | 220 | 122                 | 41                     | 82                     |
-| 19      | 230 | 129                 | 43                     | 86                     |
-| 20      | 240 | 136                 | 45                     | 91                     |
-| 21      | 250 | 143                 | 48                     | 95                     |
-| 22      | 260 | 150                 | 50                     | 100                    |
-
-Changes are huge and characters should regularly be encumbered. However, encumbered status have been updated to RAW:
-| Status | BG3 | RAW |
-| Lightly encumbered | Movement cost 50% more, Jumping distance halve, Walk | Movement distance reduced by 3m |
-| Heavily encumbered* | Movement cost 200% more, Jumping distance reduced to 0, Stroll | Movement distance reduced by 6m |
-
-* already applied by BG3: disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.
-
-I have also adjusted most items to RAW valuess:
 | Item             | Game | RAW (kg) | Diff |
 | ---------------- | ---- | -------- | ---- |
 | Plate            | 20   | 29,48    | 9,48 |
@@ -123,7 +90,41 @@ I have also adjusted most items to RAW valuess:
 | Grenade          | 0,1  | 0,23     | 0,13 |
 | Potion           | 0,1  | 0,23     | 0,13 |
 
-Additionally, Flame Blade and Pact weapons will have a normal weight.
+Additionally, Flame Blade and Pact weapons will their corresponding item weight.
+
+### Carry weight
+
+BG3 is very far from RAW and I think it was for QoL reason. Still, I was choked to see how easy it is to wear heavy armor, even for a 8 strength mage with one dip into any heavy armor class.
+Your party can loot a whole dungeon without any carrying issue so carry weight almost become a non issue.
+
+Your carrying capacity is your Strength score multiplied by 6.8 (RAW). This is in kg (metric used by default in game), PHB says 15 with imperial measure. System measurement Metric (in BG3 option) is the most accurate because Imperial conversion rate is wrong. Fortunately, game's data use metric.
+
+Compared to vanilla, this is roughly 50% less in carry weight.
+
+BG3 partially use **Variant: Encumbrance** optional rule.
+
+Encumbered status have been updated to match RAW:
+| Status              | BG3                                                            | RAW                                        |
+| ------------------- | -------------------------------------------------------------- | ------------------------------------------ |
+| Lightly encumbered  | Movement cost 50% more, Jumping distance halve, Walk           | Movement distance reduced by 3m            |
+| Heavily encumbered* | Movement cost 200% more, Jumping distance reduced to 0, Stroll | Movement distance reduced by 6m, Walk**    |
+
+* already applied by BG3: disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.
+** RAW doesn't specify that you can't run while beeing heavily encumbered, but I think it should be obvious.
+
+### Encumbrance
+
+There are 3 options here, numbers are relative to carry weight:
+- Standard is mostly RAW, but since BG3 also partly use variant encumbrance, I have set the same ratio
+- Variant is Variant: Encumbrance rule. This is very difficult to play, I have tried it !
+- Mix is an alliegiated Variant rule with added Heavy Armor requirement. I think it is the best compromise.
+
+| Encumbrance | Lightly encumbered | Heavily encumbered | Comment                                                                          |
+| ----------- | ------------------ | ------------------ | -------------------------------------------------------------------------------- |
+| Standard    | 81%                | 93%                | Strength requirement for Heavy Armor, encumbrance ratio are identical to vanilla |
+| Variant     | 33%                | 66%                | No strength requirement for heavy armor but these ratio are really hard          |
+| Mix         | 51%                | 81%                | Strength requirement for Heavy Armor, adjusted ratio to make it playable         |
+
 
 ### Feats
 
@@ -151,4 +152,4 @@ Other changes:
 
 ## Credits
 
-- BG3 Discord Modding community (lostsoul, Velnir, Athera)
+- BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats)

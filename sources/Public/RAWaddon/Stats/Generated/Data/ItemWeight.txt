@@ -1,27 +1,3 @@
-key "CarryWeightBase","0"
-key "CarryLimitMultiplier","6.8"
-// key "CarryWeightPerStr","10000"
-
-key "EncumberedMultiplier","2.27"
-key "HeavilyEncumberedMultiplier","4.54"
-
-new entry "ENCUMBERED_LIGHT"
-type "StatusData"
-data "StatusType" "BOOST"
-using "ENCUMBERED_LIGHT"
-data "Description" "h04852025ga3c0g47b2gbe02g7d22a3d12ab8;4"
-data "DescriptionParams" "Distance(3)"
-data "Boosts" "ActionResource(Movement,-3,0)"
-
-new entry "ENCUMBERED_HEAVY"
-type "StatusData"
-data "StatusType" "BOOST"
-using "ENCUMBERED_HEAVY"
-data "DisplayName" "h18065f0dg0169g4560gaff3g46fea09fd366;1"
-data "Description" "hde40b598g2937g47f5ga342g2480628c8106;3"
-data "DescriptionParams" "Distance(6)"
-data "Boosts" "ActionResource(Movement,-6,0);Disadvantage(AllAbilities);Disadvantage(AttackRoll);Disadvantage(SavingThrow,Dexterity);Disadvantage(SavingThrow,Strength);Disadvantage(SavingThrow,Constitution);MovementSpeedLimit(Walk)"
-
 new entry "ARM_Padded_Body"
 type "Armor"
 using "ARM_Padded_Body"
