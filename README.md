@@ -101,7 +101,7 @@ Your carrying capacity is your Strength score multiplied by 6.8 (RAW). This is i
 
 Compared to vanilla, this is roughly 50% less in carry weight.
 
-BG3 partially use **Variant: Encumbrance** optional rule.
+BG3 partially use Variant: Encumbrance optional rule.
 
 Encumbered status have been updated to match RAW:
 | Status              | BG3                                                            | RAW                                        |
@@ -110,6 +110,7 @@ Encumbered status have been updated to match RAW:
 | Heavily encumbered* | Movement cost 200% more, Jumping distance reduced to 0, Stroll | Movement distance reduced by 6m, Walk**    |
 
 * already applied by BG3: disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.
+
 ** RAW doesn't specify that you can't run while beeing heavily encumbered, but I think it should be obvious.
 
 ### Encumbrance
@@ -135,7 +136,7 @@ There are 3 options here, numbers are relative to carry weight:
 - Warding Flare uses wisdom modifier (instead of unlimited uses)
 - Bardic Inspiration uses charisma modifier (instead of a set number)
 - Potions now use an action
-- Sorcerers gain two Metamagic options of your choice. You gain another one at 10th.
+- Sorcerers gain two Metamagic options of your choice at level 3. You gain another one at 10th.
 
 ### Custom Ruleset defaults
 
