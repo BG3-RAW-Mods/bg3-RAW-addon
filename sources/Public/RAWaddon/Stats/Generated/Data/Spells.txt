@@ -20,13 +20,6 @@ data "SpellType" "Shout"
 using "Shout_FlameBlade"
 data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;IsConcentration"
 
-// Tempestuous Magic, fly up to 3m
-new entry "Projectile_Fly_TempestuousMagic"
-type "SpellData"
-data "SpellType" "Projectile"
-using "Projectile_Fly_TempestuousMagic"
-data "TargetRadius" "3"
-
 // Conjure Minor Elemental
 new entry "Target_ConjureElementals_Minor_Container"
 type "SpellData"

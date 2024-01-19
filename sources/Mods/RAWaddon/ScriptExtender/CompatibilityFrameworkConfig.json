@@ -283,17 +283,6 @@
             ]
         },
         {
-            "Comment": "Githyanki doesn't get Astral Knowledge (in its current OP implementation)",
-            "UUID": "f653d537-bc14-4fea-b7d2-25734ec928a2",
-            "Selectors": [
-                {
-                    "Action": "Remove",
-                    "Function": "AddSpells",
-                    "UUID": "5216169f-6b32-4860-8664-61348d970e48"
-                }
-            ]
-        },
-        {
             "Comment": "Remove from all classes +2/+1 to Ability Scores",
             "UUIDs": [
                 "a2198ee9-ea4c-468e-b6b4-22b32d37806e",
@@ -424,6 +413,54 @@
                     }
                 }
             ]
+        },
+        {
+            "Comment": "Draconic Sorcerer get fly at level 14, not 11",
+            "UUID": "94ba4bb9-7335-497a-8ac0-1ec535fb85d6",
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "12150e11-267a-4ecc-a3cc-292c9e2a198d"
+                }
+            ]
+        },
+        {
+            "Comment": "Storm Sorcerer doesn't get free spells at level 6",
+            "UUID": "daca4d03-f668-4c71-a013-4532cba886f5",
+            "Selectors": [
+                {
+                    "Action": "Remove",
+                    "Function": "AddSpells",
+                    "UUID": "1efc151d-f076-4ab9-9886-d8c5625691c9"
+                }
+            ]
+        },
+        {
+            "Comment": "Storm Sorcerer get Storm Fury at level 14, not 11",
+            "UUID": "18a0cd31-027a-41ab-ae20-0131332a0439",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "StormsFury"
+                    ]
+                }
+            ]
+        },
+        {
+            "Comment": "Wild Sorcerer get Controlled Chaos at level 14, not 11",
+            "UUID": "466ce7dc-1eec-44c5-a223-d652c7b1a5f2",
+            "Strings": [
+                {
+                    "Action": "Remove",
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "ControlledChaos"
+                    ]
+                }
+            ]
         }
-    ]
+     ]
 }

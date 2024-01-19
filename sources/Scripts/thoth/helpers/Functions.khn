@@ -1,4 +1,95 @@
+function WisdomModifier(value, entity)
+    entity = entity or context.Source
+    return ConditionResult(GetModifier(entity.Wisdom) == value)
+end
+
 function CharismaModifier(value, entity)
     entity = entity or context.Source
     return ConditionResult(GetModifier(entity.Charisma) == value)
+end
+
+function NotHasActiveAstralKnowledge(entity)
+    local entity = entity or context.Source
+    local result = HasStatus('ASTRAL_KNOWLEDGE_ACROBATICS', entity) | HasStatus('ASTRAL_KNOWLEDGE_ANIMALHANDLING', entity) | HasStatus('ASTRAL_KNOWLEDGE_ATHLETICS', entity) | HasStatus('ASTRAL_KNOWLEDGE_ARCANA', entity) | HasStatus('ASTRAL_KNOWLEDGE_DECEPTION', entity) | HasStatus('ASTRAL_KNOWLEDGE_HISTORY', entity) | HasStatus('ASTRAL_KNOWLEDGE_INSIGHT', entity) | HasStatus('ASTRAL_KNOWLEDGE_INTIMIDATION', entity) | HasStatus('ASTRAL_KNOWLEDGE_INVESTIGATION', entity) | HasStatus('ASTRAL_KNOWLEDGE_MEDICINE', entity) | HasStatus('ASTRAL_KNOWLEDGE_NATURE', entity) | HasStatus('ASTRAL_KNOWLEDGE_PERCEPTION', entity) | HasStatus('ASTRAL_KNOWLEDGE_PERFORMANCE', entity) | HasStatus('ASTRAL_KNOWLEDGE_PERSUASION', entity) | HasStatus('ASTRAL_KNOWLEDGE_RELIGION', entity) | HasStatus('ASTRAL_KNOWLEDGE_SLEIGHTOFHAND', entity) | HasStatus('ASTRAL_KNOWLEDGE_STEALTH', entity) | HasStatus('ASTRAL_KNOWLEDGE_SURVIVAL', entity)
+    return ConditionResult(not result.Result, {ConditionError("UnavailableUntilRest")}, {ConditionError("UnavailableUntilRest")})
+end
+
+function HasProficiencyIn(skill)
+    local ability = ''
+    local skillValue = 0
+    if (skill == 'Athletics') then
+        ability = context.Source.Strength
+        skillValue = context.Source.Athletics
+    end
+    if (skill == 'Acrobatics') then
+        ability = context.Source.Dexterity
+        skillValue = context.Source.Acrobatics
+    end
+    if (skill == 'SleightOfHand') then
+        ability = context.Source.Dexterity
+        skillValue = context.Source.SleightOfHand
+    end
+    if (skill == 'Stealth') then
+        ability = context.Source.Dexterity
+        skillValue = context.Source.Stealth
+    end
+    if (skill == 'Arcana') then
+        ability = context.Source.Intelligence
+        skillValue = context.Source.Arcana
+    end
+    if (skill == 'History') then
+        ability = context.Source.Intelligence
+        skillValue = context.Source.History
+    end
+    if (skill == 'Investigation') then
+        ability = context.Source.Intelligence
+        skillValue = context.Source.Investigation
+    end
+    if (skill == 'Nature') then
+        ability = context.Source.Intelligence
+        skillValue = context.Source.Nature
+    end
+    if (skill == 'Religion') then
+        ability = context.Source.Intelligence
+        skillValue = context.Source.Religion
+    end
+    if (skill == 'Deception') then
+        ability = context.Source.Charisma
+        skillValue = context.Source.Deception
+    end
+    if (skill == 'Intimidation') then
+        ability = context.Source.Charisma
+        skillValue = context.Source.Intimidation
+    end
+    if (skill == 'Performance') then
+        ability = context.Source.Charisma
+        skillValue = context.Source.Performance
+    end
+    if (skill == 'Persuasion') then
+        ability = context.Source.Charisma
+        skillValue = context.Source.Persuasion
+    end
+    if (skill == 'AnimalHandling') then
+        ability = context.Source.Wisdom
+        skillValue = context.Source.AnimalHandling
+    end
+    if (skill == 'Insight') then
+        ability = context.Source.Wisdom
+        skillValue = context.Source.Insight
+    end
+    if (skill == 'Medicine') then
+        ability = context.Source.Wisdom
+        skillValue = context.Source.Medicine
+    end
+    if (skill == 'Perception') then
+        ability = context.Source.Wisdom
+        skillValue = context.Source.Perception
+    end
+    if (skill == 'Survival') then
+        ability = context.Source.Wisdom
+        skillValue = context.Source.Survival
+    end
+    local modifier = GetModifier(ability)
+    local value = skillValue - modifier
+    return ConditionResult(value > 0)
 end

@@ -1,0 +1,50 @@
+// Draconic Sorcerer
+new entry "DraconicAncestry_Black"
+type "PassiveData"
+using "DraconicAncestry_Black"
+data "Boosts" ""
+
+new entry "DraconicAncestry_Blue"
+type "PassiveData"
+using "DraconicAncestry_Blue"
+data "Boosts" ""
+
+new entry "DraconicAncestry_Brass"
+type "PassiveData"
+using "DraconicAncestry_Brass"
+data "Boosts" ""
+
+new entry "DraconicAncestry_Bronze"
+type "PassiveData"
+using "DraconicAncestry_Bronze"
+data "Boosts" ""
+
+new entry "DraconicAncestry_Copper"
+type "PassiveData"
+using "DraconicAncestry_Copper"
+data "Boosts" ""
+
+new entry "DraconicAncestry_Gold"
+type "PassiveData"
+using "DraconicAncestry_Gold"
+data "Boosts" ""
+
+new entry "DraconicAncestry_Green"
+type "PassiveData"
+using "DraconicAncestry_Green"
+data "Boosts" ""
+
+new entry "DraconicAncestry_Red"
+type "PassiveData"
+using "DraconicAncestry_Red"
+data "Boosts" ""
+
+new entry "DraconicAncestry_Silver"
+type "PassiveData"
+using "DraconicAncestry_Silver"
+data "Boosts" ""
+
+new entry "DraconicAncestry_White"
+type "PassiveData"
+using "DraconicAncestry_White"
+data "Boosts" ""

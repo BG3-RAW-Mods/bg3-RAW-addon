@@ -13,7 +13,72 @@
 	<content contentuid="10f71f69-a978-479e-b6e8-276101e46c43" version="1">Armor's weight</content>
 	<content contentuid="5e96a7f7-7799-4c45-912e-d38c562850ba" version="1">The armor reduces the wearer’s &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; by [1] unless the wearer has a Strength score equal to or higher than [2].&lt;br&gt;This effect is not applied if you are encumbered.</content>
 
+	<!-- Fly -->
+	<content contentuid="h8eaa5f4bg6731g47c4g983ag2bcb6488497a" version="1">Fly to a target position, using your movement speed.</content>
+
 	<!-- Encumbrance -->
 	<content contentuid="h04852025ga3c0g47b2gbe02g7d22a3d12ab8" version="4">Carrying too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is reduced by [1].</content>
 	<content contentuid="hde40b598g2937g47f5ga342g2480628c8106" version="3">Carrying far too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; heavily reduced by [1], and you can no longer run. You also have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, as well as Strength, Dexterity, and Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+
+	<!-- Astral Knowledge -->
+	<content contentuid="h9cc47c36g2a6bg4bebg99ebgaafdce5eece7" version="3">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in one &lt;LSTag Tooltip="Skill"&gt;Skill&lt;/LSTag&gt; of your choice as you momentarily project your consciousness into the Astral Plane.</content>
+	<content contentuid="b3e42429-23a1-41af-bb9d-ee7a3adb27ec" version="1">Astral Plane: Acrobatics</content>
+	<content contentuid="015d5d60-0e88-4b19-8993-128af794e599" version="1">Astral Plane: Animal Handling</content>
+	<content contentuid="1c67ba90-2cdd-4f7a-8c58-7a6ae03d22ab" version="1">Astral Plane: Athletics</content>
+	<content contentuid="bb801747-b0e8-48c1-8f62-8b689b3aebcf" version="1">Astral Plane: Arcana</content>
+	<content contentuid="34df24d1-6e7c-46e4-9c00-5d9ad8514fa1" version="1">Astral Plane: Deception</content>
+	<content contentuid="d32fed0a-7089-4b51-a2c0-b44bb9176046" version="1">Astral Plane: History</content>
+	<content contentuid="d61e8cbb-e722-4b28-8813-17e5b9e11c6b" version="1">Astral Plane: Insight</content>
+	<content contentuid="33f6ba7c-6c92-457e-9be4-afe6afedcd5e" version="1">Astral Plane: Intimidation</content>
+	<content contentuid="a2f61bfa-9aab-41db-a947-fe1d4470716b" version="1">Astral Plane: Investigation</content>
+	<content contentuid="51c07d67-caaf-4126-9715-137418e9d80c" version="1">Astral Plane: Medicine</content>
+	<content contentuid="b40ee508-2d1d-4432-a5c0-8c73a81944e7" version="1">Astral Plane: Nature</content>
+	<content contentuid="8e11eaef-8620-4ebc-9bb9-c5dc6d57eaab" version="1">Astral Plane: Perception</content>
+	<content contentuid="b88c847f-7b06-42ef-93e9-357c3f2e8735" version="1">Astral Plane: Performance</content>
+	<content contentuid="7e536480-0e46-4da9-a20a-51ec9ba6215e" version="1">Astral Plane: Persuasion</content>
+	<content contentuid="822c18c3-8f1d-4014-b6a5-afaf81f06114" version="1">Astral Plane: Religion</content>
+	<content contentuid="4c915103-e856-4ab4-adcc-e41403796a52" version="1">Astral Plane: Sleight of Hand</content>
+	<content contentuid="f99d8328-5c2c-4088-915e-b64183f84c55" version="1">Astral Plane: Stealth</content>
+	<content contentuid="6c1d1c12-3746-42fc-97ca-bbbdde7f6650" version="1">Astral Plane: Survival</content>
+	<content contentuid="de81fd9a-487d-488c-b005-1b5bb4aefc1f" version="1">Has proficiency in Acrobatics &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="a38178c0-18f4-4434-84d6-3d4da4bd3478" version="1">Has proficiency in Animal Handling &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="7cb16742-4a98-485f-bc6a-c4dd1d0524f9" version="1">Has proficiency in Athletics &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="9c3b102c-69e9-495b-a9ec-46982818e2cc" version="1">Has proficiency in Arcana &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="d03df7eb-f0e7-4353-9c69-e0061d1286b8" version="1">Has proficiency in Deception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="471af6d0-9309-4968-9102-778852304c08" version="1">Has proficiency in History &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="76f3ddec-87dd-4c07-a4be-1a934474de1a" version="1">Has proficiency in Insight &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="b80ecdcc-4256-41c5-a94b-458ff1b198cc" version="1">Has proficiency in Intimidation &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="1a929c0a-5535-4cae-ba8e-9aba4361018b" version="1">Has proficiency in Investigation &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="9bfb677c-ad0d-4c70-abc3-b0c6f06c114a" version="1">Has proficiency in Medicine &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="970af043-d922-462c-80fc-a15cacd3e596" version="1">Has proficiency in Nature &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="34972425-7f53-41f1-a9e0-f96abd7dbe1c" version="1">Has proficiency in Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="33ee4be6-772a-4bdf-bc60-1c3a63cd1a67" version="1">Has proficiency in Performance &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="b84c6c98-b638-4f39-b009-5d41607350f0" version="1">Has proficiency in Persuasion &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="7eecf44a-44f9-4dd7-82d2-5987e86926f1" version="1">Has proficiency in Religion &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="757c71c9-07e0-4fa2-98a7-b3199c8d8123" version="1">Has proficiency in Sleight of Hand &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="fa21b4f3-0386-49ee-bf1e-c6e9964847c5" version="1">Has proficiency in Stealth &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+	<content contentuid="454e4beb-5a69-4003-8d95-df993b9b4f3b" version="1">Has proficiency in Survival &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+
+	<!-- Knowledge of the Ages -->
+	<content contentuid="ha03ef3efg547dg4f1agaea2gc4c840259cc0" version="8">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in one &lt;LSTag Tooltip="Skill"&gt;Skills&lt;/LSTag&gt; of your choice.</content>
+	<content contentuid="686f0a5e-a829-4412-8d05-47165fd970fe" version="1">Knowledge of the Ages: Acrobatics</content>
+	<content contentuid="9a40abc9-e8f5-44ba-8837-43de4595ffe0" version="1">Knowledge of the Ages: Animal Handling</content>
+	<content contentuid="cba98f5a-d43f-4c88-8cad-f25424289511" version="1">Knowledge of the Ages: Athletics</content>
+	<content contentuid="364a9e1a-7b95-4de1-9344-d77b5f62f05d" version="1">Knowledge of the Ages: Arcana</content>
+	<content contentuid="3ad50cd9-988f-4755-ad4b-89deaaad8e39" version="1">Knowledge of the Ages: Deception</content>
+	<content contentuid="1d29ee23-a095-4122-8ec8-c48a43e61df7" version="1">Knowledge of the Ages: History</content>
+	<content contentuid="59c87807-d6c8-422e-b4c4-dcff716e8b30" version="1">Knowledge of the Ages: Insight</content>
+	<content contentuid="6549d5d4-ced6-42e3-980a-27f31d6b38c1" version="1">Knowledge of the Ages: Intimidation</content>
+	<content contentuid="911e413f-e467-476a-8b1d-5ed2f1820b70" version="1">Knowledge of the Ages: Investigation</content>
+	<content contentuid="85231c5e-498a-48c8-9e1a-0ffbb5d33518" version="1">Knowledge of the Ages: Medicine</content>
+	<content contentuid="a32b9356-3774-4807-bb95-75b3dd1ff6a6" version="1">Knowledge of the Ages: Nature</content>
+	<content contentuid="b4576f42-4663-465d-a97e-8c2c66c6e748" version="1">Knowledge of the Ages: Perception</content>
+	<content contentuid="9db5c7b4-6f42-43b1-a263-e65b76f8e5d4" version="1">Knowledge of the Ages: Performance</content>
+	<content contentuid="b5ed1a5e-fe22-45dd-a80f-f70c5ac73bd4" version="1">Knowledge of the Ages: Persuasion</content>
+	<content contentuid="002a0b25-370d-4aba-b1ed-1523e66090f7" version="1">Knowledge of the Ages: Religion</content>
+	<content contentuid="7e6879de-3790-4bef-99ad-8b9288af56bc" version="1">Knowledge of the Ages: Sleight of Hand</content>
+	<content contentuid="6cbea37c-3cae-4659-8382-6a898cc37dd3" version="1">Knowledge of the Ages: Stealth</content>
+	<content contentuid="a7e155af-5186-4fda-94d0-9843963fac89" version="1">Knowledge of the Ages: Survival</content>
+
+  
 </contentList>

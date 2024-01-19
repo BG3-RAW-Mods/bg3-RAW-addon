@@ -40,13 +40,21 @@ Barbarian Tiger Jump has been changed from 4.5 to 3m.
 ### Spell changes
 
 - Mage Hand, 10 turns duration
-- Tempestuous Magic, fly range reduced to 3m
 
 Concentration has been added to these spells:
 - Flame Blade
 - Conjure Minor Elemental
 - Conjure Woodland Being
 - Conjure Elemental
+
+### Class adjustements
+
+#### Sorcerer
+
+- Tempestuous Magic, fly range reduced to 3m
+- Dragon Wings, distance is based on movement speed, without armor, and at level 14 (so removed from game)
+- Draconic Blood, ancestry's spell removed
+- Storm Sorcerey, level 6 free spells removed
 
 ### Weapon Range
 

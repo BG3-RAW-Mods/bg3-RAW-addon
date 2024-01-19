@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="300"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+            </children>
+        </node>
+    </region>
+</save>
