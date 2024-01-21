@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="307"/>
+    <region id="PassiveLists">
+        <node id="root">
+            <children>
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="
+                    Actor,
+                    Alert,
+                    VariantHumanAthleteStr,
+                    Charger,
+                    VariantHumanCrossbowExpert,
+                    VariantHumanDefensiveDuelist,
+                    VariantHumanDungeonDelver,
+                    VariantHumanDualWielder,
+                    Durable,
+                    VariantHumanEldritchAdept,
+                    ElementalAdept_Cold,
+                    ElementalAdept_Fire,
+                    ElementalAdept_Lightning,
+                    ElementalAdept_Thunder,
+                    VariantHumanGreatWeaponMaster,
+                    VariantHumanHeavilyArmored,
+                    VariantHumanHeavyArmorMaster,
+                    VariantHumanLightlyArmoredDex,
+                    VariantHumanLucky,
+                    VariantHumanMageSlayer,
+                    VariantHumanMediumArmorMaster,
+                    VariantHumanModeratelyArmoredDex,
+                    VariantHumanMobile,
+                    VariantHumanPolearmMaster,
+                    Resilient_Constitution,
+                    SavageAttacker,
+                    VariantHumanSentinel,
+                    VariantHumanSharpshooter,
+                    VariantHumanShieldMaster,
+                    VariantHumanTavernBrawler,
+                    Tough,
+                    VariantHumanWarCaster
+                    "/>
+                    <attribute id="UUID" type="guid" value="af415712-e7fc-4dc2-823d-e15b24ade414"/>
+                </node>
+         
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="ElfSkillVersatility,Elf_WeaponTraining,FleetOfFoot"/>
+                    <attribute id="UUID" type="guid" value="7d0390b4-973f-4063-aa56-3e8753ad6a41"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="ElfSkillVersatility,Elf_WeaponTraining,ElfCantrip"/>
+                    <attribute id="UUID" type="guid" value="1363d3fe-86bb-46e2-8cb3-cfa9f253071f"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="Variant_Skilled_Athletics,Variant_Skilled_Acrobatics,Variant_Skilled_SleightOfHand,Variant_Skilled_Stealth,Variant_Skilled_Arcana,Variant_Skilled_History,Variant_Skilled_Investigation,Variant_Skilled_Nature,Variant_Skilled_Religion,Variant_Skilled_AnimalHandling,Variant_Skilled_Insight,Variant_Skilled_Medicine,Variant_Skilled_Perception,Variant_Skilled_Survival,Variant_Skilled_Deception,Variant_Skilled_Intimidation,Variant_Skilled_Performance,Variant_Skilled_Persuasion" />
+                    <attribute id="UUID" type="guid" value="d6d0d054-d39d-4f5a-8a59-5573119d8de9" />
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,331 @@
+new entry "VARIANT_HUMAN_FEAT"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusGroups" "SG_RemoveOnRespec"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting"
+
+// Athlete
+new entry "VariantHumanAthleteStr"
+type "PassiveData"
+using "Athlete_StandUp"
+data "DisplayName" "h860bd485g72b2g45b8gbad7g02e8f5acdd3e;1"
+data "ExtraDescription" "0335c4a8-bf50-4a0f-a71b-4726cde55d9f;1"
+data "Boosts" "Ability(Strength,1,20)"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_ATHLETE',context.Source)):ApplyStatus(VARIANT_HUMAN_ATHLETE,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_ATHLETE"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "Athlete_StandUp"
+
+// Crossbow Expert
+new entry "VariantHumanCrossbowExpert"
+type "PassiveData"
+data "DisplayName" "hd025b817g4bf9g4411g8f23g73cd511a0d81;2"
+data "Description" "hf07ca2a0ge448g4e8dgabacg6152b9475931;6"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_CROSSBOW_EXPERT',context.Source)):ApplyStatus(VARIANT_HUMAN_CROSSBOW_EXPERT,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_CROSSBOW_EXPERT"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "CrossbowExpert_PointBlank;CrossbowExpert_Wounding"
+
+// Lightly Armored
+new entry "VariantHumanLightlyArmoredDex"
+type "PassiveData"
+data "DisplayName" "h866b6355g682cg4415g8048gd8097dde30a6;2"
+data "Description" "h93762a30g66b3g4832gbf74ga7ba9930ea8c;3"
+data "ExtraDescription" "87e00ac7-c6c4-4219-9af2-b4a9ab6a0119;1"
+data "Properties" "IsHidden"
+data "Boosts" "Ability(Dexterity,1,20);Proficiency(LightArmor)"
+
+// Moderately Armored
+new entry "VariantHumanModeratelyArmoredDex"
+type "PassiveData"
+data "DisplayName" "hc7ec371fg6a1cg4468g920ag28f3059635f3;2"
+data "Description" "h20014732g0400g4e54ga7c4g76fc99c787db;3"
+data "ExtraDescription" "87e00ac7-c6c4-4219-9af2-b4a9ab6a0119;1"
+data "Properties" "IsHidden"
+data "Boosts" "Ability(Dexterity,1,20)"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_MODERATELY_ARMORED',context.Source)):ApplyStatus(VARIANT_HUMAN_MODERATELY_ARMORED,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_MODERATELY_ARMORED"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "ModeratelyArmored"
+
+new entry "ModeratelyArmored"
+type "PassiveData"
+using "ModeratelyArmored"
+data "Boosts" "Proficiency(MediumArmor);Proficiency(Shields)"
+data "BoostConditions" "FeatRequirementProficiency('LightArmor')"
+
+// Heavily Armored
+new entry "VariantHumanHeavilyArmored"
+type "PassiveData"
+data "DisplayName" "h68b0e75cg762eg4aa7g8481gf7539227fa68;2"
+data "Description" "h3e3fb217gd9ddg4971ga26dg8eb980341ebd;3"
+data "Properties" "IsHidden"
+data "Boosts" "Ability(Strength,1,20)"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_HEAVILY_ARMORED',context.Source)):ApplyStatus(VARIANT_HUMAN_HEAVILY_ARMORED,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_HEAVILY_ARMORED"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "HeavilyArmoredNoStr"
+
+new entry "HeavilyArmoredNoStr"
+type "PassiveData"
+using "HeavilyArmored"
+data "Boosts" "Proficiency(HeavyArmor)"
+data "BoostConditions" "FeatRequirementProficiency('MediumArmor')"
+
+// Heavy Armor Master
+new entry "VariantHumanHeavyArmorMaster"
+type "PassiveData"
+data "DisplayName" "h3a9599eegc835g485egb629g31eeadfee623;1"
+data "Description" "h062e72a8gb2bdg4575g9071g11acf604a776;4"
+data "DescriptionParams" "1;20;3"
+data "Properties" "IsHidden"
+data "Boosts" "Ability(Strength,1,20)"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_HEAVY_ARMOR_MASTER',context.Source)):ApplyStatus(VARIANT_HUMAN_HEAVY_ARMOR_MASTER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_HEAVY_ARMOR_MASTER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "HeavyArmorMasterNoStr"
+
+new entry "HeavyArmorMasterNoStr"
+type "PassiveData"
+using "HeavyArmorMaster"
+data "Boosts" "IF(HasHeavyArmor() and not HasDamageEffectFlag(DamageFlags.Magical)):DamageReduction(Slashing, Flat, 3); IF(HasHeavyArmor() and not HasDamageEffectFlag(DamageFlags.Magical)):DamageReduction(Bludgeoning, Flat, 3); IF(HasHeavyArmor() and not HasDamageEffectFlag(DamageFlags.Magical)):DamageReduction(Piercing, Flat, 3)"
+data "BoostConditions" "FeatRequirementProficiency('HeavyArmor')"
+
+// Medium Armor Master
+new entry "VariantHumanMediumArmorMaster"
+type "PassiveData"
+data "DisplayName" "ha0cc91d9g0295g41bdgad78g46ffc8b217d4;2"
+data "Description" "h9f463949g869ag408agb2deg4270133d18bb;2"
+data "DescriptionParams" "3;2"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_MEDIUM_ARMOR_MASTER',context.Source)):ApplyStatus(VARIANT_HUMAN_MEDIUM_ARMOR_MASTER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_MEDIUM_ARMOR_MASTER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "MediumArmorMaster"
+
+new entry "MediumArmorMaster"
+type "PassiveData"
+using "MediumArmorMaster"
+data "BoostConditions" "FeatRequirementProficiency('MediumArmor')"
+
+// Defensive Duelist
+new entry "VariantHumanDefensiveDuelist"
+type "PassiveData"
+data "DisplayName" "h4ac5e779g24fbg4de3gbd04g81f25082caff;1"
+data "Description" "h73d4efe8gab76g4dd0gb231g6a81b6d38ff9;2"
+data "DescriptionParams" "ProficiencyBonus"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_DEFENSIVE_DUELIST',context.Source)):ApplyStatus(VARIANT_HUMAN_DEFENSIVE_DUELIST,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_DEFENSIVE_DUELIST"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "DefensiveDuelist"
+
+new entry "DefensiveDuelist"
+type "PassiveData"
+using "DefensiveDuelist"
+data "BoostConditions" "FeatRequirementAbilityGreaterEqual('Dexterity',13)"
+
+// Dual Wielder
+new entry "VariantHumanDualWielder"
+type "PassiveData"
+data "DisplayName" "h1d620270gba24g434egad17g5ee9b72a6e3e;1"
+data "Description" "h1909840bg87f1g4029g9be6g974d9233f516;4"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_DUAL_WIELDER',context.Source)):ApplyStatus(VARIANT_HUMAN_DUAL_WIELDER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_DUAL_WIELDER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "DualWielder_BonusAC;DualWielder_PassiveBonuses"
+
+// Dungeon Delver
+new entry "VariantHumanDungeonDelver"
+type "PassiveData"
+data "DisplayName" "ha5e18f65g3d5dg45b2g8d38gc9ee902a2be6;1"
+data "Description" "hf66efa4dg10efg4979gaa98g70fe4635cf62;3"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_DUNGEON_DELVER',context.Source)):ApplyStatus(VARIANT_HUMAN_DUNGEON_DELVER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_DUNGEON_DELVER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "DungeonDelver_Perception;DungeonDelver_ResistTraps"
+
+// Lucky
+new entry "VariantHumanLucky"
+type "PassiveData"
+data "DisplayName" "h93d3a685g4c39g4286gae06g2176f0d767f3;2"
+data "Description" "had71cd68g4785g40cdg9118g3e1f7c8b06b5;5"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_LUCKY',context.Source)):ApplyStatus(VARIANT_HUMAN_LUCKY,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_LUCKY"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "Lucky;Lucky_Unlock"
+
+// Mobile
+new entry "VariantHumanMobile"
+type "PassiveData"
+data "DisplayName" "hb434e5e8g23c2g439eg9703g2ac8fc9616ea;1"
+data "Description" "hea5b6476gaefcg412ag9d1dgb081d4e61c19;4"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_MOBILE',context.Source)):ApplyStatus(VARIANT_HUMAN_MOBILE,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_MOBILE"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "Mobile_PassiveBonuses;Mobile_CounterAttackOfOpportunity;Mobile_DashAcrossDifficultTerrain"
+
+// Polearm Master
+new entry "VariantHumanPolearmMaster"
+type "PassiveData"
+data "DisplayName" "ha7c4e2fag1168g4275g9cadg5038645ea85f;1"
+data "Description" "hc87a7293g3b25g406bg99e4gbb91dc138e9b;3"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_POLEARM_MASTER',context.Source)):ApplyStatus(VARIANT_HUMAN_POLEARM_MASTER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_POLEARM_MASTER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "PolearmMaster_AttackOfOpportunity;PolearmMaster_BonusAttack"
+
+// Sentinel
+new entry "VariantHumanSentinel"
+type "PassiveData"
+data "DisplayName" "h29babc87g541ag403bgba9dg41739c982db9;2"
+data "Description" "h19101a50g5b6ag44acgb14dg52eb3877cd28;7"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_SENTINEL',context.Source)):ApplyStatus(VARIANT_HUMAN_SENTINEL,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_SENTINEL"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "Sentinel_Attack;Sentinel_ZeroSpeed;Sentinel_OpportunityAdvantage"
+
+// War Caster
+new entry "VariantHumanWarCaster"
+type "PassiveData"
+data "DisplayName" "haadef5acg36f8g4affg8c7bg7901735048a8;2"
+data "Description" "h2967e308gd644g46d5g91e4g3de62873eef7;5"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_WAR_CASTER',context.Source)):ApplyStatus(VARIANT_HUMAN_WAR_CASTER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_WAR_CASTER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "WarCaster_Bonuses;WarCaster_OpportunitySpell"
+
+// Great Weapon Master
+new entry "VariantHumanGreatWeaponMaster"
+type "PassiveData"
+data "DisplayName" "hf41eb2bag6496g4187g994dg62b9cb959e29;1"
+data "Description" "hea61c527gd53fg46fega454g2bc02f65d75f;5"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_GREAT_WEAPON_MASTER',context.Source)):ApplyStatus(VARIANT_HUMAN_GREAT_WEAPON_MASTER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_GREAT_WEAPON_MASTER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "GreatWeaponMaster_BonusAttack;GreatWeaponMaster_BonusDamage"
+
+// Mage Slayer
+new entry "VariantHumanMageSlayer"
+type "PassiveData"
+data "DisplayName" "h1f659d00g360ag4878ga134ge53f3ab86860;1"
+data "Description" "h71d4b176gf657g4a3cgb40egc2963041d10f;5"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_MAGE_SLAYER',context.Source)):ApplyStatus(VARIANT_HUMAN_MAGE_SLAYER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_MAGE_SLAYER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "MageSlayer_Advantage;MageSlayer_AttackCaster;MageSlayer_BreakConcentration"
+
+// Tavern Brawler
+new entry "VariantHumanTavernBrawler"
+type "PassiveData"
+data "DisplayName" "h1a3b6583g891fg4caag9095g3f557dbee5bd;2"
+data "Description" "hf65735c9g9a47g4b10gbc09g980041172bba;3"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_TAVERN_BRAWLER',context.Source)):ApplyStatus(VARIANT_HUMAN_TAVERN_BRAWLER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_TAVERN_BRAWLER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "TavernBrawler"
+
+// Shield Master
+new entry "VariantHumanShieldMaster"
+type "PassiveData"
+data "DisplayName" "h8d63974fgdcb8g463fg8bedg7e8f1ceb9722;1"
+data "Description" "h7d3721fbg8c06g47ceg8584g3b7b26d94174;3"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_SHIELD_MASTER',context.Source)):ApplyStatus(VARIANT_HUMAN_SHIELD_MASTER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_SHIELD_MASTER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "ShieldMaster_PassiveBonuses;ShieldMaster_Block"
+
+// Sharpshooter
+new entry "VariantHumanSharpshooter"
+type "PassiveData"
+data "DisplayName" "h7fd575c5g3a3ag46a8g9a40gcddf1cd2b044;1"
+data "Description" "h0bf50988g8a65g40c1ga9e1g2ad5b6387678;3"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_SHARPSHOOTER',context.Source)):ApplyStatus(VARIANT_HUMAN_SHARPSHOOTER,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_SHARPSHOOTER"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "Sharpshooter_AllIn;Sharpshooter_Bonuses"
+
+// Agonizing Blast
+new entry "VariantHumanEldritchAdept"
+type "PassiveData"
+data "DisplayName" "8a51267c-9380-4393-aead-2623636fc9d8;1"
+data "Description" "3d2c2172-f140-4a58-b89d-872d8d64711e;1"
+data "Properties" "IsHidden"
+data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_ELDRITCH_ADEPT',context.Source)):ApplyStatus(VARIANT_HUMAN_ELDRITCH_ADEPT,100,-1)"
+data "StatsFunctorContext" "OnCreate"
+
+new entry "VARIANT_HUMAN_ELDRITCH_ADEPT"
+type "StatusData"
+using "VARIANT_HUMAN_FEAT"
+data "Passives" "AgonizingBlast"

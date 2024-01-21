@@ -1,0 +1,7 @@
+// Repelling Blast is 3m, not 4.5m
+new entry "RepellingBlast"
+type "PassiveData"
+using "RepellingBlast"
+data "DescriptionParams" "Distance(3)"
+data "StatsFunctors" "Force(3);ApplyStatus(PASSIVE_REPELLING_BLAST,100,0)"
+

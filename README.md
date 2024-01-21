@@ -21,6 +21,23 @@ I'm doing my best to improve compatibility with other mods. CF is a fantastic wa
 I have restored races abilities and traits, pretty much like it was before release.
 Wood Half-Elf lost their proficiency in stealth because they already get movement speed bonus. PHB clearly states it is only one trait.
 
+#### Variant Human
+
+Variant Human has been added as human's subrace. Most feats are available. For half-feat, I have chosen the most relevant ability score increase. It may not fit everyone and it is possible to create 2 versions. For example, Athlete Strength, Athlete Dexterity.
+
+Please note that these requirements are not listed in description. I might add them in a future release:
+
+| Feat                      | Requirement                       |
+| ------------------------- | --------------------------------- |
+| Defensive Duelist         | Dexterity: 13+                    |
+| Moderately Armored        | Light Armor proficiency           |
+| Heavily Armored           | Medium Armor proficiency          |
+| Heavy Armor Master        | Heavy Armor proficiency           |
+| Medium Armor Master       | Medium Armor proficiency          |
+
+Human racials have been transfered to standard human's subrace. However, this created an issue for all other humans that would loose their racials.
+As Human only get +1 to all ability scores, I have put this in Human race. Then, Variant Human get -1 to all ability scores. I think it is easier this way, instead of changing every race references by standard human subrace.
+
 ### Jump
 
 I didn't implement Long and High Jump because it would make jumps too complex and high jump would probably be useless in BG3.
@@ -55,6 +72,10 @@ Concentration has been added to these spells:
 - Dragon Wings, distance is based on movement speed, without armor, and at level 14 (so removed from game)
 - Draconic Blood, ancestry's spell removed
 - Storm Sorcerey, level 6 free spells removed
+
+#### Warlock
+
+- Repelling Blast, distance is 3m, not 4.5m
 
 ### Weapon Range
 
@@ -161,6 +182,6 @@ Other changes:
 
 ## Credits
 
-- BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats)
+- BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats, hinikuya)
 - Zerd, for RAW which gave me inspiration, and its config system.
 - Community Library and Compatibility Framework

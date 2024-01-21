@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="0" build="49"/>
+    <region id="ProgressionDescriptions">
+        <node id="root">
+            <children>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="hb7180a49g729ag4ec3g9f87gaeadb7d4252c" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h86926dd9g4332g4ae2g9954g29f5fb4b7b26" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="781ce817-265a-4926-96d8-65f4c1dacb2a"/>
+                    <attribute id="SelectorId" type="FixedString" value="VariantHumanFeat"/>
+                    <attribute id="UUID" type="guid" value="52e4810c-5f4c-4d22-8c71-3b8ff4b50560"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="393b5410-ae81-4bd9-83cb-03630a66b7b2" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="6c1a5a7c-d061-4dda-ab35-55361650746d" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="685d3b16-1f7f-49b3-906d-d7726276926b"/>
+                    <attribute id="SelectorId" type="FixedString" value="WoodHalfElfHeritageTrait"/>
+                    <attribute id="UUID" type="guid" value="a0291cc1-cf15-408a-85e3-de109124f01c"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="e4d14950-f604-41d5-b0d4-2577613cfa1e" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="5d71dc71-1dac-4486-aa61-c569de457fd9" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="685d3b16-1f7f-49b3-906d-d7726276926b"/>
+                    <attribute id="SelectorId" type="FixedString" value="WoodHalfElfSkillVersatility"/>
+                    <attribute id="UUID" type="guid" value="fb9fe43e-7b6c-4bd7-898d-0305cb85b9df"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="393b5410-ae81-4bd9-83cb-03630a66b7b2" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="6c1a5a7c-d061-4dda-ab35-55361650746d" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="9efb7794-dc6f-45f3-8cf9-74ad5286c792"/>
+                    <attribute id="SelectorId" type="FixedString" value="HighHalfElfHeritageTrait"/>
+                    <attribute id="UUID" type="guid" value="bbb40e64-f292-4698-8692-ac2b08e245fe"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="e4d14950-f604-41d5-b0d4-2577613cfa1e" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="5d71dc71-1dac-4486-aa61-c569de457fd9" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="9efb7794-dc6f-45f3-8cf9-74ad5286c792"/>
+                    <attribute id="SelectorId" type="FixedString" value="HighHalfElfSkillVersatility"/>
+                    <attribute id="UUID" type="guid" value="92f1310f-bdcb-4390-81d7-dce860573dda"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

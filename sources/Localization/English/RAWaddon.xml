@@ -80,5 +80,23 @@
 	<content contentuid="6cbea37c-3cae-4659-8382-6a898cc37dd3" version="1">Knowledge of the Ages: Stealth</content>
 	<content contentuid="a7e155af-5186-4fda-94d0-9843963fac89" version="1">Knowledge of the Ages: Survival</content>
 
-  
+	<!-- Variant Human -->
+	<content contentuid="bfb200b3-712f-4849-a391-a3d06b5d50c7" version="1">Variant Human</content>
+	<content contentuid="69a65948-edf1-4b95-ae4c-ee1fd9175270" version="1">Standard Human</content>
+	<content contentuid="0335c4a8-bf50-4a0f-a71b-4726cde55d9f" version="1">Your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; increases by 1, to a maximum of 20.</content>
+	<content contentuid="87e00ac7-c6c4-4219-9af2-b4a9ab6a0119" version="1">Your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; increases by 1, to a maximum of 20.</content>
+	<content contentuid="8a51267c-9380-4393-aead-2623636fc9d8" version="1">Eldritch Adept</content>
+	<content contentuid="3d2c2172-f140-4a58-b89d-872d8d64711e" version="1">Studying occult lore, you learn Eldritch Invocation Agonizing Blast from the warlock class.</content>
+
+	<!-- Half Elf -->
+	<content contentuid="e1b89875-159f-4963-b526-76673e598dea" version="1">Your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; increases to [1].</content>
+	<content contentuid="28f738e3-c0e8-480d-a19f-e25d6e1cb9e9" version="1">Elf Weapon Training</content>
+	<content contentuid="09143910-3519-4c95-9d58-09ffb324cceb" version="1">You have proficiency with the longsword, shortsword, shortbow, and longbow.</content>
+	<content contentuid="1e3863ea-9608-41cf-b759-adb7ff2d97b5" version="1">Cantrip</content>
+	<content contentuid="fb15a7e0-0182-4720-9cd4-0bd2f87e441b" version="1">You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.</content>
+	<content contentuid="6c1a5a7c-d061-4dda-ab35-55361650746d" version="1">Half-Elf Versatility</content>
+	<content contentuid="393b5410-ae81-4bd9-83cb-03630a66b7b2" version="1">Choose one of the following traits.</content>
+	<content contentuid="5d71dc71-1dac-4486-aa61-c569de457fd9" version="1">Skill Versatility</content>
+	<content contentuid="e4d14950-f604-41d5-b0d4-2577613cfa1e" version="1">You gain proficiency in two skills of your choice. It will only be effective if you selected Half-Elf Versatility in previous menu</content>
+
 </contentList>

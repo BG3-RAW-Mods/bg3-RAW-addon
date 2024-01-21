@@ -4,6 +4,26 @@
     <region id="Progressions">
         <node id="root">
             <children>
+                <!-- Variant Human -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="" />
+                    <attribute id="Level" type="uint8" value="1" />
+                    <attribute id="Name" type="LSString" value="StandardHuman" />
+                    <attribute id="PassivesAdded" type="LSString" value="" />
+                    <attribute id="ProgressionType" type="uint8" value="2" />
+                    <attribute id="TableUUID" type="guid" value="c82f4ecb-69b2-4247-81bf-a7d21a54c439" />
+                    <attribute id="UUID" type="guid" value="7de9eeb4-bad0-4a2c-bec2-ce2036d14aa3" />
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Ability(Strength,-1);Ability(Dexterity,-1);Ability(Constitution,-1);Ability(Intelligence,-1);Ability(Wisdom,-1);Ability(Charisma,-1)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="VariantHuman"/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(af415712-e7fc-4dc2-823d-e15b24ade414,1,VariantHumanFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1,1);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,1)"/>
+                    <attribute id="TableUUID" type="guid" value="781ce817-265a-4926-96d8-65f4c1dacb2a"/>
+                    <attribute id="UUID" type="guid" value="d1fc38a1-5116-4498-8196-851ac04c252a"/>
+                </node>
             </children>
         </node>
     </region>
