@@ -89,14 +89,17 @@
 	<content contentuid="3d2c2172-f140-4a58-b89d-872d8d64711e" version="1">Studying occult lore, you learn Eldritch Invocation Agonizing Blast from the warlock class.</content>
 
 	<!-- Half Elf -->
-	<content contentuid="e1b89875-159f-4963-b526-76673e598dea" version="1">Your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; increases to [1].</content>
-	<content contentuid="28f738e3-c0e8-480d-a19f-e25d6e1cb9e9" version="1">Elf Weapon Training</content>
-	<content contentuid="09143910-3519-4c95-9d58-09ffb324cceb" version="1">You have proficiency with the longsword, shortsword, shortbow, and longbow.</content>
-	<content contentuid="1e3863ea-9608-41cf-b759-adb7ff2d97b5" version="1">Cantrip</content>
-	<content contentuid="fb15a7e0-0182-4720-9cd4-0bd2f87e441b" version="1">You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.</content>
-	<content contentuid="6c1a5a7c-d061-4dda-ab35-55361650746d" version="1">Half-Elf Versatility</content>
-	<content contentuid="393b5410-ae81-4bd9-83cb-03630a66b7b2" version="1">Choose one of the following traits.</content>
+	<content contentuid="ha4f2b27dga556g4558gad85g35d3f659afae" version="2">High Half-Elf (Cantrip)</content>
+	<content contentuid="hb25408f8g5e5bg4976gab40g4539ace7c8d3" version="2">Wood Half-Elf (Fleet of Foot)</content>
+	<content contentuid="h95bfe875gb369g453egae61g0ed797c634f3" version="2">Drow Half-Elf (Drow Magic)</content>
+	<content contentuid="dd814de4-0d85-47bd-ba68-b9bc4a6baed9" version="2">High Half-Elf (Standard)</content>
+	<content contentuid="484f6012-8b94-4a75-a547-dd69ffdf7195" version="2">High Half-Elf (Weapon Training)</content>
+	<content contentuid="c8725031-5fef-4355-86f8-693d3e14630c" version="2">Wood Half-Elf (Standard)</content>
+	<content contentuid="47f3431e-60ba-4def-972b-cf889d7b677f" version="2">Wood Half-Elf (Weapon Training)</content>
+	<content contentuid="f4615b30-bdde-4ade-8594-64ae4e87bf75" version="2">Drow Half-Elf (Standard)</content>
+	<content contentuid="d65c94e7-6ec3-4d84-965f-7863d13c6349" version="1">Drow Magic</content>
+	<content contentuid="e7badccc-1720-4300-b232-44d46f5ab569" version="1">You know the Dancing Lights cantrip. When you reach 3rd level, you can cast Faerie Fire once, and it recharges after a long rest. When you reach 5th level, you can cast Darkness once, and it recharges after a long rest. Charisma is your spellcasting ability for these spells.</content>
 	<content contentuid="5d71dc71-1dac-4486-aa61-c569de457fd9" version="1">Skill Versatility</content>
-	<content contentuid="e4d14950-f604-41d5-b0d4-2577613cfa1e" version="1">You gain proficiency in two skills of your choice. It will only be effective if you selected Half-Elf Versatility in previous menu</content>
+	<content contentuid="1f0fb476-8748-425a-ad96-8d2bf183ca33" version="1">You gain proficiency in two skills of your choice.</content>
 
 </contentList>

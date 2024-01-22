@@ -38,6 +38,15 @@ Please note that these requirements are not listed in description. I might add t
 Human racials have been transfered to standard human's subrace. However, this created an issue for all other humans that would loose their racials.
 As Human only get +1 to all ability scores, I have put this in Human race. Then, Variant Human get -1 to all ability scores. I think it is easier this way, instead of changing every race references by standard human subrace.
 
+#### Half-Elf
+
+Added more subraces to match **Half-Elf Versatility**:
+- Skill Versatility (General). You gain proficiency in two skills of your choice.
+- Elf Weapon Training (High or Wood Elf Heritage). You have proficiency with the longsword, shortsword, shortbow, and longbow.
+- Cantrip (High Elf Heritage). You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.
+- Fleet of Foot (Wood Elf Heritage). Your base walking speed increases to 35 feet (10.5m).
+- Drow Magic (Dark Elf Heritage). You know the Dancing Lights cantrip. When you reach 3rd level, you can cast Faerie Fire once, and it recharges after a long rest. When you reach 5th level, you can cast  Darkness once, and it recharges after a long rest. Charisma is your spellcasting ability for these spells.
+
 ### Jump
 
 I didn't implement Long and High Jump because it would make jumps too complex and high jump would probably be useless in BG3.

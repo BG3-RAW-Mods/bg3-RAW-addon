@@ -24,6 +24,64 @@
                     <attribute id="TableUUID" type="guid" value="781ce817-265a-4926-96d8-65f4c1dacb2a"/>
                     <attribute id="UUID" type="guid" value="d1fc38a1-5116-4498-8196-851ac04c252a"/>
                 </node>
+
+                <!-- High Half Elf (Standard) -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="HighHalfElfStandard"/>
+                    <attribute id="PassivesAdded" type="LSString" value="HalfElfSkillVersatility"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,2)"/>
+                    <attribute id="TableUUID" type="guid" value="18f7aff0-dff4-463b-8150-c0eb4abb01c1"/>
+                    <attribute id="UUID" type="guid" value="c6571f93-edd7-49c1-ac7c-ec8e0a65edbd"/>
+                </node>
+                
+                <!-- High Half Elf (Weapon Training) -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="HighHalfElfWeaponTraining"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Elf_WeaponTraining"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="f78a58c6-0997-4927-8030-bffb7b591c9b"/>
+                    <attribute id="UUID" type="guid" value="17d7bae8-f80c-4ad5-87c3-c298f587baea"/>
+                </node>
+
+                <!-- Wood Half Elf (Standard) -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="WoodHalfElfStandard"/>
+                    <attribute id="PassivesAdded" type="LSString" value="HalfElfSkillVersatility"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,2)"/>
+                    <attribute id="TableUUID" type="guid" value="88fd74a3-4a54-4b01-8042-55f97a15767a"/>
+                    <attribute id="UUID" type="guid" value="1b5310d5-4f91-47fc-acad-3f72840924a1"/>
+                </node>
+
+                <!-- Wood Half Elf (Weapon Training) -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement, 10.5, 0);ProficiencyBonus(Skill,Stealth)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="WoodHalfElfWeaponTraining"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Elf_WeaponTraining"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="551d108c-d7df-451b-9256-3b75783130da"/>
+                    <attribute id="UUID" type="guid" value="cb0e2da5-80ae-46ca-a375-34a7feb48bb2"/>
+                </node>
+
+                <!-- Drow Half Elf (Standard) -->
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="HalfDrow"/>
+                    <attribute id="PassivesAdded" type="LSString" value="HalfElfSkillVersatility"/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,2)"/>
+                    <attribute id="TableUUID" type="guid" value="759a89aa-1d96-4a32-ae18-48cafe4dd413"/>
+                    <attribute id="UUID" type="guid" value="48aa4dbd-ce68-4b9f-b7c5-25965d5bc3bf"/>
+                </node>
             </children>
         </node>
     </region>

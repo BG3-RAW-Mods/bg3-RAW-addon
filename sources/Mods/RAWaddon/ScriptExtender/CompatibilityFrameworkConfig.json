@@ -307,7 +307,7 @@
             ]
         },
         {
-            "Comment": "Wood Half-Elf will now choose only one heritage trait (PHB)",
+            "Comment": "Wood Half-Elf will now choose one heritage trait (PHB)",
             "UUID": "cb0f84ec-1b1d-4ecc-9ab5-76261e332f5a",
             "Strings": [
                 {
@@ -316,69 +316,19 @@
                     "Strings": [
                         "ProficiencyBonus(Skill,Stealth)"
                     ]
-                },
-                {
-                    "Action": "Remove",
-                    "Type": "Boosts",
-                    "Strings": [
-                        "ActionResource(Movement, 10.5, 0)"
-                    ]
-                },
-                {
-                    "Action": "Insert",
-                    "Type": "Boosts",
-                    "Strings": [
-                        "ActionResource(Movement, 9, 0)"
-                    ]
-                }
-            ],
-            "Selectors": [
-                {
-                    "Action": "Insert",
-                    "Function": "SelectPassives",
-                    "Params": {
-                        "Guid": "d6d0d054-d39d-4f5a-8a59-5573119d8de9",
-                        "Amount": "2",
-                        "SelectorId": "WoodHalfElfSkillVersatility"
-                    }
-                },
-                {
-                    "Action": "Insert",
-                    "Function": "SelectPassives",
-                    "Params": {
-                        "Guid": "7d0390b4-973f-4063-aa56-3e8753ad6a41",
-                        "Amount": "1",
-                        "SelectorId": "WoodHalfElfHeritageTrait"
-                    }
                 }
             ]
         },
         {
-            "Comment": "High Half-Elf will now choose only one heritage trait (PHB)",
-            "UUID": "43bfa29a-fd63-4f47-850e-6714f0333022",
-            "Selectors": [
-                {
-                    "Action": "Remove",
-                    "Function": "SelectSpells",
-                    "UUID": "3cae2e56-9871-4cef-bba6-96845ea765fa"
-                },
+            "Comment": "Drow Half-Elf will now choose one heritage trait (PHB)",
+            "UUID": "58dae581-c25a-4dfb-8a57-589bf4b34f62",
+            "Strings": [
                 {
                     "Action": "Insert",
-                    "Function": "SelectPassives",
-                    "Params": {
-                        "Guid": "d6d0d054-d39d-4f5a-8a59-5573119d8de9",
-                        "Amount": "2",
-                        "SelectorId": "HighHalfElfSkillVersatility"
-                    }
-                },
-                {
-                    "Action": "Insert",
-                    "Function": "SelectPassives",
-                    "Params": {
-                        "Guid": "1363d3fe-86bb-46e2-8cb3-cfa9f253071f",
-                        "Amount": "1",
-                        "SelectorId": "HighHalfElfHeritageTrait"
-                    }
+                    "Type": "PassivesAdded",
+                    "Strings": [
+                        "DarkElfHeritageDrowMagic"
+                    ]
                 }
             ]
         },
