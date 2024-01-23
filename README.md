@@ -18,8 +18,16 @@ I'm doing my best to improve compatibility with other mods. CF is a fantastic wa
 
 ### Racials
 
-I have restored races abilities and traits, pretty much like it was before release.
-Wood Half-Elf lost their proficiency in stealth because they already get movement speed bonus. PHB clearly states it is only one trait.
+I have restored races abilities and traits, pretty much like it was before release. This is now as close as possible to PHB.
+
+#### Half-Elf
+
+Half-Elf subraces are a shortcut to PHB, which results in missing choices. I have added Half-Elf Versatility with subraces. Not the best implementation, but the most user-friendly considering the limitations of character creation:
+- Skill Versatility (General). You gain proficiency in two skills of your choice.
+- Elf Weapon Training (High or Wood Elf Heritage). You have proficiency with the longsword, shortsword, shortbow, and longbow.
+- Cantrip (High Elf Heritage). You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.
+- Fleet of Foot (Wood Elf Heritage). Your base walking speed increases to 35 feet (10.5m).
+- Drow Magic (Dark Elf Heritage). You know the Dancing Lights cantrip. When you reach 3rd level, you can cast Faerie Fire once, and it recharges after a long rest. When you reach 5th level, you can cast  Darkness once, and it recharges after a long rest. Charisma is your spellcasting ability for these spells.
 
 #### Variant Human
 
@@ -37,15 +45,6 @@ Please note that these requirements are not listed in description. I might add t
 
 Human racials have been transfered to standard human's subrace. However, this created an issue for all other humans that would loose their racials.
 As Human only get +1 to all ability scores, I have put this in Human race. Then, Variant Human get -1 to all ability scores. I think it is easier this way, instead of changing every race references by standard human subrace.
-
-#### Half-Elf
-
-Added more subraces to match **Half-Elf Versatility**:
-- Skill Versatility (General). You gain proficiency in two skills of your choice.
-- Elf Weapon Training (High or Wood Elf Heritage). You have proficiency with the longsword, shortsword, shortbow, and longbow.
-- Cantrip (High Elf Heritage). You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.
-- Fleet of Foot (Wood Elf Heritage). Your base walking speed increases to 35 feet (10.5m).
-- Drow Magic (Dark Elf Heritage). You know the Dancing Lights cantrip. When you reach 3rd level, you can cast Faerie Fire once, and it recharges after a long rest. When you reach 5th level, you can cast  Darkness once, and it recharges after a long rest. Charisma is your spellcasting ability for these spells.
 
 ### Jump
 
@@ -66,6 +65,8 @@ Barbarian Tiger Jump has been changed from 4.5 to 3m.
 ### Spell changes
 
 - Mage Hand, 10 turns duration
+- Knowledge of the Ages, proficiency in one skill for 100 turns
+- Astral Knowledge, proficiency in one skill until long rest
 
 Concentration has been added to these spells:
 - Flame Blade
@@ -164,7 +165,6 @@ There are 3 options here, numbers are relative to carry weight:
 | Variant     | 33%                | 66%                | No strength requirement for heavy armor but these ratio are really hard          |
 | Mix         | 51%                | 81%                | Strength requirement for Heavy Armor, adjusted ratio to make it playable         |
 
-
 ### Feats
 
 - Actor gives advantage instead of proficiency with expertise
@@ -175,6 +175,13 @@ There are 3 options here, numbers are relative to carry weight:
 - Bardic Inspiration uses charisma modifier (instead of a set number)
 - Potions now use an action
 - Sorcerers gain two Metamagic options of your choice at level 3. You gain another one at 10th.
+
+### Monsters
+
+Restored PHB abilities and stats. I also made my own version of weak monsters in Nautiloid, which will prove to be much more challenging. As an example, Imp regained most of their dexterity and all resistances. So they are harder to hit, more difficult to kill and damage you a lot more:
+- Imp
+- Intellect Devourer
+- Hell Boar
 
 ### Custom Ruleset defaults
 
