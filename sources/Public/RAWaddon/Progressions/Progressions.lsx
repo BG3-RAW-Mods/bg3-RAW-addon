@@ -6,10 +6,8 @@
             <children>
                 <!-- Variant Human -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="" />
                     <attribute id="Level" type="uint8" value="1" />
                     <attribute id="Name" type="LSString" value="StandardHuman" />
-                    <attribute id="PassivesAdded" type="LSString" value="" />
                     <attribute id="ProgressionType" type="uint8" value="2" />
                     <attribute id="TableUUID" type="guid" value="c82f4ecb-69b2-4247-81bf-a7d21a54c439" />
                     <attribute id="UUID" type="guid" value="7de9eeb4-bad0-4a2c-bec2-ce2036d14aa3" />
@@ -27,7 +25,6 @@
 
                 <!-- High Half Elf (Standard) -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="HighHalfElfStandard"/>
                     <attribute id="PassivesAdded" type="LSString" value="HalfElfSkillVersatility"/>
@@ -39,7 +36,6 @@
                 
                 <!-- High Half Elf (Weapon Training) -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="HighHalfElfWeaponTraining"/>
                     <attribute id="PassivesAdded" type="LSString" value="Elf_WeaponTraining"/>
@@ -50,7 +46,6 @@
 
                 <!-- Wood Half Elf (Standard) -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="WoodHalfElfStandard"/>
                     <attribute id="PassivesAdded" type="LSString" value="HalfElfSkillVersatility"/>
@@ -62,7 +57,6 @@
 
                 <!-- Wood Half Elf (Weapon Training) -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement, 10.5, 0);ProficiencyBonus(Skill,Stealth)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="WoodHalfElfWeaponTraining"/>
                     <attribute id="PassivesAdded" type="LSString" value="Elf_WeaponTraining"/>
@@ -73,7 +67,6 @@
 
                 <!-- Drow Half Elf (Standard) -->
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(Movement,9,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="HalfDrow"/>
                     <attribute id="PassivesAdded" type="LSString" value="HalfElfSkillVersatility"/>

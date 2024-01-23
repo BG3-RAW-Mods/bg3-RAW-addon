@@ -21,7 +21,7 @@
 	<content contentuid="hde40b598g2937g47f5ga342g2480628c8106" version="3">Carrying far too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; heavily reduced by [1], and you can no longer run. You also have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, as well as Strength, Dexterity, and Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 
 	<!-- Astral Knowledge -->
-	<content contentuid="h9cc47c36g2a6bg4bebg99ebgaafdce5eece7" version="3">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in one &lt;LSTag Tooltip="Skill"&gt;Skill&lt;/LSTag&gt; of your choice as you momentarily project your consciousness into the Astral Plane.</content>
+	<content contentuid="2733f3a2-5492-4d93-a57c-6c310b545397" version="3">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in one &lt;LSTag Tooltip="Skill"&gt;Skill&lt;/LSTag&gt; of your choice as you momentarily project your consciousness into the Astral Plane.</content>
 	<content contentuid="b3e42429-23a1-41af-bb9d-ee7a3adb27ec" version="1">Astral Plane: Acrobatics</content>
 	<content contentuid="015d5d60-0e88-4b19-8993-128af794e599" version="1">Astral Plane: Animal Handling</content>
 	<content contentuid="1c67ba90-2cdd-4f7a-8c58-7a6ae03d22ab" version="1">Astral Plane: Athletics</content>
@@ -60,7 +60,7 @@
 	<content contentuid="454e4beb-5a69-4003-8d95-df993b9b4f3b" version="1">Has proficiency in Survival &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
 
 	<!-- Knowledge of the Ages -->
-	<content contentuid="ha03ef3efg547dg4f1agaea2gc4c840259cc0" version="8">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in one &lt;LSTag Tooltip="Skill"&gt;Skills&lt;/LSTag&gt; of your choice.</content>
+	<content contentuid="83325b5f-cabf-4a79-89ba-00087a8de006" version="8">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in one &lt;LSTag Tooltip="Skill"&gt;Skills&lt;/LSTag&gt; of your choice.</content>
 	<content contentuid="686f0a5e-a829-4412-8d05-47165fd970fe" version="1">Knowledge of the Ages: Acrobatics</content>
 	<content contentuid="9a40abc9-e8f5-44ba-8837-43de4595ffe0" version="1">Knowledge of the Ages: Animal Handling</content>
 	<content contentuid="cba98f5a-d43f-4c88-8cad-f25424289511" version="1">Knowledge of the Ages: Athletics</content>
