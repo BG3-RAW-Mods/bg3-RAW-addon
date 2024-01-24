@@ -78,6 +78,7 @@ Concentration has been added to these spells:
 
 #### Sorcerer
 
+- Sorcerers gain two Metamagic options of your choice at level 3. You gain another one at 10th.
 - Tempestuous Magic, fly range reduced to 3m
 - Dragon Wings, distance is based on movement speed, without armor, and at level 14 (so removed from game)
 - Draconic Blood, ancestry's spell removed
@@ -86,6 +87,14 @@ Concentration has been added to these spells:
 #### Warlock
 
 - Repelling Blast, distance is 3m, not 4.5m
+
+### Cleric
+
+- Warding Flare uses wisdom modifier (instead of unlimited uses)
+
+### Bard
+
+- Bardic Inspiration uses charisma modifier (instead of a set number)
 
 ### Weapon Range
 
@@ -171,10 +180,7 @@ There are 3 options here, numbers are relative to carry weight:
 
 ### Miscellaneous changes
 
-- Warding Flare uses wisdom modifier (instead of unlimited uses)
-- Bardic Inspiration uses charisma modifier (instead of a set number)
 - Potions now use an action
-- Sorcerers gain two Metamagic options of your choice at level 3. You gain another one at 10th.
 
 ### Monsters
 
