@@ -96,6 +96,46 @@ Concentration has been added to these spells:
 
 - Bardic Inspiration uses charisma modifier (instead of a set number)
 
+### Monk
+
+Damage progression table:
+| Level | BG3 Ki | RAW Ki | BG3 DMG | RAW DMG |
+| ----- | ------ | ------ | ------- | ------- |
+|  1    |  2     |  0     | 1d4     | 1d4     |
+|  2    |  3     |  2     | 1d4     | 1d4     |
+|  3    |  4     |  3     | 1d6     | 1d4     |
+|  4    |  5     |  4     | 1d6     | 1d4     |
+|  5    |  6     |  5     | 1d6     | 1d6     |
+|  6    |  7     |  6     | 1d6     | 1d6     |
+|  7    |  8     |  7     | 1d6     | 1d6     |
+|  8    |  9     |  8     | 1d6     | 1d6     |
+|  9    | 10     |  9     | 1d8     | 1d6     |
+| 10    | 11     | 10     | 1d8     | 1d6     |
+| 11    | 12     | 11     | 1d8     | 1d8     |
+| 12    | 13     | 12     | 1d8     | 1d8     |
+
+- Flurry of Blows: requires an attack first as Martial Arts, unlock at level 2
+- Step of the Wind: you can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, **and your jump distance is doubled for the turn**.
+- Patient Defense: The status is removed if you're either incapacitated or **immobilized**. BG3 doesn't have a Dodge action but it does have a Dodge status which is missing immobilized removal condition.
+- Deflect Missiles: If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with a range of 6/18m. **BG3 uses 18m radius, so no disadvantage at 7-18 radius**
+- Slow Fall: you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level. **BG3 uses a flat 50% reduction, it is fixed by 5e Monk 5e Adjustments**
+- Stillness of Mind: you can use your action to end one effect on yourself that is causing you to be charmed or frightened. **BG3 removes it with a reaction**
+- Unarmored Movement: you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move. **BG3 hasn't implemented vertical surfaces, and gives immunity to difficult terrain. On top of that, it upgrades jump distance by 6m**. It should allow Monk to climb wall or cliffs. It should not give immunity to all difficult terrains, only deep water, grease, and maybe ice.
+
+Open Hand:
+- Flurry of Blows Push: push distance is 4.5m, **has been rounding up at 5m in BG3**.
+- Wholeness of Body: As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again. **BG3 also restores Ki Points**
+- Removes Manifestation of Body, Manifestation of Mind, and Manifestation of Soul that don't exist in PHB.
+- Tranquility: you gain the effect of a Sanctuary spell that lasts until the start of your next long rest. **BG3 only lasts 100 turns**
+- Ki Resonation (level 9) is a weaker version of Quivering Palm (level 17)
+    Ki Blast: 1 Ki to apply Resonation status with an unarmed attack. Blast: 3D6 force damage AOE 5m (DEX saves for none)
+    Quivering Palm: 3 Ki to apply vibrations with an unarmed attack. Blast: kill target (CON saves for 10d10 necrotic damage)
+
+Shadow:
+- Removes Shadow Arts: Hide, doesn't exist in PHB
+- Cloak of Shadows is granted at level 11, not 5
+- Remove Shadow Strike, doesn't exist in PHB
+
 ### Weapon Range
 
 I have made changes to make it closer to RAW:
