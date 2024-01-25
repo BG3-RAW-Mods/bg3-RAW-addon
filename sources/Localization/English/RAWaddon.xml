@@ -81,13 +81,21 @@
 	<content contentuid="a7e155af-5186-4fda-94d0-9843963fac89" version="1">Knowledge of the Ages: Survival</content>
 
 	<!-- Variant Human -->
-	<content contentuid="bfb200b3-712f-4849-a391-a3d06b5d50c7" version="1">Variant Human</content>
 	<content contentuid="69a65948-edf1-4b95-ae4c-ee1fd9175270" version="1">Standard Human</content>
+	<content contentuid="bfb200b3-712f-4849-a391-a3d06b5d50c7" version="1">Variant Human</content>
+	<content contentuid="7f3d2018-75d8-4c5e-b230-0b67c14b8057" version="1">Variant Human (Skill Expert)</content>
 	<content contentuid="0335c4a8-bf50-4a0f-a71b-4726cde55d9f" version="1">Your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; increases by 1, to a maximum of 20.</content>
 	<content contentuid="87e00ac7-c6c4-4219-9af2-b4a9ab6a0119" version="1">Your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; increases by 1, to a maximum of 20.</content>
 	<content contentuid="8a51267c-9380-4393-aead-2623636fc9d8" version="1">Eldritch Adept</content>
 	<content contentuid="3d2c2172-f140-4a58-b89d-872d8d64711e" version="1">Studying occult lore, you learn Eldritch Invocation Agonizing Blast from the warlock class.</content>
 
+	<content contentuid="3bc82a68-bb5f-43c0-a07e-7658672b4f5c" version="1">Skill Expert</content>
+	<content contentuid="35dd6443-fc25-465c-9ba1-34d53f997e82" version="1">Increase one ability score of your choice by 1, to a maximum of 20.&lt;br&gt;You gain proficiency and expertise in one skill of your choice.</content>
+	<content contentuid="ee6cd0f3-bac4-4072-bdb1-f4c958a54e87" version="1">Choose one skill. You gain proficiency and expertise with that skill.&lt;br&gt;If you didn't select Skill Expert feat, choose None.
+	</content>
+	<content contentuid="77e9c171-4d6a-4a99-8f30-40a4135a4195" version="1">Feat ASI</content>
+	<content contentuid="7da132ed-878e-4519-a2c6-b764460dca05" version="1">Increase one ability score of your choice by 1, to a maximum of 20.&lt;br&gt;If you didn't select Skill Expert feat, choose None.</content>
+	
 	<!-- Half Elf -->
 	<content contentuid="ha4f2b27dga556g4558gad85g35d3f659afae" version="2">High Half-Elf (Cantrip)</content>
 	<content contentuid="hb25408f8g5e5bg4976gab40g4539ace7c8d3" version="2">Wood Half-Elf (Fleet of Foot)</content>

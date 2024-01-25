@@ -307,7 +307,7 @@
             ]
         },
         {
-            "Comment": "Wood Half-Elf will now choose one heritage trait (PHB)",
+            "Comment": "Wood Half-Elf doesn't have Stealth",
             "UUID": "cb0f84ec-1b1d-4ecc-9ab5-76261e332f5a",
             "Strings": [
                 {
@@ -320,7 +320,7 @@
             ]
         },
         {
-            "Comment": "Drow Half-Elf will now choose one heritage trait (PHB)",
+            "Comment": "Drow Half-Elf will a dummy passive to list their drow magic",
             "UUID": "58dae581-c25a-4dfb-8a57-589bf4b34f62",
             "Strings": [
                 {

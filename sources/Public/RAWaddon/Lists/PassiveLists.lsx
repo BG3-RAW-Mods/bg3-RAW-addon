@@ -35,11 +35,46 @@
                     VariantHumanSentinel,
                     VariantHumanSharpshooter,
                     VariantHumanShieldMaster,
+                    VariantHumanSkillExpert,
                     VariantHumanTavernBrawler,
                     Tough,
                     VariantHumanWarCaster
                     "/>
                     <attribute id="UUID" type="guid" value="af415712-e7fc-4dc2-823d-e15b24ade414"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="
+                        VariantHumanNone,
+                        VariantHumanAthletics,
+                        VariantHumanAcrobatics,
+                        VariantHumanSleightOfHand,
+                        VariantHumanStealth,
+                        VariantHumanArcana,
+                        VariantHumanHistory,
+                        VariantHumanInvestigation,
+                        VariantHumanNature,
+                        VariantHumanReligion,
+                        VariantHumanAnimalHandling,
+                        VariantHumanInsight,
+                        VariantHumanMedicine,
+                        VariantHumanPerception,
+                        VariantHumanSurvival,
+                        VariantHumanDeception,
+                        VariantHumanIntimidation,
+                        VariantHumanPerformance,
+                        VariantHumanPersuasion" />
+                    <attribute id="UUID" type="guid" value="24bc2e0d-887b-48a5-b847-fa13494ab6fc" />
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="
+                        VariantHumanNone,
+                        VariantHumanStrength,
+                        VariantHumanDexterity,
+                        VariantHumanConstitution,
+                        VariantHumanIntelligence,
+                        VariantHumanWisdom,
+                        VariantHumanCharisma" />
+                    <attribute id="UUID" type="guid" value="e25c9c85-e5ef-471c-9085-e58c7059265e" />
                 </node>
             </children>
         </node>

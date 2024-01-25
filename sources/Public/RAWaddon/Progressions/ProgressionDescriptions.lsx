@@ -5,11 +5,25 @@
         <node id="root">
             <children>
                 <node id="ProgressionDescription">
-                    <attribute id="Description" type="TranslatedString" handle="hb7180a49g729ag4ec3g9f87gaeadb7d4252c" version="2"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h86926dd9g4332g4ae2g9954g29f5fb4b7b26" version="1"/>
+                    <attribute id="Description" type="TranslatedString" handle="hb7180a49g729ag4ec3g9f87gaeadb7d4252c" version="2"/>
                     <attribute id="ProgressionTableId" type="guid" value="781ce817-265a-4926-96d8-65f4c1dacb2a"/>
                     <attribute id="SelectorId" type="FixedString" value="VariantHumanFeat"/>
                     <attribute id="UUID" type="guid" value="52e4810c-5f4c-4d22-8c71-3b8ff4b50560"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="DisplayName" type="TranslatedString" handle="3bc82a68-bb5f-43c0-a07e-7658672b4f5c" version="1"/>
+                    <attribute id="Description" type="TranslatedString" handle="ee6cd0f3-bac4-4072-bdb1-f4c958a54e87" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="781ce817-265a-4926-96d8-65f4c1dacb2a"/>
+                    <attribute id="SelectorId" type="FixedString" value="VariantHumanSkillExpert"/>
+                    <attribute id="UUID" type="guid" value="ee8007ea-66ae-4578-abc8-5683d5da3032"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="DisplayName" type="TranslatedString" handle="77e9c171-4d6a-4a99-8f30-40a4135a4195" version="1"/>
+                    <attribute id="Description" type="TranslatedString" handle="7da132ed-878e-4519-a2c6-b764460dca05" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="781ce817-265a-4926-96d8-65f4c1dacb2a"/>
+                    <attribute id="SelectorId" type="FixedString" value="VariantHumanASI"/>
+                    <attribute id="UUID" type="guid" value="8e445ee7-d4b3-4e7c-9b32-31a6e35c8a75"/>
                 </node>
             </children>
         </node>

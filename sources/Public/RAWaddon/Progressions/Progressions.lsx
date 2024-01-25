@@ -13,14 +13,31 @@
                     <attribute id="UUID" type="guid" value="7de9eeb4-bad0-4a2c-bec2-ce2036d14aa3" />
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Ability(Strength,-1);Ability(Dexterity,-1);Ability(Constitution,-1);Ability(Intelligence,-1);Ability(Wisdom,-1);Ability(Charisma,-1)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="VariantHuman"/>
                     <attribute id="PassivesAdded" type="LSString" value=""/>
                     <attribute id="ProgressionType" type="uint8" value="2"/>
-                    <attribute id="Selectors" type="LSString" value="SelectPassives(af415712-e7fc-4dc2-823d-e15b24ade414,1,VariantHumanFeat);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,1,1);SelectSkills(f974ebd6-3725-4b90-bb5c-2b647d41615d,1)"/>
                     <attribute id="TableUUID" type="guid" value="781ce817-265a-4926-96d8-65f4c1dacb2a"/>
                     <attribute id="UUID" type="guid" value="d1fc38a1-5116-4498-8196-851ac04c252a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="VariantHumanSkillExpert"/>
+                    <attribute id="PassivesAdded" type="LSString" value=""/>
+                    <attribute id="ProgressionType" type="uint8" value="2"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(a1c2b712-2ed6-4e5b-820f-c5db654fe006,2);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2)"/>
+                    <attribute id="TableUUID" type="guid" value="6ff96ad6-5fae-4bdf-9449-190d5797609e"/>
+                    <attribute id="UUID" type="guid" value="77e52780-ce0d-4345-a579-d9f7cf3418ae"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,2,0)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Barbarian"/>
+                    <attribute id="PassivesAdded" type="LSString" value="RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value=""/>
+                    <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+                    <attribute id="UUID" type="guid" value="a2198ee9-ea4c-468e-b6b4-22b32d37806e"/>
                 </node>
 
                 <!-- High Half Elf (Standard) -->
