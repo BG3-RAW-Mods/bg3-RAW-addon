@@ -1,4 +1,7 @@
-
+function RAW_ToggleDebug(bool)
+    RAW_Globals.debug = bool
+end
+  
 -- Creates a Set from a list
 function RAW_Set(list)
     local set = {}
@@ -28,12 +31,6 @@ function RAW_Set_Concat(set, sep)
     return str
 end
 
-function CentralizedString(text, width)
-    width = width or 100
-    local spaces = (width - string.len(text))//2
-    return string.rep(" ", spaces) .. text
-end
-
 local ENUM_RAW_PrintTable = RAW_Set {
     RAW_PrintTable_ModOptions,
 }
@@ -42,18 +39,20 @@ RAW_PrintTypeInfo = "info"
 RAW_PrintTypeWarning = "warning"
 RAW_PrintTypeError = "error"
 
-function RAW_PrintIfDebug(text, debug, level)
-    if (type(debug) == "boolean" and debug) or ENUM_RAW_PrintTable[debug] then
-        if type(text) == "string" then
-            if level == RAW_PrintTypeError then
-                Ext.Utils.PrintError(text)
-            elseif level == RAW_PrintTypeWarning then
-                Ext.Utils.PrintWarning(text)
-            else
-                Ext.Utils.Print(text)
-            end
+function RAW_Print(text, level)
+    level = level or RAW_PrintTypeInfo
+    if (RAW_Globals.debug == false and level == RAW_PrintTypeInfo) then
+        return
+    end
+    if type(text) == "string" then
+        if level == RAW_PrintTypeError then
+            Ext.Utils.PrintError(text)
+        elseif level == RAW_PrintTypeWarning then
+            Ext.Utils.PrintWarning(text)
         else
-            _D(text)
+            Ext.Utils.Print(text)
         end
+    else
+        _D(text)
     end
 end

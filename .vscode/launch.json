@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "bg3lua",
+            "request": "launch",
+            "name": "BG3 Script Extender Lua Debug",
+            "program": "C:\\Games\\BG3 Mods\\Tools\\DebugAdapter\\LuaDebugger.exe",
+            "backendHost": "127.0.0.1",
+            "backendPort": 9998,
+            "dbgOptions": {
+                "breakOnError": true,
+                "breakOnGenericError": false
+            },
+            // "preLaunchTask": "bg3Continue",
+			//"postDebugTask": "bg3Kill",
+			//"internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}

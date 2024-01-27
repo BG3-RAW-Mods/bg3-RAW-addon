@@ -11,12 +11,12 @@ local function raceChanges()
   }))
   Mods.SubclassCompatibilityFramework.Api.RemoveStrings(removeString(RAW_HalfElf_1, "PassivesAdded", { "HumanMilitia" }))
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_HalfElf_1, "Boosts", { "Ability(Charisma,2)" }))
-  Mods.SubclassCompatibilityFramework.Api.RemoveStrings(removeString(RAW_WoodHalfElf_1, "Boosts", { "ProficiencyBonus(Skill,Stealth)" }))
+  Mods.SubclassCompatibilityFramework.Api.RemoveStrings(removeString(RAW_HalfElf_Wood_1, "Boosts", { "ProficiencyBonus(Skill,Stealth)" }))
   Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addSelectAbilityBonus(RAW_HalfElf_1, RAW_Abilities_Bonus, { "1", "1" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_DrowHalfElf_1, "PassivesAdded", { "DarkElfHeritageDrowMagic" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_HalfElf_Drow_1, "PassivesAdded", { "DarkElfHeritageDrowMagic" }))
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Elf_1, "Boosts", { "Ability(Dexterity,2)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_HighElf_1, "Boosts", { "Ability(Intelligence,1)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_WoodElf_1, "Boosts", { "Ability(Wisdom,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Elf_High_1, "Boosts", { "Ability(Intelligence,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Elf_Wood_1, "Boosts", { "Ability(Wisdom,1)" }))
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Drow_1, "Boosts", { "Ability(Dexterity,2)" }))
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Drow_1, "Boosts", { "Ability(Charisma,1)" }))
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Githyanki_1, "Boosts", { "Ability(Strength,2)" }))
@@ -26,22 +26,22 @@ local function raceChanges()
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_HalfOrc_1, "Boosts", { "Ability(Strength,2)" }))
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_HalfOrc_1, "Boosts", { "Ability(Constitution,1)" }))
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Tiefling_1, "Boosts", { "Ability(Charisma,2)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_ZarielTiefling_1, "Boosts", { "Ability(Strength,1)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_AsmodeusTiefling_1, "Boosts", { "Ability(Intelligence,1)" }))
-  Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_AsmodeusTiefling_1, "AddSpells", "a3366430-2f63-495c-be14-408d9facfd3b"))  
-  Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_AsmodeusTiefling_1, "5eada6b7-d9a2-4ef2-8872-0dce047e458c", { CastingAbility = "Charisma", PrepareType = "AlwaysPrepared" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_MephistophelesTiefling_1, "Boosts", { "Ability(Intelligence,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Tiefling_Zariel_1, "Boosts", { "Ability(Strength,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Tiefling_Asmodeus_1, "Boosts", { "Ability(Intelligence,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Tiefling_Asmodeus_1, "AddSpells", "a3366430-2f63-495c-be14-408d9facfd3b"))  
+  Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Tiefling_Asmodeus_1, "5eada6b7-d9a2-4ef2-8872-0dce047e458c", { CastingAbility = "Charisma", PrepareType = "AlwaysPrepared" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Tiefling_Mephistopheles_1, "Boosts", { "Ability(Intelligence,1)" }))
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Dwarf_1, "Boosts", { "Ability(Constitution,2)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_MountainDwarf_1, "Boosts", { "Ability(Strength,2)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_HillDwarf_1, "Boosts", { "Ability(Wisdom,1)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Duergar_1, "Boosts", { "Ability(Strength,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Dwarf_Mountain_1, "Boosts", { "Ability(Strength,2)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Dwarf_Hill_1, "Boosts", { "Ability(Wisdom,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Dwarf_Duergar_1, "Boosts", { "Ability(Strength,1)" }))
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Halfling_1, "Boosts", { "Ability(Dexterity,2)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_LightfootHalfing_1, "Boosts", { "Ability(Charisma,1)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_StoutHalfling_1, "Boosts", { "Ability(Constitution,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Halfling_Lightfoot_1, "Boosts", { "Ability(Charisma,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Halfling_Stout_1, "Boosts", { "Ability(Constitution,1)" }))
   Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Gnome_1, "Boosts", { "Ability(Intelligence,2)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_DeepGnome_1, "Boosts", { "Ability(Dexterity,1)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_ForestGnome_1, "Boosts", { "Ability(Dexterity,1)" }))
-  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_RockGnome_1, "Boosts", { "Ability(Constitution,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Gnome_Deep_1, "Boosts", { "Ability(Dexterity,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Gnome_Forest_1, "Boosts", { "Ability(Dexterity,1)" }))
+  Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Gnome_Rock_1, "Boosts", { "Ability(Constitution,1)" }))
 end
 
 local function classChanges()
@@ -65,6 +65,22 @@ local function onStatsLoaded()
   classChanges()
 end
 
-if Ext.Mod.IsModLoaded(RAW_ModCompatibilityFramework) then
-  Ext.Events.StatsLoaded:Subscribe(onStatsLoaded)
+function RAW_Racials_Traits()
+  RAW_Print("\n====================================================================================================", RAW_PrintTable_WeaponSets)
+  RAW_Print("Option: weaponSets")
+
+  if not IsModOptionEnabled("weaponSets") then
+      RAW_Print("Disabled!")
+      RAW_Print("====================================================================================================\n", RAW_PrintTable_WeaponSets)
+      return
+  end
+
+  RAW_Print("Enabled!")
+  RAW_Print("Starting the addition of default weapon attacks")
+
+  if Ext.Mod.IsModLoaded(RAW_ModCompatibilityFramework) then
+    Ext.Events.StatsLoaded:Subscribe(onStatsLoaded)
+  end
+  
+  RAW_Print("====================================================================================================\n", RAW_PrintTable_WeaponSets)
 end
