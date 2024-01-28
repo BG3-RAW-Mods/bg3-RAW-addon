@@ -34,7 +34,9 @@
     sorcererChanges()
   end
   
-  if Ext.Mod.IsModLoaded(RAW_ModCompatibilityFramework) then
-    Ext.Events.StatsLoaded:Subscribe(onStatsLoaded)
+  function RAW_Classes()
+    if RAW_CheckModOption(RAW_Globals.features.Classes) and Ext.Mod.IsModLoaded(RAW_ModCompatibilityFramework) then
+      Ext.Events.StatsLoaded:Subscribe(onStatsLoaded)
+    end
   end
   

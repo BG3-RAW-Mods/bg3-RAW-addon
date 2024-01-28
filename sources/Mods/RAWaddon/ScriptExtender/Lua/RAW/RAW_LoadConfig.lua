@@ -1,18 +1,18 @@
-local modOptionsFile = "ModOptions.json"
+local modOptionsFile = "modOptions.json"
 
 local function RAW_LoadUserOptions()
     RAW_Print("Searching for User "..modOptionsFile)
     local optionsFile = Ext.IO.LoadFile(modOptionsFile)
     if optionsFile == nil or optionsFile == "" then
-        RAW_Print("User ModOptions.json not found")
+        RAW_Print("User RAW_Globals.modOptions.json not found")
         return {}
     end
     local options = Ext.Json.Parse(optionsFile)
     if options[ModuleUUID] == nil then
-        RAW_Print("Not found User ModOptions for: " .. ModuleUUID)
+        RAW_Print("Not found User RAW_Globals.modOptions for: " .. ModuleUUID)
         return {}
     end
-    RAW_Print("Found User ModOptions for: " .. ModuleUUID)
+    RAW_Print("Found User RAW_Globals.modOptions for: " .. ModuleUUID)
     return options[ModuleUUID]
 end
 
@@ -30,8 +30,8 @@ local function checkMissingDependencies(enabledOptions, dependencies, missingDep
     for dep in pairs(dependencies) do
         if (enabledOptions[dep] == nil or not enabledOptions[dep]) and not missingDependencies[dep] then
             RAW_Set_Add(missingDependencies, dep)
-            if next(ModOptions[dep].dependencies) ~= nil then
-                checkMissingDependencies(enabledOptions, RAW_Set(ModOptions[dep].dependencies), missingDependencies)
+            if next(RAW_Globals.modOptions[dep].dependencies) ~= nil then
+                checkMissingDependencies(enabledOptions, RAW_Set(RAW_Globals.modOptions[dep].dependencies), missingDependencies)
             end
         end
     end
@@ -41,7 +41,7 @@ local function RAW_ValidateModOptions()
     local enabledOptions = {}
     local dependencies = {}
     local conflicts = {}
-    for optionName, attributes in pairs(ModOptions) do
+    for optionName, attributes in pairs(RAW_Globals.modOptions) do
         if attributes.enabled then
             parseEnabledOption(optionName, attributes, enabledOptions, dependencies, conflicts)
         end
@@ -54,8 +54,8 @@ local function RAW_ValidateModOptions()
         ok = false
         RAW_Print("Activate disabled dependencies: " .. RAW_Set_Concat(missingDependencies, ","), RAW_PrintTypeWarning)
         for dep in pairs(missingDependencies) do
-            ModOptions[dep].enabled = true
-            parseEnabledOption(dep, ModOptions[dep], enabledOptions, dependencies, conflicts)
+            RAW_Globals.modOptions[dep].enabled = true
+            parseEnabledOption(dep, RAW_Globals.modOptions[dep], enabledOptions, dependencies, conflicts)
         end
     end
 
@@ -80,7 +80,7 @@ end
 local function RAW_PrintConfig()
     print("\n\27[36mOptions:")
     local options = {}
-    for optionName, attributes in pairs(ModOptions) do
+    for optionName, attributes in pairs(RAW_Globals.modOptions) do
         local text = "\27[36m"
         if IsModOptionEnabled(optionName) then
             text = text .. optionName .. ":\27[32m enabled"
@@ -110,43 +110,44 @@ function RAW_LoadModOptions()
         return
     end
 
-    ModOptions = Ext.Json.Parse(optionsFile)
-    for optionName, attributes in pairs(ModOptions) do
+    RAW_Globals.modOptions = Ext.Json.Parse(optionsFile)
+    for optionName, attributes in pairs(RAW_Globals.modOptions) do
         local userOption = userOptions[optionName] or {}
-        if userOption.enabled ~= nil  then
+        if userOption.enabled ~= nil then
             attributes.enabled = userOption.enabled
         end
-        if userOption.enabled ~= nil  then
+        if userOption.value ~= nil then
             attributes.value = userOption.value
         end
 
         local filteredDependencies = {}
         for _, dep in pairs(attributes.dependencies or {}) do
-            if ModOptions[dep] ~= nil then
+            if RAW_Globals.modOptions[dep] ~= nil then
                 table.insert(filteredDependencies, dep)
             else
-                RAW_Print("Non-existing dependency on ModOptions: " .. dep, RAW_PrintTypeWarning)
+                RAW_Print("Non-existing dependency on modOptions: " .. dep, RAW_PrintTypeWarning)
             end
         end
         attributes.dependencies = filteredDependencies
 
         local filteredConflicts = {}
         for _, con in pairs(attributes.conflicts or {}) do
-            if ModOptions[con] ~= nil then
+            if RAW_Globals.modOptions[con] ~= nil then
                 table.insert(filteredConflicts, con)
             else
-                RAW_Print("Non-existing conflict on ModOptions: " .. con, RAW_PrintTypeWarning)
+                RAW_Print("Non-existing conflict on modOptions: " .. con, RAW_PrintTypeWarning)
             end
         end
         attributes.conflicts = filteredConflicts
+
+        if attributes.enabled and attributes.allowedValues ~= nil and not RAW_IsValueInList(attributes.allowedValues, attributes.value) then
+            RAW_Print("Option "..optionName.." has an unknown value "..attributes.value..". It is disabled to prevent erratic behavior", RAW_PrintTypeWarning)
+            attributes.enabled = false
+        end
     end
 
     RAW_ValidateModOptions()
     RAW_PrintConfig()
 
     RAW_Print("====================================================================================================\n")
-end
-
-function IsModOptionEnabled(modOption)
-    return ModOptions[modOption] ~= nil and ModOptions[modOption].enabled
 end

@@ -14,11 +14,42 @@ While it can be used without the former, it is highly encouraged to use it.
 
 I'm doing my best to improve compatibility with other mods. CF is a fantastic way to prevent mod conflicts.
 
+## User-config
+
+You can create this file if it doesn't exist: `%localappdata%\Larian Studios\Baldur's Gate 3\Script Extender\ModOptions.json`.
+
+Each UUID is a mod configuration and its value is mod configuration. You can copy and paste the following block:
+```json
+{
+	"a5799115-ef11-457b-92cd-2c927de09b02": {
+		"RacialTraits": { "enabled": true, "value": "PHB" },
+		"Classes": { "enabled": true },
+        "ItemWeight": { "enabled": true },
+		"Jump": { "enabled": false },
+		"Encumbrance": { "enabled": true, "value": "Mix" },
+		"EncumbranceCore": { "enabled": true },
+		"EncumbranceHeavyArmor": { "enabled": true },
+        "EncumbranceStandard": { "enabled": false },
+        "EncumbranceVariant": { "enabled": false },
+        "EncumbranceMix": { "enabled": true },
+		"WeaponRange": { "enabled": true }
+	}
+}
+```
+
 ## Features
 
 ### Racials
 
-I have restored races abilities and traits, pretty much like it was before release. This is now as close as possible to PHB.
+I have restored races abilities and traits. There are 2 possible values (config value in parenthesis):
+- PHB *(PHB)*
+- Tasha's Cauldron *(Tasha)*
+
+BG3 was initially using PHB then switched to Tasha's Cauldron. However, it didn't respect the new rule and gave every races +2/+1. I have implemented the exact rule which gives the same increase in numbers but you chan choose attributes now:
+- Human and Variant Human don't have any change.
+- Shield Dward get +2/+2
+- Half-Elf get +2/+1/+1
+- All others get +2/+1
 
 #### Half-Elf
 
@@ -139,41 +170,41 @@ I have adjusted most items to RAW valuess:
 | Grenade          | 0,1  | 0,23     | 0,13 |
 | Potion           | 0,1  | 0,23     | 0,13 |
 
-Additionally, Flame Blade and Pact weapons will their corresponding item weight.
+Additionally, Flame Blade and Pact weapons will their corresponding item weights.
 
-### Carry weight
+### Encumbrance
 
-BG3 is very far from RAW and I think it was for QoL reason. Still, I was choked to see how easy it is to wear heavy armor, even for a 8 strength mage with one dip into any heavy armor class.
-Your party can loot a whole dungeon without any carrying issue so carry weight almost become a non issue.
+BG3 is very far from RAW and I think it was for QoL reason. Still, I was choked to see how easy it is to wear heavy armor, even for a 8 strength mage with one dip into any heavy armor class. Also, your party can loot a whole dungeon without any carrying issue, so carry weight almost become a non issue.
 
-Your carrying capacity is your Strength score multiplied by 6.8 (RAW). This is in kg (metric used by default in game), PHB says 15 with imperial measure. System measurement Metric (in BG3 option) is the most accurate because Imperial conversion rate is wrong. Fortunately, game's data use metric.
+System measurement Metric (in BG3 option) is the most accurate because Imperial conversion rate is rounded and so wrong. Fortunately, game's data use metric.
+Every measure are in kg and all values come from RAW (there, it is imperial measure).
 
-Compared to vanilla, this is roughly 50% less in carry weight.
+**First change**: your carrying capacity is your Strength score multiplied by 6.8. Compared to vanilla, this is roughly 50% less in carry weight.
 
-BG3 partially use Variant: Encumbrance optional rule.
+BG3 partially use Variant: Encumbrance optional rule but it is far less strict than PHB.
 
-Encumbered status have been updated to match RAW:
+**Encumbered status have been updated to RAW**:
 | Status              | BG3                                                            | RAW                                        |
 | ------------------- | -------------------------------------------------------------- | ------------------------------------------ |
 | Lightly encumbered  | Movement cost 50% more, Jumping distance halve, Walk           | Movement distance reduced by 3m            |
 | Heavily encumbered* | Movement cost 200% more, Jumping distance reduced to 0, Stroll | Movement distance reduced by 6m, Walk**    |
 
-* already applied by BG3: disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.
+ * already applied by BG3: disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.
 
-** RAW doesn't specify that you can't run while beeing heavily encumbered, but I think it should be obvious.
-
-### Encumbrance
+ ** RAW doesn't specify that you can't run while beeing heavily encumbered, but I think it should be obvious.
 
 There are 3 options here, numbers are relative to carry weight:
-- Standard is mostly RAW, but since BG3 also partly use variant encumbrance, I have set the same ratio
-- Variant is Variant: Encumbrance rule. This is very difficult to play, I have tried it !
-- Mix is an alliegiated Variant rule with added Heavy Armor requirement. I think it is the best compromise.
 
-| Encumbrance | Lightly encumbered | Heavily encumbered | Comment                                                                          |
-| ----------- | ------------------ | ------------------ | -------------------------------------------------------------------------------- |
-| Standard    | 81%                | 93%                | Strength requirement for Heavy Armor, encumbrance ratio are identical to vanilla |
-| Variant     | 33%                | 66%                | No strength requirement for heavy armor but these ratio are really hard          |
-| Mix         | 51%                | 81%                | Strength requirement for Heavy Armor, adjusted ratio to make it playable         |
+| Config value | Lightly enc. | Heavily enc. | Str HA | Comment                                                     |
+| ------------ | ------------ | ------------ | ------ | ----------------------------------------------------------- |
+| Standard     | 81%          | 93%          | Yes    | Encumbrance ratio are identical to vanilla, easiest setting |
+| Variant      | 33%          | 66%          | No     | Hardest setting, I don't recommend it                       |
+| Mix          | 51%          | 81%          | Yes    | A mix of both rules, medium and default setting             | 
+
+- Str HA is Strength requirement for Heavy Armor 
+- Standard is RAW for Strength requirement for Heavy Armor. I have kept BG3 encumbrance ratio with RAW carry weight.
+- RAW Variant: Encumbrance rule is very difficult to play. You have been warned !
+- Mix is an alleviated Variant rule with added Heavy Armor requirement. I think it is the best compromise.
 
 ### Feats
 

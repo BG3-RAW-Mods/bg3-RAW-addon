@@ -4,6 +4,26 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "bg3Start",
+			"type": "shell",
+			"windows": {
+				"command": "Start-Process",
+				"args": [
+					"-FilePath",
+					"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin\\bg3.exe",
+					"-ArgumentList",
+					"--skip-launcher", // Starts the last game you had loaded automagically
+					"-WorkingDirectory",
+					"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin"
+				],
+				"options": {
+					"shell": {
+						"executable": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+					}
+				},
+			}
+		},
+		{
 			"label": "bg3Continue",
 			"type": "shell",
 			"windows": {
@@ -30,7 +50,7 @@
 				"command": "taskkill",
 				"args": [
 					"/IM",
-					"bg3.exe"
+					"bg3_dx11.exe"
 				],
 				"options": {
 					"shell": {

@@ -31,14 +31,6 @@ function RAW_Set_Concat(set, sep)
     return str
 end
 
-local ENUM_RAW_PrintTable = RAW_Set {
-    RAW_PrintTable_ModOptions,
-}
-
-RAW_PrintTypeInfo = "info"
-RAW_PrintTypeWarning = "warning"
-RAW_PrintTypeError = "error"
-
 function RAW_Print(text, level)
     level = level or RAW_PrintTypeInfo
     if (RAW_Globals.debug == false and level == RAW_PrintTypeInfo) then
@@ -55,4 +47,36 @@ function RAW_Print(text, level)
     else
         _D(text)
     end
+end
+
+function RAW_BooleanToString(bool)
+    if bool == nil then
+        return "(null)"
+    end
+    if bool then
+        return "Enabled"
+    else
+        return "Disabled"
+    end
+end
+
+function RAW_IsValueInList(list, value)
+    local result = false
+    for _, val in pairs(list) do
+        if value == val then
+            result = true
+        end
+    end
+    return result
+end
+
+function IsModOptionEnabled(modOption)
+    return RAW_Globals.modOptions[modOption] ~= nil and RAW_Globals.modOptions[modOption].enabled
+end
+
+function RAW_CheckModOption(option)
+    RAW_Print("\n====================================================================================================")
+    local enabled = IsModOptionEnabled(option)
+    RAW_Print(option .. " : " .. RAW_BooleanToString(enabled))
+    return enabled
 end

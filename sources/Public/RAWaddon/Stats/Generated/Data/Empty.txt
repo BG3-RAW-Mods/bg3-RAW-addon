@@ -1,1 +1,1 @@
-new spellset "RAW_Empty_SpellSet"
+new entry "RAW_Void_Item"

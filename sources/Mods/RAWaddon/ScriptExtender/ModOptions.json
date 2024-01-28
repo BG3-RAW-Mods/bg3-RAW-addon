@@ -2,7 +2,20 @@
     "RacialTraits": {
         "displayName": "Racial Traits",
         "enabled": true,
-        "value": "all"
+        "value": "PHB",
+        "allowedValues": ["PHB", "Tasha"],
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Race_Core.txt"]
+    },
+    "Classes": {
+        "displayName": "Classes",
+        "enabled": true,
+        "files": [
+            "Public/RAWaddon/Stats/Generated/Data/Class_Bard.txt",
+            "Public/RAWaddon/Stats/Generated/Data/Class_Cleric.txt",
+            "Public/RAWaddon/Stats/Generated/Data/Class_Monk.txt",
+            "Public/RAWaddon/Stats/Generated/Data/Class_Sorcerer.txt",
+            "Public/RAWaddon/Stats/Generated/Data/Class_Warlock.txt"
+        ]
     },
     "ItemWeight": {
         "displayName": "Item Weights",
@@ -12,7 +25,8 @@
     "Encumbrance": {
         "displayName": "Encumbrance",
         "enabled": true,
-        "value": "heavy"
+        "value": "Mix",
+        "allowedValues": ["Standard", "Variant", "Mix"]
     },
     "Jump": {
         "displayName": "RAW Jump",
