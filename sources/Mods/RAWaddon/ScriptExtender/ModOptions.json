@@ -17,11 +17,6 @@
             "Public/RAWaddon/Stats/Generated/Data/Class_Warlock.txt"
         ]
     },
-    "ItemWeight": {
-        "displayName": "Item Weights",
-        "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/ItemWeight.txt"]
-    },
     "Encumbrance": {
         "displayName": "Encumbrance",
         "enabled": true,
@@ -37,5 +32,40 @@
         "displayName": "Weapon Ranges adjustments",
         "enabled": true,
         "files": ["Public/RAWaddon/Stats/Generated/Data/WeaponRange.txt"]
+    },
+    "Monsters": {
+        "displayName": "Monsters",
+        "enabled": true,
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Monsters.txt"]
+    },
+    "ItemWeight": {
+        "displayName": "Item Weights",
+        "enabled": true,
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Weights.txt"]
+    },
+    "ItemPotionAction": {
+        "displayName": "Potions use an action",
+        "enabled": true,
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Potion_Action.txt"]
+    },
+    "ItemPotionDuration": {
+        "displayName": "Potions use RAW durations",
+        "enabled": true,
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Potion_Duration.txt"]
+    },
+    "ItemPotionPrice": {
+        "displayName": "Potions use RAW prices",
+        "enabled": true,
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Potion_Price.txt"]
+    },
+    "ItemPotionThrow": {
+        "displayName": "Potions don't do splash radius when thrown",
+        "enabled": true,
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Potion_Throw.txt"]
+    },
+    "Poisons": {
+        "displayName": "Poisons",
+        "enabled": true,
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Poisons.txt"]
     }
 }

@@ -208,11 +208,19 @@ There are 3 options here, numbers are relative to carry weight:
 
 ### Feats
 
-- Actor gives advantage instead of proficiency with expertise
+- Actor gives advantage instead of proficiency plus expertise
 
-### Miscellaneous changes
+### Potions
 
 - Potions now use an action
+
+### Poisons
+
+- Poisons use an action
+- Apply RAW costs and duration
+- Serpent Venom Toxin: increase damage from 1d6 to 3d6
+- Wyvern Toxin: increase damage from 1d8 to 7d6
+- Purple Worm Toxin: increase damage from 1d10 to 12d6
 
 ### Monsters
 

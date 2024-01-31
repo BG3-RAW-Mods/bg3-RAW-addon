@@ -15,7 +15,7 @@
                 "breakOnError": true,
                 "breakOnGenericError": false
             },
-            "preLaunchTask": "bg3Start",
+            // "preLaunchTask": "bg3Start",
 			"postDebugTask": "bg3Kill",
 			"internalConsoleOptions": "openOnSessionStart"
         }

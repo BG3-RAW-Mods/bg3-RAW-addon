@@ -1,0 +1,4 @@
+new entry "_Potion"
+type "Object"
+using "_Potion"
+data "UseCosts" "ActionPoint:1"

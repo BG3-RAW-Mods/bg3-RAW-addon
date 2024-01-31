@@ -1,28 +1,3 @@
-new entry "Toxin_SerpentVenom_Passive"
-type "PassiveData"
-using "Toxin_SerpentVenom_Passive"
-data "DescriptionParams" "DealDamage(3d6,Poison)"
-
-new entry "Toxin_Wyvern_Passive"
-type "PassiveData"
-using "Toxin_Wyvern_Passive"
-data "DescriptionParams" "DealDamage(7d6,Poison)"
-
-new entry "Toxin_PurpleWorm_Passive"
-type "PassiveData"
-using "Toxin_PurpleWorm_Passive"
-data "DescriptionParams" "DealDamage(12d6,Poison)"
-
-new entry "_Potion"
-type "Object"
-using "_Potion"
-data "UseCosts" "ActionPoint:1"
-
-new entry "_Poison"
-type "Object"
-using "_Poison"
-data "UseCosts" "ActionPoint:1"
-
 new entry "OBJ_Potion_Healing"
 type "Object"
 using "OBJ_Potion_Healing"
@@ -106,34 +81,4 @@ data "ValueOverride" "600"
 new entry "_Potion_Of_Resistance"
 type "Object"
 using "_Potion_Of_Resistance"
-data "ValueOverride" "300"
-
-new entry "OBJ_SerpentVenom"
-type "Object"
-using "OBJ_SerpentVenom"
-data "ValueOverride" "200"
-
-new entry "OBJ_WyvernPoison"
-type "Object"
-using "OBJ_WyvernPoison"
-data "ValueOverride" "1200"
-
-new entry "OBJ_PurpleWormPoison"
-type "Object"
-using "OBJ_PurpleWormPoison"
-data "ValueOverride" "2000"
-
-new entry "OBJ_AssassinsBlood"
-type "Object"
-using "OBJ_AssassinsBlood"
-data "ValueOverride" "150"
-
-new entry "OBJ_DrowPoison"
-type "Object"
-using "OBJ_DrowPoison"
-data "ValueOverride" "200"
-
-new entry "OBJ_EssenceOfEther"
-type "Object"
-using "OBJ_EssenceOfEther"
 data "ValueOverride" "300"

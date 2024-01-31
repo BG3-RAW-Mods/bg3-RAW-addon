@@ -1,0 +1,89 @@
+new entry "OBJ_Potion_Of_Animal_Speaking"
+type "Object"
+using "OBJ_Potion_Of_Animal_Speaking"
+data "RootTemplate" "f1a3d1c8-33f3-46d1-8243-8b3ae8d5da26"
+
+new entry "OBJ_Potion_Of_Hill_Giant_Strength"
+type "Object"
+using "OBJ_Potion_Of_Hill_Giant_Strength"
+data "RootTemplate" "50b81b66-a131-4d86-ab21-e763360e8f1e"
+
+new entry "OBJ_Potion_Of_Cloud_Giant_Strength"
+type "Object"
+using "OBJ_Potion_Of_Cloud_Giant_Strength"
+data "RootTemplate" "140c1d7e-5bd3-42d2-85eb-d857eedf0493"
+
+new entry "OBJ_Potion_Of_Shrinking"
+type "Object"
+using "OBJ_Potion_Of_Shrinking"
+data "RootTemplate" "99950a00-49cc-440d-aa82-e41dcfcfca53"
+
+new entry "OBJ_Potion_Of_Heroism"
+type "Object"
+using "OBJ_Potion_Of_Heroism"
+data "RootTemplate" "0f822997-30d3-41ba-897f-61ee9d46f549"
+
+new entry "OBJ_Potion_Of_Speed"
+type "Object"
+using "OBJ_Potion_Of_Speed"
+data "RootTemplate" "70afaaf2-fc00-4488-805c-ff2aab02a026"
+
+new entry "OBJ_Oil_Of_Slipperiness"
+type "Object"
+using "OBJ_Oil_Of_Slipperiness"
+data "RootTemplate" "5c3be010-c37b-4628-846f-e7216bd55b7d"
+
+new entry "OBJ_Potion_Sleep"
+type "Object"
+using "OBJ_Potion_Sleep"
+data "RootTemplate" "c0b22255-eff1-419b-92a4-b80622929867"
+
+new entry "OBJ_Potion_Of_Acid_Resistance"
+type "Object"
+using "OBJ_Potion_Of_Acid_Resistance"
+data "RootTemplate" "53324f86-9a47-41d7-b02a-5afb25b6409a"
+
+new entry "OBJ_Potion_Of_Poison_Resistance"
+type "Object"
+using "OBJ_Potion_Of_Poison_Resistance"
+data "RootTemplate" "621ee790-37ce-46d1-8012-fb43f7c934fc"
+
+new entry "OBJ_Potion_Of_Fire_Resistance"
+type "Object"
+using "OBJ_Potion_Of_Fire_Resistance"
+data "RootTemplate" "c89c75a6-070d-4ba5-a70a-4468e60f215c"
+
+new entry "OBJ_Potion_Of_Cold_Resistance"
+type "Object"
+using "OBJ_Potion_Of_Cold_Resistance"
+data "RootTemplate" "62ed8bb2-2989-42c1-98ef-b7367810309c"
+
+new entry "OBJ_Potion_Of_Lightning_Resistance"
+type "Object"
+using "OBJ_Potion_Of_Lightning_Resistance"
+data "RootTemplate" "90bb38c5-6db2-41e3-9700-ec39f946156a"
+
+new entry "OBJ_Potion_Of_Thunder_Resistance"
+type "Object"
+using "OBJ_Potion_Of_Thunder_Resistance"
+data "RootTemplate" "9938cb0e-b328-47b0-99c8-90793b9e4291"
+
+new entry "OBJ_Potion_Of_Force_Resistance"
+type "Object"
+using "OBJ_Potion_Of_Force_Resistance"
+data "RootTemplate" "4fde48c6-3db2-4c68-92d3-592a3848c687"
+
+new entry "OBJ_Potion_Of_Psychic_Resistance"
+type "Object"
+using "OBJ_Potion_Of_Psychic_Resistance"
+data "RootTemplate" "8d503e29-1689-482c-88ac-6ffc517311a7"
+
+new entry "OBJ_Potion_Of_Necrotic_Resistance"
+type "Object"
+using "OBJ_Potion_Of_Necrotic_Resistance"
+data "RootTemplate" "fc6aa700-055f-4204-85fe-d507e91ab36f"
+
+new entry "OBJ_Potion_Of_Radiant_Resistance"
+type "Object"
+using "OBJ_Potion_Of_Radiant_Resistance"
+data "RootTemplate" "bb3fb983-1589-4e1b-b1f4-d99a31e6cda3"
