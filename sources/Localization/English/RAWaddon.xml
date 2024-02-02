@@ -20,6 +20,12 @@
 	<content contentuid="h04852025ga3c0g47b2gbe02g7d22a3d12ab8" version="4">Carrying too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is reduced by [1].</content>
 	<content contentuid="hde40b598g2937g47f5ga342g2480628c8106" version="3">Carrying far too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; heavily reduced by [1], and you can no longer run. You also have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, as well as Strength, Dexterity, and Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 
+	<!-- Potions-->
+	<content contentuid="3b9ac5d3-ecf2-424b-832e-f63a8366829c" version="1">Heals.</content>
+
+	<!-- Druid -->
+	<content contentuid="49ee6ff4-0501-44da-9786-87ef4bc604b3" version="4">Affected entity has gained [1].&lt;br&gt;&lt;br&gt;As long as it has its &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt;, its melee weapon attacks and unarmed strikes deal an additional [2], and it deals double damage with &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Ends early if the entity uses &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wild Shape&lt;/LSTag&gt;.</content>
+
 	<!-- Astral Knowledge -->
 	<content contentuid="2733f3a2-5492-4d93-a57c-6c310b545397" version="3">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in one &lt;LSTag Tooltip="Skill"&gt;Skill&lt;/LSTag&gt; of your choice as you momentarily project your consciousness into the Astral Plane.</content>
 	<content contentuid="b3e42429-23a1-41af-bb9d-ee7a3adb27ec" version="1">Astral Plane: Acrobatics</content>
@@ -109,5 +115,4 @@
 	<content contentuid="e7badccc-1720-4300-b232-44d46f5ab569" version="1">You know the Dancing Lights cantrip. When you reach 3rd level, you can cast Faerie Fire once, and it recharges after a long rest. When you reach 5th level, you can cast Darkness once, and it recharges after a long rest. Charisma is your spellcasting ability for these spells.</content>
 	<content contentuid="5d71dc71-1dac-4486-aa61-c569de457fd9" version="1">Skill Versatility</content>
 	<content contentuid="1f0fb476-8748-425a-ad96-8d2bf183ca33" version="1">You gain proficiency in two skills of your choice.</content>
-
 </contentList>

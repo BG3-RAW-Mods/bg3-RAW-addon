@@ -1,0 +1,4 @@
+new entry "_Poison"
+type "Object"
+using "_Poison"
+data "UseCosts" "ActionPoint:1"

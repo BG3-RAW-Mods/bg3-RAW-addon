@@ -7,6 +7,8 @@ RAW_Globals.features.RacialTraits = "RacialTraits"
 RAW_Globals.features.Classes = "Classes"
 RAW_Globals.features.ItemWeight = "ItemWeight"
 RAW_Globals.features.Encumbrance = "Encumbrance"
+RAW_Globals.features.Potion = "ItemPotion"
+RAW_Globals.features.Poison = "ItemPoison"
 RAW_Globals.features.Jump = "Jump"
 RAW_Globals.features.WeaponRange = "WeaponRange"
 

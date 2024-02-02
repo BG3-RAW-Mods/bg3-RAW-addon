@@ -1,0 +1,26 @@
+new entry "POTION_OF_HEALING"
+type "StatusData"
+using "POTION_OF_HEALING"
+data "OnApplyFunctors" "RegainHitPoints(2d4+2)"
+
+new entry "POTION_OF_HEALING_GREATER"
+type "StatusData"
+using "POTION_OF_HEALING_GREATER"
+data "OnApplyFunctors" "RegainHitPoints(4d4+4);"
+
+new entry "POTION_OF_HEALING_SUPERIOR"
+type "StatusData"
+using "POTION_OF_HEALING_SUPERIOR"
+data "OnApplyFunctors" "RegainHitPoints(8d4+8);"
+
+new entry "POTION_OF_HEALING_SUPREME"
+type "StatusData"
+using "POTION_OF_HEALING_SUPREME"
+data "OnApplyFunctors" "RegainHitPoints(10d4+20);"
+
+new entry "Projectile_Potion_Destroy_Sleep"
+type "SpellData"
+using "Projectile_Potion_Destroy_Sleep"
+data "SpellProperties" "ApplyStatus(SLEEP,100,10,,,,not SavingThrow(Ability.Constitution,11, AdvantageOnPoisoned()))"
+
+//TODO: PHB: Drinking a potion or administering a potion to another character requires an action

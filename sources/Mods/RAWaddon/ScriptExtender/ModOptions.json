@@ -12,6 +12,7 @@
         "files": [
             "Public/RAWaddon/Stats/Generated/Data/Class_Bard.txt",
             "Public/RAWaddon/Stats/Generated/Data/Class_Cleric.txt",
+            "Public/RAWaddon/Stats/Generated/Data/Class_Druid.txt",
             "Public/RAWaddon/Stats/Generated/Data/Class_Monk.txt",
             "Public/RAWaddon/Stats/Generated/Data/Class_Sorcerer.txt",
             "Public/RAWaddon/Stats/Generated/Data/Class_Warlock.txt"
@@ -28,44 +29,29 @@
         "enabled": true,
         "files": ["Public/RAWaddon/Stats/Generated/Data/Jump.txt"]
     },
-    "WeaponRange": {
-        "displayName": "Weapon Ranges adjustments",
-        "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/WeaponRange.txt"]
-    },
     "Monsters": {
         "displayName": "Monsters",
         "enabled": true,
         "files": ["Public/RAWaddon/Stats/Generated/Data/Monsters.txt"]
+    },
+    "ItemWeapon": {
+        "displayName": "Weapon fixes",
+        "enabled": true,
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Weapon.txt"]
     },
     "ItemWeight": {
         "displayName": "Item Weights",
         "enabled": true,
         "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Weights.txt"]
     },
-    "ItemPotionAction": {
-        "displayName": "Potions use an action",
+    "ItemPotion": {
+        "displayName": "RAW Potions (see README for values)",
         "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Potion_Action.txt"]
+        "value": 7
     },
-    "ItemPotionDuration": {
-        "displayName": "Potions use RAW durations",
+    "ItemPoison": {
+        "displayName": "RAW Poisons (see README for values)",
         "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Potion_Duration.txt"]
-    },
-    "ItemPotionPrice": {
-        "displayName": "Potions use RAW prices",
-        "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Potion_Price.txt"]
-    },
-    "ItemPotionThrow": {
-        "displayName": "Potions don't do splash radius when thrown",
-        "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Potion_Throw.txt"]
-    },
-    "Poisons": {
-        "displayName": "Poisons",
-        "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Poisons.txt"]
+        "value": 15
     }
 }

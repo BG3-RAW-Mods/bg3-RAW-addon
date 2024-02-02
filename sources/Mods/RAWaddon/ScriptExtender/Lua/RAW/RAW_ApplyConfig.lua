@@ -1,3 +1,63 @@
+local function RAW_Encumbrance()
+    local disabled = not RAW_CheckModOption(RAW_Globals.features.Encumbrance)
+    local value = RAW_Globals.modOptions[RAW_Globals.features.Encumbrance].value
+    local list = {}
+    if disabled then
+      table.insert(list, 'Encumbrance_Core.txt')
+    end
+    if disabled or value == "Variant" then
+      table.insert(list, 'Encumbrance_HeavyArmor.txt')
+    end
+    if disabled or value ~= "Standard" then 
+      table.insert(list, 'Encumbrance_Standard.txt')
+    end
+    if disabled or value ~= "Variant" then 
+      table.insert(list, 'Encumbrance_Variant.txt')
+    end
+    if disabled or value ~= "Mix" then 
+        table.insert(list, 'Encumbrance_Mix.txt')
+    end
+    RAW_disableFiles(list)
+end
+
+local function RAW_Potion()
+    local disabled = not RAW_CheckModOption(RAW_Globals.features.Potion)
+    local value = RAW_Globals.modOptions[RAW_Globals.features.Potion].value
+    local list = {}
+    if disabled then
+        table.insert(list, 'Item_Potion_Core.txt')
+    end
+    if disabled or (value & 1 ~= 1) then
+        table.insert(list, 'Item_Potion_Action.txt')
+    end
+    if disabled or (value & 2 ~= 2) then 
+        table.insert(list, 'Item_Potion_Price.txt')
+    end
+    if disabled or (value & 4 ~= 4) then 
+        table.insert(list, 'Item_Potion_Throw.txt')
+    end
+    RAW_disableFiles(list)
+end
+
+local function RAW_Poison()
+    local disabled = not RAW_CheckModOption(RAW_Globals.features.Poison)
+    local value = RAW_Globals.modOptions[RAW_Globals.features.Poison].value
+    local list = {}
+    if disabled or (value & 1 ~= 1) then
+        table.insert(list, 'Item_Poison_Action.txt')
+    end
+    if disabled or (value & 2 ~= 2) then 
+        table.insert(list, 'Item_Poison_Price.txt')
+    end
+    if disabled or (value & 4 ~= 4) then 
+        table.insert(list, 'Item_Poison_Throw.txt')
+    end
+    if disabled or (value & 8 ~= 8) then 
+        table.insert(list, 'Item_Poison_Damage.txt')
+    end
+    RAW_disableFiles(list)
+end
+  
 function RAW_disableFiles(list)
     for _, file in pairs(list) do
         RAW_Print("Disabling file " .. file)
@@ -12,10 +72,12 @@ function RAW_ApplyModOptions()
             RAW_disableFiles(files)
         end
     end
+    RAW_Encumbrance()
+    RAW_Potion()
+    RAW_Poison()
 end
 
 function RAW_ApplyClientModOptions() 
     RAW_RacialTraits()
     RAW_Classes()
-    RAW_Encumbrance()
 end

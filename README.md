@@ -25,14 +25,11 @@ Each UUID is a mod configuration and its value is mod configuration. You can cop
 		"RacialTraits": { "enabled": true, "value": "PHB" },
 		"Classes": { "enabled": true },
         "ItemWeight": { "enabled": true },
+		"ItemPotion": { "enabled": true, "value": 5 },
+		"ItemPoison": { "enabled": true, "value": 13 },
+		"ItemWeapon": { "enabled": true },
 		"Jump": { "enabled": false },
-		"Encumbrance": { "enabled": true, "value": "Mix" },
-		"EncumbranceCore": { "enabled": true },
-		"EncumbranceHeavyArmor": { "enabled": true },
-        "EncumbranceStandard": { "enabled": false },
-        "EncumbranceVariant": { "enabled": false },
-        "EncumbranceMix": { "enabled": true },
-		"WeaponRange": { "enabled": true }
+		"Encumbrance": { "enabled": true, "value": "Mix" }
 	}
 }
 ```
@@ -128,9 +125,16 @@ Concentration has been added to these spells:
 
 - Bardic Inspiration uses charisma modifier (instead of a set number)
 
-### Weapon Range
+### Druid
 
-I have made changes to make it closer to RAW:
+- Symbiotic Entity, last for 10 minutes (100 turns), bonus damage only applies to melee weapons
+
+
+### Weapon fixes
+
+- Torch is not a weapon and can't be dual wielded, it deals 1 fire damage instead of 1d4.
+
+I have updated range weapons to make them closer to RAW:
 
 | Weapon         | WR BG3 | DR BG3 | WR RAW | DR RAW | WR Diff | WR Mod | DR Mod |
 | -------------- | ------ | ------ | ------ | ------ | ------- | ------ | ------ |
@@ -212,15 +216,63 @@ There are 3 options here, numbers are relative to carry weight:
 
 ### Potions
 
-- Potions now use an action
+Core changes:
+- set PHB durations
+- you can administering a potion to another character with an action
+- healing potion doesn't remove Burning
+
+You can enable optional rules with config value:
+
+| Config value | Action | Price | Throw |
+| ------------ | ------ | ----- | ----- |
+| 1            |    X   |       |       |
+| 2            |        |   X   |       |
+| 3            |    X   |   X   |       |
+| 4            |        |       |   X   |
+| 5            |    X   |       |   X   |
+| 6            |        |   X   |   X   |
+| 7            |    X   |   X   |   X   |
+
+- Action: potions now use an action
+- Price: set PHB Prices, may break economy since expensive loots are very abundant
+- Throw: throwing a potion doesn't apply its effect. PHB clearly says "When you drink this potion..."
 
 ### Poisons
 
-- Poisons use an action
-- Apply RAW costs and duration
-- Serpent Venom Toxin: increase damage from 1d6 to 3d6
-- Wyvern Toxin: increase damage from 1d8 to 7d6
-- Purple Worm Toxin: increase damage from 1d10 to 12d6
+Core changes:
+- set PHB durations
+- you can administering a potion to another character with an action
+
+You can enable optional rules with config value:
+
+| Config value | Action | Price | Throw | Damage |
+| ------------ | ------ | ----- | ----- | ------ |
+| 1            |    X   |       |       |        |
+| 2            |        |   X   |       |        |
+| 3            |    X   |   X   |       |        |
+| 4            |        |       |   X   |        |
+| 5            |    X   |       |   X   |        |
+| 6            |        |   X   |   X   |        |
+| 7            |    X   |   X   |   X   |        |
+| 8            |        |       |       |   X    |
+| 9            |    X   |       |       |   X    |
+| 10           |        |   X   |       |   X    |
+| 11           |    X   |   X   |       |   X    |
+| 12           |        |       |   X   |   X    |
+| 13           |    X   |       |   X   |   X    |
+| 14           |        |   X   |   X   |   X    |
+| 15           |    X   |   X   |   X   |   X    |
+
+- Action: poisons now use an action
+- Price: set PHB Prices, may break economy since expensive loots are very abundant
+- Throw: throwing a poison doesn't apply its effect. Most poisons are apply by injury (a creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects)
+- Damage: set PHB damage for all poisons. It might be overpowered because it is easy to get powerful poisons and a poison lasts 10 turns
+
+| Poison              | BG3  | RAW  |
+| ------------------- | ---- | ---- |
+| Serpent Venom Toxin | 1d6  | 3d6  |
+| Wyvern Toxin        | 1d8  | 7d6  |
+| Purple Worm Toxin   | 1d10 | 12d6 |
 
 ### Monsters
 

@@ -1,8 +1,3 @@
-new entry "_Poison"
-type "Object"
-using "_Poison"
-data "UseCosts" "ActionPoint:1"
-
 // Basic poison
 new entry "Toxin_Basic_Passive"
 type "PassiveData"
@@ -15,11 +10,6 @@ using "Projectile_Toxin_Destroy_Basic"
 data "SpellProperties" "ApplyStatus(ALCH_TOXIN_BASIC_CONDITION,100,1,,,,not SavingThrow(Ability.Constitution,10, AdvantageOnPoisoned()))"
 
 // Serpent Venom Toxin
-new entry "OBJ_SerpentVenom"
-type "Object"
-using "OBJ_SerpentVenom"
-data "ValueOverride" "200"
-
 new entry "Toxin_SerpentVenom_Passive"
 type "PassiveData"
 using "Toxin_SerpentVenom_Passive"
@@ -54,11 +44,6 @@ using "POISON_SERPENT_VENOM"
 data "DescriptionParams" "DealDamage(3d6,Poison)"
 
 // Wyvern Toxin
-new entry "OBJ_WyvernPoison"
-type "Object"
-using "OBJ_WyvernPoison"
-data "ValueOverride" "1200"
-
 new entry "Toxin_Wyvern_Passive"
 type "PassiveData"
 using "Toxin_Wyvern_Passive"
@@ -99,11 +84,6 @@ data "DescriptionParams" "DealDamage(7D6,Poison)"
 data "Boosts" "WeaponDamage(7d6,Poison)"
 
 // Purple Worm Toxin
-new entry "OBJ_PurpleWormPoison"
-type "Object"
-using "OBJ_PurpleWormPoison"
-data "ValueOverride" "2000"
-
 new entry "Toxin_PurpleWorm_Passive"
 type "PassiveData"
 using "Toxin_PurpleWorm_Passive"
@@ -137,35 +117,27 @@ type "StatusData"
 using "WEAPON_COATED_WITH_POISON"
 data "DescriptionParams" "DealDamage(12D6,Poison)"
 
+// Assassin's Blood
 //TODO: check if they get poisoned for 24 hour, something like POISONED with proper duration
 // Make sure 1d12 is applied because it seems to be only set in tooltip (POISON_ASSASSINS_BLOOD)
-new entry "OBJ_AssassinsBlood"
-type "Object"
-using "OBJ_AssassinsBlood"
-data "ValueOverride" "150"
 
 // new entry "POISON_ASSASSINS_BLOOD"
 // type "StatusData"
 // using "POISON_ASSASSINS_BLOOD"
 // data "DescriptionParams" "DealDamage(1d12,Poison)"
 
+// Drow Poison
 //TODO: check if they get poisoned for 1 hour, something like POISONED or POISON_SIMPLE_CONDITION with proper duration
-new entry "OBJ_DrowPoison"
-type "Object"
-using "OBJ_DrowPoison"
-data "ValueOverride" "200"
 
 // new entry "Projectile_Poison_Destroy_Drow"
 // type "SpellData"
 // using "Projectile_Poison_Destroy_Drow"
 // data "SpellProperties" "ApplyStatus(POISON_DROW_CONDITION,100,-1,,,,not SavingThrow(Ability.Constitution,13, AdvantageOnPoisoned()))"
 
+// Essence of Ether
 //TODO: check if they get poisoned for 8 hour, something like POISONED or POISON_SIMPLE_CONDITION with proper duration
-new entry "OBJ_EssenceOfEther"
-type "Object"
-using "OBJ_EssenceOfEther"
-data "ValueOverride" "300"
 
+// Crawler Mucus
 // A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. 
 // The poisoned creature is paralyzed. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 // new entry "Projectile_Poison_Destroy_CrawlerMucus"
@@ -173,6 +145,7 @@ data "ValueOverride" "300"
 // using "Projectile_Poison_Destroy_CrawlerMucus"
 // data "SpellProperties" "ApplyStatus(POISON_CRAWLER_MUCUS_CONDITION,100,-1,,,,not SavingThrow(Ability.Constitution,13, AdvantageOnPoisoned()))"
 
+// Malice
 // A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour. 
 // The poisoned creature is blinded.
 // new entry "Projectile_Poison_Destroy_Malice"

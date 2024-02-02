@@ -1,0 +1,39 @@
+new entry "OBJ_SerpentVenom"
+type "Object"
+using "OBJ_SerpentVenom"
+data "ValueOverride" "200"
+
+new entry "OBJ_WyvernPoison"
+type "Object"
+using "OBJ_WyvernPoison"
+data "ValueOverride" "1200"
+
+new entry "OBJ_PurpleWormPoison"
+type "Object"
+using "OBJ_PurpleWormPoison"
+data "ValueOverride" "2000"
+
+new entry "OBJ_AssassinsBlood"
+type "Object"
+using "OBJ_AssassinsBlood"
+data "ValueOverride" "150"
+
+new entry "OBJ_DrowPoison"
+type "Object"
+using "OBJ_DrowPoison"
+data "ValueOverride" "200"
+
+new entry "OBJ_EssenceOfEther"
+type "Object"
+using "OBJ_EssenceOfEther"
+data "ValueOverride" "300"
+
+new entry "OBJ_CrawlerMucus"
+type "Object"
+using "OBJ_CrawlerMucus"
+data "ValueOverride" "200"
+
+new entry "OBJ_Malice"
+type "Object"
+using "OBJ_Malice"
+data "ValueOverride" "250"

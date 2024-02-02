@@ -1,0 +1,14 @@
+// Symbiotic Entity
+// Benefits last for 10 minutes, until you lose all these temporary hit points. or until you use your Wild Shape again.
+new entry "Shout_SymbioticEntity"
+type "SpellData"
+using "Shout_SymbioticEntity"
+data "SpellProperties" "ApplyStatus(SYMBIOTIC_ENTITY,100,100)"
+data "TooltipStatusApply" "ApplyStatus(SYMBIOTIC_ENTITY,100,100)"
+
+// Your melee weapon attacks deal an extra 1d6 necrotic damage to any target they hit
+new entry "SYMBIOTIC_ENTITY"
+type "StatusData"
+using "SYMBIOTIC_ENTITY"
+data "Description" "49ee6ff4-0501-44da-9786-87ef4bc604b3;4"
+data "Boosts" "TemporaryHP(ClassLevel(Druid)*4);IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(1d6,Necrotic);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d6, Necrotic);IF(HasPassive('SpreadingSpores', context.Source)):UnlockSpell(Target_SpreadingSpores)"

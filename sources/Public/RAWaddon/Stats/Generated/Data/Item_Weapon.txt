@@ -1,6 +1,21 @@
+// Torch is not a light weapon because it is not classified as a weapon
+new entry "WPN_Torch"
+type "Weapon"
+using "WPN_Torch"
+data "Weapon Properties" "Melee;Dippable;AddToHotbar;Torch"
+
+// A burning torch deals 1 fire damage, not 1d4
+new entry "BURNING"
+type "StatusData"
+using "BURNING"
+data "Boosts" "IF(not WieldingWeapon('Torch',false,false,context.Source)):WeaponDamage(1d4,Fire);IF(WieldingWeapon('Torch',false,false,context.Source)):WeaponDamage(1,Fire);IF(Item(context.Source)):WeaponProperty(Unstowable);"
+data "TooltipDamage" "IF(not WieldingWeapon('Torch',false,false,context.Source)):DealDamage(1d4,Fire)"
+
+// Throw range
 key "ThrowDistanceMax","6"
 key "ThrowWeightMultiplier","1.25"
 
+// Weapon ranges
 new entry "WPN_Dart"
 type "Weapon"
 using "WPN_Dart"
@@ -36,3 +51,4 @@ new entry "WPN_Longbow"
 type "Weapon"
 using "WPN_Longbow"
 data "WeaponRange" "3000"
+
