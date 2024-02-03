@@ -350,3 +350,4 @@ Shadow:
 ## Known bugs
 
 - Throwing Wyvern Poison still works when disabled, can't find a way to fix this
+- Variant Human Skilled Expert subrace not working yet
