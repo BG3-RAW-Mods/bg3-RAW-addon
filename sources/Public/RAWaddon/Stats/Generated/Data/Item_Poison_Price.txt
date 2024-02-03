@@ -1,3 +1,13 @@
+// new entry "OBJ_BasicPoison"
+// type "Object"
+// using "_Poison"
+// data "ValueOverride" "50"
+
+// new entry "Solution_Toxin_Basic"
+// type "Object"
+// using "_Poison"
+// data "ValueOverride" "50"
+
 new entry "OBJ_SerpentVenom"
 type "Object"
 using "OBJ_SerpentVenom"

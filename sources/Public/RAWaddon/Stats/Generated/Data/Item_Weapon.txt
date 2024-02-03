@@ -1,14 +1,26 @@
-// Torch is not a light weapon because it is not classified as a weapon
+// Torch is not a weapon, it only deals one fire damage
 new entry "WPN_Torch"
 type "Weapon"
-using "WPN_Torch"
-data "Weapon Properties" "Melee;Dippable;AddToHotbar;Torch"
+using "_BaseWeapon"
+data "RootTemplate" "50c43f27-a12e-412c-88f0-56e15eba692a"
+data "ItemGroup" "Torch"
+data "WeaponFunctors" "GROUND:IF(HasStatus('BURNING',context.Source)):SurfaceChange(Ignite)"
+data "Flags" "Torch;InvulnerableAndInteractive"
+data "DefaultBoosts" "HiddenDuringCinematic()"
+data "PersonalStatusImmunities" "SILENCED;SG_Condition;BLEEDING"
+data "Weight" "0.45"
+data "Damage Type" "Fire"
+data "Damage" "1"
+data "Boosts" "BlockAbilityModifierDamageBonus()"
+data "BoostsOnEquipMainHand" ""
+data "Weapon Properties" "Finesse;Melee;Dippable;AddToHotbar;Torch"
+data "Weapon Group" "SimpleMeleeWeapon"
 
-// A burning torch deals 1 fire damage, not 1d4
+// A burning torch does not apply burning damage
 new entry "BURNING"
 type "StatusData"
 using "BURNING"
-data "Boosts" "IF(not WieldingWeapon('Torch',false,false,context.Source)):WeaponDamage(1d4,Fire);IF(WieldingWeapon('Torch',false,false,context.Source)):WeaponDamage(1,Fire);IF(Item(context.Source)):WeaponProperty(Unstowable);"
+data "Boosts" "IF(not WieldingWeapon('Torch',false,false,context.Source)):WeaponDamage(1d4,Fire);IF(Item(context.Source)):WeaponProperty(Unstowable);"
 data "TooltipDamage" "IF(not WieldingWeapon('Torch',false,false,context.Source)):DealDamage(1d4,Fire)"
 
 // Throw range

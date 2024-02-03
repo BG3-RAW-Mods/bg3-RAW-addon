@@ -3,19 +3,19 @@ local function RAW_Encumbrance()
     local value = RAW_Globals.modOptions[RAW_Globals.features.Encumbrance].value
     local list = {}
     if disabled then
-      table.insert(list, 'Encumbrance_Core.txt')
+      table.insert(list, RAW_TxtFolder..'Encumbrance_Core.txt')
     end
     if disabled or value == "Variant" then
-      table.insert(list, 'Encumbrance_HeavyArmor.txt')
+      table.insert(list, RAW_TxtFolder..'Encumbrance_HeavyArmor.txt')
     end
     if disabled or value ~= "Standard" then 
-      table.insert(list, 'Encumbrance_Standard.txt')
+      table.insert(list, RAW_TxtFolder..'Encumbrance_Standard.txt')
     end
     if disabled or value ~= "Variant" then 
-      table.insert(list, 'Encumbrance_Variant.txt')
+      table.insert(list, RAW_TxtFolder..'Encumbrance_Variant.txt')
     end
     if disabled or value ~= "Mix" then 
-        table.insert(list, 'Encumbrance_Mix.txt')
+        table.insert(list, RAW_TxtFolder..'Encumbrance_Mix.txt')
     end
     RAW_disableFiles(list)
 end
@@ -25,16 +25,16 @@ local function RAW_Potion()
     local value = RAW_Globals.modOptions[RAW_Globals.features.Potion].value
     local list = {}
     if disabled then
-        table.insert(list, 'Item_Potion_Core.txt')
+        table.insert(list, RAW_RootFolder..'RootTemplates/potions.lsf')
     end
     if disabled or (value & 1 ~= 1) then
-        table.insert(list, 'Item_Potion_Action.txt')
+        table.insert(list, RAW_TxtFolder..'Item_Potion_Action.txt')
     end
     if disabled or (value & 2 ~= 2) then 
-        table.insert(list, 'Item_Potion_Price.txt')
+        table.insert(list, RAW_TxtFolder..'Item_Potion_Price.txt')
     end
     if disabled or (value & 4 ~= 4) then 
-        table.insert(list, 'Item_Potion_Throw.txt')
+        table.insert(list, RAW_TxtFolder..'Item_Potion_Throw.txt')
     end
     RAW_disableFiles(list)
 end
@@ -44,16 +44,17 @@ local function RAW_Poison()
     local value = RAW_Globals.modOptions[RAW_Globals.features.Poison].value
     local list = {}
     if disabled or (value & 1 ~= 1) then
-        table.insert(list, 'Item_Poison_Action.txt')
+        table.insert(list, RAW_TxtFolder..'Item_Poison_Action.txt')
     end
     if disabled or (value & 2 ~= 2) then 
-        table.insert(list, 'Item_Poison_Price.txt')
+        table.insert(list, RAW_TxtFolder..'Item_Poison_Price.txt')
     end
     if disabled or (value & 4 ~= 4) then 
-        table.insert(list, 'Item_Poison_Throw.txt')
+        table.insert(list, RAW_TxtFolder..'Item_Poison_Throw.txt')
+        table.insert(list, RAW_RootFolder..'RootTemplates/poisons.lsf')
     end
     if disabled or (value & 8 ~= 8) then 
-        table.insert(list, 'Item_Poison_Damage.txt')
+        table.insert(list, RAW_TxtFolder..'Item_Poison_Damage.txt')
     end
     RAW_disableFiles(list)
 end

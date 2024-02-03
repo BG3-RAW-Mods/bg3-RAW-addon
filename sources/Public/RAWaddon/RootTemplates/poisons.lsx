@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="Templates">
+		<node id="Templates">
+			<children>
+				<node id="GameObjects">
+					<attribute id="Description" type="28" handle="h28a0bb3bg6ebbg4cc4gb699g580419b5f970" version="2" />
+					<attribute id="DisplayName" type="28" handle="h4cfc9fb5ge993g46d8ga920g623df2c9d3f8" version="1" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="Icon" type="22" value="Item_GRN_Poison_vial_B" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="28645376-e6e8-436a-8e9a-c62877fae07d" />
+					<attribute id="Name" type="23" value="CONS_Poison_Basic" />
+					<attribute id="ParentTemplateId" type="22" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="PhysicsTemplate" type="22" value="888b4f3c-5a71-e5c8-4e9a-fb9c858fa520" />
+					<attribute id="ShowAttachedSpellDescriptions" type="19" value="True" />
+					<attribute id="Stats" type="22" value="OBJ_BasicPoison" />
+					<attribute id="TechnicalDescription" type="28" handle="" version="0" />
+					<attribute id="TechnicalDescriptionParams" type="23" value="" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="6230ff3a-b5b3-0950-31b9-1d99f774a9f1" />
+					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209020" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.0982076 0.494118 0.093401" />
+									<attribute id="Min" type="12" value="-0.0982076 -0.00554287 -0.093401" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.0982076 0.494118 0.093401" />
+									<attribute id="Min" type="12" value="-0.0982076 -0.00554287 -0.093401" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="2" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.0982076 0.494118 0.093401" />
+									<attribute id="Min" type="12" value="-0.0982076 -0.00554287 -0.093401" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="0" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="22" value="" />
+											<attribute id="Conditions" type="23" value="(Player(context.Source) or (not HasStatus('SG_WeaponCoating', GetActiveWeapon(context.Source))))" />
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="StatsId" type="22" value="POISON_BASIC" />
+											<attribute id="StatusDuration" type="4" value="0" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="HardcoreOnly" />
+													<attribute id="Type" type="4" value="1" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="LifeTime" />
+													<attribute id="Type" type="4" value="2" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="ProjectileSpell" />
+													<attribute id="Type" type="4" value="9" />
+													<attribute id="Value" type="23" value="Projectile_Poison_Destroy_Basic" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="28" handle="h72c8091ega2a0g4ed4g928fgcf3c3d7e8396" version="4" />
+					<attribute id="DisplayName" type="28" handle="h9a28c230ge2f2g4648g8c59g76650186008e" version="2" />
+					<attribute id="Icon" type="22" value="Item_GRN_Poison_vial_A" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="8b5f7965-6cd1-42c1-8449-c6562a270ad9" />
+					<attribute id="Name" type="23" value="Solution_Toxin_Basic" />
+					<attribute id="ParentTemplateId" type="22" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="PhysicsTemplate" type="22" value="888b4f3c-5a71-e5c8-4e9a-fb9c858fa520" />
+					<attribute id="ShowAttachedSpellDescriptions" type="19" value="True" />
+					<attribute id="Stats" type="22" value="Solution_Toxin_Basic" />
+					<attribute id="TechnicalDescription" type="28" handle="" version="0" />
+					<attribute id="TechnicalDescriptionParams" type="23" value="" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="7534d951-04f9-cc6f-8951-c270be4a38fc" />
+					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209020" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1004131 0.4089107 0.09126517" />
+									<attribute id="Min" type="12" value="-0.1004131 -0.0001859367 -0.09126517" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1004131 0.4089107 0.09126517" />
+									<attribute id="Min" type="12" value="-0.1004131 -0.0001859367 -0.09126517" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1004131 0.4089107 0.09126517" />
+									<attribute id="Min" type="12" value="-0.1004131 -0.0001859367 -0.09126517" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="2" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="22" value="" />
+											<attribute id="Conditions" type="23" value="(Player(context.Source) or (not HasStatus('SG_WeaponCoating', GetActiveWeapon(context.Source))))" />
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="StatsId" type="22" value="TOXIN_BASIC" />
+											<attribute id="StatusDuration" type="4" value="0" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="HardcoreOnly" />
+													<attribute id="Type" type="4" value="1" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="LifeTime" />
+													<attribute id="Type" type="4" value="2" />
+													<attribute id="Value" type="23" value="1" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="ProjectileSpell" />
+													<attribute id="Type" type="4" value="9" />
+													<attribute id="Value" type="23" value="Projectile_Toxin_Destroy_Basic" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="28" handle="h70056913g4386g4a71g837agb9ae1f1d6f01" version="3" />
+					<attribute id="DisplayName" type="28" handle="hcae89a1ag5d66g4a89g8e0cgcd9743d8d8d3" version="3" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="Icon" type="22" value="Item_CONS_Poison_Serpent_Venom" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="b0385b93-f525-4740-8126-471a76fa31a2" />
+					<attribute id="Name" type="23" value="CONS_Poison_Serpent_Venom" />
+					<attribute id="ParentTemplateId" type="22" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="PhysicsTemplate" type="22" value="35a843b3-d213-4fbe-be92-28fbfe5be35b" />
+					<attribute id="ShowAttachedSpellDescriptions" type="19" value="True" />
+					<attribute id="Stats" type="22" value="OBJ_SerpentVenom" />
+					<attribute id="TechnicalDescription" type="28" handle="" version="0" />
+					<attribute id="TechnicalDescriptionParams" type="23" value="" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="62d7d9cd-38f6-4afd-a8ab-7b6af3a7b793" />
+					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209020" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.08624375 0.4074676 0.08016232" />
+									<attribute id="Min" type="12" value="-0.08025973 -0.0006922483 -0.0831385" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.08624375 0.4074676 0.08016232" />
+									<attribute id="Min" type="12" value="-0.08025973 -0.0006922483 -0.0831385" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="2" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.08624375 0.4074676 0.08016232" />
+									<attribute id="Min" type="12" value="-0.08025973 -0.0006922483 -0.0831385" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="0" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="22" value="" />
+											<attribute id="Conditions" type="23" value="(Player(context.Source) or (not HasStatus('SG_WeaponCoating', GetActiveWeapon(context.Source))))" />
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="StatsId" type="22" value="TOXIN_SERPENTVENOM" />
+											<attribute id="StatusDuration" type="4" value="0" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="HardcoreOnly" />
+													<attribute id="Type" type="4" value="1" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="LifeTime" />
+													<attribute id="Type" type="4" value="2" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="ProjectileSpell" />
+													<attribute id="Type" type="4" value="9" />
+													<attribute id="Value" type="23" value="Projectile_Toxin_Destroy_SerpentVenom" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="28" handle="h8f55ad9fg0bf2g4df4gaa43gd588763d1bef" version="4" />
+					<attribute id="DisplayName" type="28" handle="ha5fba5ccgae1bg4ff7gbc57g80b4527556da" version="3" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="Icon" type="22" value="Item_CONS_Poison_Purple_Worm" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="56e531e9-78e4-430b-bc98-611c1b1ccd08" />
+					<attribute id="Name" type="23" value="CONS_Poison_Purple_Worm" />
+					<attribute id="ParentTemplateId" type="22" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="PhysicsTemplate" type="22" value="0c9ffa0d-fea5-8607-2eb0-138d15d370ec" />
+					<attribute id="ShowAttachedSpellDescriptions" type="19" value="True" />
+					<attribute id="Stats" type="22" value="OBJ_PurpleWormPoison" />
+					<attribute id="TechnicalDescription" type="28" handle="" version="0" />
+					<attribute id="TechnicalDescriptionParams" type="23" value="" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="fd2ba788-abb9-5c77-5b8b-0f97b0bf14d3" />
+					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209020" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1478598 0.3692819 0.1039265" />
+									<attribute id="Min" type="12" value="-0.1478598 -0.001234025 -0.1039265" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1478598 0.3692819 0.1039265" />
+									<attribute id="Min" type="12" value="-0.1478598 -0.001234025 -0.1039265" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="2" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1478598 0.3692819 0.1039265" />
+									<attribute id="Min" type="12" value="-0.1478598 -0.001234025 -0.1039265" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="0" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="22" value="" />
+											<attribute id="Conditions" type="23" value="(Player(context.Source) or (not HasStatus('SG_WeaponCoating', GetActiveWeapon(context.Source))))" />
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="StatsId" type="22" value="TOXIN_PURPLEWORM" />
+											<attribute id="StatusDuration" type="4" value="0" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="HardcoreOnly" />
+													<attribute id="Type" type="4" value="1" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="LifeTime" />
+													<attribute id="Type" type="4" value="2" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="ProjectileSpell" />
+													<attribute id="Type" type="4" value="9" />
+													<attribute id="Value" type="23" value="Projectile_Toxin_Destroy_PurpleWorm" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="28" handle="hb44d982eg73edg4e43gaa5ag2cea1b9c0a34" version="4" />
+					<attribute id="DisplayName" type="28" handle="h9815530bgc228g4d2eg8414g37c0e7cbac19" version="1" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="Icon" type="22" value="Item_CONS_Poison_Drow" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="f528a334-bdb3-4cf1-b74c-0e08942daeb1" />
+					<attribute id="Name" type="23" value="CONS_Poison_Drow" />
+					<attribute id="ParentTemplateId" type="22" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="PhysicsTemplate" type="22" value="0ed2055b-dc6b-4019-e9c1-32b1b9199505" />
+					<attribute id="ShowAttachedSpellDescriptions" type="19" value="True" />
+					<attribute id="Stats" type="22" value="OBJ_DrowPoison" />
+					<attribute id="TechnicalDescription" type="28" handle="" version="0" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="db7aa485-ed7c-3194-1653-359a1238105b" />
+					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209020" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1310518 0.1250607 0.05994947" />
+									<attribute id="Min" type="12" value="-0.1674877 -0.0003156662 -0.06737426" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1310518 0.1250607 0.05994947" />
+									<attribute id="Min" type="12" value="-0.1674877 -0.0003156662 -0.06737426" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="2" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1310518 0.1250607 0.05994947" />
+									<attribute id="Min" type="12" value="-0.1674877 -0.0003156662 -0.06737426" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="0" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="22" value="" />
+											<attribute id="Conditions" type="23" value="(Player(context.Source) or (not HasStatus('SG_WeaponCoating', GetActiveWeapon(context.Source))))" />
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="StatsId" type="22" value="POISON_DROW" />
+											<attribute id="StatusDuration" type="4" value="0" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="HardcoreOnly" />
+													<attribute id="Type" type="4" value="1" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="LifeTime" />
+													<attribute id="Type" type="4" value="2" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="ProjectileSpell" />
+													<attribute id="Type" type="4" value="9" />
+													<attribute id="Value" type="23" value="Projectile_Poison_Destroy_Drow" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="28" handle="h602d521age370g4455ga5bbg4c0aa0c11d0b" version="3" />
+					<attribute id="DevComment" type="23" value="Reusing visuals of Essence of Ether on purpose." />
+					<attribute id="DisplayName" type="28" handle="hd93025eeg0599g479dgbb7egd6695a88d46d" version="1" />
+					<attribute id="Flag" type="4" value="0" />
+					<attribute id="Icon" type="22" value="Item_CONS_Poison_Essence_Of_Ether" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="5865caed-4a5d-45b7-b365-1113334a8e7b" />
+					<attribute id="Name" type="23" value="CONS_Poison_Crawler_Mucus" />
+					<attribute id="ParentTemplateId" type="22" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="PhysicsTemplate" type="22" value="7abec161-6915-2dc6-8c4f-99bc38b0f51e" />
+					<attribute id="ShowAttachedSpellDescriptions" type="19" value="True" />
+					<attribute id="Stats" type="22" value="OBJ_CrawlerMucus" />
+					<attribute id="TechnicalDescription" type="28" handle="" version="0" />
+					<attribute id="Type" type="22" value="item" />
+					<attribute id="VisualTemplate" type="22" value="eeb06c1b-c7dc-c360-74cb-1e8c69963c88" />
+					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209020" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1184767 0.3239878 0.0694262" />
+									<attribute id="Min" type="12" value="-0.06971779 0 -0.1062432" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1184767 0.3239878 0.0694262" />
+									<attribute id="Min" type="12" value="-0.06971779 0 -0.1062432" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="6" value="0.418184" />
+									<attribute id="Max" type="12" value="0.1184767 0.3239878 0.0694262" />
+									<attribute id="Min" type="12" value="-0.06971779 0 -0.1062432" />
+									<attribute id="Radius" type="6" value="0.114147" />
+									<attribute id="Shape" type="1" value="1" />
+									<attribute id="Type" type="1" value="2" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="4" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="22" value="" />
+											<attribute id="Conditions" type="23" value="(Player(context.Source) or (not HasStatus('SG_WeaponCoating', GetActiveWeapon(context.Source))))" />
+											<attribute id="Consume" type="19" value="True" />
+											<attribute id="StatsId" type="22" value="POISON_CRAWLER_MUCUS" />
+											<attribute id="StatusDuration" type="4" value="0" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="HardcoreOnly" />
+													<attribute id="Type" type="4" value="1" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="LifeTime" />
+													<attribute id="Type" type="4" value="2" />
+													<attribute id="Value" type="23" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="22" value="ProjectileSpell" />
+													<attribute id="Type" type="4" value="9" />
+													<attribute id="Value" type="23" value="Projectile_Poison_Destroy_CrawlerMucus" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h24228284g8d08g494ega9f7gbe0962d286a3" version="4" />
+					<attribute id="DisplayName" type="TranslatedString" handle="ha23f7c1ag443ag476bg807cg058e02a648c4" version="2" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="Icon" type="FixedString" value="Item_GRN_Poison_vial_D_Sheathe" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="eca393b0-3f8e-4862-814b-9e236a0d4129" />
+					<attribute id="Name" type="LSString" value="CONS_Poison_Wyvern" />
+					<attribute id="ParentTemplateId" type="FixedString" value="19a6fbb0-7123-460b-a4a8-643bb6cab5b5" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="685cc273-75b7-c745-5fb0-61ba5d60beff" />
+					<attribute id="ShowAttachedSpellDescriptions" type="bool" value="True" />
+					<attribute id="Stats" type="FixedString" value="OBJ_WyvernPoison" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="" version="0" />
+					<attribute id="TechnicalDescriptionParams" type="LSString" value="DealDamage(1d8,Poison)" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="8f1dee8c-64db-48ce-d5c4-84b2fe29bb3e" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209020" />
+					<children>
+						<node id="Bounds">
+							<children>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1" />
+									<attribute id="Max" type="fvec3" value="0.08139521 0.0839899 0.1935836" />
+									<attribute id="Min" type="fvec3" value="-0.081395194 -9.457767E-05 -0.221449" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="0" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1" />
+									<attribute id="Max" type="fvec3" value="0.08139521 0.08398992 0.1935836" />
+									<attribute id="Min" type="fvec3" value="-0.081395194 -9.45963E-05 -0.221449" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="1" />
+								</node>
+								<node id="Bound">
+									<attribute id="Height" type="float" value="1" />
+									<attribute id="Max" type="fvec3" value="0.08139521 0.08398992 0.1935836" />
+									<attribute id="Min" type="fvec3" value="-0.081395194 -9.45963E-05 -0.221449" />
+									<attribute id="Radius" type="float" value="0.433013" />
+									<attribute id="Shape" type="uint8" value="1" />
+									<attribute id="Type" type="uint8" value="2" />
+								</node>
+							</children>
+						</node>
+						<node id="OnUsePeaceActions">
+							<children>
+								<node id="Action">
+									<attribute id="ActionType" type="int32" value="7" />
+									<children>
+										<node id="Attributes">
+											<attribute id="Animation" type="FixedString" value="" />
+											<attribute id="Conditions" type="LSString" value="(Player(context.Source) or (not HasStatus('SG_WeaponCoating', GetActiveWeapon(context.Source))))" />
+											<attribute id="Consume" type="bool" value="True" />
+											<attribute id="StatsId" type="FixedString" value="TOXIN_WYVERN" />
+											<attribute id="StatusDuration" type="int32" value="0" />
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Scripts">
+							<children>
+								<node id="Script">
+									<attribute id="UUID" type="FixedString" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
+									<children>
+										<node id="Parameters">
+											<children>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="HardcoreOnly" />
+													<attribute id="Type" type="int32" value="1" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="LifeTime" />
+													<attribute id="Type" type="int32" value="2" />
+													<attribute id="Value" type="LSString" value="0" />
+												</node>
+												<node id="Parameter">
+													<attribute id="MapKey" type="FixedString" value="ProjectileSpell" />
+													<attribute id="Type" type="int32" value="9" />
+													<attribute id="Value" type="LSString" value="Projectile_Toxin_Destroy_Wyvern" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>				
+			</children>
+		</node>
+	</region>
+</save>

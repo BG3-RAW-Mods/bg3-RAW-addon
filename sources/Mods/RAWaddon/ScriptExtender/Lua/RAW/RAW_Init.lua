@@ -12,7 +12,8 @@ RAW_Globals.features.Poison = "ItemPoison"
 RAW_Globals.features.Jump = "Jump"
 RAW_Globals.features.WeaponRange = "WeaponRange"
 
-RAW_TxtFolder = "Public/RAWaddon/Stats/Generated/Data/"
+RAW_RootFolder = "Public/RAWaddon/"
+RAW_TxtFolder = RAW_RootFolder.."Stats/Generated/Data/"
 RAW_EmptyFile = "Empty.txt"
 
 RAW_PrintTypeInfo = "info"

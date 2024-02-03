@@ -129,10 +129,9 @@ Concentration has been added to these spells:
 
 - Symbiotic Entity, last for 10 minutes (100 turns), bonus damage only applies to melee weapons
 
-
 ### Weapon fixes
 
-- Torch is not a weapon and can't be dual wielded, it deals 1 fire damage instead of 1d4.
+- Torch is not a weapon, it only deals 1 fire damage (no ability modifier).
 
 I have updated range weapons to make them closer to RAW:
 
@@ -344,6 +343,10 @@ Shadow:
 
 ## Credits
 
-- BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats, hinikuya)
+- BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats, hinikuya, JuuM)
 - Zerd, for RAW which gave me inspiration, and its config system.
 - Community Library and Compatibility Framework
+
+## Known bugs
+
+- Throwing Wyvern Poison still works when disabled, can't find a way to fix this
