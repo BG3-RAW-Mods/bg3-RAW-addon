@@ -24,12 +24,15 @@ Each UUID is a mod configuration and its value is mod configuration. You can cop
 	"a5799115-ef11-457b-92cd-2c927de09b02": {
 		"RacialTraits": { "enabled": true, "value": "PHB" },
 		"Classes": { "enabled": true },
-        "ItemWeight": { "enabled": true },
-		"ItemPotion": { "enabled": true, "value": 5 },
-		"ItemPoison": { "enabled": true, "value": 13 },
+		"Encumbrance": { "enabled": true, "value": "Mix" },
+		"Jump": { "enabled": true },
+		"Monsters": { "enabled": true },
 		"ItemWeapon": { "enabled": true },
-		"Jump": { "enabled": false },
-		"Encumbrance": { "enabled": true, "value": "Mix" }
+        "ItemWeight": { "enabled": true },
+		"ItemPotion": { "enabled": true, "value": 7 },
+		"ItemPoison": { "enabled": true, "value": 15 },
+		"Spells": { "enabled": true },
+		"Feats": { "enabled": true }
 	}
 }
 ```
@@ -55,7 +58,7 @@ Half-Elf subraces are a shortcut to PHB, which results in missing choices. I hav
 - Elf Weapon Training (High or Wood Elf Heritage). You have proficiency with the longsword, shortsword, shortbow, and longbow.
 - Cantrip (High Elf Heritage). You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.
 - Fleet of Foot (Wood Elf Heritage). Your base walking speed increases to 35 feet (10.5m).
-- Drow Magic (Dark Elf Heritage). You know the Dancing Lights cantrip. When you reach 3rd level, you can cast Faerie Fire once, and it recharges after a long rest. When you reach 5th level, you can cast  Darkness once, and it recharges after a long rest. Charisma is your spellcasting ability for these spells.
+- Drow Magic (Dark Elf Heritage). You know the Dancing Lights cantrip. When you reach 3rd level, you can cast Faerie Fire once, and it recharges after a long rest. When you reach 5th level, you can cast Darkness once, and it recharges after a long rest. Charisma is your spellcasting ability for these spells.
 
 #### Variant Human
 
@@ -217,7 +220,6 @@ There are 3 options here, numbers are relative to carry weight:
 
 Core changes:
 - set PHB durations
-- you can administering a potion to another character with an action
 - healing potion doesn't remove Burning
 
 You can enable optional rules with config value:
@@ -295,6 +297,10 @@ Other changes:
 
 ## Future plans
 
+### Potions
+
+- you can administering a potion to another character with an action
+
 ### High level class abilities
 
 Many high level class abilities were introduced in the game, either in their true form, either in a toned down form.
@@ -351,3 +357,4 @@ Shadow:
 
 - Throwing Wyvern Poison still works when disabled, can't find a way to fix this
 - Variant Human Skilled Expert subrace not working yet
+- Administering a potion is not implemented yet. It is something I want to replace throwing but changing RootTemplate is sensible.

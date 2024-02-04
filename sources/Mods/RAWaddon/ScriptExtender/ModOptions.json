@@ -1,13 +1,11 @@
 {
     "RacialTraits": {
-        "displayName": "Racial Traits",
         "enabled": true,
         "value": "PHB",
         "allowedValues": ["PHB", "Tasha"],
         "files": ["Public/RAWaddon/Stats/Generated/Data/Race_Core.txt"]
     },
     "Classes": {
-        "displayName": "Classes",
         "enabled": true,
         "files": [
             "Public/RAWaddon/Stats/Generated/Data/Class_Bard.txt",
@@ -19,39 +17,40 @@
         ]
     },
     "Encumbrance": {
-        "displayName": "Encumbrance",
         "enabled": true,
         "value": "Mix",
         "allowedValues": ["Standard", "Variant", "Mix"]
     },
     "Jump": {
-        "displayName": "RAW Jump",
         "enabled": true,
         "files": ["Public/RAWaddon/Stats/Generated/Data/Jump.txt"]
     },
     "Monsters": {
-        "displayName": "Monsters",
         "enabled": true,
         "files": ["Public/RAWaddon/Stats/Generated/Data/Monsters.txt"]
     },
     "ItemWeapon": {
-        "displayName": "Weapon fixes",
         "enabled": true,
         "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Weapon.txt"]
     },
     "ItemWeight": {
-        "displayName": "Item Weights",
         "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Weights.txt"]
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Weight.txt"]
     },
     "ItemPotion": {
-        "displayName": "RAW Potions (see README for values)",
         "enabled": true,
         "value": 7
     },
     "ItemPoison": {
-        "displayName": "RAW Poisons (see README for values)",
         "enabled": true,
         "value": 15
+    },
+    "Spells": {
+        "enabled": true,
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Spells_Concentration.txt", "Public/RAWaddon/Stats/Generated/Data/Spells_Knowledge.txt"]
+    },
+    "Feats": {
+        "enabled": true,
+        "files": ["Public/RAWaddon/Stats/Generated/Data/Feats.txt"]
     }
 }
