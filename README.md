@@ -28,7 +28,7 @@ Each UUID is a mod configuration and its value is mod configuration. You can cop
 		"Jump": { "enabled": true },
 		"Monsters": { "enabled": true },
 		"ItemWeapon": { "enabled": true },
-        "ItemWeight": { "enabled": true },
+		"ItemWeight": { "enabled": true },
 		"ItemPotion": { "enabled": true, "value": 7 },
 		"ItemPoison": { "enabled": true, "value": 15 },
 		"Spells": { "enabled": true },
@@ -88,7 +88,7 @@ Even high strength characters won't fly over the battlefield. While Enhanced Lea
 
 Please note there are several jumps that now impossible without Enhanced Leap.
 
-Remarkable Athlete has been toned down from 3 to 1.5m, because it is supposely 1 feet per strength modifier, which is more likely to be 4 or 5 feet at this point. Of course, if you play a dexterity champion, this makes no sense.
+Remarkable Athlete has been adjusted to 1 foot per strength modifier.
 
 Athlete feat has been changed. In RAW, you can make a long jump after moving 1.5m instead of 3. Since it is not implemented, it increases jump range by 1.5m.
 
@@ -120,17 +120,21 @@ Concentration has been added to these spells:
 
 - Repelling Blast, distance is 3m, not 4.5m
 
-### Cleric
+#### Cleric
 
 - Warding Flare uses wisdom modifier (instead of unlimited uses)
 
-### Bard
+#### Bard
 
 - Bardic Inspiration uses charisma modifier (instead of a set number)
 
-### Druid
+#### Druid
 
 - Symbiotic Entity, last for 10 minutes (100 turns), bonus damage only applies to melee weapons
+
+#### Rogue
+
+- Second-Story Work, adds an increased jump distance based on dexterity modifier  
 
 ### Weapon fixes
 

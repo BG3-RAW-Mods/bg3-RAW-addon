@@ -1,3 +1,13 @@
+function StrengthModifier(value, entity)
+    entity = entity or context.Source
+    return ConditionResult(GetModifier(entity.Strength) == value)
+end
+
+function DexterityModifier(value, entity)
+    entity = entity or context.Source
+    return ConditionResult(GetModifier(entity.Dexterity) == value)
+end
+
 function WisdomModifier(value, entity)
     entity = entity or context.Source
     return ConditionResult(GetModifier(entity.Wisdom) == value)

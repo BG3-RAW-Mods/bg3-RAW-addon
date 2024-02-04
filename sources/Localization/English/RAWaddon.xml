@@ -2,6 +2,7 @@
 	<!-- Jump -->
 	<content contentuid="h4b921d5bg6e70g455cga6fcg68c4e67f9067" version="7">Your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; or &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; increases by 1, to a maximum of 20.&lt;br&gt;&lt;br&gt;When you are Prone, standing up uses only [1] of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed.&lt;br&gt;Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance also increases by [1].</content>
 	<content contentuid="51bcb59d-133a-44df-8d68-bf8cd65fc69d" version="1">When you are &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, standing up uses only [1] of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;.&lt;br&gt;Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance is increased by [1].</content>
+	<content contentuid="a3cddb60-5f33-4232-ad1c-9f52ad7c03fc" version="4">You're a master of your own body, your athletic prowess extended beyond the usual.&lt;br&gt;&lt;br&gt;Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance increases by a number of feet equal to your Strength modifier.</content>
 
 	<!-- Feats -->
 	<content contentuid="0611a12f-914c-473a-8eac-9c1dd042fc4d" version="3">Skilled at mimicry and dramatics, you gain the following benefits:&lt;br&gt;- your &lt;LSTag Tooltip="Charisma"&gt;Charisma&lt;/LSTag&gt; increases by [1], to a maximum of [2].&lt;br&gt;- you have an advantage on Deception and Performance &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
@@ -22,6 +23,9 @@
 
 	<!-- Potions-->
 	<content contentuid="3b9ac5d3-ecf2-424b-832e-f63a8366829c" version="1">Heals.</content>
+
+	<!-- Rogue -->
+	<content contentuid="af8e4a50-2f1f-42ba-880f-242f2e5ea4f2" version="1">You've mastered the art of falling and gain resistance to Falling damage. Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance increases by a number of feet equal to your Dexterity modifier.</content>	
 
 	<!-- Druid -->
 	<content contentuid="49ee6ff4-0501-44da-9786-87ef4bc604b3" version="4">Affected entity has gained [1].&lt;br&gt;&lt;br&gt;As long as it has its &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt;, its melee weapon attacks and unarmed strikes deal an additional [2], and it deals double damage with &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Ends early if the entity uses &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wild Shape&lt;/LSTag&gt;.</content>

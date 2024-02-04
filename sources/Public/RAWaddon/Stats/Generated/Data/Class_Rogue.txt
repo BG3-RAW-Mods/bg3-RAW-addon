@@ -1,0 +1,6 @@
+new entry "SecondStoryWork"
+type "PassiveData"
+using "SecondStoryWork"
+data "Description" "af8e4a50-2f1f-42ba-880f-242f2e5ea4f2;1"
+data "Boosts" "FallDamageMultiplier(0.5);IF(DexterityModifier(1)):JumpMaxDistanceBonus(0.3);IF(DexterityModifier(2)):JumpMaxDistanceBonus(0.6);IF(DexterityModifier(3)):JumpMaxDistanceBonus(0.9);IF(DexterityModifier(4)):JumpMaxDistanceBonus(1.2);IF(DexterityModifier(5)):JumpMaxDistanceBonus(1.5);IF(DexterityModifier(6)):JumpMaxDistanceBonus(1.8);IF(DexterityModifier(7)):JumpMaxDistanceBonus(2.1);IF(DexterityModifier(8)):JumpMaxDistanceBonus(2.4);IF(DexterityModifier(9)):JumpMaxDistanceBonus(2.7);IF(DexterityModifier(10)):JumpMaxDistanceBonus(3)"
+
