@@ -10,6 +10,33 @@
     Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Cleric_Light_1, "PassivesAdded", { "WardingFlareScaling" }))
   end
 
+  local function monkChanges()
+    -- Monk receives 2 ki points at level 2, then 1 per level
+    Mods.SubclassCompatibilityFramework.Api.RemoveStrings(removeString(RAW_Monk_1, "Boosts", { "ActionResource(KiPoint,2,0)" }))
+    Mods.SubclassCompatibilityFramework.Api.RemoveStrings(removeString(RAW_Monk_Multi_1, "Boosts", { "ActionResource(KiPoint,2,0)" }))
+    Mods.SubclassCompatibilityFramework.Api.RemoveStrings(removeString(RAW_Monk_2, "Boosts", { "ActionResource(KiPoint,1,0)" }))
+    Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Monk_2, "Boosts", { "ActionResource(KiPoint,2,0)" }))
+    -- Flurry of Blows is unlocked after you take the Attack action on your turn
+    Mods.SubclassCompatibilityFramework.Api.RemovePassives(removeString(RAW_Monk_1, "PassivesAdded", { "FlurryOfBlowsUnlock" }))
+    Mods.SubclassCompatibilityFramework.Api.RemovePassives(removeString(RAW_Monk_Multi_1, "PassivesAdded", { "FlurryOfBlowsUnlock" }))
+    -- Open Hand Technique are interrupts
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_OpenHand_3, "AddSpells", "6566d841-ef96-4e13-ac40-c40f44c5e08b"))  
+    Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Monk_OpenHand_3, "PassivesAdded", { "OpenHandTechnique_Passive" }))
+    -- Stunning Strikes are interrupts
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_5, "AddSpells", "3ba6090a-a8be-4938-82ef-40eba0083441"))  
+    Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Monk_5, "PassivesAdded", { "StunningStrike_Passive" }))
+    -- Shadow doesn't have access to Hide bonus action
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_Shadow_3, "AddSpells", "e050fe59-a8f0-4c03-a7f4-569ac747c80e"))  
+    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Monk_Shadow_3, "80e8c4ce-1df6-4987-bc69-8f7fc2e5b031", {}))
+    -- Open Hand doesn't have Manifestation ability (this is actually an OP variant of Manifest Blow)
+    Mods.SubclassCompatibilityFramework.Api.RemoveStrings(removeString(RAW_Monk_OpenHand_6, "PassivesAdded", { "Manifestation_of_Body", "Manifestation_of_Mind", "Manifestation_of_Soul" }))
+    -- Stillness Of Mind is an active ability, not passive
+    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Monk_7, "90d61529-d390-4d39-a84a-58dfc94c90aa", {}))
+    -- Cloak of Shadows is granted at level 11, not 5
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_Shadow_5, "AddSpells", "e1f0e927-0711-4644-8745-af2b02434cfd"))  
+    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Monk_Shadow_11, "e1f0e927-0711-4644-8745-af2b02434cfd", {}))
+  end
+
   local function sorcererChanges()
     -- Remove MetaMagic selection at level 2 and 3
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Sorcerer_2, "SelectPassives", "49704931-e47b-4ce6-abc6-dfa7ba640752"))
@@ -32,6 +59,7 @@
     bardChanges()
     clericChanges()
     sorcererChanges()
+    monkChanges()
   end
   
   function RAW_Classes()
@@ -39,4 +67,4 @@
       Ext.Events.StatsLoaded:Subscribe(onStatsLoaded)
     end
   end
-  
+   

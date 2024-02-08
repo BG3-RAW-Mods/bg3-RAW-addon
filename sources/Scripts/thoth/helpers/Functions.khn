@@ -1,3 +1,15 @@
+function WisdomSaveDC()
+    return 8 + context.Source.ProficiencyBonus + GetModifier(context.Source.Wisdom)
+end
+
+function DistanceToTargetBetween(min, max)
+    return ConditionResult(DistanceToTarget() >= min and DistanceToTarget() <= max)
+end
+
+function DistanceToTargetLesserOrEqualThan(value)
+    return ConditionResult(DistanceToTarget() <= value)
+end
+
 function StrengthModifier(value, entity)
     entity = entity or context.Source
     return ConditionResult(GetModifier(entity.Strength) == value)

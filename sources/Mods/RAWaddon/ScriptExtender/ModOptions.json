@@ -14,7 +14,8 @@
             "Public/RAWaddon/Stats/Generated/Data/Class_Monk.txt",
             "Public/RAWaddon/Stats/Generated/Data/Class_Rogue.txt",
             "Public/RAWaddon/Stats/Generated/Data/Class_Sorcerer.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Warlock.txt"
+            "Public/RAWaddon/Stats/Generated/Data/Class_Warlock.txt",
+            "Public/RAWaddon/Levelmaps/MartialArts.lsx"
         ]
     },
     "Encumbrance": {

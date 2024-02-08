@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="300"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Shadow Monk level 3"/>
+                    <attribute id="Spells" type="LSString" value="Shout_PassWithoutTrace_Monk;Target_Darkness_Monk;Target_Darkvision_Monk;Target_MinorIllusion;Target_Silence_Monk"/>
+                    <attribute id="UUID" type="guid" value="80e8c4ce-1df6-4987-bc69-8f7fc2e5b031"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

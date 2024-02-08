@@ -14,6 +14,11 @@ While it can be used without the former, it is highly encouraged to use it.
 
 I'm doing my best to improve compatibility with other mods. CF is a fantastic way to prevent mod conflicts.
 
+## Installation
+
+I recommend using [BG3ModManager](https://github.com/LaughingLeader/BG3ModManager).
+I would put RAW mods on the bottom of order list, just before CompatibilityFramework.
+
 ## User-config
 
 You can create this file if it doesn't exist: `%localappdata%\Larian Studios\Baldur's Gate 3\Script Extender\ModOptions.json`.
@@ -329,16 +334,19 @@ Damage progression table:
 | 11    | 12     | 11     | 1d8     | 1d8     |
 | 12    | 13     | 12     | 1d8     | 1d8     |
 
-- Flurry of Blows: requires an attack first as Martial Arts, unlock at level 2
+- Source Spell DC uses Wisdom instead of Strength/Dexterity
+- Flurry of Blows: requires an attack first as Martial Arts, unlock at level 1. This is now a temporary ability, which is hidden if you don't have any Ki Point or Bonus Action.
 - Step of the Wind: you can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, **and your jump distance is doubled for the turn**.
-- Patient Defense: The status is removed if you're either incapacitated or **immobilized**. BG3 doesn't have a Dodge action but it does have a Dodge status which is missing immobilized removal condition.
-- Deflect Missiles: If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with a range of 6/18m. **BG3 uses 18m radius, so no disadvantage at 7-18 radius**
-- Slow Fall: you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level. **BG3 uses a flat 50% reduction, it is fixed by 5e Monk 5e Adjustments**
-- Stillness of Mind: you can use your action to end one effect on yourself that is causing you to be charmed or frightened. **BG3 removes it with a reaction**
+- Patient Defense: The status is removed if you're either incapacitated or **immobilized**. BG3 doesn't have a Dodge action but it does have a Dodge status that is missing immobilized removal condition. *This one is already fixed with RAW Default Actions*
+- Deflect Missiles: If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with a range of 6/18m. **BG3 uses 18m radius, you could even trigger it above 18**. Now, you can make an attack if target is under 6m, an attack with disadvantage if under 18m, and no reaction if above.
+- Slow Fall: you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level. **BG3 uses a flat 50% reduction**. Additionally, you land prone unless you avoid taking damage from the fall (not implemented yet).
+- Stunning Strike is now a reaction with a toggle passive
+- Stillness of Mind: you can use your action to end one effect on yourself that is causing you to be charmed or frightened. **BG3 triggers it automatically at the start of your turn**
 - Unarmored Movement: you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move. **BG3 hasn't implemented vertical surfaces, and gives immunity to difficult terrain. On top of that, it upgrades jump distance by 6m**. It should allow Monk to climb wall or cliffs. It should not give immunity to all difficult terrains, only deep water, grease, and maybe ice.
 
 Open Hand:
-- Flurry of Blows Push: push distance is 4.5m, **has been rounding up at 5m in BG3**.
+- Open Hand Technique are now reactions that work on Flurry of Blows
+- Open Hand Technique: push, distance is 4.5m, not 5m.
 - Wholeness of Body: As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again. **BG3 also restores Ki Points**
 - Removes Manifestation of Body, Manifestation of Mind, and Manifestation of Soul that don't exist in PHB.
 - Tranquility: you gain the effect of a Sanctuary spell that lasts until the start of your next long rest. **BG3 only lasts 100 turns**
@@ -351,11 +359,42 @@ Shadow:
 - Cloak of Shadows is granted at level 11, not 5
 - Remove Shadow Strike, doesn't exist in PHB
 
+### Druid
+
+Wildshape CR rating:
+| Level | Circle of the Moon | Other Circle |
+| ----- | ------------------ | ------------ |
+|  2    | 1                  | 1/4          |
+|  3	| 1                  | 1/4          |
+|  4	| 1					 | 1/2          |
+|  5	| 1					 | 1/2          |
+|  6	| 2					 | 1/2          |
+|  7	| 2					 | 1/2          |
+|  8	| 2					 | 1            |
+|  9	| 3					 | 1            |
+|  10	| 3					 | 1            |
+|  11	| 3					 | 1            |
+|  12	| 4					 | 1            |
+
+Note: Remember that Druids (including Moon Druids) can't take forms with a swim speed until level 4, and can’t take forms with a fly speed until level 8.
+
+Wild Shape Forms by CR:
+| CR   | Beasts                                                                       |
+| ---- | ---------------------------------------------------------------------------- |
+| 0    | Badger, Cat, Eagle, Owl, Raven                                               |
+| 1/4  | Boar, Elk, Giant Wolf Spider, Panther, Velociraptor, Wolf                    |
+| 1/2  | Ape, Black Bear, Giant Goat, Warhorse                                        |
+| 1    | Brown Bear, Dire Wolf, Giant Eagle, Giant Hyena, Giant Spider, Giant vulture |
+| 2    | Aurochs, Giant Elk, Polar Bear, Quetzalcoatlus, Saber-Toothed Tiger          |
+| 3    | Ankylosaurus, Giant Scorpion, Spotted Lion                                   |
+| 4    | Elephant, Stegosaurus                                                        |
+
 ## Credits
 
 - BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats, hinikuya, JuuM)
-- Zerd, for RAW which gave me inspiration, and its config system.
+- Zerd for RAW which gave me inspiration and its config system
 - Community Library and Compatibility Framework
+- jellytajm for Monk SlowFall damage reduction
 
 ## Known bugs
 

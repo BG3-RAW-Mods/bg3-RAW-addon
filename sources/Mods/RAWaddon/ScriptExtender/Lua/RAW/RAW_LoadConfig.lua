@@ -4,15 +4,15 @@ local function RAW_LoadUserOptions()
     RAW_Print("Searching for User "..modOptionsFile)
     local optionsFile = Ext.IO.LoadFile(modOptionsFile)
     if optionsFile == nil or optionsFile == "" then
-        RAW_Print("User RAW_Globals.modOptions.json not found")
+        RAW_Print("User ModOptions.json not found")
         return {}
     end
     local options = Ext.Json.Parse(optionsFile)
     if options[ModuleUUID] == nil then
-        RAW_Print("Not found User RAW_Globals.modOptions for: " .. ModuleUUID)
+        RAW_Print("Not found User ModOptions for: " .. ModuleUUID)
         return {}
     end
-    RAW_Print("Found User RAW_Globals.modOptions for: " .. ModuleUUID)
+    RAW_Print("Found User ModOptions for: " .. ModuleUUID)
     return options[ModuleUUID]
 end
 
