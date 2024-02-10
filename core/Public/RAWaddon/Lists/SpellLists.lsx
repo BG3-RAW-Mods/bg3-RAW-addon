@@ -9,6 +9,11 @@
                     <attribute id="Spells" type="LSString" value="Shout_PassWithoutTrace_Monk;Target_Darkness_Monk;Target_Darkvision_Monk;Target_MinorIllusion;Target_Silence_Monk"/>
                     <attribute id="UUID" type="guid" value="80e8c4ce-1df6-4987-bc69-8f7fc2e5b031"/>
                 </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Open Hand Monk level 9"/>
+                    <attribute id="Spells" type="LSString" value="Target_KiResonation_Blast"/>
+                    <attribute id="UUID" type="guid" value="f4d4e906-0c7e-4459-ab49-f135bdb7a961"/>
+                </node>
             </children>
         </node>
     </region>

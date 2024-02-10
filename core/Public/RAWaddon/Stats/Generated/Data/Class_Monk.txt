@@ -8,17 +8,28 @@ new entry "Shout_Disengage_StepOfTheWind"
 type "SpellData"
 using "Shout_Disengage_StepOfTheWind"
 data "Description" "65031a0a-f3af-428e-8bcd-d041f87c7363;2"
-data "DescriptionParams" "1"
 
 new entry "Shout_PatientDefense"
 type "SpellData"
 using "Shout_PatientDefense"
 data "Description" "a4d2f511-6f9c-4f92-9a27-963427d9a1d3;5"
 
+// ModifyUseCosts is only relevant if RAW default actions and RAW addon Jump are disabled
 new entry "STEP_OF_THE_WIND"
 type "StatusData"
 using "STEP_OF_THE_WIND"
 data "Boosts" "JumpMaxDistanceMultiplier(2);UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,BonusActionPoint,0,0,BonusActionPoint))"
+
+// Immobilized removes Dodge status
+// Clean featsextra data as it overlaps with RAW (just visually through)
+new entry "DODGE"
+type "StatusData"
+using "DODGE"
+data "Description" "068aecf0-a0cf-4f96-89f7-01e660505685;1"
+data "RemoveConditions" "HasStatus('SG_Incapacitated') or Immobilized()"
+data "SoundLoop" ""
+data "SoundStop" ""
+data "StatusEffect" ""
 
 // Returning a deflected missile works only if range is less or equal than 18
 // If range is superior than 9, attack will have a disadavantage
@@ -220,9 +231,28 @@ data "DisplayName" "h617ec5edg40a2g4fefga310gdee969416e36;1"
 data "Description" "0dd60c74-b15d-4dcf-9884-2ec87dcc7691;2"
 data "Icon" "Spell_Transmutation_FeatherFall"
 data "StackId" "SLOWFALL_TECHNICAL"
-data "Boosts" "DamageReduction(Bludgeoning,Flat,(ClassLevel(Monk)*5));StatusImmunity(SG_Prone)"
+//data "Boosts" "DamageReduction(Bludgeoning,Flat,(ClassLevel(Monk)*5));StatusImmunity(SG_Prone)"
+data "Boosts" "DamageReduction(Bludgeoning,Flat,(ClassLevel(Monk)*5))"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "OnRemoveFunctors" "UseActionResource(ReactionActionPoint,1)"
+
+// Unarmored Movement: you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.
+// Maybe add immunity to prone on slowfall ?
+new entry "UnarmoredMovement_DifficultTerrain"
+type "PassiveData"
+using "UnarmoredMovement_DifficultTerrain"
+data "Description" "984d9c6f-f6be-4bc6-91af-317da55c5365;7"
+data "Boosts" "StatusImmunity(SG_DifficultTerrain)"
+
+// The Aspect of the Crocodile increases your agility in the water.&lt;br&gt;&lt;br&gt;Your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; increases by [1] while standing in water-based surfaces.&lt;br&gt;&lt;br&gt;On slippery surfaces, you also have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being knocked &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+// data "BoostConditions" "InSurface('SurfaceAlcohol') or InSurface('SurfaceBlood') or InSurface('SurfaceDeepWater') 
+// or InSurface('SurfaceDeepWaterRunning') or InSurface('SurfaceGrease') or InSurface('SurfaceOil') 
+// or InSurface('SurfaceWater') or InSurface('SurfaceWaterFrozen') or InSurface('SurfaceBloodFrozen')"
+// data "PersonalStatusImmunities" "
+// DIFFICULT_TERRAIN_MUD
+// PRONE_GREASE
+// SG_DifficultTerrain
+// data "Boosts" "StatusImmunity(DIFFICULT_TERRAIN);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_SEWER);"
 
 // Stunning Strike
 new entry "Target_StunningStrike"
@@ -285,5 +315,81 @@ data "UseCosts" "ActionPoint:1"
 new entry "StillnessOfMind"
 type "PassiveData"
 using "StillnessOfMind"
+data "DisplayName" "b9839978-40c8-482f-993f-15454c1e3b07;2"
+data "Description" "5d129e97-1e4b-44dd-a56a-3f3dd0aa65d4;3"
 data "Conditions" "HasStatus('SG_Charmed', context.Source) and HasActionResource('ActionPoint', 1, 0, false, false, context.Source)"
 data "StatsFunctors" "RemoveStatus(SG_Charmed);RemoveStatus(SG_Frightened);UseActionResource(SELF,ActionPoint,1,0);UseSpell(SELF,Shout_StillnessOfMind,true,true,true)"
+
+// Tranquility lasts until long rest
+new entry "Tranquility"
+type "PassiveData"
+using "Tranquility"
+data "StatsFunctors" "ApplyStatus(SELF,SANCTUARY_TRANQUILITY,100,-1)"
+
+// Ki Blast: 1 Ki to apply Resonation status with an unarmed attack. Blast: 3D6 force damage AOE 5m (DEX saves for none)
+// Quivering Palm: 3 Ki to apply vibrations with an unarmed attack. Blast: kill target (CON saves for 10d10 necrotic damage)
+new entry "KiResonation_Passive"
+type "PassiveData"
+data "Icon" "Action_KiResonation_Punch"
+data "DisplayName" "20e0049c-c134-46d5-afd4-f7f3685bf794;2"
+data "Description" "d13b42e1-0793-40eb-8e47-49e12b60baef;3"
+data "DescriptionParams" "2"
+data "ExtraDescription" ""
+data "TooltipUseCosts" "KiPoint:2"
+data "Properties" "Highlighted;IsToggled;ToggledDefaultAddToHotbar"
+data "Boosts" "UnlockInterrupt(Interrupt_KiResonation)"
+
+new entry "Interrupt_KiResonation"
+type "InterruptData"
+data "InterruptContext" "OnCastHit"
+data "InterruptContextScope" "Self"
+data "InterruptDefaultValu&e" "Ask;Enabled"
+data "Container" "YesNoDecision"
+data "DisplayName" "bcf9b273-5e86-436b-94f4-b539e6495c67;2"
+data "Description" "7789c49d-d9b0-4fd2-a88a-92055e539ef9;3"
+data "TooltipStatusApply" "ApplyStatus(KI_RESONATION, 100, -1)"
+data "TooltipUseCosts" "KiPoint:2"
+data "Icon" "Action_KiResonation_Punch"
+data "Conditions" "not Item() and Self(context.Source,context.Observer) and not Self(context.Source,context.Target) and IsMeleeAttack() and IsUnarmedAttack() and not HasStatus('KI_RESONATION') and HasDamageEffectFlag(DamageFlags.Hit) and not IsKillingBlow()"
+//data "Properties" "UseSpell(OBSERVER_TARGET,Target_KiResonation_Punch,true,true,true)"
+data "Properties" "ApplyStatus(KI_RESONATION, 100, -1)
+data "Cost" "KiPoint:2"
+data "EnableCondition" "not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise')"
+data "EnableContext" "OnStatusApplied;OnStatusRemoved"
+
+new entry "Target_KiResonation_Punch"
+type "SpellData"
+using "Target_KiResonation_Punch"
+data "SpellSuccess" "ApplyStatus(KI_RESONATION, 100, -1)"
+data "Description" "7789c49d-d9b0-4fd2-a88a-92055e539ef9;3"
+data "TooltipStatusApply" "ApplyStatus(KI_RESONATION, 100, -1)"
+
+// BG3: 3d6 force
+new entry "Target_KiResonation_Blast"
+type "SpellData"
+using "Target_KiResonation_Blast"
+data "Cooldown" ""
+data "SpellProperties" "RemoveStatus(KI_RESONATION)"
+data "SpellRoll" "not SavingThrow(Ability.Constitution, WisdomSaveDC())"
+// data "SpellSuccess" "Kill()"
+data "SpellSuccess" "DealDamage(6d10, Necrotic, Magical)" 
+data "SpellFail" "DealDamage(10d10, Necrotic, Magical)"
+data "TargetRadius" "18"
+data "AreaRadius" "0"
+data "DisplayName" "8d1c4c37-d27f-4949-90b5-dbeff5f9a93e;1"
+data "Description" "156f3e5d-81fd-4447-8bcc-33da80252072;3"
+data "DescriptionParams" "0;10d10"
+data "ExtraDescription" ""
+data "TooltipDamageList" "DealDamage(10d10, Necrotic)"
+data "TooltipAttackSave" "Constitution"
+data "TooltipOnSave" ""
+data "UseCosts" "ActionPoint:1"
+data "SpellFlags" "IsHarmful"
+data "DamageType" "Necrotic"
+
+new entry "KI_RESONATION"
+type "StatusData"
+using "KI_RESONATION"
+data "DisplayName" "hf3a73818g3b39g454dgb194g9d186c0c6423;3"
+data "Description" "c516018a-0e11-4554-a3fd-a26c6bcd4c96;3"
+data "OnRemoveFunctors" ""

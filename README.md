@@ -37,7 +37,8 @@ Each UUID is a mod configuration and its value is mod configuration. You can cop
 		"ItemPotion": { "enabled": true, "value": 7 },
 		"ItemPoison": { "enabled": true, "value": 15 },
 		"Spells": { "enabled": true },
-		"Feats": { "enabled": true }
+		"Feats": { "enabled": true },
+		"CustomRules": { "enabled": true }		
 	}
 }
 ```
@@ -318,7 +319,7 @@ Also, it seem to be a random pick, maybe based on class performance. Draconic So
 
 ### Monk
 
-Damage progression table:
+Adjusted Ki and Unarmed damage table:
 | Level | BG3 Ki | RAW Ki | BG3 DMG | RAW DMG |
 | ----- | ------ | ------ | ------- | ------- |
 |  1    |  2     |  0     | 1d4     | 1d4     |
@@ -334,30 +335,65 @@ Damage progression table:
 | 11    | 12     | 11     | 1d8     | 1d8     |
 | 12    | 13     | 12     | 1d8     | 1d8     |
 
-- Source Spell DC uses Wisdom instead of Strength/Dexterity
-- Flurry of Blows: requires an attack first as Martial Arts, unlock at level 1. This is now a temporary ability, which is hidden if you don't have any Ki Point or Bonus Action.
-- Step of the Wind: you can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, **and your jump distance is doubled for the turn**.
-- Patient Defense: The status is removed if you're either incapacitated or **immobilized**. BG3 doesn't have a Dodge action but it does have a Dodge status that is missing immobilized removal condition. *This one is already fixed with RAW Default Actions*
-- Deflect Missiles: If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with a range of 6/18m. **BG3 uses 18m radius, you could even trigger it above 18**. Now, you can make an attack if target is under 6m, an attack with disadvantage if under 18m, and no reaction if above.
-- Slow Fall: you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level. **BG3 uses a flat 50% reduction**. Additionally, you land prone unless you avoid taking damage from the fall (not implemented yet).
-- Stunning Strike is now a reaction with a toggle passive
-- Stillness of Mind: you can use your action to end one effect on yourself that is causing you to be charmed or frightened. **BG3 triggers it automatically at the start of your turn**
-- Unarmored Movement: you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move. **BG3 hasn't implemented vertical surfaces, and gives immunity to difficult terrain. On top of that, it upgrades jump distance by 6m**. It should allow Monk to climb wall or cliffs. It should not give immunity to all difficult terrains, only deep water, grease, and maybe ice.
+- All Ki ability source DC uses Wisdom instead of Strength/Dexterity
+- Bonus Unarmed Attack is unlocked if you still have your bonus action
+- Flurry of Blows: immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action. It is now a temporary ability, hidden if you don't have any Ki Point or Bonus Action. RAW implementation: allows you to make 2 unarmed attacks.
+- Step of the Wind: you can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn and your jump distance is doubled for the turn.
+- Patient Defense: *immobilized* will remove Dodge status (used by this ability). 
+- Deflect Missiles: Clarify names and tooltips for better understanding between the 2 parts: deflect and throw back
+- Deflect Missiles: Throwing back is now impossible if target is above 18m
+- Deflect Missiles: Throwing back has disadvantage if target is above 6m
+- Slow Fall: you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level. Additionally, you land prone unless you avoid taking damage from the fall (this last part is not implemented yet).
+- Stunning Strike is now a reaction with a passive toggle
+- Stillness of Mind (passive): triggers automatically if you are charmed but not frightened. So you can still choose to attack even if frightened.
+- Stillness of Mind: added as an action to allow manual use to remove frightened
 
-Open Hand:
-- Open Hand Technique are now reactions that work on Flurry of Blows
-- Open Hand Technique: push, distance is 4.5m, not 5m.
-- Wholeness of Body: As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again. **BG3 also restores Ki Points**
-- Removes Manifestation of Body, Manifestation of Mind, and Manifestation of Soul that don't exist in PHB.
-- Tranquility: you gain the effect of a Sanctuary spell that lasts until the start of your next long rest. **BG3 only lasts 100 turns**
-- Ki Resonation (level 9) is a weaker version of Quivering Palm (level 17)
-    Ki Blast: 1 Ki to apply Resonation status with an unarmed attack. Blast: 3D6 force damage AOE 5m (DEX saves for none)
-    Quivering Palm: 3 Ki to apply vibrations with an unarmed attack. Blast: kill target (CON saves for 10d10 necrotic damage)
+#### Unarmored Movement (level 9)
+RAW: you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.
+BG3: you gain immunity to all difficult terrains and your jump distance is increased by 6m.
 
-Shadow:
+BG3 doesn't allow vertical movement, so I'm not sure how to implement this feature. It should allow Monk to climb wall or cliffs.
+It should not give immunity to difficult terrains, only allow you to walk over water surfaces.
+
+#### Open Hand
+- Open Hand Techniques are now reactions with a passive toggle that can trigger on Flurry of Blows attacks
+- Open Hand Technique: push, distance set to 4.5m instead of 5m
+- Wholeness of Body: removed everything but Heal part
+- Manifestation (Body, Mind, Soul): removed as it doesn't exist in PHB
+- Tranquility: lasts until long rest
+- Ki Resonation: removed as it doesn't exist in PHB (see below)
+ 
+BG3: Ki Resonation, level 9, 2 Ki Points, 3d6 force damage AOE 5m (DEX saves for none).
+RAW: Quivering Palm, level 17, 3 Ki Points, kill target (CON saves for 10d10 necrotic damage).
+
+Suggestion: Lesser Quivering Palm, level 9, 2 Ki Points, 5d10 necrotic damage (CON saves for half).
+
+#### Shadow
 - Removes Shadow Arts: Hide, doesn't exist in PHB
-- Cloak of Shadows is granted at level 11, not 5
-- Remove Shadow Strike, doesn't exist in PHB
+- Cloak of Shadows is granted at level 11 instead of 5
+- Removed Shadow Strike, doesn't exist in PHB
+
+#### Way of the Four Elements
+- You know the Elemental Attunement discipline and one other elemental discipline of your choice. You learn one additional elemental discipline of your choice at 6th and 11th level. Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.
+
+- Fangs of the Fire Snake, 1st level, 1 KP, when you use the Attack action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet. Your reach with your unarmed strikes increases by 10 feet for that action, as well as the rest of the turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and if you spend 1 ki point when the attack hits, it also deals an extra 1d10 fire damage.
+- Fist of Four Thunders, 1st level, 2 KP, cast Thunderwave.
+- Fist of Unbroken Air, 1st level, 2 KP, you can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don't push it or knock it prone.
+- Rush of the Gale Spirits, 1st level, 2 KP, cast Gust of Wind.
+- Shape the Flowing River, 1st level, 1 KP, as an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high, raise or lower the square's elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can't shape the ice to trap or injure a creature in the area.
+- Sweeping Cinder Strike, 1st level, 2 KP, cast Burning Hands.
+- Water Whip, 1st level, 2 KP: you can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don't pull it or knock it prone.
+
+- Clench of the North Wind, 6th Level, 3 KP, Hold Person
+- Gong of the Summit, 6th Level, 3 KP, cast Shatter.
+- Flames of the Phoenix, 11th Level, 4 KP, cast Fireball.
+- Mist Stance, 11th Level, 4 KP, cast Gaseous Form, targeting yourself.
+- Ride the Wind, 11th Level, 4 KP, cast Fly, targeting yourself.
+
+- Breath of Winter, 17th Level, 6 KP, cast Cone of Cold.
+- Eternal Mountain Defense, 17th Level, 5 KP, cast Stoneskin, targeting yourself.
+- River of Hungry Flame, 17th Level, 5 KP, cast Wall of Fire.
+- Wave of Rolling Earth, 17th Level, 6 KP, cast Wall of Stone.
 
 ### Druid
 

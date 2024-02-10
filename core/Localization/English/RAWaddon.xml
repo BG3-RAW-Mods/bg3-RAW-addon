@@ -53,6 +53,17 @@
 	<content contentuid="0dd60c74-b15d-4dcf-9884-2ec87dcc7691" version="1">Affected entity knows how to break its fall. It takes reduced falling damage.</content>
 	<content contentuid="9e696cef-b886-4c7b-9553-341facdc929b" version="1">You can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</content>
 	<content contentuid="275e8029-c20c-4625-b628-03fdd1257466" version="7">You gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.</content>
+	<content contentuid="b9839978-40c8-482f-993f-15454c1e3b07" version="2">Stillness of Mind (Passive)</content>
+	<content contentuid="5d129e97-1e4b-44dd-a56a-3f3dd0aa65d4" version="3">If you are &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;, you automatically cast &lt;LSTag Type="Spell" Tooltip="Shout_StillnessOfMind"&gt;Stillness of Mind&lt;/LSTag&gt; to remove the condition.</content>
+	<content contentuid="984d9c6f-f6be-4bc6-91af-317da55c5365" version="7">&lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt; doesn't slow you down while you are not wearing armour or using a shield.</content>
+	
+	<content contentuid="20e0049c-c134-46d5-afd4-f7f3685bf794" version="2">Ki Resonation (Passive)</content>
+	<content contentuid="bcf9b273-5e86-436b-94f4-b539e6495c67" version="2">Ki Resonation</content>
+	<content contentuid="d13b42e1-0793-40eb-8e47-49e12b60baef" version="3">When you hit a creature with an unarmed strike, you can spend [1] ki points to set up lethal vibrations. The vibrations are harmless unless you use &lt;LSTag Type="Spell" Tooltip="Target_KiResonation_Blast"&gt;Lesser Quivering Palm&lt;/LSTag&gt; to end them.</content>
+	<content contentuid="7789c49d-d9b0-4fd2-a88a-92055e539ef9" version="3">Set up lethal vibrations. The vibrations are harmless unless you use &lt;LSTag Type="Spell" Tooltip="Target_KiResonation_Blast"&gt;Lesser Quivering Palm&lt;/LSTag&gt; to end them.</content>
+	<content contentuid="8d1c4c37-d27f-4949-90b5-dbeff5f9a93e" version="1">Lesser Quivering Palm</content>
+	<content contentuid="156f3e5d-81fd-4447-8bcc-33da80252072" version="3">Detonate the ki of a creature &lt;LSTag Type="Status" Tooltip="KI_RESONATION"&gt;Resonating&lt;/LSTag&gt; with you. The target must make a Constitution saving throw. If it fails, it is reduced to [1] hit points. If it succeeds, it takes [2] necrotic damage.</content>
+	<content contentuid="c516018a-0e11-4554-a3fd-a26c6bcd4c96" version="3">The ki within the affected entity is resonating with a monk's. The monk can use &lt;LSTag Type="Spell" Tooltip="Target_KiResonation_Blast"&gt;Lesser Quivering Palm&lt;/LSTag&gt; to make it explode.</content>
 
 	<!-- Astral Knowledge -->
 	<content contentuid="2733f3a2-5492-4d93-a57c-6c310b545397" version="3">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in one &lt;LSTag Tooltip="Skill"&gt;Skill&lt;/LSTag&gt; of your choice as you momentarily project your consciousness into the Astral Plane.</content>
@@ -143,4 +154,7 @@
 	<content contentuid="e7badccc-1720-4300-b232-44d46f5ab569" version="1">You know the Dancing Lights cantrip. When you reach 3rd level, you can cast Faerie Fire once, and it recharges after a long rest. When you reach 5th level, you can cast Darkness once, and it recharges after a long rest. Charisma is your spellcasting ability for these spells.</content>
 	<content contentuid="5d71dc71-1dac-4486-aa61-c569de457fd9" version="1">Skill Versatility</content>
 	<content contentuid="1f0fb476-8748-425a-ad96-8d2bf183ca33" version="1">You gain proficiency in two skills of your choice.</content>
+
+	<!-- Dodge -->
+	<content contentuid="068aecf0-a0cf-4f96-89f7-01e660505685" version="4">Focusing on avoiding attacks.&lt;br&gt;&lt;Br&gt;&lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against the affected entity have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;, and the entity has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Dexterity &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. You lose this benefit if you are incapacitated or immobilized.</content>
 </contentList>

@@ -30,11 +30,17 @@
     Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Monk_Shadow_3, "80e8c4ce-1df6-4987-bc69-8f7fc2e5b031", {}))
     -- Open Hand doesn't have Manifestation ability (this is actually an OP variant of Manifest Blow)
     Mods.SubclassCompatibilityFramework.Api.RemoveStrings(removeString(RAW_Monk_OpenHand_6, "PassivesAdded", { "Manifestation_of_Body", "Manifestation_of_Mind", "Manifestation_of_Soul" }))
-    -- Stillness Of Mind is an active ability, not passive
+    -- Add Stillness Of Mind ability because it won't autocast if frightened
     Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Monk_7, "90d61529-d390-4d39-a84a-58dfc94c90aa", {}))
     -- Cloak of Shadows is granted at level 11, not 5
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_Shadow_5, "AddSpells", "e1f0e927-0711-4644-8745-af2b02434cfd"))  
     Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Monk_Shadow_11, "e1f0e927-0711-4644-8745-af2b02434cfd", {}))
+    -- Shadow doesn't have Shadow Strike ability
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_Shadow_11, "AddSpells", "6c0c93e7-d43a-43ca-8f36-43eff7a5ccdb"))  
+    -- Open Hand doesn't get Ki Resonation at level 9
+    Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Monk_OpenHand_9, "PassivesAdded", { "KiResonation_Passive" }))
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_OpenHand_9, "AddSpells", "0ffe7be9-d826-42d7-b59e-d1924ad28ffc"))  
+    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Monk_OpenHand_9, "f4d4e906-0c7e-4459-ab49-f135bdb7a961", {}))
   end
 
   local function sorcererChanges()
