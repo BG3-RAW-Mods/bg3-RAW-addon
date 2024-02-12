@@ -38,9 +38,25 @@
     -- Shadow doesn't have Shadow Strike ability
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_Shadow_11, "AddSpells", "6c0c93e7-d43a-43ca-8f36-43eff7a5ccdb"))  
     -- Open Hand doesn't get Ki Resonation at level 9
-    Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Monk_OpenHand_9, "PassivesAdded", { "KiResonation_Passive" }))
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_OpenHand_9, "AddSpells", "0ffe7be9-d826-42d7-b59e-d1924ad28ffc"))  
-    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Monk_OpenHand_9, "f4d4e906-0c7e-4459-ab49-f135bdb7a961", {}))
+    -- Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Monk_OpenHand_9, "PassivesAdded", { "KiResonation_Passive" }))
+    -- Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Monk_OpenHand_9, "f4d4e906-0c7e-4459-ab49-f135bdb7a961", {}))
+    -- Four Element only select 2 spells at level 3
+    Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Monk_FourElements_3, "PassivesAdded", { "FourElementsDisciplines" }))
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_3, "AddSpells", "de3d347b-69f4-43ac-915d-26e7cbb912bc"))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_3, "SelectSpells", "9da8ef4f-676b-46f1-81e4-f7c3cfd1c34c"))  
+    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addSelectSpells(RAW_Monk_FourElements_3, "50072bc3-d182-4ea6-9f7a-0eb021ce6c86", 2, { SelectorId = "FourElements"}))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_4, "SelectSpells", "9da8ef4f-676b-46f1-81e4-f7c3cfd1c34c"))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_5, "SelectSpells", "9da8ef4f-676b-46f1-81e4-f7c3cfd1c34c"))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_6, "SelectSpells", "c841dfad-9d3b-486d-ad6b-ac3eaebc2db4"))  
+    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addSelectSpells(RAW_Monk_FourElements_6, "65897e6b-7863-4a0c-9c99-753a793df498", 1, { SelectorId = "FourElements", SwapAmount = 1 }))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_7, "SelectSpells", "c841dfad-9d3b-486d-ad6b-ac3eaebc2db4"))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_8, "SelectSpells", "c841dfad-9d3b-486d-ad6b-ac3eaebc2db4"))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_9, "SelectSpells", "c841dfad-9d3b-486d-ad6b-ac3eaebc2db4"))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_10, "SelectSpells", "c841dfad-9d3b-486d-ad6b-ac3eaebc2db4"))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_11, "SelectSpells", "cf014f77-4d0a-4322-a2bf-95e38b89435b"))  
+    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addSelectSpells(RAW_Monk_FourElements_11, "a279acb9-88f8-4246-83c6-146d8fc77c8a", 1, { SelectorId = "FourElements", SwapAmount = 1 }))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_12, "SelectSpells", "cf014f77-4d0a-4322-a2bf-95e38b89435b"))  
   end
 
   local function sorcererChanges()

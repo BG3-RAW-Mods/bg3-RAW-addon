@@ -46,6 +46,16 @@ RAW_Monk_OpenHand_9 = "2c9045a3-0d3b-4daf-b3b3-7e0518ba4ee5"
 RAW_Monk_Shadow_3 = "077e6458-3b93-4820-88a7-bd7c9babbeae"
 RAW_Monk_Shadow_5 = "62fa2d62-9cc9-4642-9d11-121ac5188875"
 RAW_Monk_Shadow_11 = "9d7ed30f-fd99-4d5d-b190-8f781f9cb6a9"
+RAW_Monk_FourElements_3 = "cae2ce43-a1b8-473a-b163-c961d0048bd6"
+RAW_Monk_FourElements_4 = "4d2390c9-e95a-4b3d-bc22-22ac680e0393"
+RAW_Monk_FourElements_5 = "64e4f191-186b-4cc9-9e3d-9374d2670ec3"
+RAW_Monk_FourElements_6 = "78b2ac1f-38c7-4da8-b233-c0cb0a0c65a1"
+RAW_Monk_FourElements_7 = "4ad9ff21-d003-4194-a04b-04b2a5c8780f"
+RAW_Monk_FourElements_8 = "667c7882-0d2c-43fc-99b8-6b8289eb65f5"
+RAW_Monk_FourElements_9 = "a846bdfe-75e9-44b8-978a-864227b5caf8"
+RAW_Monk_FourElements_10 = "0089d463-3aa3-49de-95d5-4e9f5c47f9d7"
+RAW_Monk_FourElements_11 = "f71e5d22-b830-42dd-ba88-a91ad6d95ec6"
+RAW_Monk_FourElements_12 = "d61acf79-7437-49e1-a003-2426049ef323"
 RAW_Paladin_1 = "b60618d1-c262-42b5-9fdd-2c0f7aa5e5af"
 RAW_Ranger_1 = "ad1084b1-b99f-6720-cfdd-cf82ad44345b"
 RAW_Rogue_1 = "16f00e7f-12f6-4cff-b610-4ee738b02d62"
@@ -109,16 +119,16 @@ function addSelectSpells(target, uuid, amount, payload)
         {
             modGuid = RAW_ModRawAddon,
             FileType = "Progression",
-            TargetUUID = target,
+            Target = target,
             Function = "SelectSpells",
             Params = {
                 Guid = uuid,
                 Amount = amount,
-                SwapAmount = payload.SwapAmount,
+                SwapAmount = payload.SwapAmount or 0,
                 SelectorId = payload.SelectorId,
                 CastingAbility = payload.CastingAbility,
                 ActionResource = payload.ActionResource,
-                PrepareType = payload.PrepareType,
+                PrepareType = payload.PrepareType or "AlwaysPrepared",
                 CooldownType = payload.CooldownType
             }
         }

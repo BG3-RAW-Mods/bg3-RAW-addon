@@ -278,7 +278,7 @@ data "Boosts" "UnlockInterrupt(Interrupt_StunningStrike)"
 new entry "Interrupt_StunningStrike"
 type "InterruptData"
 data "InterruptContext" "OnCastHit"
-data "InterruptContextScope" "Nearby"
+data "InterruptContextScope" "Self"
 data "InterruptDefaultValue" "Ask;Enabled"
 data "Container" "YesNoDecision"
 data "DisplayName" "ha2b41647g8c02g47c6g9d70g3460189d287c;1"
@@ -320,14 +320,18 @@ data "Description" "5d129e97-1e4b-44dd-a56a-3f3dd0aa65d4;3"
 data "Conditions" "HasStatus('SG_Charmed', context.Source) and HasActionResource('ActionPoint', 1, 0, false, false, context.Source)"
 data "StatsFunctors" "RemoveStatus(SG_Charmed);RemoveStatus(SG_Frightened);UseActionResource(SELF,ActionPoint,1,0);UseSpell(SELF,Shout_StillnessOfMind,true,true,true)"
 
+new entry "Shout_StillnessOfMind"
+type "SpellData"
+using "Shout_StillnessOfMind"
+data "Conditions" "HasStatus('SG_Charmed', context.Source) or HasStatus('SG_Frightened', context.Source)"
+
 // Tranquility lasts until long rest
 new entry "Tranquility"
 type "PassiveData"
 using "Tranquility"
 data "StatsFunctors" "ApplyStatus(SELF,SANCTUARY_TRANQUILITY,100,-1)"
 
-// Ki Blast: 1 Ki to apply Resonation status with an unarmed attack. Blast: 3D6 force damage AOE 5m (DEX saves for none)
-// Quivering Palm: 3 Ki to apply vibrations with an unarmed attack. Blast: kill target (CON saves for 10d10 necrotic damage)
+// Lesser Quivering Palm
 new entry "KiResonation_Passive"
 type "PassiveData"
 data "Icon" "Action_KiResonation_Punch"
@@ -364,25 +368,22 @@ data "SpellSuccess" "ApplyStatus(KI_RESONATION, 100, -1)"
 data "Description" "7789c49d-d9b0-4fd2-a88a-92055e539ef9;3"
 data "TooltipStatusApply" "ApplyStatus(KI_RESONATION, 100, -1)"
 
-// BG3: 3d6 force
 new entry "Target_KiResonation_Blast"
 type "SpellData"
 using "Target_KiResonation_Blast"
 data "Cooldown" ""
 data "SpellProperties" "RemoveStatus(KI_RESONATION)"
 data "SpellRoll" "not SavingThrow(Ability.Constitution, WisdomSaveDC())"
-// data "SpellSuccess" "Kill()"
-data "SpellSuccess" "DealDamage(6d10, Necrotic, Magical)" 
-data "SpellFail" "DealDamage(10d10, Necrotic, Magical)"
+data "SpellSuccess" "DealDamage(5d10, Necrotic, Magical)" 
+data "SpellFail" "DealDamage((5d10)/2, Necrotic, Magical)"
 data "TargetRadius" "18"
 data "AreaRadius" "0"
 data "DisplayName" "8d1c4c37-d27f-4949-90b5-dbeff5f9a93e;1"
 data "Description" "156f3e5d-81fd-4447-8bcc-33da80252072;3"
-data "DescriptionParams" "0;10d10"
+data "DescriptionParams" "5d10"
 data "ExtraDescription" ""
-data "TooltipDamageList" "DealDamage(10d10, Necrotic)"
+data "TooltipDamageList" "DealDamage(5d10, Necrotic)"
 data "TooltipAttackSave" "Constitution"
-data "TooltipOnSave" ""
 data "UseCosts" "ActionPoint:1"
 data "SpellFlags" "IsHarmful"
 data "DamageType" "Necrotic"
@@ -393,3 +394,224 @@ using "KI_RESONATION"
 data "DisplayName" "hf3a73818g3b39g454dgb194g9d186c0c6423;3"
 data "Description" "c516018a-0e11-4554-a3fd-a26c6bcd4c96;3"
 data "OnRemoveFunctors" ""
+
+// Four Elements passive
+new entry "FourElementsDisciplines"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "UnlockInterrupt(Interrupt_FangsOfTheFireSnake)"
+
+// Fangs Of The Fire Snake
+new entry "Projectile_FangsOfTheFireSnake"
+type "SpellData"
+using "Projectile_FangsOfTheFireSnake"
+data "SpellProperties" "IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);ApplyStatus(SELF,FANGS_OF_THE_FIRE_SNAKE,100,1);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1);ApplyStatus(SELF,MARTIAL_ARTS_FLURRY_OF_BLOWS,100,1)"
+data "TargetRadius" "4.5"
+data "SpellRoll" "Attack(AttackType.MeleeUnarmedAttack)	"
+data "SpellSuccess" "DealDamage(UnarmedDamage, Fire)"
+data "Description" "f316aa7c-6e93-4b99-ae71-83e3c67f9b0a;6"
+data "TooltipDamageList" "DealDamage(MartialArtsUnarmedDamage, Fire)"
+data "TooltipAttackSave" "MeleeUnarmedAttack"
+data "TooltipStatusApply" "ApplyStatus(FANGS_OF_THE_FIRE_SNAKE,100,1); "
+
+new entry "FANGS_OF_THE_FIRE_SNAKE"
+type "StatusData"
+using "FANGS_OF_THE_FIRE_SNAKE"
+data "DisplayName" "h60dd4652gfc75g4a9dg8256gbc9bbeb1395b;1"
+data "Description" "f316aa7c-6e93-4b99-ae71-83e3c67f9b0a;6"
+data "Boosts" "UnlockSpellVariant(MeleeUnarmedAttackCheck(),ModifyTargetRadius(Override,4.5))"
+data "StatusEffect" "9c1c9ea9-e5d5-4f1e-91f2-415f5e80e942"
+
+new entry "Interrupt_FangsOfTheFireSnake"
+type "InterruptData"
+data "InterruptContext" "OnCastHit"
+data "InterruptContextScope" "Self"
+data "InterruptDefaultValue" "Ask;Enabled"
+data "InterruptDefaultValue" ""
+data "Container" "YesNoDecision"
+data "DisplayName" "h60dd4652gfc75g4a9dg8256gbc9bbeb1395b;1"
+data "Description" "f368060b-4738-4353-b142-a9aa16257a39;1"
+data "Icon" "Action_Monk_FangsOfTheFireSnake"
+data "Conditions" "not Item() and Self(context.Source,context.Observer) and not Self(context.Source,context.Target) and HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source) and IsMeleeUnarmedAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsKillingBlow()"
+data "Properties" "DealDamage(1d10,Fire)"
+data "Cost" "KiPoint:1"
+data "EnableCondition" "not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise')"
+data "EnableContext" "OnStatusApplied"
+
+new entry "Target_UnarmedAttack"
+type "SpellData"
+using "Target_UnarmedAttack"
+data "SpellSuccess" "IF(not HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Bludgeoning);IF(HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Fire)"
+
+new entry "Target_UnarmedStrike_Monk"
+type "SpellData"
+using "Target_UnarmedStrike_Monk"
+data "SpellSuccess" "IF(not HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Bludgeoning);IF(HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Fire)"
+
+new entry "Target_FlurryOfBlows_FirstAttack"
+type "SpellData"
+using "Target_FlurryOfBlows_FirstAttack"
+data "SpellSuccess" "IF(not HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Bludgeoning);IF(HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Fire)"
+
+new entry "Target_FlurryOfBlows_LastAttack"
+type "SpellData"
+using "Target_FlurryOfBlows_LastAttack"
+data "SpellSuccess" "IF(not HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Bludgeoning);IF(HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Fire)"
+
+new entry "Projectile_Deflect_Missiles"
+type "SpellData"
+using "Projectile_Deflect_Missiles"
+data "SpellSuccess" "IF(not HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Bludgeoning);IF(HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Fire)"
+
+new entry "Projectile_Deflect_Missiles_Disadvantage"
+type "SpellData"
+using "Projectile_Deflect_Missiles_Disadvantage"
+data "SpellSuccess" "IF(not HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Bludgeoning);IF(HasStatus('FANGS_OF_THE_FIRE_SNAKE',context.Source)):DealDamage(UnarmedDamage, Fire)"
+
+// Fist of Four Thunders
+new entry "RAW_FistOfFourThunders"
+type "SpellData"
+data "SpellType" "Zone"
+data "ContainerSpells" "Zone_Thunderwave_Monk_3;Zone_Thunderwave_Monk_2;Zone_Thunderwave_Monk"
+data "Icon" "Spell_Evocation_Thunderwave"
+data "DisplayName" "hd3e28c15gfb0fg42d1g98e1gf65e6d78ce6a;2"
+data "Description" "h1780b369gb2c3g4bbagb0c5ga163962737e3;2"
+data "TooltipDamageList" "DealDamage(2d8,Thunder)"
+data "TooltipAttackSave" "Constitution"
+data "TooltipOnSave" "f762efbb-f8f1-493e-b248-2de1567b4bd2"
+data "PreviewCursor" "Cast"
+data "CastTextEvent" "Cast"
+data "UseCosts" "ActionPoint:1;KiPoint:2"
+data "SpellFlags" "HasSomaticComponent;AddFallDamageOnLand;IsHarmful;IsLinkedSpellContainer"
+
+new entry "Zone_Thunderwave_Monk"
+type "SpellData"
+using "Zone_Thunderwave_Monk"
+data "SpellRoll" "not SavingThrow(Ability.Constitution, WisdomSaveDC())"
+data "SpellSuccess" "DealDamage(2d8,Thunder,Magical);Force(3, OriginToTarget)"
+data "SpellFail" "DealDamage((2d8)/2,Thunder,Magical);"
+data "TooltipDamageList" "DealDamage(2d8,Thunder)"
+data "UseCosts" "ActionPoint:1;KiPoint:2"
+data "SpellContainerID" "RAW_FistOfFourThunders"
+
+new entry "Zone_Thunderwave_Monk_2"
+type "SpellData"
+using "Zone_Thunderwave_Monk"
+data "SpellSuccess" "DealDamage(3d8,Thunder,Magical);Force(3, OriginToTarget)"
+data "SpellFail" "DealDamage((3d8)/2,Thunder,Magical);"
+data "TooltipDamageList" "DealDamage(3d8,Thunder)"
+data "UseCosts" "ActionPoint:1;KiPoint:3"
+data "SpellContainerID" "RAW_FistOfFourThunders"
+data "RequirementConditions" "ClassLevelHigherOrEqualThan(5,'Monk')"
+
+new entry "Zone_Thunderwave_Monk_3"
+type "SpellData"
+using "Zone_Thunderwave_Monk"
+data "SpellSuccess" "DealDamage(4d8,Thunder,Magical);Force(3, OriginToTarget)"
+data "SpellFail" "DealDamage((4d8)/2,Thunder,Magical);"
+data "TooltipDamageList" "DealDamage(4d8,Thunder)"
+data "UseCosts" "ActionPoint:1;KiPoint:4"
+data "SpellContainerID" "RAW_FistOfFourThunders"
+data "RequirementConditions" "ClassLevelHigherOrEqualThan(9,'Monk')"
+
+// Fist Of Unbroken Air
+new entry "RAW_FistOfUnbrokenAir"
+type "SpellData"
+data "SpellType" "Zone"
+data "ContainerSpells" "Target_FistOfUnbrokenAir_3;Target_FistOfUnbrokenAir_2;Target_FistOfUnbrokenAir"
+data "Icon" "Action_Monk_FistOfUnbrokenAir"
+data "DisplayName" "h133847b1gabedg4325gae61g968ab733a058;2"
+data "Description" "hb580f508g6b4cg463ega722g7b92469c17e5;7"
+data "TooltipDamageList" "DealDamage(3d10,Bludgeoning)"
+data "TooltipAttackSave" "Strength"
+data "TooltipOnSave" "f762efbb-f8f1-493e-b248-2de1567b4bd2"
+data "PreviewCursor" "Cast"
+data "CastTextEvent" "Cast"
+data "UseCosts" "ActionPoint:1;KiPoint:2"
+data "SpellFlags" "DisableBlood;AddFallDamageOnLand;IsHarmful;IsLinkedSpellContainer"
+
+new entry "Target_FistOfUnbrokenAir"
+type "SpellData"
+using "Target_FistOfUnbrokenAir"
+data "SpellProperties" "ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1);ApplyStatus(SELF,MARTIAL_ARTS_FLURRY_OF_BLOWS,100,1)"
+data "SpellRoll" "not SavingThrow(Ability.Strength, WisdomSaveDC())"
+data "SpellSuccess" "DealDamage(3d10,Bludgeoning);Force(6);ApplyStatus(PRONE,100,1)"
+data "SpellFail" "DealDamage((3d10)/2,Bludgeoning)"
+data "TooltipDamageList" "DealDamage(3d10,Bludgeoning)"
+data "SpellContainerID" "RAW_FistOfUnbrokenAir"
+
+new entry "Target_FistOfUnbrokenAir_2"
+type "SpellData"
+using "Target_FistOfUnbrokenAir"
+data "SpellSuccess" "DealDamage(4d10,Bludgeoning);Force(6);ApplyStatus(PRONE,100,1)"
+data "SpellFail" "DealDamage((4d10)/2,Bludgeoning)"
+data "TooltipDamageList" "DealDamage(4d10,Bludgeoning)"
+data "UseCosts" "ActionPoint:1;KiPoint:3"
+data "SpellContainerID" "RAW_FistOfUnbrokenAir"
+data "RequirementConditions" "ClassLevelHigherOrEqualThan(5,'Monk')"
+
+new entry "Target_FistOfUnbrokenAir_3"
+type "SpellData"
+using "Target_FistOfUnbrokenAir"
+data "SpellSuccess" "DealDamage(5d10,Bludgeoning);Force(6);ApplyStatus(PRONE,100,1)"
+data "SpellFail" "DealDamage((5d10)/2,Bludgeoning)"
+data "TooltipDamageList" "DealDamage(5d10,Bludgeoning)"
+data "UseCosts" "ActionPoint:1;KiPoint:4"
+data "SpellContainerID" "RAW_FistOfUnbrokenAir"
+data "RequirementConditions" "ClassLevelHigherOrEqualThan(9,'Monk')"
+
+// Sweeping Cinder Strike
+// -> Zone_BurningHands_Monk
+new entry "Zone_BurningHands_Monk"
+type "SpellData"
+using "Zone_BurningHands_Monk"
+data "SpellProperties" "GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);TARGET:IF(Item()):ApplyStatus(BURNING,100,2);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1)"
+data "SpellSuccess" "DealDamage(LevelMapValue(BurningHands_Monk), Fire,Magical)"
+data "SpellFail" "DealDamage(LevelMapValue(BurningHands_Monk)/2, Fire,Magical)"
+data "DisplayName" "hf3c69a0agc6b0g4e79g9d03g856f0f56dca5;2"
+data "Description" "hedc3040eg8cd8g4a32g97c2g65d5e5c6c33d;1"
+data "TooltipDamageList" "DealDamage(LevelMapValue(BurningHands_Monk),Fire)"
+data "PrepareSound" "Vocal_Component_Monk_Damage"
+data "CastSound" "Spell_Cast_Monk_SweepingCinderStrike_L1to3"
+data "TargetSound" "Spell_Impact_Monk_SweepingCinderStrike_L1to3"
+data "VocalComponentSound" "Vocal_Component_Stop"
+data "UseCosts" "ActionPoint:1;KiPoint:2"
+data "SpellAnimation" "ba181bb4-331a-4e69-92af-d09bde86d835,,;,,;2c5aae21-74b6-452d-9d76-53d4c36e5ba2,,;4c923700-3192-4c7c-8009-26e1087fa91e,,;a1c2c833-b2c8-465f-a902-b6ae38f6553d,,;,,;74dead2e-d842-4d29-976a-d1cb373f7f0e,,;,,;,,"
+data "SpellStyleGroup" "Class"
+data "SpellFlags" "HasSomaticComponent;IsHarmful;CanAreaDamageEvade"
+data "PowerLevel" ""
+data "PrepareEffect" "8e955204-7c26-4ac8-8595-94f87b25ac71"
+data "CastEffect" "5aac9d6e-ca02-40d3-a59c-e1d0fc6af5c8"
+data "TargetEffect" "53412dd1-8066-4860-a2ae-b27e77bfdab5"
+
+
+// Rush of the Gale Spirits
+// -> Zone_GustOfWind_Monk
+
+
+// Shape the Flowing River
+// -> Target_ShapeTheFlowingRiver_IceBlock
+
+
+// Water Whip
+// -> Target_WaterWhip
+
+
+// Clench of the North Wind
+// -> Target_HoldPerson_Monk
+
+
+// Gong of the Summit
+// -> Target_Shatter_Monk
+
+
+// Flames of the Phoenix
+// -> Projectile_Fireball_Monk
+
+
+// Mist Stance
+// -> Shout_GaseousForm_Monk
+
+
+// Ride the Wind
+// -> Shout_Fly_Monk

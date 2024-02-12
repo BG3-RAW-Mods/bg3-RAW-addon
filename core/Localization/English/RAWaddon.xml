@@ -56,14 +56,15 @@
 	<content contentuid="b9839978-40c8-482f-993f-15454c1e3b07" version="2">Stillness of Mind (Passive)</content>
 	<content contentuid="5d129e97-1e4b-44dd-a56a-3f3dd0aa65d4" version="3">If you are &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;, you automatically cast &lt;LSTag Type="Spell" Tooltip="Shout_StillnessOfMind"&gt;Stillness of Mind&lt;/LSTag&gt; to remove the condition.</content>
 	<content contentuid="984d9c6f-f6be-4bc6-91af-317da55c5365" version="7">&lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt; doesn't slow you down while you are not wearing armour or using a shield.</content>
-	
 	<content contentuid="20e0049c-c134-46d5-afd4-f7f3685bf794" version="2">Ki Resonation (Passive)</content>
 	<content contentuid="bcf9b273-5e86-436b-94f4-b539e6495c67" version="2">Ki Resonation</content>
 	<content contentuid="d13b42e1-0793-40eb-8e47-49e12b60baef" version="3">When you hit a creature with an unarmed strike, you can spend [1] ki points to set up lethal vibrations. The vibrations are harmless unless you use &lt;LSTag Type="Spell" Tooltip="Target_KiResonation_Blast"&gt;Lesser Quivering Palm&lt;/LSTag&gt; to end them.</content>
 	<content contentuid="7789c49d-d9b0-4fd2-a88a-92055e539ef9" version="3">Set up lethal vibrations. The vibrations are harmless unless you use &lt;LSTag Type="Spell" Tooltip="Target_KiResonation_Blast"&gt;Lesser Quivering Palm&lt;/LSTag&gt; to end them.</content>
 	<content contentuid="8d1c4c37-d27f-4949-90b5-dbeff5f9a93e" version="1">Lesser Quivering Palm</content>
-	<content contentuid="156f3e5d-81fd-4447-8bcc-33da80252072" version="3">Detonate the ki of a creature &lt;LSTag Type="Status" Tooltip="KI_RESONATION"&gt;Resonating&lt;/LSTag&gt; with you. The target must make a Constitution saving throw. If it fails, it is reduced to [1] hit points. If it succeeds, it takes [2] necrotic damage.</content>
+	<content contentuid="156f3e5d-81fd-4447-8bcc-33da80252072" version="3">Detonate the ki of a creature &lt;LSTag Type="Status" Tooltip="KI_RESONATION"&gt;Resonating&lt;/LSTag&gt; with you. The target must make a Constitution saving throw. If it fails, it takes [1] necrotic damage.</content>
 	<content contentuid="c516018a-0e11-4554-a3fd-a26c6bcd4c96" version="3">The ki within the affected entity is resonating with a monk's. The monk can use &lt;LSTag Type="Spell" Tooltip="Target_KiResonation_Blast"&gt;Lesser Quivering Palm&lt;/LSTag&gt; to make it explode.</content>
+	<content contentuid="f316aa7c-6e93-4b99-ae71-83e3c67f9b0a" version="6">Cause tendrils of flame to stretch out from your fists and feet. Your reach with your unarmed strikes increases by 3m and deals fire damage for the rest of the turn. If you spend 1 ki point when the attack hits, it also deals an extra 1d10 fire damage.</content>
+	<content contentuid="f368060b-4738-4353-b142-a9aa16257a39" version="1">Deals an extra 1d10 fire damage.</content>
 
 	<!-- Astral Knowledge -->
 	<content contentuid="2733f3a2-5492-4d93-a57c-6c310b545397" version="3">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in one &lt;LSTag Tooltip="Skill"&gt;Skill&lt;/LSTag&gt; of your choice as you momentarily project your consciousness into the Astral Plane.</content>

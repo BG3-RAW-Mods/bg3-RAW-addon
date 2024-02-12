@@ -1,0 +1,45 @@
+// Thunderwave pushs 3m away, not 8
+new entry "Zone_Thunderwave"
+type "SpellData"
+using "Zone_Thunderwave"
+data "SpellSuccess" "DealDamage(2d8,Thunder,Magical);Force(3, OriginToTarget)"
+
+new entry "Zone_Thunderwave_2"
+type "SpellData"
+using "Zone_Thunderwave_2"
+data "SpellSuccess" "DealDamage(3d8,Thunder,Magical);Force(3, OriginToTarget)"
+
+new entry "Zone_Thunderwave_3"
+type "SpellData"
+using "Zone_Thunderwave_3"
+data "SpellSuccess" "DealDamage(4d8,Thunder,Magical);Force(3, OriginToTarget)"
+
+new entry "Zone_Thunderwave_4"
+type "SpellData"
+using "Zone_Thunderwave_4"
+data "SpellSuccess" "DealDamage(5d8,Thunder,Magical);Force(3, OriginToTarget)"
+
+new entry "Zone_Thunderwave_5"
+type "SpellData"
+using "Zone_Thunderwave_5"
+data "SpellSuccess" "DealDamage(6d8,Thunder,Magical);Force(3, OriginToTarget)"
+
+new entry "Zone_Thunderwave_6"
+type "SpellData"
+using "Zone_Thunderwave_6"
+data "SpellSuccess" "DealDamage(7d8,Thunder,Magical);Force(3, OriginToTarget)"
+
+new entry "Zone_Thunderwave_7"
+type "SpellData"
+using "Zone_Thunderwave_7"
+data "SpellSuccess" "DealDamage(8d8,Thunder,Magical);Force(3, OriginToTarget)"
+
+new entry "Zone_Thunderwave_8"
+type "SpellData"
+using "Zone_Thunderwave_8"
+data "SpellSuccess" "DealDamage(9d8,Thunder,Magical);Force(3, OriginToTarget)"
+
+new entry "Zone_Thunderwave_9"
+type "SpellData"
+using "Zone_Thunderwave_9"
+data "SpellSuccess" "DealDamage(10d8,Thunder,Magical);Force(3, OriginToTarget)"

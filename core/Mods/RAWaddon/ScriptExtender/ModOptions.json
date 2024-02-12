@@ -49,7 +49,11 @@
     },
     "Spells": {
         "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Spells_Concentration.txt", "Public/RAWaddon/Stats/Generated/Data/Spells_Knowledge.txt"]
+        "files": [
+            "Public/RAWaddon/Stats/Generated/Data/Spells_Concentration.txt", 
+            "Public/RAWaddon/Stats/Generated/Data/Spells_Knowledge.txt",
+            "Public/RAWaddon/Stats/Generated/Data/Spells_Misc.txt"
+        ]
     },
     "Feats": {
         "enabled": true,
