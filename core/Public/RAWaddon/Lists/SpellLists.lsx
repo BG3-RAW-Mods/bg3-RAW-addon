@@ -16,17 +16,17 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Four Elements Monk Level 3"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_FangsOfTheFireSnake;RAW_FistOfFourThunders;RAW_FistOfUnbrokenAir;Zone_GustOfWind_Monk;Target_ShapeTheFlowingRiver_IceBlock;Zone_BurningHands_Monk;Target_WaterWhip"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_FangsOfTheFireSnake;RAW_FistOfFourThunders;RAW_FistOfUnbrokenAir;Zone_GustOfWind_Monk;Target_ShapeTheFlowingRiver_IceBlock;RAW_SweepingCinderStrike;RAW_Target_WaterWhip"/>
                     <attribute id="UUID" type="guid" value="50072bc3-d182-4ea6-9f7a-0eb021ce6c86"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Four Elements Monk Level 6"/>
-                    <attribute id="Spells" type="LSString" value="Target_HoldPerson_Monk;Target_Shatter_Monk;Projectile_FangsOfTheFireSnake;RAW_FistOfFourThunders;RAW_FistOfUnbrokenAir;Zone_GustOfWind_Monk;Target_ShapeTheFlowingRiver_IceBlock;Zone_BurningHands_Monk;Target_WaterWhip"/>
+                    <attribute id="Spells" type="LSString" value="Target_HoldPerson_Monk;RAW_Target_Shatter_Monk;Projectile_FangsOfTheFireSnake;RAW_FistOfFourThunders;RAW_FistOfUnbrokenAir;Zone_GustOfWind_Monk;Target_ShapeTheFlowingRiver_IceBlock;RAW_SweepingCinderStrike;RAW_Target_WaterWhip"/>
                     <attribute id="UUID" type="guid" value="65897e6b-7863-4a0c-9c99-753a793df498"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Four Elements Monk Level 11"/>
-                    <attribute id="Spells" type="LSString" value="Projectile_Fireball_Monk;Shout_GaseousForm_Monk;Shout_Fly_Monk;Target_HoldPerson_Monk;Target_Shatter_Monk;Projectile_FangsOfTheFireSnake;RAW_FistOfFourThunders;RAW_FistOfUnbrokenAir;Zone_GustOfWind_Monk;Target_ShapeTheFlowingRiver_IceBlock;Zone_BurningHands_Monk;Target_WaterWhip"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_Fireball_Monk;Shout_GaseousForm_Monk;Shout_Fly_Monk;Target_HoldPerson_Monk;RAW_Target_Shatter_Monk;Projectile_FangsOfTheFireSnake;RAW_FistOfFourThunders;RAW_FistOfUnbrokenAir;Zone_GustOfWind_Monk;Target_ShapeTheFlowingRiver_IceBlock;RAW_SweepingCinderStrike;RAW_Target_WaterWhip"/>
                     <attribute id="UUID" type="guid" value="a279acb9-88f8-4246-83c6-146d8fc77c8a"/>
                 </node>
             </children>

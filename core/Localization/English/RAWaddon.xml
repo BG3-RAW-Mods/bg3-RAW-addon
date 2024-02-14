@@ -1,4 +1,7 @@
 ﻿<contentList date="29/12/2023 11:20">
+	<content contentuid="58686da2-ea07-4cef-97bb-acbd6fe7efdb" version="1">This ability requires Monk level 5</content>
+	<content contentuid="3dc3d8ff-d96f-4c1e-8394-7f675f6a3c17" version="1">This ability requires Monk level 9</content>
+
 	<!-- Jump -->
 	<content contentuid="h4b921d5bg6e70g455cga6fcg68c4e67f9067" version="7">Your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; or &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; increases by 1, to a maximum of 20.&lt;br&gt;&lt;br&gt;When you are Prone, standing up uses only [1] of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed.&lt;br&gt;Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance also increases by [1].</content>
 	<content contentuid="51bcb59d-133a-44df-8d68-bf8cd65fc69d" version="1">When you are &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, standing up uses only [1] of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;.&lt;br&gt;Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance is increased by [1].</content>
@@ -125,6 +128,9 @@
 	<content contentuid="7e6879de-3790-4bef-99ad-8b9288af56bc" version="1">Knowledge of the Ages: Sleight of Hand</content>
 	<content contentuid="6cbea37c-3cae-4659-8382-6a898cc37dd3" version="1">Knowledge of the Ages: Stealth</content>
 	<content contentuid="a7e155af-5186-4fda-94d0-9843963fac89" version="1">Knowledge of the Ages: Survival</content>
+
+	<!-- Gust of Wind -->
+	<content contentuid="54f1c6d9-1420-4b47-8a1a-ef6d2a33bf52" version="4">Summon a strong wind that clears all clouds and pushes creatures back [1], forcing them &lt;LSTag Type="Status" Tooltip="GUST_OF_WIND_SLOW"&gt;Slowed down&lt;/LSTag&gt;.</content>
 
 	<!-- Variant Human -->
 	<content contentuid="69a65948-edf1-4b95-ae4c-ee1fd9175270" version="1">Standard Human</content>

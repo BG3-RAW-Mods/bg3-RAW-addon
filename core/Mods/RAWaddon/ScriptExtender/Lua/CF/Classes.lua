@@ -53,6 +53,7 @@
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_7, "SelectSpells", "c841dfad-9d3b-486d-ad6b-ac3eaebc2db4"))  
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_8, "SelectSpells", "c841dfad-9d3b-486d-ad6b-ac3eaebc2db4"))  
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_9, "SelectSpells", "c841dfad-9d3b-486d-ad6b-ac3eaebc2db4"))  
+    Mods.SubclassCompatibilityFramework.Api.RemovePassives(removeString(RAW_Monk_FourElements_9, "PassivesAdded", { "ImprovedElementalCasting" }))
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_10, "SelectSpells", "c841dfad-9d3b-486d-ad6b-ac3eaebc2db4"))  
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Monk_FourElements_11, "SelectSpells", "cf014f77-4d0a-4322-a2bf-95e38b89435b"))  
     Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addSelectSpells(RAW_Monk_FourElements_11, "a279acb9-88f8-4246-83c6-146d8fc77c8a", 1, { SelectorId = "FourElements", SwapAmount = 1 }))  
