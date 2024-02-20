@@ -1,0 +1,33 @@
+new entry "Shout_WildShape_BrownBear"
+type "SpellData"
+using "Shout_WildShape_Bear_Polar"
+data "SpellProperties" "IF(ClassLevelEqual('Druid',2)):ApplyStatus(WILDSHAPE_BEAR_BROWN_PLAYER,100,-1);IF(ClassLevelEqual('Druid',3)):ApplyStatus(WILDSHAPE_BEAR_BROWN_PLAYER_2,100,-1);IF(ClassLevelHigherOrEqualThan(4,'Druid')):ApplyStatus(WILDSHAPE_BEAR_BROWN_PLAYER_3,100,-1)"
+data "Icon" "Skill_Druid_WildShape_PolarBear"
+data "DisplayName" "a1afcd4f-7713-43a3-b05f-3d59ab49291b;1"
+data "Description" "bcdd4b4d-c560-4627-984e-b4fde27ee4a9;1"
+data "ExtraDescription" "3a82397f-cdd9-4078-bd1c-6caf5518b8bf;1"
+data "ExtraDescriptionParams" "RegainHitPoints(34)"
+
+new entry "WILDSHAPE_BEAR_BROWN_PLAYER"
+type "StatusData"
+using "WILDSHAPE_BEAR_POLAR_PLAYER"
+data "DisplayName" "3921c27e-e5b9-4b0b-981c-3117e090514c;1"
+data "Boosts" "ProficiencyBonus(Skill,Perception); VoicebarkBlock();BlockSpellCast();UnlockSpell(Shout_WildShape_Dismiss);IF(HasPassive('WildShape_Combat',context.Source)):UnlockSpell(Shout_WildShape_Combat_Heal,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)"
+data "Passives" "WildShapeSpeed40;KeenSmell"
+data "TemplateID" "960a6318-3fc0-4b85-8b70-887e99ff248f"
+
+new entry "Bear_Brown_Wildshape_1"
+type "Character"
+using "Bear_Brown"
+data "Vitality" "34"
+
+new entry "Bear_Brown_Wildshape_2"
+type "Character"
+using "Bear_Brown_Wildshape_1"
+data "Vitality" "45"
+
+new entry "Bear_Brown_Wildshape_3"
+type "Character"
+using "Bear_Brown_Wildshape_1"
+data "Vitality" "52"
+

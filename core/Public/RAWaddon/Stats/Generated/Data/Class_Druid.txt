@@ -12,3 +12,4 @@ type "StatusData"
 using "SYMBIOTIC_ENTITY"
 data "Description" "49ee6ff4-0501-44da-9786-87ef4bc604b3;4"
 data "Boosts" "TemporaryHP(ClassLevel(Druid)*4);IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(1d6,Necrotic);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d6, Necrotic);IF(HasPassive('SpreadingSpores', context.Source)):UnlockSpell(Target_SpreadingSpores)"
+

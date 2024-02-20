@@ -21,6 +21,14 @@
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
                     <attribute id="UUID" type="guid" value="bfaaebe7-0cbc-401a-a2df-14c00d0a945c"/>
                 </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="b8119aa2-c1be-4429-87c2-6fe3924ae751" version="3"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="34df0c25-ed49-4e7e-83b3-2f66f9bd7a94" version="2"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="FlyMovement"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="UUID" type="guid" value="bb6388d2-2f07-413f-9e15-40b58b092a0e"/>
+                </node>
             </children>
         </node>
     </region>

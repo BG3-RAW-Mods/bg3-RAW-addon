@@ -1,0 +1,44 @@
+new entry "WildShapeSpeed30"
+type "PassiveData"
+data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,1.5,0);IF(isFasterMovementRace()):ActionResource(Movement,-1.5,0)"
+data "Properties" "IsHidden"
+
+new entry "WildShapeSpeed40"
+type "PassiveData"
+data "Boosts" "IF(isNormalMovementRace()):ActionResource(Movement,3,0);IF(isSlowerMovementRace()):ActionResource(Movement,4.5,0);IF(isFasterMovementRace()):ActionResource(Movement,1.5,0)"
+data "Properties" "IsHidden"
+
+new entry "WildShapeSpeed50"
+type "PassiveData"
+data "Boosts" "IF(isNormalMovementRace()):ActionResource(Movement,4.5,0);IF(isSlowerMovementRace()):ActionResource(Movement,6,0);IF(isFasterMovementRace()):ActionResource(Movement,3,0)"
+data "Properties" "IsHidden"
+
+new entry "Darkvision30"
+type "PassiveData"
+using "Darkvision"
+data "DescriptionParams" "Distance(9)"
+data "Boosts" "DarkvisionRangeMin(9);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989)"
+
+new entry "Darkvision60"
+type "PassiveData"
+using "Darkvision"
+data "DescriptionParams" "Distance(18)"
+data "Boosts" "DarkvisionRangeMin(18);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989)"
+
+new entry "KeenSmell"
+type "PassiveData"
+data "DisplayName" "31d7f3da-2568-420a-9d4b-de4d501cc932;1"
+data "Description" "6529ee56-ffb3-4b81-a14e-be64df4cc3b3;1"
+data "Boosts" "Advantage(Skill, Perception)"
+
+new entry "SpiderWalk"
+type "PassiveData"
+using "SpiderWalk"
+data "Boosts" "StatusImmunity(WEB);StatusImmunity(DIFFICULT_TERRAIN_WEB)"
+// SPIDER_INFESTATION
+
+new entry "PackTactics"
+type "PassiveData"
+using "PackTactics"
+data "DescriptionParams" " Distance(1.5)"
+data "Boosts" "IF(HasAllyWithinRange('SG_Incapacitated',1.5)):Advantage(AttackRoll)"

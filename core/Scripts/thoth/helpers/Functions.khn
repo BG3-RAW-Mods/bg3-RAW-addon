@@ -1,3 +1,33 @@
+function ClassLevelLessThan(class, level)
+    return ConditionResult(context.Source.GetClassLevel(class) < level)
+end
+
+function ClassLevelEqual(class, level)
+    return ConditionResult(context.Source.GetClassLevel(class) == level)
+end
+
+function ClassLevelBetween(class, levelMin, levelMax)
+    level = context.Source.GetClassLevel(class)
+    return ConditionResult(level >= levelMin and level <= levelMax)
+end
+
+function isSlowerMovementRace()
+    return HasPassive('SlowerRace',context.Source)
+end
+
+function isFasterMovementRace()
+    return HasPassive('FleetOfFoot',context.Source)
+end
+
+function isNormalMovementRace()
+    return not isSlowerMovementRace() and not isFasterMovementRace()
+end
+
+function WildShapeSaveDC(base)
+    base = base or 9
+    return base + context.Source.ProficiencyBonus
+end
+
 function MonkLevelHigherOrEqualThan(level)
     local entity = context.Source
     local error = 'RequireMonkLevel5'

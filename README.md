@@ -137,10 +137,6 @@ Concentration has been added to these spells:
 
 - Bardic Inspiration uses charisma modifier (instead of a set number)
 
-#### Druid
-
-- Symbiotic Entity, last for 10 minutes (100 turns), bonus damage only applies to melee weapons
-
 #### Rogue
 
 - Second-Story Work, adds an increased jump distance based on dexterity modifier  
@@ -220,6 +216,103 @@ Not implemented due to level limit:
 - Eternal Mountain Defense, 17th Level, 5 Ki Points, cast Stoneskin, targeting yourself.
 - River of Hungry Flame, 17th Level, 5 Ki Points, cast Wall of Fire.
 - Wave of Rolling Earth, 17th Level, 6 Ki Points, cast Wall of Stone.
+
+### Druid
+
+- Symbiotic Entity, last for 10 minutes (100 turns), bonus damage only applies to melee weapons
+
+Wildshape CR rating:
+| Level | Circle of the Moon | Other Circle |
+| ----- | ------------------ | ------------ |
+|  2    | 1                  | 1/4          |
+|  3	| 1                  | 1/4          |
+|  4	| 1					 | 1/2          |
+|  5	| 1					 | 1/2          |
+|  6	| 2					 | 1/2          |
+|  7	| 2					 | 1/2          |
+|  8	| 2					 | 1            |
+|  9	| 3					 | 1            |
+|  10	| 3					 | 1            |
+|  11	| 3					 | 1            |
+|  12	| 4					 | 1            |
+
+Note: Remember that Druids (including Moon Druids) can't take forms with a swim speed until level 4, and can’t take forms with a fly speed until level 8.
+
+Wild Shape Forms by CR:
+| CR   | Beasts                                                                               |
+| ---- | ------------------------------------------------------------------------------------ |
+| 0    | Badger, Cat, *Eagle*, *Owl*, Raven                                                   |
+| 1/4  | *Boar*, *Elk*, *Giant Wolf Spider*, Panther, *Velociraptor*, *Wolf*                  |
+| 1/2  | *Ape*, *Black Bear*, *Giant Goat*, *Warhorse*                                        |
+| 1    | *Brown Bear*, Dire Wolf, *Giant Eagle*, *Giant Hyena*, Giant Spider, *Giant vulture* |
+| 2    | *Aurochs*, *Giant Elk*, Polar Bear, *Quetzalcoatlus*, Saber-Toothed Tiger            |
+| 3    | *Ankylosaurus*, *Giant Scorpion*, *Spotted Lion*                                     |
+| 4    | *Elephant*, *Stegosaurus*                                                            |
+
+Druid Wildshape Forms by Level:
+- 2: Badger, Cat, Boar, Giant Wolf Spider, Panther, Velociraptor, Wolf
+- 8: Eagle, Raven, Owl, Giant Eagle, Giant vulture
+
+Land/Spore Wildshape Forms by Level:
+- 4: Black Bear
+- 8: Brown Bear, Dire Wolf, Giant Hyena, Giant Spider
+
+Moon Wildshape Forms by Level:
+- 2: Black Bear, Brown Bear, Dire Wolf, Giant Hyena, Giant Spider
+- 6: Polar Bear, Saber-Toothed Tiger, Giant Elk
+- 8: Quetzalcoatlus
+- 9: Ankylosaurus, Spotted Lion, Owlbear (if kept)
+- 12: Stegosaurus
+
+###  Shape Hit Points
+
+PHB have HP dices and an average number.
+Wild Shapes will now get hit points between average number set by PHB and their full hit dices.
+
+| Shape                    | HP      | L1 | L2 | L3 |
+| ------------------------ | ------- | -- | -- | -- |
+| Badger                   | 2d8+4   | 13 | 16 | 20 |
+| Cat                      | 1d4     | 2  | 4  |    |
+| Giant Wolf Spider        | 2d8+2   | 11 | 14 | 18 |
+| Velociraptor             | 3d4+3   | 10 | 12 | 15 |
+| Wolf                     | 2d8+2   | 11 | 14 | 18 |
+| Panther                  | 3d8     | 13 | 18 | 24 |
+| Black Bear               | 3d8+6   | 19 | 24 | 30 |
+| Brown Bear               | 4d10+12 | 34 | 45 | 52 |
+| Polar Bear               | 5d10+15 | 42 | 53 | 65 |
+
+
+
+Shout_WildShape_Badger 47263893-8aab-48f1-96ad-13907d1e23e8 Badger_Giant_Wildshape
+Shout_WildShape_Bear_Polar 960a6318-3fc0-4b85-8b70-887e99ff248f Bear_Polar_Wildshape
+Shout_WildShape_Cat 398887ea-5013-4c9b-8f89-37f44efef8dc Familiar_Cat
+Shout_WildShape_Spider e0e6f504-8114-46c8-834a-186466edbd87 Spider_Giant_Wildshape
+Shout_WildShape_Wolf_Dire 71e2c062-fdf8-40c7-88d7-05ef57cdff41 Wolf_Dire_Wildshape
+Shout_WildShape_Raven 6c2fc745-20b3-44c0-9032-97e97a5368eb Companion_Raven
+Shout_WildShape_DeepRothe 201de8c4-a88a-45b8-abb4-1ee67df8bf81 Deep_Rothe_WildShape
+Shout_Wildshape_Panther e7780038-d09c-48e1-8bb8-db86538a3cb9 Wildshape_Panther
+Shout_WildShape_Owlbear 92467fe9-2452-47f4-8c19-59883cca6dc5 Wildshape_Owlbear
+Shout_Wildshape_SaberTooth_Tiger 007a0a64-d763-4daf-9697-21765a4c2d4d Wildshape_SaberTooth_Tiger
+Shout_WildShape_Dilophosaurus fca74933-fb42-45c0-af31-c9f806368453 Dilophosaurus_Wildshape
+Shout_WildShape_Myrmidon_Air 3feb7490-c75e-446a-b8af-d459a164a0a6 Air_Myrmidon_Wildshape
+Shout_WildShape_Myrmidon_Earth 86b5ed60-c0a8-41d0-88a5-ed77985820eb Earth_Myrmidon_WIldshape
+Shout_WildShape_Myrmidon_Fire 9c5e77bc-0e65-4c11-865a-46d892cc06fe Fire_Myrmidon_Wildshape
+Shout_WildShape_Myrmidon_Water 6c9ea298-14dd-4485-ac3c-fdf818f6b110 Water_Myrmidon_Wildshape
+
+Boar -> new entry "Boar"
+Black Bear -> new entry "Bear_Black"
+Brown Bear -> new entry "Bear_Brown"
+Eagle -> new entry "Eagle"
+Giant Eagle -> new entry "GiantEagle"
+Giant Hyena -> based on: new entry "Hyena"
+Giant Wolf -> new entry "Spider_GiantWolf"
+Giant vulture -> new entry "Vulture_Giant"
+Giant Elk -> replace Deep Rothe
+Wolf -> new entry "Wolf"
+Ankylosaurus -> replace "Dilophosaurus"
+Stegosaurus -> maybe based on: new entry "Dilophosaurus"
+Spotted Lion -> based on: Panther or SaberTooth_Tiger
+
 
 ### Weapon fixes
 
@@ -396,39 +489,9 @@ Many high level class abilities were introduced in the game, either in their tru
 Following RAW, I have removed all of them. But it could be an optional rule. 
 Also, it seem to be a random pick, maybe based on class performance. Draconic Sorcerer got his Wings at level 11 instead of 14, but Evocation Wizard didn't get Overchannel which is also a level 14 ability.
 
-### Druid
-
-Wildshape CR rating:
-| Level | Circle of the Moon | Other Circle |
-| ----- | ------------------ | ------------ |
-|  2    | 1                  | 1/4          |
-|  3	| 1                  | 1/4          |
-|  4	| 1					 | 1/2          |
-|  5	| 1					 | 1/2          |
-|  6	| 2					 | 1/2          |
-|  7	| 2					 | 1/2          |
-|  8	| 2					 | 1            |
-|  9	| 3					 | 1            |
-|  10	| 3					 | 1            |
-|  11	| 3					 | 1            |
-|  12	| 4					 | 1            |
-
-Note: Remember that Druids (including Moon Druids) can't take forms with a swim speed until level 4, and can’t take forms with a fly speed until level 8.
-
-Wild Shape Forms by CR:
-| CR   | Beasts                                                                       |
-| ---- | ---------------------------------------------------------------------------- |
-| 0    | Badger, Cat, Eagle, Owl, Raven                                               |
-| 1/4  | Boar, Elk, Giant Wolf Spider, Panther, Velociraptor, Wolf                    |
-| 1/2  | Ape, Black Bear, Giant Goat, Warhorse                                        |
-| 1    | Brown Bear, Dire Wolf, Giant Eagle, Giant Hyena, Giant Spider, Giant vulture |
-| 2    | Aurochs, Giant Elk, Polar Bear, Quetzalcoatlus, Saber-Toothed Tiger          |
-| 3    | Ankylosaurus, Giant Scorpion, Spotted Lion                                   |
-| 4    | Elephant, Stegosaurus                                                        |
-
 ## Credits
 
-- BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats, hinikuya, JuuM)
+- BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats, hinikuya, JuuM, GabeCamomescro)
 - Zerd for RAW which gave me inspiration and its config system
 - Community Library and Compatibility Framework
 - jellytajm for Monk SlowFall damage reduction

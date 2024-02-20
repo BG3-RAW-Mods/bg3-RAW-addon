@@ -164,4 +164,43 @@
 
 	<!-- Dodge -->
 	<content contentuid="068aecf0-a0cf-4f96-89f7-01e660505685" version="4">Focusing on avoiding attacks.&lt;br&gt;&lt;Br&gt;&lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against the affected entity have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt;, and the entity has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Dexterity &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. You lose this benefit if you are incapacitated or immobilized.</content>
+
+	<!-- Fleet of Foot -->
+	<content contentuid="2052b83c-beda-41ba-90a8-4fda3fd1d773" version="1">Fleet of Foot</content>
+	<content contentuid="a3511086-e32d-4a18-baa8-c7477bff365c" version="1">Your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is increased by [1].</content>
+
+	<!-- Slower Race -->
+	<content contentuid="12c27790-88d2-44fb-92cc-806373422cad" version="1">Slower Race</content>
+	<content contentuid="1871a9cf-7ac4-4823-a517-3783c5595790" version="1">Your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is decreased by [1].</content>
+
+	<!-- Fly -->
+	<content contentuid="b8119aa2-c1be-4429-87c2-6fe3924ae751" version="3">Flying speed determines how far you can fly per turn.</content>
+	<content contentuid="34df0c25-ed49-4e7e-83b3-2f66f9bd7a94" version="2">Flying Speed</content>
+
+	<!-- Wild Shape -->
+	<content contentuid="74d62c40-f14c-4757-86d9-1944d9ab625b" version="1">Wild Shape: Boar</content>
+	<content contentuid="a0f4b0e7-2477-4781-b9c2-15a9f150c4f5" version="1">Wild Shape: Giant Wolf Spider</content>
+	<content contentuid="90b83c34-89d1-4f2b-aaa4-a35ad6216d1f" version="1">Wild Shape: Velociraptor</content>
+	<content contentuid="7273b0bc-0e81-40d9-b2c7-2d21163f8ee2" version="1">Wild Shape: Wolf</content>
+	<content contentuid="3921c27e-e5b9-4b0b-981c-3117e090514c" version="1">Wild Shape: Black Bear</content>
+	<content contentuid="dfddcb90-02e4-4ea5-90d0-a829d8a3a5d4" version="1">Wild Shape: Eagle</content>
+	<content contentuid="1250091b-7b3b-4686-9779-5f339d7eaefa" version="1">Wild Shape: Owl</content>
+	<content contentuid="4a1ebd4f-21c8-4e02-892e-2835cb6903ab" version="1">Wild Shape: Giant Eagle</content>
+	<content contentuid="7c9f6e42-3bca-45ad-a63c-2654941d5b4e" version="1">Wild Shape: Giant Vulture</content>
+	<content contentuid="a1afcd4f-7713-43a3-b05f-3d59ab49291b" version="1">Wild Shape: Brown Bear</content>
+	<content contentuid="12127fc6-8ef6-4b63-93b9-c678e8a0c790" version="1">Wild Shape: Giant Hyena</content>
+	<content contentuid="31d7f3da-2568-420a-9d4b-de4d501cc932" version="1">Keen Smell</content>
+	<content contentuid="6529ee56-ffb3-4b81-a14e-be64df4cc3b3" version="1">You have advantage on Wisdom (Perception) checks that rely on smell.</content>
+	<content contentuid="3a82397f-cdd9-4078-bd1c-6caf5518b8bf" version="1">It has a starting health of [1] that increases at some levels.</content>
+	<content contentuid="66b59886-ea1c-4660-b398-b1ca1dc5e352" version="1">Take the shape of a giant badger that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_GiantBadger_Wildshape"&gt;multi-attack&lt;/LSTag&gt;.</content>
+	<content contentuid="8304e92c-6ea4-4565-9fed-343f6cce7be0" version="1">Take the shape of a cat.</content>
+	<content contentuid="50a94ba5-8ceb-4cac-801d-f1c524d7d5b8" version="1">Take the shape of a wolf that can knock &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+	<content contentuid="1ff13628-ec31-4a0b-95f5-9634af6ee857" version="1">Take the shape of a giant spider that can &lt;LSTag Type="Status" Tooltip="GIANT_WOLFSPIDER_POISON"&gt;poison&lt;/LSTag&gt; its target.</content>
+	<content contentuid="bcdd4b4d-c560-4627-984e-b4fde27ee4a9" version="1">Take the shape of a velociraptor that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Velociraptor_Wildshape"&gt;multi-attack&lt;/LSTag&gt;. It has [1].</content>
+	<content contentuid="b9797ae6-2e02-430b-9a66-9d66cab97f29" version="1">Take the shape of a panther that can &lt;LSTag Type="Spell" Tooltip="Projectile_Pounce_Panther_Summon"&gt;Pounce&lt;/LSTag&gt; its target and knock it &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>	
+	<content contentuid="7f55d4c8-9d57-4934-809b-3879716a720f" version="1">Bite a target and knock it &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+	<content contentuid="45821c16-b5f3-4d08-9da4-7d2fc1f4d42b" version="1">Bite a target and apply &lt;LSTag Type="Status" Tooltip="GIANT_WOLFSPIDER_POISON"&gt;Spider Venom&lt;/LSTag&gt;.</content>
+	<content contentuid="ba6fb6d5-b99f-46c0-b3c9-e5441983a96a" version="1">Spider Venom</content>
+	<content contentuid="b1c27a4d-1e6d-4a0f-932f-a2ebe683448f" version="1">Target must make a DC 11 Constitution saving throw, taking [1] poison damage on a failed save, or half as much damage on a successful one.</content>
+	<content contentuid="a5c16db7-6e7f-4718-a2ee-3a6d8c5c6323" version="1">Leap at a target to hit it with a claw attack and knock it &lt;LSTag Type="Status" Tooltip="PANTHER_POUNCE"&gt;Prone&lt;/LSTag&gt;.</content>
 </contentList>

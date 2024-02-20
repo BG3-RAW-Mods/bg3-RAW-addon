@@ -1,4 +1,4 @@
-local modOptionsFile = "modOptions.json"
+local modOptionsFile = "ModOptions.json"
 
 local function RAW_LoadUserOptions()
     RAW_Print("Searching for User "..modOptionsFile)

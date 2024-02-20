@@ -85,6 +85,23 @@
                     <attribute id="TableUUID" type="guid" value="759a89aa-1d96-4a32-ae18-48cafe4dd413"/>
                     <attribute id="UUID" type="guid" value="48aa4dbd-ce68-4b9f-b7c5-25965d5bc3bf"/>
                 </node>
+
+                <!-- Classes missing levels -->
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="CircleOfTheLand"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ba1f14d6-d40b-47ce-b071-91b491d87b27"/>
+                    <attribute id="UUID" type="guid" value="a16d20fb-4d37-49c8-895b-fbba9bfeecb6"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="CircleOfTheSpores"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="288c9d1e-ab18-46dd-8fa3-d4fcfa44147a"/>
+                    <attribute id="UUID" type="guid" value="99bf5dbe-d978-4cd1-a4a1-c2d63a9f7bb3"/>
+                </node>
+
             </children>
         </node>
     </region>
