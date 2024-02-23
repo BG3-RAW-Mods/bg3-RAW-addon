@@ -10,15 +10,9 @@
         "files": [
             "Public/RAWaddon/Stats/Generated/Data/Class_Bard.txt",
             "Public/RAWaddon/Stats/Generated/Data/Class_Cleric.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Druid.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Monk.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Monk_FourElements.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Monk_OpenHand.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Monk_Shadow.txt",
             "Public/RAWaddon/Stats/Generated/Data/Class_Rogue.txt",
             "Public/RAWaddon/Stats/Generated/Data/Class_Sorcerer.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Warlock.txt",
-            "Public/RAWaddon/Levelmaps/MartialArts.lsx"
+            "Public/RAWaddon/Stats/Generated/Data/Class_Warlock.txt"
         ]
     },
     "Encumbrance": {

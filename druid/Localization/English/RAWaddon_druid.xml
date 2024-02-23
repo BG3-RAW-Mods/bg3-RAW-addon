@@ -1,0 +1,36 @@
+﻿<contentList date="29/12/2023 11:20">
+	<content contentuid="49ee6ff4-0501-44da-9786-87ef4bc604b3" version="4">Affected entity has gained [1].&lt;br&gt;&lt;br&gt;As long as it has its &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt;, its melee weapon attacks and unarmed strikes deal an additional [2], and it deals double damage with &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Ends early if the entity uses &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wild Shape&lt;/LSTag&gt;.</content>
+
+	<!-- Wild Shape -->
+	<content contentuid="a0f4b0e7-2477-4781-b9c2-15a9f150c4f5" version="1">Wild Shape: Giant Wolf Spider</content>
+	<content contentuid="90b83c34-89d1-4f2b-aaa4-a35ad6216d1f" version="1">Wild Shape: Velociraptor</content>
+	<content contentuid="7273b0bc-0e81-40d9-b2c7-2d21163f8ee2" version="1">Wild Shape: Wolf</content>
+	<content contentuid="f1b99a96-6a91-431e-9a7d-cff833434aa7" version="1">Wild Shape: Dire Wolf</content>
+	<content contentuid="dfddcb90-02e4-4ea5-90d0-a829d8a3a5d4" version="1">Wild Shape: Eagle</content>
+	<content contentuid="1250091b-7b3b-4686-9779-5f339d7eaefa" version="1">Wild Shape: Owl</content>
+	<content contentuid="4a1ebd4f-21c8-4e02-892e-2835cb6903ab" version="1">Wild Shape: Giant Eagle</content>
+	<content contentuid="7c9f6e42-3bca-45ad-a63c-2654941d5b4e" version="1">Wild Shape: Giant Vulture</content>
+	<content contentuid="12127fc6-8ef6-4b63-93b9-c678e8a0c790" version="1">Wild Shape: Giant Hyena</content>
+	<content contentuid="3921c27e-e5b9-4b0b-981c-3117e090514c" version="1">Wild Shape: Black Bear</content>
+	<content contentuid="a1afcd4f-7713-43a3-b05f-3d59ab49291b" version="1">Wild Shape: Brown Bear</content>
+	<content contentuid="65e4a1ac-612f-430c-8b9f-e345f94f14b1" version="1">Wild Shape: Polar Bear</content>
+	<content contentuid="31d7f3da-2568-420a-9d4b-de4d501cc932" version="1">Keen Smell</content>
+	<content contentuid="6529ee56-ffb3-4b81-a14e-be64df4cc3b3" version="1">You have advantage on Wisdom (Perception) checks that rely on smell.</content>
+	<content contentuid="3a82397f-cdd9-4078-bd1c-6caf5518b8bf" version="1">It has a starting health of [1] that increases at some levels.</content>
+	<content contentuid="66b59886-ea1c-4660-b398-b1ca1dc5e352" version="1">Take the shape of a giant badger that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_GiantBadger_Wildshape"&gt;multi-attack&lt;/LSTag&gt;.</content>
+	<content contentuid="8304e92c-6ea4-4565-9fed-343f6cce7be0" version="1">Take the shape of a cat.</content>
+	<content contentuid="50a94ba5-8ceb-4cac-801d-f1c524d7d5b8" version="1">Take the shape of a wolf that can knock &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+	<content contentuid="1542f11a-539f-4d4b-9dc4-72e2f67cbaeb" version="1">Take the shape of a dire wolf that can knock &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+	<content contentuid="1ff13628-ec31-4a0b-95f5-9634af6ee857" version="1">Take the shape of a giant spider that can &lt;LSTag Type="Status" Tooltip="GIANT_WOLFSPIDER_POISON"&gt;poison&lt;/LSTag&gt; its target.</content>
+	<content contentuid="bcdd4b4d-c560-4627-984e-b4fde27ee4a9" version="1">Take the shape of a velociraptor that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Velociraptor_Wildshape"&gt;multi-attack&lt;/LSTag&gt;. It has [1].</content>
+	<content contentuid="b9797ae6-2e02-430b-9a66-9d66cab97f29" version="1">Take the shape of a panther that can &lt;LSTag Type="Spell" Tooltip="Projectile_Pounce_Panther_Summon"&gt;Pounce&lt;/LSTag&gt; its target and knock it &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>	
+	<content contentuid="ae5baad1-3e70-4778-bae7-a7fa7b19a689" version="1">Take the shape of a black bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_GiantBadger_Wildshape"&gt;multi-attack&lt;/LSTag&gt;.</content>
+	<content contentuid="d052097b-6272-494e-8a50-6766a6bdfbf1" version="1">Take the shape of a brown bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_GiantBadger_Wildshape"&gt;multi-attack&lt;/LSTag&gt;.</content>
+	<content contentuid="0656b77e-666c-44d7-ab4a-c1bca4c49163" version="1">Take the shape of a polar bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_GiantBadger_Wildshape"&gt;multi-attack&lt;/LSTag&gt;.</content>
+	<content contentuid="7f55d4c8-9d57-4934-809b-3879716a720f" version="1">Bite a target and knock it &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
+	<content contentuid="45821c16-b5f3-4d08-9da4-7d2fc1f4d42b" version="1">Bite a target and apply &lt;LSTag Type="Status" Tooltip="GIANT_WOLFSPIDER_POISON"&gt;Spider Venom&lt;/LSTag&gt;.</content>
+	<content contentuid="ba6fb6d5-b99f-46c0-b3c9-e5441983a96a" version="1">Spider Venom</content>
+	<content contentuid="b1c27a4d-1e6d-4a0f-932f-a2ebe683448f" version="1">Target must make a DC 11 Constitution saving throw, taking [1] poison damage on a failed save, or half as much damage on a successful one.</content>
+	<content contentuid="a5c16db7-6e7f-4718-a2ee-3a6d8c5c6323" version="1">Leap at a target to hit it with a claw attack and knock it &lt;LSTag Type="Status" Tooltip="PANTHER_POUNCE"&gt;Prone&lt;/LSTag&gt;.</content>
+	<content contentuid="f0981b84-ce2a-4b48-9643-5051a4799f60" version="1">When a creature &lt;LSTag Tooltip="Downed"&gt;downs&lt;/LSTag&gt; another creature with a melee attack, it can use a bonus action to move up to half its &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; and make a bite attack.</content>
+</contentList>

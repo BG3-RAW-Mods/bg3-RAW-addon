@@ -101,6 +101,20 @@
                     <attribute id="TableUUID" type="guid" value="288c9d1e-ab18-46dd-8fa3-d4fcfa44147a"/>
                     <attribute id="UUID" type="guid" value="99bf5dbe-d978-4cd1-a4a1-c2d63a9f7bb3"/>
                 </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="CircleOfTheMoon"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ede8583c-434b-4fb2-87a8-af8e0e239d62"/>
+                    <attribute id="UUID" type="guid" value="2177aef6-bb11-47ad-8af6-7dd17440c2a1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="CircleOfTheMoon"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="ede8583c-434b-4fb2-87a8-af8e0e239d62"/>
+                    <attribute id="UUID" type="guid" value="accf4513-af8b-41b5-9c8a-c3b486c966f9"/>
+                </node>
 
             </children>
         </node>

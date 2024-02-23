@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="300"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Land/Spore Druid Wild Shape Level 2"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape;Shout_WildShape_GiantBadger;Shout_WildShape_Cat;Shout_WildShape_GiantWolfSpider;Shout_Wildshape_Panther;Shout_WildShape_Velociraptor;Shout_WildShape_Wolf"/>
+                    <attribute id="UUID" type="guid" value="cd642852-24d9-4742-b3dd-6993e8273bb3"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Land/Spore Druid Wild Shape Level 4"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_BlackBear"/>
+                    <attribute id="UUID" type="guid" value="c88217eb-d468-4df4-b9c0-fb837d4b7037"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Land/Spore Druid Wild Shape Level 8"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_DireWolf;Shout_WildShape_GiantSpider;Shout_WildShape_BrownBear;Shout_WildShape_GiantHyena"/>
+                    <attribute id="UUID" type="guid" value="33759e59-fa4d-4247-91f2-1e98ae97f285"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Druid Flying Wild Shape"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_Raven;Shout_WildShape_Eagle;Shout_WildShape_Owl;Shout_WildShape_GiantEagle;Shout_WildShape_GiantVulture"/>
+                    <attribute id="UUID" type="guid" value="fb4db188-e2ed-467b-a8f5-ec6a3fe47dca"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Moon Druid Wild Shape Level 2"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape;Shout_WildShape_GiantBadger;Shout_WildShape_Cat;Shout_Wildshape_Panther;Shout_WildShape_Velociraptor;Shout_WildShape_Wolf_Dire;Shout_WildShape_GiantSpider;Shout_WildShape_BrownBear;Shout_WildShape_GiantHyena"/>
+                    <attribute id="UUID" type="guid" value="eab46c7c-c5f2-4534-a0f1-71dffaa6fc8e"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Moon Druid Wild Shape Level 6"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_Bear_Polar;Shout_Wildshape_SaberTooth_Tiger;Shout_WildShape_DeepRothe"/>
+                    <attribute id="UUID" type="guid" value="1a66f9f7-9898-4e29-a62b-75fb07581719"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Moon Druid Wild Shape Level 8"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_Quetzalcoatlus"/>
+                    <attribute id="UUID" type="guid" value="015e0546-d3dd-4cc1-8727-dfe8a6875a4f"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Moon Druid Wild Shape Level 9"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_Ankylosaurus;Shout_WildShape_SpottedLion;Shout_WildShape_Owlbear"/>
+                    <attribute id="UUID" type="guid" value="1ae6fd0e-366c-46ae-932c-d2c745b43a5e"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Moon Druid Wild Shape Level 12"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_Stegosaurus"/>
+                    <attribute id="UUID" type="guid" value="cfdf8d6b-2fca-4992-af0e-e4a4ee318060"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

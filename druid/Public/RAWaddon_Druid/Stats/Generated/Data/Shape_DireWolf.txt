@@ -1,0 +1,75 @@
+new entry "Shout_WildShape_Wolf_Dire"
+type "SpellData"
+using "Shout_WildShape_Wolf_Dire"
+data "SpellProperties" "IF(DruidLevelEqual(2)):ApplyStatus(WILDSHAPE_WOLF_DIRE_PLAYER,100,-1);IF(DruidLevelEqual(3)):ApplyStatus(WILDSHAPE_WOLF_DIRE_PLAYER_2,100,-1);IF(DruidLevelEqual(4)):ApplyStatus(WILDSHAPE_WOLF_DIRE_PLAYER_3,100,-1);IF(DruidLevelEqual(5)):ApplyStatus(WILDSHAPE_WOLF_DIRE_PLAYER_4,100,-1);IF(DruidLevelHigherOrEqualThan(8,6)):ApplyStatus(WILDSHAPE_WOLF_DIRE_PLAYER_5,100,-1)"
+data "DisplayName" "f1b99a96-6a91-431e-9a7d-cff833434aa7;1"
+data "Description" "1542f11a-539f-4d4b-9dc4-72e2f67cbaeb;1"
+data "ExtraDescription" "3a82397f-cdd9-4078-bd1c-6caf5518b8bf;1"
+data "ExtraDescriptionParams" "RegainHitPoints(20)"
+
+new entry "WILDSHAPE_WOLF_DIRE_PLAYER"
+type "StatusData"
+using "WILDSHAPE_WOLF_DIRE_PLAYER"
+data "DisplayName" "f1b99a96-6a91-431e-9a7d-cff833434aa7;1"
+data "Boosts" "ProficiencyBonus(Skill,Perception);ProficiencyBonus(Skill,Stealth); VoicebarkBlock();BlockSpellCast();UnlockSpell(Shout_WildShape_Dismiss);IF(isMoonDruid()):UnlockSpell(Shout_WildShape_Combat_Heal,AddChildren,d136c5d9-0ff0-43da-acce-a74a07f8d6bf)"
+data "Passives" "WildShapeSpeed50;PackTactics"
+data "TemplateID" "6cf58b80-97b2-4e9d-b5ae-d92beec7ba2a"
+
+new entry "WILDSHAPE_WOLF_DIRE_PLAYER_2"
+type "StatusData"
+using "WILDSHAPE_WOLF_DIRE_PLAYER"
+data "TemplateID" "df429573-e479-45c1-ac65-8bf3ed879e3e"
+
+new entry "WILDSHAPE_WOLF_DIRE_PLAYER_3"
+type "StatusData"
+using "WILDSHAPE_WOLF_DIRE_PLAYER"
+data "TemplateID" "2dbf7ea1-1ac6-46fd-b2da-661946c01bae"
+
+new entry "WILDSHAPE_WOLF_DIRE_PLAYER_4"
+type "StatusData"
+using "WILDSHAPE_WOLF_DIRE_PLAYER"
+data "TemplateID" "09c08275-a107-4ace-bee9-2ce4821fdde7"
+
+new entry "WILDSHAPE_WOLF_DIRE_PLAYER_5"
+type "StatusData"
+using "WILDSHAPE_WOLF_DIRE_PLAYER"
+data "TemplateID" "ed8df25e-bd8d-4c30-81e9-610fb2c7632f"
+
+new entry "Wolf_Dire"
+type "Character"
+using "Wolf_Dire"
+data "Armor" "14"
+
+new entry "DireWolf_Wildshape_Player_1"
+type "Character"
+using "Wolf_Dire"
+data "Vitality" "20"
+
+new entry "DireWolf_Wildshape_Player_2"
+type "Character"
+using "DireWolf_Wildshape_Player_1"
+data "Vitality" "30"
+
+new entry "DireWolf_Wildshape_Player_3"
+type "Character"
+using "DireWolf_Wildshape_Player_1"
+data "Vitality" "40"
+
+new entry "DireWolf_Wildshape_Player_4"
+type "Character"
+using "DireWolf_Wildshape_Player_1"
+data "Vitality" "50"
+
+new entry "DireWolf_Wildshape_Player_5"
+type "Character"
+using "DireWolf_Wildshape_Player_1"
+data "Vitality" "60"
+
+new entry "Target_Bite_Wolf_Dire"
+type "SpellData"
+using "Target_Bite_Wolf_Dire"
+data "SpellSuccess" "IF(not HasPassive('PrimalStrike',context.Source)):DealDamage(2d6+UnarmedMeleeAbilityModifier,Piercing);IF(HasPassive('PrimalStrike',context.Source))::DealDamage(2d6+UnarmedMeleeAbilityModifier,Piercing,Magical);IF(not SavingThrow(Ability.Strength,WildShapeSaveDC(11))):ApplyStatus(PRONE,100,1)"
+data "TooltipDamageList" "DealDamage(2d6+UnarmedMeleeAbilityModifier,Piercing)"
+data "TooltipStatusApply" "ApplyStatus(PRONE,100,1)"
+
+

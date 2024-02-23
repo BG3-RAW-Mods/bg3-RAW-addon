@@ -1,14 +1,73 @@
-function ClassLevelLessThan(class, level)
-    return ConditionResult(context.Source.GetClassLevel(class) < level)
+function RawClassLevelLessThan(class, level, entity)
+    local entity = entity or context.Source
+    return ConditionResult(entity.GetClassLevel(class) < level)
 end
 
-function ClassLevelEqual(class, level)
-    return ConditionResult(context.Source.GetClassLevel(class) == level)
+function RawClassLevelLesserOrEqualThan(class, level, entity)
+    local entity = entity or context.Source
+    return ConditionResult(entity.GetClassLevel(class) <= level)
 end
 
-function ClassLevelBetween(class, levelMin, levelMax)
-    level = context.Source.GetClassLevel(class)
+function RawClassLevelHigherOrEqualThan(class, level, entity)
+    local entity = entity or context.Source
+    return ConditionResult(entity.GetClassLevel(class) >= level)
+end
+
+function RawClassLevelEqual(class, level, entity)
+    local entity = entity or context.Source
+    return ConditionResult(entity.GetClassLevel(class) == level)
+end
+
+function RawClassLevelBetween(class, levelMin, levelMax, entity)
+    local entity = entity or context.Source
+    level = entity.GetClassLevel(class)
     return ConditionResult(level >= levelMin and level <= levelMax)
+end
+
+function isMoonDruid(entity)
+    local entity = entity or context.Source
+    return HasPassive('WildShape_Combat',entity)
+end
+
+function DruidLevelLessThan(level, moonLevel)
+    local moonLevel = moonLevel or level
+    if isMoonDruid().Result then
+        return RawClassLevelLessThan('Druid',moonLevel)
+    end
+    return RawClassLevelLessThan('Druid',level)
+end
+
+function DruidLevelLesserOrEqualThan(level, moonLevel)
+    local moonLevel = moonLevel or level
+    if isMoonDruid().Result then
+        return RawClassLevelLesserOrEqualThan('Druid',moonLevel)
+    end
+    return RawClassLevelLesserOrEqualThan('Druid',level)
+end
+
+function DruidLevelHigherOrEqualThan(level, moonLevel)
+    local moonLevel = moonLevel or level
+    if isMoonDruid().Result then
+        return RawClassLevelHigherOrEqualThan('Druid',moonLevel)
+    end
+    return RawClassLevelHigherOrEqualThan('Druid',level)
+end
+
+function DruidLevelEqual(leve, moonLevel)
+    local moonLevel = moonLevel or level
+    if isMoonDruid().Result then
+        return RawClassLevelEqual('Druid',moonLevel)
+    end
+    return RawClassLevelEqual('Druid',level)
+end
+
+function DruidLevelBetween(levelMin, levelMax, moonLevelMin, moonLevelMax)
+    local moonLevelMin = moonLevelMin or level
+    local moonLevelMax = moonLevelMax or level
+    if isMoonDruid().Result then
+        return RawClassLevelBetween('Druid',moonLevelMin,moonLevelMax)
+    end
+    return RawClassLevelBetween('Druid',levelMin,levelMax)
 end
 
 function isSlowerMovementRace()
