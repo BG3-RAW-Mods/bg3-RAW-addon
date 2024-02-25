@@ -1,7 +1,13 @@
-new entry "Shout_WildShape"
+new entry "Shout_WildShape_Action"
 type "SpellData"
 using "Shout_WildShape"
-data "ContainerSpells" "Shout_WildShape_Badger;Shout_WildShape_Cat;Shout_WildShape_Boar;Shout_WildShape_GiantWolfSpider;Shout_Wildshape_Panther;Shout_WildShape_Velociraptor;Shout_WildShape_Wolf"
+data "ContainerSpells" "Shout_WildShape_Action_GiantBadger;Shout_WildShape_Action_Cat;Shout_WildShape_Action_Spider;Shout_Wildshape_Action_Panther;Shout_WildShape_Action_Velociraptor"
+
+new entry "Shout_WildShape_BonusAction"
+type "SpellData"
+using "Shout_WildShape"
+data "ContainerSpells" "Shout_WildShape_BonusAction_GiantBadger;Shout_WildShape_BonusAction_Cat;Shout_WildShape_BonusAction_GiantWolfSpider;Shout_Wildshape_BonusAction_Panther;Shout_WildShape_BonusAction_Velociraptor"
+data "UseCosts" "BonusActionPoint:1;WildShape:1"
 
 // new entry "Shout_WildShape_Eagle"
 // type "SpellData"

@@ -24,52 +24,6 @@ function RawClassLevelBetween(class, levelMin, levelMax, entity)
     return ConditionResult(level >= levelMin and level <= levelMax)
 end
 
-function isMoonDruid(entity)
-    local entity = entity or context.Source
-    return HasPassive('WildShape_Combat',entity)
-end
-
-function DruidLevelLessThan(level, moonLevel)
-    local moonLevel = moonLevel or level
-    if isMoonDruid().Result then
-        return RawClassLevelLessThan('Druid',moonLevel)
-    end
-    return RawClassLevelLessThan('Druid',level)
-end
-
-function DruidLevelLesserOrEqualThan(level, moonLevel)
-    local moonLevel = moonLevel or level
-    if isMoonDruid().Result then
-        return RawClassLevelLesserOrEqualThan('Druid',moonLevel)
-    end
-    return RawClassLevelLesserOrEqualThan('Druid',level)
-end
-
-function DruidLevelHigherOrEqualThan(level, moonLevel)
-    local moonLevel = moonLevel or level
-    if isMoonDruid().Result then
-        return RawClassLevelHigherOrEqualThan('Druid',moonLevel)
-    end
-    return RawClassLevelHigherOrEqualThan('Druid',level)
-end
-
-function DruidLevelEqual(leve, moonLevel)
-    local moonLevel = moonLevel or level
-    if isMoonDruid().Result then
-        return RawClassLevelEqual('Druid',moonLevel)
-    end
-    return RawClassLevelEqual('Druid',level)
-end
-
-function DruidLevelBetween(levelMin, levelMax, moonLevelMin, moonLevelMax)
-    local moonLevelMin = moonLevelMin or level
-    local moonLevelMax = moonLevelMax or level
-    if isMoonDruid().Result then
-        return RawClassLevelBetween('Druid',moonLevelMin,moonLevelMax)
-    end
-    return RawClassLevelBetween('Druid',levelMin,levelMax)
-end
-
 function isSlowerMovementRace()
     return HasPassive('SlowerRace',context.Source)
 end
@@ -80,11 +34,6 @@ end
 
 function isNormalMovementRace()
     return not isSlowerMovementRace() and not isFasterMovementRace()
-end
-
-function WildShapeSaveDC(base)
-    base = base or 9
-    return base + context.Source.ProficiencyBonus
 end
 
 function MonkLevelHigherOrEqualThan(level)

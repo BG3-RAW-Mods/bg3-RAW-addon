@@ -5,12 +5,17 @@ data "Properties" "IsHidden"
 
 new entry "WildShapeSpeed40"
 type "PassiveData"
-data "Boosts" "IF(isNormalMovementRace()):ActionResource(Movement,3,0);IF(isSlowerMovementRace()):ActionResource(Movement,4.5,0);IF(isFasterMovementRace()):ActionResource(Movement,1.5,0)"
+data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,4.5,0);IF(isFasterMovementRace()):ActionResource(Movement,1.5,0);IF(isNormalMovementRace()):ActionResource(Movement,3,0)"
 data "Properties" "IsHidden"
 
 new entry "WildShapeSpeed50"
 type "PassiveData"
-data "Boosts" "IF(isNormalMovementRace()):ActionResource(Movement,4.5,0);IF(isSlowerMovementRace()):ActionResource(Movement,6,0);IF(isFasterMovementRace()):ActionResource(Movement,3,0)"
+data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,7.5,0);IF(isFasterMovementRace()):ActionResource(Movement,4.5,0);IF(isNormalMovementRace()):ActionResource(Movement,6,0)"
+data "Properties" "IsHidden"
+
+new entry "WildShapeSpeed60"
+type "PassiveData"
+data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,10.5,0);IF(isFasterMovementRace()):ActionResource(Movement,7.5,0);IF(isNormalMovementRace()):ActionResource(Movement,9,0)"
 data "Properties" "IsHidden"
 
 new entry "Darkvision30"

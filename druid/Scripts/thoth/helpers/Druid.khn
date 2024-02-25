@@ -1,0 +1,33 @@
+function WildShapeSaveDC(base)
+    base = base or 9
+    return base + context.Source.ProficiencyBonus
+end
+
+function isMoonDruid(entity)
+    local entity = entity or context.Source
+    return HasPassive('WildShape_Combat',entity)
+end
+
+function DruidLevelLessThan(level)
+    return RawClassLevelLessThan('Druid',level)
+end
+
+function DruidLevelLesserOrEqualThan(level)
+    return RawClassLevelLesserOrEqualThan('Druid',level)
+end
+
+function DruidLevelHigherOrEqualThan(level)
+    return RawClassLevelHigherOrEqualThan('Druid',level)
+end
+
+function DruidLevelEqual(level)
+    return RawClassLevelEqual('Druid',level)
+end
+
+function DruidLevelBetween(levelMin, levelMax)
+    return RawClassLevelBetween('Druid',levelMin,levelMax)
+end
+
+function ProficiencyBonusEqual(bonus)
+    return ConditionResult(context.Source.ProficiencyBonus == bonus)
+end

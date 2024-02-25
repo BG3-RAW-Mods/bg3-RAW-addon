@@ -35,3 +35,8 @@ data "Strength" "12"
 data "Vitality" "15"
 data "DefaultBoosts" "CriticalHit(AttackRoll,Success,Never)"
 data "Passives" "AttackOfOpportunity;Darkvision;DarknessRules"
+
+new entry "Hyena"
+type "Character"
+using "Hyena"
+data "Armor" "10"

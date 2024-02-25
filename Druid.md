@@ -59,9 +59,13 @@ Movement Speed is defined in meters.
 Wild Shapes will now get hit points between min and max. For example, Dire Wolf has 37 Hit Points (5d10 + 10). Min is 15, Max is 60. Moon Druid can't have 37 at level 2, would be overpowered. And for other subclasses, 37 is rather low at level 8.
 
 Passives:
-- Keen Smell: Advantage on Perception rolls
-- Feline Fall: Resistance to Fall Damage
-- Pack Tactics: Has advantage on attack rolls against a creature if at least one of the wolf's allies is within 1.5 meters of the creature and the ally isn't incapacitated.
+- Keen Smell. Advantage on Perception rolls
+- Feline Fall. Resistance to Fall Damage
+- Spider Fall. Resistance to Fall Damage
+- Pack Tactics. Has advantage on attack rolls against a creature if at least one of the wolf's allies is within 1.5 meters of the creature and the ally isn't incapacitated.
+- Web Walker. Ignores movement restrictions caused by webbing.
+- Blindsight. A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. 
+- Rampage. When the attacker reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make a bite attack.
 
 Ability DC: when a wildshape rolls a DC, it adds proficiency bonus to base number.
 For example, Panther Pounce rolls DC 10. It will be:
@@ -71,6 +75,8 @@ For example, Panther Pounce rolls DC 10. It will be:
 - DC 15 for levels 13-15
 - DC 16 for levels 16-20
 
+The notation "Recharge X- Y" means a monster can use a special ability once and that the ability then has a random chance of recharging during each subsequent round of combat. At the start of each of the monster's turns, roll a d6. If the roll is one of the numbers in the recharge notation, the monster regains the use of the special ability. The ability also recharges when the monster finishes a short or long rest. For the Giant Spider, that means you roll a d6 and if it comes up with 5 or 6, then it can use the web attack again.
+
 ### Giant Badger
 
 Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9 
@@ -78,8 +84,8 @@ Hit Points: 13 (level 2), 16 (level 3), 20 (level 4)
 Proficiencies: Perception
 Passives: Keen Smell, Darkvision (9m)
 Attacks (adds *Strength modifier*): 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
+- bite: 1d6+1 Piercing
+- claws: 2d4+1 Slashing
 - multi-attack: bite and claws
 
 ### Cat
@@ -93,33 +99,33 @@ Attacks (adds *Dexterity modifier*):
 
 ### Panther
 
-Strength: 13, Dexterity: 15, Constitution: 10, AC: 12, Movement Speed: 15
+Strength: 14, Dexterity: 15, Constitution: 10, AC: 12, Movement Speed: 15
 Hit Points: 13 (level 2), 18 (level 3), 20 (level 4)
-Proficiencies: Perception, Stealth
+Proficiencies: Perception, Stealth (Expertise)
 Passives: Keen Smell. **Not RAW ->** Darkvision (9m), Feline Fall
 Attacks (adds *Dexterity modifier*): 
-- bite: 1d6 Piercing
-- claws: 1d4 Slashing
+- bite: 1d6+2 Piercing
+- claws: 1d4+2 Slashing
 - pounce: jump on a target then hits it with a claw attack on the same turn, that target must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action. *Implementation: it can attack any target within range as a bonus action, as long as panther doesn't move.*
 
 ### Wolf
 
-Strength: 12, Dexterity: 15, Constitution: 12, AC: 11, Movement Speed: 12
+Strength: 12, Dexterity: 15, Constitution: 12, AC: 13 (natural), Movement Speed: 12
 Hit Points: 11 (level 2), 14 (level 3), 18 (level 4)
 Proficiencies: Perception, Stealth
 Passives: Keen Smell, Pack Tactics
-Attacks (adds *Strength modifier*): 
-- bite: 2d4 Piercing, target must succeed on a DC 9 Strength saving throw or be knocked prone.
+Attacks (adds *Dexterity modifier*): 
+- bite: 2d4+2 Piercing, target must succeed on a DC 9 Strength saving throw or be knocked prone.
 
 ### Dire Wolf
 
-Strength: 17, Dexterity: 15, Constitution: 15, AC: 14, Movement Speed: 15
+Strength: 17, Dexterity: 15, Constitution: 15, AC: 14 (natural), Movement Speed: 15
 Hit Points (Moon Druid): 20 (level 2), 30 (level 3), 40 (level 4), 50 (level 5), 60 (level 6)
 Hit Points (Other Druid): 60 (level 8)
 Proficiencies: Perception, Stealth
 Passives: Keen Smell, Pack Tactics
 Attacks (adds *Strength modifier*): 
-- bite: 2d6 Piercing, target must succeed on a DC 11 Strength saving throw or be knocked prone.
+- bite: 2d6+3 Piercing, target must succeed on a DC 11 Strength saving throw or be knocked prone.
 
 ### Giant Hyena
 
@@ -127,88 +133,87 @@ Strength: 16, Dexterity: 14, Constitution: 14, AC: 12, Movement Speed: 15
 Hit Points (Moon Druid): 24 (level 2), 36 (level 3), 48 (level 4), 60 (level 5), 72 (level 6)
 Hit Points (Other Druid): 72 (level 8)
 Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+Passives: Keen Smell, Rampage
+Attacks (adds *Strength modifier*): 
+- bite: 2d6+3 Piercing
 
 ### Giant Wolf Spider
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
-Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+Strength: 12, Dexterity: 16, Constitution: 13, AC: 13, Movement Speed: 12
+Hit Points: 11 (level 2), 14 (level 3), 18 (level 4)
+Proficiencies: Perception, Stealth (Expertise)
+Passives: Web Walker, Blindsight, Spider Fall, Darkvision (18m)
+Attacks (adds *Strength modifier*): 
+- bite: 1d6+1 Piercing, target must succeed on a DC 9 Constitution saving throw or take 2d6 poison damage (half on a successful save).
 
 ### Giant Spider
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
-Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+Strength: 14, Dexterity: 16, Constitution: 12, AC: 14 (natural), Movement Speed: 9
+Hit Points (Moon Druid): 26 (level 2), 35 (level 3), 44 (level 4)
+Hit Points (Other Druid): 44 (level 8)
+Proficiencies: Perception, Stealth (Expertise)
+Passives: Web Walker, Blindsight, Spider Fall, Darkvision (18m)
+Attacks (adds *Dexterity modifier*): 
+- bite: 1d8+3 Piercing, target must succeed on a DC 9 Constitution saving throw or take 2d8 poison damage (half on a successful save).
+- web: (Recharge 5–6) hit one creature with a ranged weapon attack (range 9/18m), target is restrained by webbing for 10 turns. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success.
 
 ### Black Bear
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
+Strength: 15, Dexterity: 10, Constitution: 14, AC: 11 (natural), Movement Speed: 12
+Hit Points: 19 (level 4), 24 (level 5), 30 (level 6)
 Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
+Passives: Keen Smell
+Attacks (adds *Strength modifier*): 
+- bite: 1d6+2 Piercing
+- claws: 2d4+2 Slashing
 - multi-attack: bite and claws
 
 ### Brown Bear
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
+Strength: 19, Dexterity: 10, Constitution: 16, AC: 11 (natural), Movement Speed: 12
+Hit Points (Moon Druid): 30 (level 2), 40 (level 3), 52 (level 4)
+Hit Points (Other Druid): 52 (level 8)
 Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
+Passives: Keen Smell
+Attacks (adds *Strength modifier*): 
+- bite: 1d8+4 Piercing
+- claws: 2d6+4 Slashing
 - multi-attack: bite and claws
 
 ### Polar Bear
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
+Strength: 20, Dexterity: 10, Constitution: 16, AC: 12 (natural), Movement Speed: 12
+Hit Points: 63 (level 6)
 Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
+Passives: Keen Smell
+Attacks (adds *Strength modifier*): 
+- bite: 1d8+5 Piercing
+- claws: 2d6+5 Slashing
 - multi-attack: bite and claws
 
 ### Saber-Toothed Tiger
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
-Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+Strength: 18, Dexterity: 14, Constitution: 15, AC: 12, Movement Speed: 12
+Hit Points: 60 (level 6), 70 (level 7), 84 (level 8)
+Proficiencies: Perception, Stealth (Expertise)
+Passives: Keen Smell
+Attacks (adds *Strength modifier*): 
+- bite: 1d10+5 Piercing
+- claws: 2d6+5 Slashing
+- pounce: jump on a target then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action. *Implementation: it can attack any target within range as a bonus action, as long as tiger doesn't move.*
 
 ### Giant Elk
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
+Giant Elk -> replace Deep Rothe
+Shout_WildShape_DeepRothe 201de8c4-a88a-45b8-abb4-1ee67df8bf81 Deep_Rothe_WildShape
+
+Strength: 19, Dexterity: 16, Constitution: 14, AC: 14 (natural), Movement Speed: 18
+Hit Points: 50 (level 6), 60 (level 7), 70 (level 8)
 Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
 Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+- ram: 2d6+4 Bludgeoning 
+- hooves: 4d8+4 Bludgeoning on a Prone creature
+- charge: if the elk moves at least 6m straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage and must succeed on a DC 12 Strength saving throw or be knocked prone.
 
 ### Raven
 
@@ -289,13 +294,13 @@ Attack:
 
 ### Velociraptor
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
+Strength: 6, Dexterity: 14, Constitution: 13, AC: 13 (natural), Movement Speed: 9
+Hit Points: 10 (level 2), 12 (level 3), 15 (level 4)
 Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
+Passives: Pack Tactics
+Attacks (adds *Dexterity modifier*): 
+- bite: 1d6+2 Piercing
+- claws: 1d4+2 Slashing
 - multi-attack: bite and claws
 
 ### Ankylosaurus
@@ -320,52 +325,19 @@ Attack:
 - claws: 2d4 Slashing
 - multi-attack: bite and claws
 
-## Shape Hit Points
+## Technical data
 
-PHB have HP dices and an average number.
-Wild Shapes will now get hit points between min and max.
-
-| Shape                    | HP      | Min | L1 | L2 | Max |
-| ------------------------ | ------- | --- | -- | -- | --- |
-| Badger                   | 2d8+4   |  6  | 13 | 16 | 20  |
-| Cat                      | 1d4     |  1  | 2  | 4  |     |
-| Giant Wolf Spider        | 2d8+2   |  4  | 11 | 14 | 18  |
-| Velociraptor             | 3d4+3   |  6  | 10 | 12 | 15  |
-| Panther                  | 3d8     |  3  | 13 | 18 | 24  |
-| Black Bear               | 3d8+6   |  9  | 19 | 24 | 30  |
-| Brown Bear               | 4d10+12 | 16  | 34 | 45 | 52  |
-| Polar Bear               | 5d10+15 | 20  | 42 | 53 | 65  |
-| Wolf                     | 2d8+2   |  4  | 11 | 14 | 18  |
-| Dire Wolf                | 5d10+10 | 15  | 37 | 48 | 60  |
-
-
-
-Shout_WildShape_Badger 47263893-8aab-48f1-96ad-13907d1e23e8 Badger_Giant_Wildshape
-Shout_WildShape_Bear_Polar 960a6318-3fc0-4b85-8b70-887e99ff248f Bear_Polar_Wildshape
-Shout_WildShape_Cat 398887ea-5013-4c9b-8f89-37f44efef8dc Familiar_Cat
-Shout_WildShape_Spider e0e6f504-8114-46c8-834a-186466edbd87 Spider_Giant_Wildshape
-Shout_WildShape_Wolf_Dire 71e2c062-fdf8-40c7-88d7-05ef57cdff41 Wolf_Dire_Wildshape
 Shout_WildShape_Raven 6c2fc745-20b3-44c0-9032-97e97a5368eb Companion_Raven
-Shout_WildShape_DeepRothe 201de8c4-a88a-45b8-abb4-1ee67df8bf81 Deep_Rothe_WildShape
-Shout_Wildshape_Panther e7780038-d09c-48e1-8bb8-db86538a3cb9 Wildshape_Panther
 Shout_WildShape_Owlbear 92467fe9-2452-47f4-8c19-59883cca6dc5 Wildshape_Owlbear
-Shout_Wildshape_SaberTooth_Tiger 007a0a64-d763-4daf-9697-21765a4c2d4d Wildshape_SaberTooth_Tiger
 Shout_WildShape_Dilophosaurus fca74933-fb42-45c0-af31-c9f806368453 Dilophosaurus_Wildshape
 Shout_WildShape_Myrmidon_Air 3feb7490-c75e-446a-b8af-d459a164a0a6 Air_Myrmidon_Wildshape
 Shout_WildShape_Myrmidon_Earth 86b5ed60-c0a8-41d0-88a5-ed77985820eb Earth_Myrmidon_WIldshape
 Shout_WildShape_Myrmidon_Fire 9c5e77bc-0e65-4c11-865a-46d892cc06fe Fire_Myrmidon_Wildshape
 Shout_WildShape_Myrmidon_Water 6c9ea298-14dd-4485-ac3c-fdf818f6b110 Water_Myrmidon_Wildshape
 
-Boar -> new entry "Boar"
-Black Bear -> new entry "Bear_Black"
-Brown Bear -> new entry "Bear_Brown"
 Eagle -> new entry "Eagle"
 Giant Eagle -> new entry "GiantEagle"
-Giant Hyena -> based on: new entry "Hyena"
-Giant Wolf -> new entry "Spider_GiantWolf"
 Giant vulture -> new entry "Vulture_Giant"
-Giant Elk -> replace Deep Rothe
-Wolf -> new entry "Wolf"
 Ankylosaurus -> replace "Dilophosaurus"
 Stegosaurus -> maybe based on: new entry "Dilophosaurus"
 Spotted Lion -> based on: Panther or SaberTooth_Tiger
