@@ -73,7 +73,7 @@ type "Character"
 using "GiantHyena_Wildshape_Player_1"
 data "Vitality" "72"
 
-new entry "Target_Bite_Hyena"
+new entry "Target_Bite_Hyena_Wildshape"
 type "SpellData"
 using "Target_Bite_Hyena"
 data "SpellSuccess" "IF(not HasPassive('PrimalStrike',context.Source)):DealDamage(2d6+UnarmedMeleeAbilityModifier,Piercing);IF(HasPassive('PrimalStrike',context.Source))::DealDamage(2d6+UnarmedMeleeAbilityModifier,Piercing,Magical)"

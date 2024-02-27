@@ -1,40 +1,75 @@
+// Movement speed 9m
 new entry "WildShapeSpeed30"
 type "PassiveData"
-data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,1.5,0);IF(isFasterMovementRace()):ActionResource(Movement,-1.5,0)"
+//data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,1.5,0);IF(isFasterMovementRace()):ActionResource(Movement,-1.5,0)"
 data "Properties" "IsHidden"
 
+// Movement speed 12m
 new entry "WildShapeSpeed40"
 type "PassiveData"
-data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,4.5,0);IF(isFasterMovementRace()):ActionResource(Movement,1.5,0);IF(isNormalMovementRace()):ActionResource(Movement,3,0)"
+//data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,4.5,0);IF(isFasterMovementRace()):ActionResource(Movement,1.5,0);IF(isNormalMovementRace()):ActionResource(Movement,3,0)"
+data "Boosts" "ActionResource(Movement,3,0)"
 data "Properties" "IsHidden"
 
+// Movement speed 15m
 new entry "WildShapeSpeed50"
 type "PassiveData"
-data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,7.5,0);IF(isFasterMovementRace()):ActionResource(Movement,4.5,0);IF(isNormalMovementRace()):ActionResource(Movement,6,0)"
+// data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,7.5,0);IF(isFasterMovementRace()):ActionResource(Movement,4.5,0);IF(isNormalMovementRace()):ActionResource(Movement,6,0)"
+data "Boosts" "ActionResource(Movement,6,0)"
 data "Properties" "IsHidden"
 
+// Movement speed 18m
 new entry "WildShapeSpeed60"
 type "PassiveData"
-data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,10.5,0);IF(isFasterMovementRace()):ActionResource(Movement,7.5,0);IF(isNormalMovementRace()):ActionResource(Movement,9,0)"
+// data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,10.5,0);IF(isFasterMovementRace()):ActionResource(Movement,7.5,0);IF(isNormalMovementRace()):ActionResource(Movement,9,0)"
+data "Boosts" "ActionResource(Movement,9,0)"
 data "Properties" "IsHidden"
 
+// Movement speed 21m
+new entry "WildShapeSpeed70"
+type "PassiveData"
+// data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,13.5,0);IF(isFasterMovementRace()):ActionResource(Movement,10.5,0);IF(isNormalMovementRace()):ActionResource(Movement,12,0)"
+data "Boosts" "ActionResource(Movement,12,0)"
+data "Properties" "IsHidden"
+
+// Movement speed 24m
+new entry "WildShapeSpeed80"
+type "PassiveData"
+// data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,16.5,0);IF(isFasterMovementRace()):ActionResource(Movement,13.5,0);IF(isNormalMovementRace()):ActionResource(Movement,15,0)"
+data "Boosts" "ActionResource(Movement,15,0)"
+data "Properties" "IsHidden"
+
+// Darkvision 9m
 new entry "Darkvision30"
 type "PassiveData"
 using "Darkvision"
 data "DescriptionParams" "Distance(9)"
 data "Boosts" "DarkvisionRangeMin(9);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989)"
 
+// Darkvision 18m
 new entry "Darkvision60"
 type "PassiveData"
 using "Darkvision"
 data "DescriptionParams" "Distance(18)"
 data "Boosts" "DarkvisionRangeMin(18);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989)"
 
+// Darkvision 36m
+new entry "Darkvision120"
+type "PassiveData"
+using "Darkvision"
+data "DescriptionParams" "Distance(36)"
+data "Boosts" "DarkvisionRangeMin(36);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989)"
+
 new entry "KeenSmell"
 type "PassiveData"
 data "DisplayName" "31d7f3da-2568-420a-9d4b-de4d501cc932;1"
 data "Description" "6529ee56-ffb3-4b81-a14e-be64df4cc3b3;1"
 data "Boosts" "Advantage(Skill, Perception)"
+
+new entry "KeenSight"
+type "PassiveData"
+using "KeenSmell"
+data "DisplayName" "44cfe891-0266-4a64-ad45-0cb1b3d23b83;1"
 
 new entry "SpiderWalk"
 type "PassiveData"
@@ -47,6 +82,17 @@ type "PassiveData"
 using "PackTactics"
 data "DescriptionParams" " Distance(1.5)"
 data "Boosts" "IF(HasAllyWithinRange('SG_Incapacitated',1.5)):Advantage(AttackRoll)"
+
+new entry "Flyby"
+type "PassiveData"
+data "DisplayName" "b839ff12-5aa5-4428-9bf1-d39d7ef6a9f5;1"
+data "Description" "e47e53e4-85f4-48cc-8a74-f0595569ba1b;1"
+data "Icon" "PassiveFeature_Mobile_CounterAttackOfOpportunity"
+data "PriorityOrder" "1"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnAttack"
+data "Conditions" "IsMeleeAttack() and Character()"
+data "StatsFunctors" "ApplyStatus(SELF,MOBILE_NO_AOO_SOURCE,100,1);ApplyStatus(MOBILE_NO_AOO,100,1)"
 
 new entry "Rampage"
 type "PassiveData"

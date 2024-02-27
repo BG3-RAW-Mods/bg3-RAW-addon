@@ -45,7 +45,7 @@ type "Character"
 using "Cat_Wildshape_1"
 data "Vitality" "4"
 
-new entry "Target_Claws_Cat"
+new entry "Target_Claws_Cat_Wildshape"
 type "SpellData"
 using "Target_Claws_Cat"
 data "SpellSuccess" "IF(not HasPassive('PrimalStrike',context.Source)):DealDamage(1,Slashing);IF(HasPassive('PrimalStrike',context.Source)):DealDamage(1,Slashing,Magical)"

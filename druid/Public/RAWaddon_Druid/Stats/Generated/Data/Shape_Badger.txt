@@ -58,7 +58,7 @@ type "SpellData"
 using "Target_Claws_GiantBadger_Wildshape"
 data "Description" ""
 
-new entry "Target_Bite_GiantBadger"
+new entry "Target_Bite_GiantBadger_Wildshape"
 type "SpellData"
 using "Target_Bite_GiantBadger"
 data "SpellSuccess" "IF(not HasPassive('PrimalStrike',context.Source)):DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Piercing);IF(HasPassive('PrimalStrike',context.Source)):DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Piercing,Magical)"

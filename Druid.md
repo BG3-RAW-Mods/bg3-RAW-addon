@@ -20,15 +20,16 @@ Wildshape CR rating:
 Note: Remember that Druids (including Moon Druids) can't take forms with a swim speed until level 4, and can’t take forms with a fly speed until level 8.
 
 Wild Shape Forms by CR:
-| CR   | Beasts                                                                               |
-| ---- | ------------------------------------------------------------------------------------ |
-| 0    | Giant Badger, Cat, *Eagle*, *Owl*, Raven                                             |
-| 1/4  | *Boar*, *Elk*, *Giant Wolf Spider*, Panther, *Velociraptor*, *Wolf*                  |
-| 1/2  | *Ape*, *Black Bear*, *Giant Goat*, *Warhorse*                                        |
-| 1    | *Brown Bear*, Dire Wolf, *Giant Eagle*, *Giant Hyena*, Giant Spider, *Giant vulture* |
-| 2    | *Aurochs*, *Giant Elk*, Polar Bear, *Quetzalcoatlus*, Saber-Toothed Tiger            |
-| 3    | *Ankylosaurus*, *Giant Scorpion*, *Spotted Lion*                                     |
-| 4    | *Elephant*, *Stegosaurus*                                                            |
+| CR   | Beasts                                                                                               |
+| ---- | ---------------------------------------------------------------------------------------------------- |
+| 0    | Giant Badger, Cat                                                                                    |
+| 1/4  | Giant Wolf Spider, Panther, Velociraptor, Wolf                                                       |
+| 1/2  | Black Bear                                                                                           |
+| 1    | Brown Bear, Dire Wolf, Giant Eagle, Giant Hyena, Giant Spider, Giant vulture, Giant Raven, Giant Owl |
+| 2    | Giant Elk, Polar Bear, Quetzalcoatlus, Saber-Toothed Tiger                                           | 
+| 3    | Ankylosaurus, Spotted Lion                                                                           |
+| 4    | Stegosaurus                                                                                          |
+| 5    | Air Elemental, Earth Elemental, Fire elemental, Water Elemental                                      |
 
 | Lvl | Land and Spore Druid                                                                            |
 | --- | ----------------------------------------------------------------------------------------------- |
@@ -40,18 +41,17 @@ Wild Shape Forms by CR:
 | --- | ----------------------------------------------------------------------------------------------- |
 | 2   | Giant Badger, Cat, Panther, Velociraptor, Brown Bear, Dire Wolf, Giant Hyena, Giant Spider      |
 | 6   | Polar Bear, Saber-Toothed Tiger, Giant Elk                                                      |
-| 8   | Raven, Owl, Giant Eagle, Giant vulture, Quetzalcoatlus                                          |
+| 8   | Giant Raven, Giant Owl, Giant Eagle, Giant vulture, Quetzalcoatlus                              |
 | 9   | Ankylosaurus, Spotted Lion, Owlbear                                                             |
+| 10  | Air Elemental, Earth Elemental, Fire elemental, Water Elemental                                 |
 | 12  | Stegosaurus                                                                                     |
 
 Some shapes are straight upgrades from lower ones and will be a replacement instead of an addition:
 - Black Bear, Brown Bear, Polar Bear
 - Wolf, Dire Wolf
 - Giant Wolf Spider, Giant Spider
-
-(need checks for these ones:)
+- Panther, Saber-Toothed Tiger, Spotted Lion
 - Velociraptor, Ankylosaurus, Stegosaurus
-- Panther, Spotted Lion
 
 ## Shape Stats
 
@@ -59,13 +59,15 @@ Movement Speed is defined in meters.
 Wild Shapes will now get hit points between min and max. For example, Dire Wolf has 37 Hit Points (5d10 + 10). Min is 15, Max is 60. Moon Druid can't have 37 at level 2, would be overpowered. And for other subclasses, 37 is rather low at level 8.
 
 Passives:
-- Keen Smell. Advantage on Perception rolls
+- Keen Smell. Advantage on Perception checks
+- Keen Sight. Advantage on Perception checks
 - Feline Fall. Resistance to Fall Damage
 - Spider Fall. Resistance to Fall Damage
 - Pack Tactics. Has advantage on attack rolls against a creature if at least one of the wolf's allies is within 1.5 meters of the creature and the ally isn't incapacitated.
 - Web Walker. Ignores movement restrictions caused by webbing.
 - Blindsight. A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. 
 - Rampage. When the attacker reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make a bite attack.
+- Flyby. Doesn't provoke opportunity attacks when it flies out of an enemy's reach.
 
 Ability DC: when a wildshape rolls a DC, it adds proficiency bonus to base number.
 For example, Panther Pounce rolls DC 10. It will be:
@@ -83,7 +85,7 @@ Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
 Hit Points: 13 (level 2), 16 (level 3), 20 (level 4)
 Proficiencies: Perception
 Passives: Keen Smell, Darkvision (9m)
-Attacks (adds *Strength modifier*): 
+Actions (adds *Strength modifier*): 
 - bite: 1d6+1 Piercing
 - claws: 2d4+1 Slashing
 - multi-attack: bite and claws
@@ -94,7 +96,7 @@ Strength: 3, Dexterity: 15, Constitution: 10, AC: 10, Movement Speed: 12
 Hit Points: 2 (level 2), 3 (level 3), 4 (level 4)
 Proficiencies: Perception, Stealth
 Passives: Keen Smell. **Not RAW ->** Darkvision (9m), Feline Fall
-Attacks (adds *Dexterity modifier*): 
+Actions: 
 - claws: 1 Slashing
 
 ### Panther
@@ -103,10 +105,33 @@ Strength: 14, Dexterity: 15, Constitution: 10, AC: 12, Movement Speed: 15
 Hit Points: 13 (level 2), 18 (level 3), 20 (level 4)
 Proficiencies: Perception, Stealth (Expertise)
 Passives: Keen Smell. **Not RAW ->** Darkvision (9m), Feline Fall
-Attacks (adds *Dexterity modifier*): 
+Actions (adds *Dexterity modifier*): 
 - bite: 1d6+2 Piercing
 - claws: 1d4+2 Slashing
-- pounce: jump on a target then hits it with a claw attack on the same turn, that target must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action. *Implementation: it can attack any target within range as a bonus action, as long as panther doesn't move.*
+- pounce: if the panther moves at least 6m straight toward a target and then hits it with a claw attack on the same turn, that target must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action.
+          *Implementation: it can attack any prone target within range as a bonus action, as long as tiger doesn't move.*
+
+### Saber-Toothed Tiger
+
+Strength: 18, Dexterity: 14, Constitution: 15, AC: 12, Movement Speed: 12
+Hit Points: 60 (level 6), 70 (level 7), 84 (level 8)
+Proficiencies: Perception, Stealth (Expertise)
+Passives: Keen Smell **Not RAW ->** Darkvision (9m), Feline Fall
+Actions (adds *Strength modifier*): 
+- bite: 1d10+5 Piercing
+- claws: 2d6+5 Slashing
+- pounce: if the tiger moves at least 6m straight toward a target and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.
+          *Implementation: it can attack any prone target within range as a bonus action, as long as tiger doesn't move.*
+
+### Spotted Lion
+
+Strength: 23, Dexterity: 14, Constitution: 17, AC: 15 (natural), Movement Speed: 18
+Hit Points: 92 (level 9), 105 (level 10)
+Proficiencies: Perception, Stealth (Expertise)
+Passives: Darkvision (18m), Pack Tactics. **Not RAW ->** Feline Fall
+Actions (adds *Strength modifier*): 
+- rend: reach 10 feet, 2d8+6 Piercing. if the lion moved at least 6m straight toward the target and then hits it with a claw attack on the same turn, the target must succeed on a DC 14 Strength saving throw or or be knocked prone. If the target is prone, the lion can make another rend attack against it as a bonus action.
+        *Implementation: it can attack any prone target within range as a bonus action, as long as tiger doesn't move.*
 
 ### Wolf
 
@@ -114,7 +139,7 @@ Strength: 12, Dexterity: 15, Constitution: 12, AC: 13 (natural), Movement Speed:
 Hit Points: 11 (level 2), 14 (level 3), 18 (level 4)
 Proficiencies: Perception, Stealth
 Passives: Keen Smell, Pack Tactics
-Attacks (adds *Dexterity modifier*): 
+Actions (adds *Dexterity modifier*): 
 - bite: 2d4+2 Piercing, target must succeed on a DC 9 Strength saving throw or be knocked prone.
 
 ### Dire Wolf
@@ -124,7 +149,7 @@ Hit Points (Moon Druid): 20 (level 2), 30 (level 3), 40 (level 4), 50 (level 5),
 Hit Points (Other Druid): 60 (level 8)
 Proficiencies: Perception, Stealth
 Passives: Keen Smell, Pack Tactics
-Attacks (adds *Strength modifier*): 
+Actions (adds *Strength modifier*): 
 - bite: 2d6+3 Piercing, target must succeed on a DC 11 Strength saving throw or be knocked prone.
 
 ### Giant Hyena
@@ -134,7 +159,7 @@ Hit Points (Moon Druid): 24 (level 2), 36 (level 3), 48 (level 4), 60 (level 5),
 Hit Points (Other Druid): 72 (level 8)
 Proficiencies: Perception
 Passives: Keen Smell, Rampage
-Attacks (adds *Strength modifier*): 
+Actions (adds *Strength modifier*): 
 - bite: 2d6+3 Piercing
 
 ### Giant Wolf Spider
@@ -143,8 +168,10 @@ Strength: 12, Dexterity: 16, Constitution: 13, AC: 13, Movement Speed: 12
 Hit Points: 11 (level 2), 14 (level 3), 18 (level 4)
 Proficiencies: Perception, Stealth (Expertise)
 Passives: Web Walker, Blindsight, Spider Fall, Darkvision (18m)
-Attacks (adds *Strength modifier*): 
+Actions (adds *Strength modifier*): 
 - bite: 1d6+1 Piercing, target must succeed on a DC 9 Constitution saving throw or take 2d6 poison damage (half on a successful save).
+
+*Not Implemented yet*: If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 
 ### Giant Spider
 
@@ -153,9 +180,11 @@ Hit Points (Moon Druid): 26 (level 2), 35 (level 3), 44 (level 4)
 Hit Points (Other Druid): 44 (level 8)
 Proficiencies: Perception, Stealth (Expertise)
 Passives: Web Walker, Blindsight, Spider Fall, Darkvision (18m)
-Attacks (adds *Dexterity modifier*): 
+Actions (adds *Dexterity modifier*): 
 - bite: 1d8+3 Piercing, target must succeed on a DC 9 Constitution saving throw or take 2d8 poison damage (half on a successful save).
 - web: (Recharge 5–6) hit one creature with a ranged weapon attack (range 9/18m), target is restrained by webbing for 10 turns. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success.
+
+*Not Implemented yet*: If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 
 ### Black Bear
 
@@ -163,7 +192,7 @@ Strength: 15, Dexterity: 10, Constitution: 14, AC: 11 (natural), Movement Speed:
 Hit Points: 19 (level 4), 24 (level 5), 30 (level 6)
 Proficiencies: Perception
 Passives: Keen Smell
-Attacks (adds *Strength modifier*): 
+Actions (adds *Strength modifier*): 
 - bite: 1d6+2 Piercing
 - claws: 2d4+2 Slashing
 - multi-attack: bite and claws
@@ -175,7 +204,7 @@ Hit Points (Moon Druid): 30 (level 2), 40 (level 3), 52 (level 4)
 Hit Points (Other Druid): 52 (level 8)
 Proficiencies: Perception
 Passives: Keen Smell
-Attacks (adds *Strength modifier*): 
+Actions (adds *Strength modifier*): 
 - bite: 1d8+4 Piercing
 - claws: 2d6+4 Slashing
 - multi-attack: bite and claws
@@ -186,111 +215,70 @@ Strength: 20, Dexterity: 10, Constitution: 16, AC: 12 (natural), Movement Speed:
 Hit Points: 63 (level 6)
 Proficiencies: Perception
 Passives: Keen Smell
-Attacks (adds *Strength modifier*): 
+Actions (adds *Strength modifier*): 
 - bite: 1d8+5 Piercing
 - claws: 2d6+5 Slashing
 - multi-attack: bite and claws
 
-### Saber-Toothed Tiger
-
-Strength: 18, Dexterity: 14, Constitution: 15, AC: 12, Movement Speed: 12
-Hit Points: 60 (level 6), 70 (level 7), 84 (level 8)
-Proficiencies: Perception, Stealth (Expertise)
-Passives: Keen Smell
-Attacks (adds *Strength modifier*): 
-- bite: 1d10+5 Piercing
-- claws: 2d6+5 Slashing
-- pounce: jump on a target then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action. *Implementation: it can attack any target within range as a bonus action, as long as tiger doesn't move.*
-
 ### Giant Elk
-
-Giant Elk -> replace Deep Rothe
-Shout_WildShape_DeepRothe 201de8c4-a88a-45b8-abb4-1ee67df8bf81 Deep_Rothe_WildShape
 
 Strength: 19, Dexterity: 16, Constitution: 14, AC: 14 (natural), Movement Speed: 18
 Hit Points: 50 (level 6), 60 (level 7), 70 (level 8)
 Proficiencies: Perception
-Attack: 
+Actions (adds *Strength modifier*): 
 - ram: 2d6+4 Bludgeoning 
 - hooves: 4d8+4 Bludgeoning on a Prone creature
 - charge: if the elk moves at least 6m straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage and must succeed on a DC 12 Strength saving throw or be knocked prone.
 
-### Raven
+### Giant Raven
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
-Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+Strength: 15, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 18 (fly)
+Hit Points: 36
+Proficiencies: Perception, Keen Sight, Pack Tactics
+Actions (adds *Strength modifier*): 
+- beak: 2d4+2 Piercing
+- talons: 2d6+2 Slashing
+- multiattack: beak and talons
 
-### Owl
+### Giant Owl
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
-Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+Strength: 13, Dexterity: 15, Constitution: 12, AC: 12, Movement Speed: 18 (fly)
+Hit Points: 33
+Proficiencies: Perception, Stealth, Darkvision (36m)
+Passives: Flyby, Keen Sight
+Actions (adds *Dexterity modifier*): 
+- talons: 2d6+1 Slashing
 
 ### Giant Eagle
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
+Strength: 16, Dexterity: 17, Constitution: 13, AC: 13, Movement Speed: 24 (fly)
+Hit Points: 44
 Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+Passives: Keen Sight
+Actions (adds *Dexterity modifier*): 
+- beak: 1d6+3 Piercing
+- talons: 2d6+3 Slashing
+- multi-attack: beak and talons
 
-### Giant vulture
+### Giant Vulture
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
+Strength: 15, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 18 (fly)
+Hit Points: 36
 Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+Passives: Keen Sight, Pack Tactics
+Actions (adds *Strength modifier*): 
+- beak: 2d4+2 Piercing
+- talons: 2d6+2 Slashing
+- multi-attack: beak and talons
 
 ### Quetzalcoatlus
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
+Strength: 15, Dexterity: 13, Constitution: 13, AC: 13 (natural), Movement Speed: 24 (fly)
+Hit Points: 52
 Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
-
-### Spotted Lion
-
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
-Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
-
-### Owlbear
-
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
-Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+Passives: Flyby
+Actions (adds *Strength modifier*): 
+- bite: 3d6+2 Piercing. If the quetzalcoatlus flew least 9m toward the target immediately before the hit, the target takes an extra 3d6 Piercing.
 
 ### Velociraptor
 
@@ -298,47 +286,105 @@ Strength: 6, Dexterity: 14, Constitution: 13, AC: 13 (natural), Movement Speed: 
 Hit Points: 10 (level 2), 12 (level 3), 15 (level 4)
 Proficiencies: Perception
 Passives: Pack Tactics
-Attacks (adds *Dexterity modifier*): 
+Actions (adds *Dexterity modifier*): 
 - bite: 1d6+2 Piercing
 - claws: 1d4+2 Slashing
 - multi-attack: bite and claws
 
 ### Ankylosaurus
+Shout_WildShape_Dilophosaurus fca74933-fb42-45c0-af31-c9f806368453 Dilophosaurus_Wildshape
 
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
+Strength: 19, Dexterity: 11, Constitution: 15, AC: 15 (natural), Movement Speed: 9
+Hit Points: 98 (level 9), 112 (level 10)
 Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
+Actions (adds *Strength modifier*): 
+- tail: reach 10 feet, 4d6+4 Bludgeoning. Target must succeed on a DC 14 Strength saving throw or be knocked prone.
 
 ### Stegosaurus
-
-Strength: 13, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 9
-Hit Points: 13 - 20
-Proficiencies: Perception
-Passives: Keen Smell, Darkvision (9m)
-Attack: 
-- bite: 1d6 Piercing
-- claws: 2d4 Slashing
-- multi-attack: bite and claws
-
-## Technical data
-
-Shout_WildShape_Raven 6c2fc745-20b3-44c0-9032-97e97a5368eb Companion_Raven
-Shout_WildShape_Owlbear 92467fe9-2452-47f4-8c19-59883cca6dc5 Wildshape_Owlbear
 Shout_WildShape_Dilophosaurus fca74933-fb42-45c0-af31-c9f806368453 Dilophosaurus_Wildshape
-Shout_WildShape_Myrmidon_Air 3feb7490-c75e-446a-b8af-d459a164a0a6 Air_Myrmidon_Wildshape
-Shout_WildShape_Myrmidon_Earth 86b5ed60-c0a8-41d0-88a5-ed77985820eb Earth_Myrmidon_WIldshape
-Shout_WildShape_Myrmidon_Fire 9c5e77bc-0e65-4c11-865a-46d892cc06fe Fire_Myrmidon_Wildshape
+
+Strength: 20, Dexterity: 9, Constitution: 17, AC: 13 (natural), Movement Speed: 12
+Hit Points: 120
+Proficiencies: Perception
+Actions (adds *Strength modifier*): 
+- tail: reach 10 feet, 6d6+5 Piercing.
+
+### Water Elemental
 Shout_WildShape_Myrmidon_Water 6c9ea298-14dd-4485-ac3c-fdf818f6b110 Water_Myrmidon_Wildshape
 
-Eagle -> new entry "Eagle"
-Giant Eagle -> new entry "GiantEagle"
-Giant vulture -> new entry "Vulture_Giant"
-Ankylosaurus -> replace "Dilophosaurus"
-Stegosaurus -> maybe based on: new entry "Dilophosaurus"
-Spotted Lion -> based on: Panther or SaberTooth_Tiger
+Strength: 18, Dexterity: 14, Constitution: 18, AC: 14 (natural), Movement Speed: 9
+Hit Points: 114 (level 10), 141 (level 11), 168 (level 12)
+Damage Resistances: Acid; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
+Damage Immunities: Poison
+Condition Immunities: Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious
+Proficiencies: Perception
+Passives: Darkvision (18m)
 
+Water Form. The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
+Freeze. If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 feet until the end of its next turn.
+
+Actions (adds *Strength modifier*): 
+- Slam. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
+- Multiattack. The elemental makes two slam attacks.
+- Whelm (Recharge 4–6). Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 2d8+4 bludgeoning damage. If it is Large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.
+
+The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 2d8+4 bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength check and succeeding.
+
+### Fire Elemental
+Shout_WildShape_Myrmidon_Fire 9c5e77bc-0e65-4c11-865a-46d892cc06fe Fire_Myrmidon_Wildshape
+
+Strength: 10, Dexterity: 17, Constitution: 16, AC: 13, Movement Speed: 15
+Hit Points: 102 (level 10), 129 (level 11), 156 (level 12)
+Damage Resistances Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
+Damage Immunities Fire, Poison
+Condition Immunities Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious
+Proficiencies: Perception
+Passives: Darkvision (18m)
+
+Fire Form. The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.
+
+Illumination. The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet.
+
+Water Susceptibility. For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.
+
+Actions (adds *Dexterity modifier*): 
+- Multiattack. The elemental makes two touch attacks.
+- Touch. 2d6+3 Fire damage. ignites target. Until a creature takes an action to douse the fire, the target takes 1d10 fire damage at the start of each of its turns.
+
+### Air Elemental
+Shout_WildShape_Myrmidon_Air 3feb7490-c75e-446a-b8af-d459a164a0a6 Air_Myrmidon_Wildshape
+
+Strength: 14, Dexterity: 20, Constitution: 14, AC: 15, Movement Speed: 36
+Hit Points: 90 (level 10), 117 (level 11), 144 (level 12)
+Damage Resistances Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
+Damage Immunities Poison
+Condition Immunities Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious
+Proficiencies: Perception
+Passives: Darkvision (18m)
+
+Air Form. The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
+
+Actions (adds *Dexterity modifier*): 
+- Multiattack. The elemental makes two slam attacks.
+- Slam. 2d8+5 Bludgeoning
+- Whirlwind (Recharge 4–6). Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 3d8+2 Bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 1d6 Bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.
+If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.
+
+### Earth Elemental
+Shout_WildShape_Myrmidon_Earth 86b5ed60-c0a8-41d0-88a5-ed77985820eb Earth_Myrmidon_WIldshape
+
+Strength: 20, Dexterity: 8, Constitution: 20, AC: 17 (natural), Movement Speed: 9
+Hit Points: 126 (level 10), 153 (level 11), 180 (level 12)
+Damage Vulnerabilities Thunder
+Damage Resistances Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
+Damage Immunities Poison
+Condition Immunities Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious
+Proficiencies: Perception
+Passives: Darkvision (18m)
+
+Earth Glide. The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.
+Siege Monster. The elemental deals double damage to objects and structures.
+
+Actions (adds *Strength modifier*): 
+- Multiattack. The elemental makes two slam attacks.
+- Slam. reach 10 feet, 2d8+5 Bludgeoning
