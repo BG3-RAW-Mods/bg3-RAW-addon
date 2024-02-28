@@ -16,12 +16,12 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Land/Spore Druid Wild Shape Level 8"/>
-                    <attribute id="Spells" type="LSString" value="Shout_WildShape_Action_Raven;Shout_WildShape_Action_Owl;Shout_WildShape_Action_GiantEagle;Shout_WildShape_Action_GiantVulture;Shout_WildShape_Action_GiantHyena"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_Action_GiantEagle;Shout_WildShape_Action_GiantVulture;Shout_WildShape_Action_GiantHyena"/>
                     <attribute id="UUID" type="guid" value="33759e59-fa4d-4247-91f2-1e98ae97f285"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Moon Druid Wild Shape Level 2"/>
-                    <attribute id="Spells" type="LSString" value="Shout_WildShape_BonusAction;Shout_WildShape_BonusAction_GiantBadger;Shout_WildShape_BonusAction_Cat;Shout_WildShape_BonusAction_Velociraptor;Shout_WildShape_BonusAction_GiantSpider;Shout_WildShape_BonusAction_Bear;Shout_WildShape_BonusAction_DireWolf;Shout_WildShape_BonusAction_GiantHyena;Shout_Wildshape_BonusAction_Feline"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_BonusAction;Shout_WildShape_BonusAction_GiantBadger;Shout_WildShape_BonusAction_Cat;Shout_WildShape_BonusAction_Saurus;Shout_WildShape_BonusAction_GiantSpider;Shout_WildShape_BonusAction_Bear;Shout_WildShape_BonusAction_DireWolf;Shout_WildShape_BonusAction_GiantHyena;Shout_Wildshape_BonusAction_Feline"/>
                     <attribute id="UUID" type="guid" value="51f2ab56-4403-49c0-99e8-582b9069477d"/>
                 </node>
                 <node id="SpellList">
@@ -31,18 +31,13 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Moon Druid Wild Shape Level 8"/>
-                    <attribute id="Spells" type="LSString" value="Shout_WildShape_BonusAction_Raven;Shout_WildShape_BonusAction_Owl;Shout_WildShape_BonusAction_GiantEagle;Shout_WildShape_BonusAction_GiantVulture;Shout_WildShape_BonusAction_Quetzalcoatlus"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_BonusAction_GiantVulture;Shout_WildShape_BonusAction_Quetzalcoatlus"/>
                     <attribute id="UUID" type="guid" value="015e0546-d3dd-4cc1-8727-dfe8a6875a4f"/>
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Moon Druid Wild Shape Level 9"/>
-                    <attribute id="Spells" type="LSString" value="Shout_WildShape_BonusAction_Ankylosaurus;Shout_WildShape_BonusAction_SpottedLion;Shout_WildShape_BonusAction_Owlbear"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_BonusAction_SpottedLion;Shout_WildShape_BonusAction_Owlbear"/>
                     <attribute id="UUID" type="guid" value="1ae6fd0e-366c-46ae-932c-d2c745b43a5e"/>
-                </node>
-                <node id="SpellList">
-                    <attribute id="Comment" type="LSString" value="Moon Druid Wild Shape Level 12"/>
-                    <attribute id="Spells" type="LSString" value="Shout_WildShape_BonusAction_Stegosaurus"/>
-                    <attribute id="UUID" type="guid" value="cfdf8d6b-2fca-4992-af0e-e4a4ee318060"/>
                 </node>
             </children>
         </node>

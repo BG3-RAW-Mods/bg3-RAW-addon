@@ -87,6 +87,37 @@
 										</node>
 									</children>
 								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="3" value="0" />
+									<attribute id="CasualExplorer" type="19" value="True" />
+									<attribute id="Classic" type="19" value="True" />
+									<attribute id="FallbackStartRound" type="4" value="-1" />
+									<attribute id="HonorHardcore" type="19" value="True" />
+									<attribute id="LearningStrategy" type="1" value="0" />
+									<attribute id="MinimumImpact" type="4" value="0" />
+									<attribute id="OnlyCastOnSelf" type="19" value="False" />
+									<attribute id="ScoreModifier" type="6" value="1" />
+									<attribute id="Skill" type="22" value="Target_Bite_GiantBadger_Wildshape" />
+									<attribute id="SpellCastingAbility" type="1" value="0" />
+									<attribute id="StartRound" type="4" value="0" />
+									<attribute id="TacticianHardcore" type="19" value="True" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
 							</children>
 						</node>
 						<node id="SpeakerGroupList">
@@ -713,7 +744,7 @@
 									<attribute id="MinimumImpact" type="4" value="0" />
 									<attribute id="OnlyCastOnSelf" type="19" value="False" />
 									<attribute id="ScoreModifier" type="6" value="1" />
-									<attribute id="Skill" type="22" value="Target_Multiattack_Velociraptor_Wildshape" />
+									<attribute id="Skill" type="22" value="Target_Bite_Velociraptor_Wildshape" />
 									<attribute id="SpellCastingAbility" type="1" value="0" />
 									<attribute id="StartRound" type="4" value="0" />
 									<children>
@@ -769,6 +800,154 @@
 					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209032" />
 					<children>
 						<node id="LocomotionParams" />
+					</children>
+				</node>
+
+				<!-- Ankylosaurus -->
+				<node id="GameObjects">
+					<attribute id="Archetype" type="22" value="melee" />
+					<attribute id="DisplayName" type="28" handle="h98901340g0dc5g47cfga1e3ga6229c7dcff7" version="1" />
+					<attribute id="LadderLoopSpeed" type="6" value="6" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="8acc9b9d-fda3-4198-a6c2-7fd8596f8094" />
+					<attribute id="Name" type="23" value="Ankylosaurus_PlayerWildshape" />
+					<attribute id="ParentTemplateId" type="22" value="ea400d0d-f3cc-4e12-b1a3-faf7e63e7780" />
+					<attribute id="SpellSet" type="22" value="" />
+					<attribute id="Stats" type="22" value="Ankylosaurus_Wildshape_1" />
+					<attribute id="Type" type="22" value="character" />
+					<attribute id="VocalAngryResourceID" type="22" value="a910d363-e72e-41ad-ad21-e9ef252de2ce" />
+					<attribute id="VocalEffortsResourceID" type="22" value="a4ebcbac-8faa-4e91-b437-84633ed98312" />
+					<attribute id="VocalIdle1ResourceID" type="22" value="32e42621-9bc1-401e-b6d9-7598c25e03a5" />
+					<attribute id="VocalIdleCombat1ResourceID" type="22" value="fc2de719-2ee4-441b-8132-5a6cd1956584" />
+					<attribute id="VocalIdleCombat2ResourceID" type="22" value="10ac55f9-65b0-46b4-b4b0-2910d96a1b7f" />
+					<attribute id="VocalRelaxedResourceID" type="22" value="2d815f5f-37b0-4aab-b687-1419e8d7b9d1" />
+					<attribute id="VocalShoutResourceID" type="22" value="d7d7c0bd-bfda-4532-9462-ffec78f68a21" />
+					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209032" />
+					<children>
+						<node id="LocomotionParams">
+							<attribute id="WorldClimbingRadius" type="6" value="1.6" />
+						</node>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="AIFlags" type="3" value="0" />
+									<attribute id="FallbackStartRound" type="4" value="-1" />
+									<attribute id="LearningStrategy" type="1" value="0" />
+									<attribute id="MinimumImpact" type="4" value="0" />
+									<attribute id="OnlyCastOnSelf" type="19" value="False" />
+									<attribute id="ScoreModifier" type="6" value="1" />
+									<attribute id="Skill" type="22" value="Target_Tail_Ankylosaurus_Wildshape" />
+									<attribute id="SpellCastingAbility" type="1" value="0" />
+									<attribute id="StartRound" type="4" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="7fd38477-891b-4e95-bfdd-060da49eacaf" />
+					<attribute id="Name" type="23" value="Ankylosaurus_PlayerWildshape_2" />
+					<attribute id="ParentTemplateId" type="22" value="8acc9b9d-fda3-4198-a6c2-7fd8596f8094" />
+					<attribute id="Stats" type="22" value="Ankylosaurus_Wildshape_2" />
+					<attribute id="Type" type="22" value="character" />
+					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209032" />
+					<children>
+						<node id="LocomotionParams" />
+					</children>
+				</node>
+
+				<!-- Stegosaurus -->
+				<node id="GameObjects">
+					<attribute id="Archetype" type="22" value="melee" />
+					<attribute id="DisplayName" type="28" handle="h98901340g0dc5g47cfga1e3ga6229c7dcff7" version="1" />
+					<attribute id="LadderLoopSpeed" type="6" value="6" />
+					<attribute id="LevelName" type="22" value="" />
+					<attribute id="MapKey" type="22" value="40c018d5-90a4-478c-863b-f3c8a9431806" />
+					<attribute id="Name" type="23" value="Stegosaurus_PlayerWildshape" />
+					<attribute id="ParentTemplateId" type="22" value="ea400d0d-f3cc-4e12-b1a3-faf7e63e7780" />
+					<attribute id="SpellSet" type="22" value="" />
+					<attribute id="Stats" type="22" value="Stegosaurus_Wildshape" />
+					<attribute id="Type" type="22" value="character" />
+					<attribute id="VocalAngryResourceID" type="22" value="a910d363-e72e-41ad-ad21-e9ef252de2ce" />
+					<attribute id="VocalEffortsResourceID" type="22" value="a4ebcbac-8faa-4e91-b437-84633ed98312" />
+					<attribute id="VocalIdle1ResourceID" type="22" value="32e42621-9bc1-401e-b6d9-7598c25e03a5" />
+					<attribute id="VocalIdleCombat1ResourceID" type="22" value="fc2de719-2ee4-441b-8132-5a6cd1956584" />
+					<attribute id="VocalIdleCombat2ResourceID" type="22" value="10ac55f9-65b0-46b4-b4b0-2910d96a1b7f" />
+					<attribute id="VocalRelaxedResourceID" type="22" value="2d815f5f-37b0-4aab-b687-1419e8d7b9d1" />
+					<attribute id="VocalShoutResourceID" type="22" value="d7d7c0bd-bfda-4532-9462-ffec78f68a21" />
+					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209032" />
+					<children>
+						<node id="LocomotionParams">
+							<attribute id="WorldClimbingRadius" type="6" value="1.6" />
+						</node>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="AIFlags" type="3" value="0" />
+									<attribute id="FallbackStartRound" type="4" value="-1" />
+									<attribute id="LearningStrategy" type="1" value="0" />
+									<attribute id="MinimumImpact" type="4" value="0" />
+									<attribute id="OnlyCastOnSelf" type="19" value="False" />
+									<attribute id="ScoreModifier" type="6" value="1" />
+									<attribute id="Skill" type="22" value="Target_Tail_Stegosaurus_Wildshape" />
+									<attribute id="SpellCastingAbility" type="1" value="0" />
+									<attribute id="StartRound" type="4" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
+								</node>
+							</children>
+						</node>
 					</children>
 				</node>
 
@@ -1113,7 +1292,38 @@
 									<attribute id="MinimumImpact" type="4" value="0" />
 									<attribute id="OnlyCastOnSelf" type="19" value="False" />
 									<attribute id="ScoreModifier" type="6" value="1" />
-									<attribute id="Skill" type="22" value="Target_Multiattack_Bear_Black_Wildshape" />
+									<attribute id="Skill" type="22" value="Target_Bite_BlackBear_Wildshape" />
+									<attribute id="SpellCastingAbility" type="1" value="0" />
+									<attribute id="StartRound" type="4" value="0" />
+									<attribute id="TacticianHardcore" type="19" value="True" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="3" value="0" />
+									<attribute id="CasualExplorer" type="19" value="True" />
+									<attribute id="Classic" type="19" value="True" />
+									<attribute id="FallbackStartRound" type="4" value="-1" />
+									<attribute id="HonorHardcore" type="19" value="True" />
+									<attribute id="LearningStrategy" type="1" value="0" />
+									<attribute id="MinimumImpact" type="4" value="0" />
+									<attribute id="OnlyCastOnSelf" type="19" value="False" />
+									<attribute id="ScoreModifier" type="6" value="1" />
+									<attribute id="Skill" type="22" value="Target_Multiattack_BlackBear_Wildshape" />
 									<attribute id="SpellCastingAbility" type="1" value="0" />
 									<attribute id="StartRound" type="4" value="0" />
 									<attribute id="TacticianHardcore" type="19" value="True" />
@@ -1244,7 +1454,38 @@
 									<attribute id="MinimumImpact" type="4" value="0" />
 									<attribute id="OnlyCastOnSelf" type="19" value="False" />
 									<attribute id="ScoreModifier" type="6" value="1" />
-									<attribute id="Skill" type="22" value="Target_Multiattack_Bear_Brown_Wildshape" />
+									<attribute id="Skill" type="22" value="Target_Bite_BrownBear_Wildshape" />
+									<attribute id="SpellCastingAbility" type="1" value="0" />
+									<attribute id="StartRound" type="4" value="0" />
+									<attribute id="TacticianHardcore" type="19" value="True" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="3" value="0" />
+									<attribute id="CasualExplorer" type="19" value="True" />
+									<attribute id="Classic" type="19" value="True" />
+									<attribute id="FallbackStartRound" type="4" value="-1" />
+									<attribute id="HonorHardcore" type="19" value="True" />
+									<attribute id="LearningStrategy" type="1" value="0" />
+									<attribute id="MinimumImpact" type="4" value="0" />
+									<attribute id="OnlyCastOnSelf" type="19" value="False" />
+									<attribute id="ScoreModifier" type="6" value="1" />
+									<attribute id="Skill" type="22" value="Target_Multiattack_BrownBear_Wildshape" />
 									<attribute id="SpellCastingAbility" type="1" value="0" />
 									<attribute id="StartRound" type="4" value="0" />
 									<attribute id="TacticianHardcore" type="19" value="True" />
@@ -1375,7 +1616,38 @@
 									<attribute id="MinimumImpact" type="4" value="0" />
 									<attribute id="OnlyCastOnSelf" type="19" value="False" />
 									<attribute id="ScoreModifier" type="6" value="1" />
-									<attribute id="Skill" type="22" value="Target_Multiattack_Bear_Polar_Wildshape" />
+									<attribute id="Skill" type="22" value="Target_Bite_PolarBear_Wildshape" />
+									<attribute id="SpellCastingAbility" type="1" value="0" />
+									<attribute id="StartRound" type="4" value="0" />
+									<attribute id="TacticianHardcore" type="19" value="True" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="4" value="100" />
+											<attribute id="MinimumHealthPercentage" type="4" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="3" value="0" />
+									<attribute id="CasualExplorer" type="19" value="True" />
+									<attribute id="Classic" type="19" value="True" />
+									<attribute id="FallbackStartRound" type="4" value="-1" />
+									<attribute id="HonorHardcore" type="19" value="True" />
+									<attribute id="LearningStrategy" type="1" value="0" />
+									<attribute id="MinimumImpact" type="4" value="0" />
+									<attribute id="OnlyCastOnSelf" type="19" value="False" />
+									<attribute id="ScoreModifier" type="6" value="1" />
+									<attribute id="Skill" type="22" value="Target_Multiattack_PolarBear_Wildshape" />
 									<attribute id="SpellCastingAbility" type="1" value="0" />
 									<attribute id="StartRound" type="4" value="0" />
 									<attribute id="TacticianHardcore" type="19" value="True" />
@@ -1964,278 +2236,6 @@
 					<attribute id="_OriginalFileVersion_" type="32" value="144115207403209023" />
 					<children>
 						<node id="LocomotionParams" />
-					</children>
-				</node>
-
-				<!-- Raven -->
-				<node id="GameObjects">
-					<attribute id="AiHint" type="31" value="f5614548-32cc-4e2e-b108-32e5d532471e" />
-					<attribute id="Archetype" type="22" value="melee" />
-					<attribute id="Icon" type="22" value="02cffb7c-0f9d-8036-a270-e1d4ad7c007f-_(Icon_Raven)" />
-					<attribute id="LevelName" type="22" value="" />
-					<attribute id="MapKey" type="22" value="e5cbcdf1-ed38-4906-811b-f058b09bb3c4" />
-					<attribute id="Name" type="23" value="Raven_PlayerWildshape" />
-					<attribute id="ParentTemplateId" type="22" value="d5676054-fe07-4c6d-8433-b79b33a80a89" />
-					<attribute id="SpellSet" type="22" value="" />
-					<attribute id="Stats" type="22" value="Wildshape_Raven" />
-					<attribute id="Type" type="22" value="character" />
-					<attribute id="VocalAlertResourceID" type="22" value="359ee994-e619-a774-f449-14b86beb3120" />
-					<attribute id="VocalAngryResourceID" type="22" value="21952fa0-e40f-8647-9b37-ba562a8b6ca7" />
-					<attribute id="VocalBoredResourceID" type="22" value="696c35bf-e520-42f2-22b1-e0f1c326906a" />
-					<attribute id="VocalExhaustedResourceID" type="22" value="c8adc253-f713-2cfd-5ec8-8863278eb464" />
-					<attribute id="VocalRecoverResourceID" type="22" value="ca237d66-b73c-1970-0273-31c894e58f17" />
-					<attribute id="VocalRelaxedResourceID" type="22" value="09c77e5b-d7c1-5160-2f59-d7cd6f6c96b4" />
-					<attribute id="_OriginalFileVersion_" type="32" value="144115205255725056" />
-					<children>
-						<node id="Bounds">
-							<children>
-								<node id="Bound">
-									<attribute id="Height" type="6" value="1.5" />
-									<attribute id="Max" type="12" value="0 0 0" />
-									<attribute id="Min" type="12" value="0 0 0" />
-									<attribute id="Radius" type="6" value="0.1" />
-									<attribute id="Shape" type="1" value="2" />
-									<attribute id="Type" type="1" value="0" />
-								</node>
-								<node id="Bound">
-									<attribute id="Height" type="6" value="1.5" />
-									<attribute id="Max" type="12" value="0 0 0" />
-									<attribute id="Min" type="12" value="0 0 0" />
-									<attribute id="Radius" type="6" value="0.1" />
-									<attribute id="Shape" type="1" value="2" />
-									<attribute id="Type" type="1" value="1" />
-								</node>
-								<node id="Bound">
-									<attribute id="Height" type="6" value="1.5" />
-									<attribute id="Max" type="12" value="0 0 0" />
-									<attribute id="Min" type="12" value="0 0 0" />
-									<attribute id="Radius" type="6" value="0.249" />
-									<attribute id="Shape" type="1" value="2" />
-									<attribute id="Type" type="1" value="2" />
-								</node>
-							</children>
-						</node>
-						<node id="LocomotionParams" />
-						<node id="SkillList">
-							<children>
-								<node id="Skill">
-									<attribute id="AIFlags" type="3" value="0" />
-									<attribute id="CasualExplorer" type="19" value="True" />
-									<attribute id="Classic" type="19" value="True" />
-									<attribute id="FallbackStartRound" type="4" value="-1" />
-									<attribute id="HonorHardcore" type="19" value="True" />
-									<attribute id="LearningStrategy" type="1" value="0" />
-									<attribute id="MinimumImpact" type="4" value="0" />
-									<attribute id="OnlyCastOnSelf" type="19" value="False" />
-									<attribute id="ScoreModifier" type="6" value="1" />
-									<attribute id="Skill" type="22" value="Projectile_Fly" />
-									<attribute id="SpellCastingAbility" type="1" value="0" />
-									<attribute id="StartRound" type="4" value="0" />
-									<attribute id="TacticianHardcore" type="19" value="True" />
-									<children>
-										<node id="SourceConditions">
-											<attribute id="MaximumHealthPercentage" type="4" value="100" />
-											<attribute id="MinimumHealthPercentage" type="4" value="0" />
-											<children>
-												<node id="Tags" />
-											</children>
-										</node>
-										<node id="TargetConditions">
-											<attribute id="MaximumHealthPercentage" type="4" value="100" />
-											<attribute id="MinimumHealthPercentage" type="4" value="0" />
-											<children>
-												<node id="Tags" />
-											</children>
-										</node>
-									</children>
-								</node>
-								<node id="Skill">
-									<attribute id="AIFlags" type="3" value="0" />
-									<attribute id="CasualExplorer" type="19" value="True" />
-									<attribute id="Classic" type="19" value="True" />
-									<attribute id="FallbackStartRound" type="4" value="-1" />
-									<attribute id="HonorHardcore" type="19" value="True" />
-									<attribute id="LearningStrategy" type="1" value="0" />
-									<attribute id="MinimumImpact" type="4" value="0" />
-									<attribute id="OnlyCastOnSelf" type="19" value="False" />
-									<attribute id="ScoreModifier" type="6" value="1" />
-									<attribute id="Skill" type="22" value="Target_Multiattack_Raven_Wildshape" />
-									<attribute id="SpellCastingAbility" type="1" value="0" />
-									<attribute id="StartRound" type="4" value="0" />
-									<attribute id="TacticianHardcore" type="19" value="True" />
-									<children>
-										<node id="SourceConditions">
-											<attribute id="MaximumHealthPercentage" type="4" value="100" />
-											<attribute id="MinimumHealthPercentage" type="4" value="0" />
-											<children>
-												<node id="Tags" />
-											</children>
-										</node>
-										<node id="TargetConditions">
-											<attribute id="MaximumHealthPercentage" type="4" value="100" />
-											<attribute id="MinimumHealthPercentage" type="4" value="0" />
-											<children>
-												<node id="Tags" />
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="SpeakerGroupList">
-							<children>
-								<node id="SpeakerGroup">
-									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
-								</node>
-							</children>
-						</node>
-						<node id="Tags">
-							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
-								</node>
-							</children>
-						</node>
-					</children>
-				</node>
-
-				<!-- Owl -->
-				<node id="GameObjects">
-					<attribute id="CharacterVisualResourceID" type="22" value="0e07698e-61b6-b206-fe80-cbc8c76c014a" />
-					<attribute id="PhysicsTemplate" type="22" value="13bdcb93-0fa1-7658-5f71-302ed894700d" />
-					<attribute id="AiHint" type="31" value="f5614548-32cc-4e2e-b108-32e5d532471e" />
-					<attribute id="Archetype" type="22" value="melee" />
-					<attribute id="Icon" type="22" value="02cffb7c-0f9d-8036-a270-e1d4ad7c007f-_(Icon_Raven)" />
-					<attribute id="LevelName" type="22" value="" />
-					<attribute id="MapKey" type="22" value="f2ddbd04-f963-4701-8d27-8e22dd40fd24" />
-					<attribute id="Name" type="23" value="Owl_PlayerWildshape" />
-					<attribute id="ParentTemplateId" type="22" value="d5676054-fe07-4c6d-8433-b79b33a80a89" />
-					<attribute id="SpellSet" type="22" value="" />
-					<attribute id="Stats" type="22" value="Wildshape_Owl" />
-					<attribute id="Type" type="22" value="character" />
-					<attribute id="VocalAlertResourceID" type="22" value="359ee994-e619-a774-f449-14b86beb3120" />
-					<attribute id="VocalAngryResourceID" type="22" value="21952fa0-e40f-8647-9b37-ba562a8b6ca7" />
-					<attribute id="VocalBoredResourceID" type="22" value="696c35bf-e520-42f2-22b1-e0f1c326906a" />
-					<attribute id="VocalExhaustedResourceID" type="22" value="c8adc253-f713-2cfd-5ec8-8863278eb464" />
-					<attribute id="VocalRecoverResourceID" type="22" value="ca237d66-b73c-1970-0273-31c894e58f17" />
-					<attribute id="VocalRelaxedResourceID" type="22" value="09c77e5b-d7c1-5160-2f59-d7cd6f6c96b4" />
-					<attribute id="_OriginalFileVersion_" type="32" value="144115205255725056" />
-					<children>
-						<node id="Bounds">
-							<children>
-								<node id="Bound">
-									<attribute id="Height" type="6" value="1.5" />
-									<attribute id="Max" type="12" value="0 0 0" />
-									<attribute id="Min" type="12" value="0 0 0" />
-									<attribute id="Radius" type="6" value="0.1" />
-									<attribute id="Shape" type="1" value="2" />
-									<attribute id="Type" type="1" value="0" />
-								</node>
-								<node id="Bound">
-									<attribute id="Height" type="6" value="1.5" />
-									<attribute id="Max" type="12" value="0 0 0" />
-									<attribute id="Min" type="12" value="0 0 0" />
-									<attribute id="Radius" type="6" value="0.1" />
-									<attribute id="Shape" type="1" value="2" />
-									<attribute id="Type" type="1" value="1" />
-								</node>
-								<node id="Bound">
-									<attribute id="Height" type="6" value="1.5" />
-									<attribute id="Max" type="12" value="0 0 0" />
-									<attribute id="Min" type="12" value="0 0 0" />
-									<attribute id="Radius" type="6" value="0.249" />
-									<attribute id="Shape" type="1" value="2" />
-									<attribute id="Type" type="1" value="2" />
-								</node>
-							</children>
-						</node>
-						<node id="LocomotionParams" />
-						<node id="SkillList">
-							<children>
-								<node id="Skill">
-									<attribute id="AIFlags" type="3" value="0" />
-									<attribute id="CasualExplorer" type="19" value="True" />
-									<attribute id="Classic" type="19" value="True" />
-									<attribute id="FallbackStartRound" type="4" value="-1" />
-									<attribute id="HonorHardcore" type="19" value="True" />
-									<attribute id="LearningStrategy" type="1" value="0" />
-									<attribute id="MinimumImpact" type="4" value="0" />
-									<attribute id="OnlyCastOnSelf" type="19" value="False" />
-									<attribute id="ScoreModifier" type="6" value="1" />
-									<attribute id="Skill" type="22" value="Projectile_Fly" />
-									<attribute id="SpellCastingAbility" type="1" value="0" />
-									<attribute id="StartRound" type="4" value="0" />
-									<attribute id="TacticianHardcore" type="19" value="True" />
-									<children>
-										<node id="SourceConditions">
-											<attribute id="MaximumHealthPercentage" type="4" value="100" />
-											<attribute id="MinimumHealthPercentage" type="4" value="0" />
-											<children>
-												<node id="Tags" />
-											</children>
-										</node>
-										<node id="TargetConditions">
-											<attribute id="MaximumHealthPercentage" type="4" value="100" />
-											<attribute id="MinimumHealthPercentage" type="4" value="0" />
-											<children>
-												<node id="Tags" />
-											</children>
-										</node>
-									</children>
-								</node>
-								<node id="Skill">
-									<attribute id="AIFlags" type="3" value="0" />
-									<attribute id="CasualExplorer" type="19" value="True" />
-									<attribute id="Classic" type="19" value="True" />
-									<attribute id="FallbackStartRound" type="4" value="-1" />
-									<attribute id="HonorHardcore" type="19" value="True" />
-									<attribute id="LearningStrategy" type="1" value="0" />
-									<attribute id="MinimumImpact" type="4" value="0" />
-									<attribute id="OnlyCastOnSelf" type="19" value="False" />
-									<attribute id="ScoreModifier" type="6" value="1" />
-									<attribute id="Skill" type="22" value="Target_Talons_Owl_Wildshape" />
-									<attribute id="SpellCastingAbility" type="1" value="0" />
-									<attribute id="StartRound" type="4" value="0" />
-									<attribute id="TacticianHardcore" type="19" value="True" />
-									<children>
-										<node id="SourceConditions">
-											<attribute id="MaximumHealthPercentage" type="4" value="100" />
-											<attribute id="MinimumHealthPercentage" type="4" value="0" />
-											<children>
-												<node id="Tags" />
-											</children>
-										</node>
-										<node id="TargetConditions">
-											<attribute id="MaximumHealthPercentage" type="4" value="100" />
-											<attribute id="MinimumHealthPercentage" type="4" value="0" />
-											<children>
-												<node id="Tags" />
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="SpeakerGroupList">
-							<children>
-								<node id="SpeakerGroup">
-									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
-								</node>
-							</children>
-						</node>
-						<node id="Tags">
-							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 

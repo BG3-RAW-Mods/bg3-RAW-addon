@@ -6,7 +6,7 @@ data "ContainerSpells" "Shout_WildShape_Action_GiantBadger;Shout_WildShape_Actio
 new entry "Shout_WildShape_BonusAction"
 type "SpellData"
 using "Shout_WildShape"
-data "ContainerSpells" "Shout_WildShape_BonusAction_GiantBadger;Shout_WildShape_BonusAction_Cat;Shout_Wildshape_BonusAction_Feline;Shout_WildShape_BonusAction_Velociraptor;Shout_WildShape_BonusAction_GiantSpider"
+data "ContainerSpells" "Shout_WildShape_BonusAction_GiantBadger;Shout_WildShape_BonusAction_Cat;Shout_Wildshape_BonusAction_Feline;Shout_WildShape_BonusAction_Saurus;Shout_WildShape_BonusAction_GiantSpider"
 data "UseCosts" "BonusActionPoint:1;WildShape:1"
 
 new entry "WILDSHAPE_MOVEMENT_TECHNICAL"

@@ -62,6 +62,7 @@ data "Description" "9e05f433-2723-4009-b593-4dbca769ee95;1"
 data "SpellSuccess" "IF(not HasPassive('PrimalStrike',context.Source)):DealDamage(max(1,1d8+UnarmedMeleeAbilityModifier),Piercing);IF(HasPassive('PrimalStrike',context.Source)):DealDamage(max(1,1d8+UnarmedMeleeAbilityModifier),Piercing,Magical);ApplyStatus(GIANT_SPIDER_POISON,100,1)"
 data "TooltipDamageList" "DealDamage(1d8+UnarmedMeleeAbilityModifier,Piercing)"
 data "TooltipStatusApply" "ApplyStatus(GIANT_SPIDER_POISON,100,1)"
+data "TooltipAttackSave" "MeleeUnarmedAttack;Constitution"
 
 // TODO: If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, 
 // even after regaining hit points, and is paralyzed while poisoned in this way.
@@ -89,6 +90,7 @@ data "TargetRadius" "9"
 data "SpellProperties" ""
 data "AreaRadius" ""
 data "Requirements" ""
+data "TooltipStatusApply" "ApplyStatus(GIANT_SPIDER_WEB_DC12,100,10)"
 
 new entry "Target_Web_GiantSpider_WildShape_Disadvantage"
 type "SpellData"

@@ -59,6 +59,7 @@ data "Description" "45821c16-b5f3-4d08-9da4-7d2fc1f4d42b;1"
 data "SpellSuccess" "IF(not HasPassive('PrimalStrike',context.Source)):DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Piercing);IF(HasPassive('PrimalStrike',context.Source)):DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Piercing,Magical);ApplyStatus(GIANT_WOLFSPIDER_POISON,100,1)"
 data "TooltipDamageList" "DealDamage(1d6+UnarmedMeleeAbilityModifier,Piercing)"
 data "TooltipStatusApply" "ApplyStatus(GIANT_WOLFSPIDER_POISON,100,1)"
+data "TooltipAttackSave" "MeleeUnarmedAttack;Constitution"
 
 // TODO: If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, 
 // even after regaining hit points, and is paralyzed while poisoned in this way.

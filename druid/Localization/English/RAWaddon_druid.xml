@@ -33,10 +33,25 @@ Level 8: Giant Spider Wolf that can &lt;LSTag Type="Spell" Tooltip="Target_Bite_
 	<content contentuid="9a28c372-4f27-42d8-92df-0e8f0b84bff9" version="1">Throw a web on a target. It is restrained by &lt;LSTag Type="Status" Tooltip="GIANT_SPIDER_WEB_DC12"&gt;webbing&lt;/LSTag&gt;. As an action, the restrained target can try to &lt;LSTag Type="Spell" Tooltip="Shout_BurstWebbing_DC12"&gt;burst&lt;/LSTag&gt; the webbing.</content>
 	<content contentuid="0e850499-e22a-497f-bd7a-f7ea0b63fc71" version="1">Burst the webbing</content>
 	<content contentuid="e5eac417-aff7-4a7e-a88b-744228693a0d" version="1">Burst the webbing with a successful Strength DC [1]</content>
-		
+
+	<!-- Saurus -->
+	<content contentuid="2685c03b-1dfe-4135-8564-b3d505c8b867" version="1">Wild Shape: Saurus</content>
+	<content contentuid="16782a32-9c70-4ebb-ae71-026df486a29d" version="1">Take the shape of a saurus:&lt;br&gt;
+Level 2: Velociraptor that &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Velociraptor_Wildshape"&gt;multi-attack&lt;/LSTag&gt;. It has between [1] and [2] Hit Points.&lt;br&gt;
+Level 9: Ankylosaurus that can make a &lt;LSTag Type="Spell" Tooltip="Target_Tail_Ankylosaurus_Wildshape"&gt;tail&lt;/LSTag&gt; attack. It has between [3] and [4] Hit Points.&lt;br&gt;
+Level 12: Stegosaurus that can make a &lt;LSTag Type="Spell" Tooltip="Target_Tail_Stegosaurus_Wildshape"&gt;tail&lt;/LSTag&gt; attack. It has [5] Hit Points.</content>
+			
 	<!-- Velociraptor -->
 	<content contentuid="90b83c34-89d1-4f2b-aaa4-a35ad6216d1f" version="1">Wild Shape: Velociraptor</content>
 	<content contentuid="bcdd4b4d-c560-4627-984e-b4fde27ee4a9" version="1">Take the shape of a velociraptor that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Velociraptor_Wildshape"&gt;multi-attack&lt;/LSTag&gt;.</content>
+
+	<!-- Ankylosaurus -->
+	<content contentuid="a0fd9ddd-d5fe-4d8a-84e3-bb926fa8631f" version="1">Wild Shape: Ankylosaurus</content>
+	<content contentuid="27849df3-1f6d-45d2-8108-5f81c59793b9" version="1">Tail</content>
+	<content contentuid="e7f8922a-a858-418c-be61-746d98a60d1f" version="1"></content>
+
+	<!-- Stegosaurus -->
+	<content contentuid="5605539e-ed7b-49bd-b526-7bb774177503" version="1">Wild Shape: Stegosaurus</content>
 
 	<!-- Wolf -->
 	<content contentuid="42e3b4cd-d347-49d6-a29b-500808fc1f0d" version="1">Take the shape of a wolf:&lt;br&gt;
@@ -56,7 +71,7 @@ Level 8: Dire Wolf that can &lt;LSTag Type="Spell" Tooltip="Target_Bite_DireWolf
 	<content contentuid="f002f137-1137-467d-9f65-46f2831429aa" version="1">Take the shape of a feline:&lt;br&gt;
 Level 2: Panther that can &lt;LSTag Type="Spell" Tooltip="Target_Bite_Panther_WildShape"&gt;bite&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Target_Pounce_Panther_WildShape"&gt;pounce&lt;/LSTag&gt;. It has between [1] and [2] Hit Points.&lt;br&gt;
 Level 6: Sabre-Toothed Tiger that can &lt;LSTag Type="Spell" Tooltip="Target_Bite_SaberToothTiger_Wildshape"&gt;bite&lt;/LSTag&gt; and &lt;LSTag Type="Spell" Tooltip="Target_Pounce_SaberToothTiger_Wildshape"&gt;pounce&lt;/LSTag&gt;. It has between [3] and [4] Hit Points.&lt;br&gt;
-Level 9: Spotted Lion that can &lt;LSTag Type="Spell" Tooltip="Target_Rend_SpottedLion_Wildshape"&gt;rend&lt;/LSTag&gt;. It has between [5] and [6] Hit Points.&lt;br&gt;</content>
+Level 9: Spotted Lion that can &lt;LSTag Type="Spell" Tooltip="Target_Rend_SpottedLion_Wildshape"&gt;rend&lt;/LSTag&gt;. It has between [5] and [6] Hit Points.</content>
 	<content contentuid="6ab722a8-8073-4bde-b23c-cf2847f9e7a9" version="1">If the target is prone, the [1] can make another attack against it as a bonus action</content>
 
 	<!-- Panther -->
@@ -111,13 +126,8 @@ Level 6: Polar Bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_
 	<content contentuid="094e0059-6b5f-48a5-8121-0eb5673f7585" version="1">Giant Elk's Charge</content>
 	<content contentuid="ae8db86c-c5b2-4e1e-bafa-4478de7e4327" version="1">Charge a target and then hits it with a ram attack on the same turn, the target takes an extra [1] damage and must succeed on a DC 14 Strength saving throw or be knocked prone</content>
 
-	<!-- Giant Raven -->
-	<content contentuid="ee420aa2-bc7d-4a59-a34c-7a05dd4a01ff" version="1">Wild Shape: Giant Raven</content>
-	<content contentuid="8c0802f0-2ff5-4005-b78e-32db156d48e6" version="1">Take the shape of a giant raven that can fly [1] and &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Raven_Wildshape"&gt;multiattack&lt;/LSTag&gt;. It has [2].</content>
-
-	<!-- Giant Owl -->
-	<content contentuid="1b61c2ec-e890-468d-819b-ded21b1c7c90" version="1">Wild Shape: Giant Owl</content>
-	<content contentuid="19f07695-4c4b-4f67-ad56-cd16dd5832fe" version="1">Take the shape of a giant owl that can fly [1] and &lt;LSTag Type="Spell" Tooltip="Target_Talons_Owl_Wildshape"&gt;attack&lt;/LSTag&gt;. It has [2].</content>
+	<!-- Birds -->
+	<content contentuid="3fb414f3-330c-4843-b654-2d32f38a6fbf" version="1">Beak</content>	
 
 	<!-- Giant Eagle -->
 	<content contentuid="93fa3c1c-4130-4a30-a63f-f03b4a315ac7" version="1">Wild Shape: Giant Eagle</content>
@@ -140,7 +150,5 @@ Level 6: Polar Bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_
 	<content contentuid="b839ff12-5aa5-4428-9bf1-d39d7ef6a9f5" version="1">Flyby</content>
 	<content contentuid="e47e53e4-85f4-48cc-8a74-f0595569ba1b" version="1">Doesn't provoke opportunity attacks when it flies out of an enemy's reach.</content>
 	<content contentuid="f0981b84-ce2a-4b48-9643-5051a4799f60" version="1">When the attacker &lt;LSTag Tooltip="Downed"&gt;downs&lt;/LSTag&gt; another creature with a melee attack, it can use a bonus action to move up to half its &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; and make a bite attack.</content>
-
-	
 
 </contentList>

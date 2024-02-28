@@ -77,6 +77,8 @@ For example, Panther Pounce rolls DC 10. It will be:
 - DC 15 for levels 13-15
 - DC 16 for levels 16-20
 
+Some shapes have multi-attacks, typically bite-claws. They will get one attack skill and multi-attack skill. When using attack skill (bite), it will unlock another attack skill (claws). Usually, it is faster to use multi-attack but on weaker targets, it is not desirable.
+
 The notation "Recharge X- Y" means a monster can use a special ability once and that the ability then has a random chance of recharging during each subsequent round of combat. At the start of each of the monster's turns, roll a d6. If the roll is one of the numbers in the recharge notation, the monster regains the use of the special ability. The ability also recharges when the monster finishes a short or long rest. For the Giant Spider, that means you roll a d6 and if it comes up with 5 or 6, then it can use the web attack again.
 
 ### Giant Badger
@@ -230,25 +232,6 @@ Actions (adds *Strength modifier*):
 - hooves: 4d8+4 Bludgeoning on a Prone creature
 - charge: if the elk moves at least 6m straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage and must succeed on a DC 12 Strength saving throw or be knocked prone.
 
-### Giant Raven
-
-Strength: 15, Dexterity: 10, Constitution: 15, AC: 10, Movement Speed: 18 (fly)
-Hit Points: 36
-Proficiencies: Perception, Keen Sight, Pack Tactics
-Actions (adds *Strength modifier*): 
-- beak: 2d4+2 Piercing
-- talons: 2d6+2 Slashing
-- multiattack: beak and talons
-
-### Giant Owl
-
-Strength: 13, Dexterity: 15, Constitution: 12, AC: 12, Movement Speed: 18 (fly)
-Hit Points: 33
-Proficiencies: Perception, Stealth, Darkvision (36m)
-Passives: Flyby, Keen Sight
-Actions (adds *Dexterity modifier*): 
-- talons: 2d6+1 Slashing
-
 ### Giant Eagle
 
 Strength: 16, Dexterity: 17, Constitution: 13, AC: 13, Movement Speed: 24 (fly)
@@ -289,7 +272,7 @@ Passives: Pack Tactics
 Actions (adds *Dexterity modifier*): 
 - bite: 1d6+2 Piercing
 - claws: 1d4+2 Slashing
-- multi-attack: bite and claws
+- multi-attack: bite and claws (*not implemented due to missing animation*)
 
 ### Ankylosaurus
 Shout_WildShape_Dilophosaurus fca74933-fb42-45c0-af31-c9f806368453 Dilophosaurus_Wildshape
@@ -298,7 +281,7 @@ Strength: 19, Dexterity: 11, Constitution: 15, AC: 15 (natural), Movement Speed:
 Hit Points: 98 (level 9), 112 (level 10)
 Proficiencies: Perception
 Actions (adds *Strength modifier*): 
-- tail: reach 10 feet, 4d6+4 Bludgeoning. Target must succeed on a DC 14 Strength saving throw or be knocked prone.
+- tail: reach 10 feet, 4d6+4 Bludgeoning. Target must succeed on a DC 12 Strength saving throw or be knocked prone.
 
 ### Stegosaurus
 Shout_WildShape_Dilophosaurus fca74933-fb42-45c0-af31-c9f806368453 Dilophosaurus_Wildshape
@@ -307,7 +290,7 @@ Strength: 20, Dexterity: 9, Constitution: 17, AC: 13 (natural), Movement Speed: 
 Hit Points: 120
 Proficiencies: Perception
 Actions (adds *Strength modifier*): 
-- tail: reach 10 feet, 6d6+5 Piercing.
+- tail: reach 10 feet, 6d6+5 Piercing. Target must succeed on a DC 13 Strength saving throw or be knocked prone.
 
 ### Water Elemental
 Shout_WildShape_Myrmidon_Water 6c9ea298-14dd-4485-ac3c-fdf818f6b110 Water_Myrmidon_Wildshape
