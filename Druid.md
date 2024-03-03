@@ -77,7 +77,7 @@ For example, Panther Pounce rolls DC 10. It will be:
 - DC 15 for levels 13-15
 - DC 16 for levels 16-20
 
-Some shapes have multi-attacks, typically bite-claws. They will get one attack skill and multi-attack skill. When using attack skill (bite), it will unlock another attack skill (claws). Usually, it is faster to use multi-attack but on weaker targets, it is not desirable.
+Some shapes have multi-attacks, typically bite-claws. They will get two attack skills and a multi-attack skill.
 
 The notation "Recharge X- Y" means a monster can use a special ability once and that the ability then has a random chance of recharging during each subsequent round of combat. At the start of each of the monster's turns, roll a d6. If the roll is one of the numbers in the recharge notation, the monster regains the use of the special ability. The ability also recharges when the monster finishes a short or long rest. For the Giant Spider, that means you roll a d6 and if it comes up with 5 or 6, then it can use the web attack again.
 
@@ -293,7 +293,6 @@ Actions (adds *Strength modifier*):
 - tail: reach 10 feet, 6d6+5 Piercing. Target must succeed on a DC 13 Strength saving throw or be knocked prone.
 
 ### Water Elemental
-Shout_WildShape_Myrmidon_Water 6c9ea298-14dd-4485-ac3c-fdf818f6b110 Water_Myrmidon_Wildshape
 
 Strength: 18, Dexterity: 14, Constitution: 18, AC: 14 (natural), Movement Speed: 9
 Hit Points: 114 (level 10), 141 (level 11), 168 (level 12)
@@ -314,34 +313,35 @@ Actions (adds *Strength modifier*):
 The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 2d8+4 bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength check and succeeding.
 
 ### Fire Elemental
-Shout_WildShape_Myrmidon_Fire 9c5e77bc-0e65-4c11-865a-46d892cc06fe Fire_Myrmidon_Wildshape
 
 Strength: 10, Dexterity: 17, Constitution: 16, AC: 13, Movement Speed: 15
 Hit Points: 102 (level 10), 129 (level 11), 156 (level 12)
-Damage Resistances Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
-Damage Immunities Fire, Poison
-Condition Immunities Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious
+Damage Resistances: Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
+Damage Immunities: Fire, Poison
+Condition Immunities: Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious
 Proficiencies: Perception
 Passives: Darkvision (18m)
 
-Fire Form. The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.
+Fire Form:
+- The elemental can move through a space as narrow as 1 inch wide without squeezing.
+- A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 1d10 fire damage. 
+- The elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 1d10 fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 1d10 fire damage at the start of each of its turns.
 
 Illumination. The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet.
 
 Water Susceptibility. For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.
 
 Actions (adds *Dexterity modifier*): 
-- Multiattack. The elemental makes two touch attacks.
 - Touch. 2d6+3 Fire damage. ignites target. Until a creature takes an action to douse the fire, the target takes 1d10 fire damage at the start of each of its turns.
+- Multiattack. The elemental makes two touch attacks.
 
 ### Air Elemental
-Shout_WildShape_Myrmidon_Air 3feb7490-c75e-446a-b8af-d459a164a0a6 Air_Myrmidon_Wildshape
 
 Strength: 14, Dexterity: 20, Constitution: 14, AC: 15, Movement Speed: 36
 Hit Points: 90 (level 10), 117 (level 11), 144 (level 12)
-Damage Resistances Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
-Damage Immunities Poison
-Condition Immunities Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious
+Damage Resistances: Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
+Damage Immunities: Poison
+Condition Immunities: Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious
 Proficiencies: Perception
 Passives: Darkvision (18m)
 
@@ -354,14 +354,13 @@ Actions (adds *Dexterity modifier*):
 If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.
 
 ### Earth Elemental
-Shout_WildShape_Myrmidon_Earth 86b5ed60-c0a8-41d0-88a5-ed77985820eb Earth_Myrmidon_WIldshape
 
 Strength: 20, Dexterity: 8, Constitution: 20, AC: 17 (natural), Movement Speed: 9
 Hit Points: 126 (level 10), 153 (level 11), 180 (level 12)
-Damage Vulnerabilities Thunder
-Damage Resistances Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
-Damage Immunities Poison
-Condition Immunities Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious
+Damage Vulnerabilities: Thunder
+Damage Resistances: Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
+Damage Immunities: Poison
+Condition Immunities: Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious
 Proficiencies: Perception
 Passives: Darkvision (18m)
 

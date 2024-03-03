@@ -5,6 +5,15 @@
 	<!-- Movement Tracking -->
 	<content contentuid="4f93a1b8-eeeb-484a-a937-cd7b5c42454c" version="1">Movement Tracking</content>
 	<content contentuid="40f43875-6158-4d7c-84f8-9c8cee0b5bae" version="1">Track how many meters you have moved this turn.</content>
+	<content contentuid="3d0146df-cfc0-4399-ba59-b9ca64ba5515" version="1">You need to move at least 6m before using this ability</content>
+
+	<content contentuid="e5f69875-a2ee-4635-be21-2ed867435ef7" version="1">Require a Prone target</content>
+	
+
+	<!-- Multiattack -->
+	<content contentuid="f4450a7e-2ee9-44df-a9d9-39d21e4af4e4" version="1">You can make a Bite attack after a Claws attack</content>
+	<content contentuid="ad6dfe6c-d8ce-4b34-85c0-d4376a408dd3" version="1">You can make a Claws attack right after a Bite attack</content>
+	<content contentuid="ee968e11-d4e6-4dff-a57f-03b9f37e9d97" version="1">You can make a Bite attack after a Talons attack</content>
 
 	<!-- Giant Badger -->
 	<content contentuid="946693ed-5292-483e-b2d1-27a411a4ef38" version="1">Wild Shape: Giant Badger</content>
@@ -22,6 +31,7 @@ Level 8: Giant Spider Wolf that can &lt;LSTag Type="Spell" Tooltip="Target_Bite_
 
 	<!-- Giant Wolf Spider -->
 	<content contentuid="a0f4b0e7-2477-4781-b9c2-15a9f150c4f5" version="1">Wild Shape: Giant Wolf Spider</content>
+	<content contentuid="c050088c-debc-4b0c-8d8c-e4d3c40ebff6" version="1">Giant Wolf Spider</content>
 	<content contentuid="1ff13628-ec31-4a0b-95f5-9634af6ee857" version="1">Take the shape of a giant wolf spider that can &lt;LSTag Type="Spell" Tooltip="Target_Bite_GiantWolfSpider_Wildshape"&gt;bite&lt;/LSTag&gt;.</content>
 	<content contentuid="45821c16-b5f3-4d08-9da4-7d2fc1f4d42b" version="1">Bite a target and apply &lt;LSTag Type="Status" Tooltip="GIANT_WOLFSPIDER_POISON"&gt;poison&lt;/LSTag&gt;.</content>
 
@@ -48,10 +58,11 @@ Level 12: Stegosaurus that can make a &lt;LSTag Type="Spell" Tooltip="Target_Tai
 	<!-- Ankylosaurus -->
 	<content contentuid="a0fd9ddd-d5fe-4d8a-84e3-bb926fa8631f" version="1">Wild Shape: Ankylosaurus</content>
 	<content contentuid="27849df3-1f6d-45d2-8108-5f81c59793b9" version="1">Tail</content>
-	<content contentuid="e7f8922a-a858-418c-be61-746d98a60d1f" version="1"></content>
+	<content contentuid="41e41fca-321d-4bd4-9597-ea194e0d882e" version="1">Ankylosaurus</content>
 
 	<!-- Stegosaurus -->
 	<content contentuid="5605539e-ed7b-49bd-b526-7bb774177503" version="1">Wild Shape: Stegosaurus</content>
+	<content contentuid="e81437a6-0fe5-4889-987a-e17ccfcd8a45" version="1">Stegosaurus</content>
 
 	<!-- Wolf -->
 	<content contentuid="42e3b4cd-d347-49d6-a29b-500808fc1f0d" version="1">Take the shape of a wolf:&lt;br&gt;
@@ -59,6 +70,7 @@ Level 2: Wolf that can &lt;LSTag Type="Spell" Tooltip="Target_Bite_Wolf_Wildshap
 Level 8: Dire Wolf that can &lt;LSTag Type="Spell" Tooltip="Target_Bite_DireWolf_Wildshape"&gt;bite&lt;/LSTag&gt;. It has [3] Hit Points.</content>
 
 	<content contentuid="7273b0bc-0e81-40d9-b2c7-2d21163f8ee2" version="1">Wild Shape: Wolf</content>
+	<content contentuid="e0735a68-da23-4148-83cd-fd41a33f8c5a" version="1">Wolf</content>
 	<content contentuid="7f55d4c8-9d57-4934-809b-3879716a720f" version="1">Bite a target and knock it &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; on a failed Strength &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
 
 	<!-- Dire Wolf -->
@@ -86,6 +98,7 @@ Level 9: Spotted Lion that can &lt;LSTag Type="Spell" Tooltip="Target_Rend_Spott
 
 	<!-- Spotted Lion -->
 	<content contentuid="66f98895-4af5-4ffd-869c-5a5b318e1494" version="1">Wild Shape: Spotted Lion</content>
+	<content contentuid="a1970a6f-c76d-4ccb-bef6-d5cf1cbf467c" version="1">Spotted Lion</content>
 	<content contentuid="2ccc0bf0-26a5-4bc2-8fb6-54a73de756bf" version="1">Take the shape of a spotted lion that can &lt;LSTag Type="Spell" Tooltip="Target_Rend_SpottedLion_Wildshape"&gt;rend&lt;/LSTag&gt;.</content>
 	<content contentuid="58d6ade1-8c91-4dde-bcb9-5e873fb564e8" version="1">Rend</content>
 	<content contentuid="06a5a992-10b7-4139-8fab-b8c58f64623b" version="1">Spotted Lion Rend's knockdown</content>
@@ -93,6 +106,7 @@ Level 9: Spotted Lion that can &lt;LSTag Type="Spell" Tooltip="Target_Rend_Spott
 	
 	<!-- Giant Hyena -->
 	<content contentuid="12127fc6-8ef6-4b63-93b9-c678e8a0c790" version="1">Wild Shape: Giant Hyena</content>
+	<content contentuid="31e5be43-ef44-4f56-82b7-5b88cdaf9bc5" version="1">Giant Hyena</content>
 	<content contentuid="91e16d48-40ce-4ff0-aa13-4c9ac02c3fc5" version="1">Take the shape of a giant hyena that can &lt;LSTag Type="Spell" Tooltip="Target_Bite_Hyena_Wildshape"&gt;bite&lt;/LSTag&gt; and go &lt;LSTag Type="Passive" Tooltip="Rampage"&gt;Rampage&lt;/LSTag&gt;.</content>
 
 	<!-- Bear -->
@@ -105,10 +119,12 @@ Level 6: Polar Bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_
 
 	<!-- Black Bear -->
 	<content contentuid="3921c27e-e5b9-4b0b-981c-3117e090514c" version="1">Wild Shape: Black Bear</content>
+	<content contentuid="f688f214-4ab2-41af-8da5-cf5544961d72" version="1">Black Bear</content>
 	<content contentuid="ae5baad1-3e70-4778-bae7-a7fa7b19a689" version="1">Take the shape of a black bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Bear_Black_Wildshape"&gt;multi-attack&lt;/LSTag&gt;.</content>
 
 	<!-- Brown Bear -->
 	<content contentuid="a1afcd4f-7713-43a3-b05f-3d59ab49291b" version="1">Wild Shape: Brown Bear</content>
+	<content contentuid="a5d484c1-3c00-4ed8-b2bd-6ec614242929" version="1">Brown Bear</content>
 	<content contentuid="d052097b-6272-494e-8a50-6766a6bdfbf1" version="1">Take the shape of a brown bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Bear_Brown_Wildshape"&gt;multi-attack&lt;/LSTag&gt;.</content>
 
 	<!-- Polar Bear -->
@@ -117,6 +133,7 @@ Level 6: Polar Bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_
 		
 	<!-- Giant Elk -->
 	<content contentuid="991275fe-7cde-4e26-8b36-532b0441a592" version="1">Wild Shape: Giant Elk</content>
+	<content contentuid="79129229-129d-4e92-be18-cf0807e39201" version="1">Giant Elk</content>
 	<content contentuid="a77b258b-5aac-42eb-9b06-c5b0c3ed293e" version="1">Take the shape of a giant elk that can &lt;LSTag Type="Spell" Tooltip="Target_Ram_GiantElk_Wildshape"&gt;ram&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Target_Hoove_GiantElk_Wildshape"&gt;hooves&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_Charge_GiantElk_Wildshape"&gt;charge&lt;/LSTag&gt;.</content>
 	<content contentuid="768c4c10-75f8-4324-95c5-f91630f23ec0" version="1">Ram</content>
 	<content contentuid="e768b2ed-1ad3-4d22-a544-40ea40498ba5" version="1">Hooves</content>
@@ -131,17 +148,40 @@ Level 6: Polar Bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_
 
 	<!-- Giant Eagle -->
 	<content contentuid="93fa3c1c-4130-4a30-a63f-f03b4a315ac7" version="1">Wild Shape: Giant Eagle</content>
+	<content contentuid="58374f70-fee2-4475-bda1-0c64f274bb13" version="1">Giant Eagle</content>
 	<content contentuid="a5249bb8-b7bc-43a2-b43e-58bbc753e895" version="1">Take the shape of a giant eagle that can fly [1] and &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_GiantEagle_Wildshape"&gt;multiattack&lt;/LSTag&gt;. It has [2].</content>
 
 	<!-- Giant Vulture -->
 	<content contentuid="d0c0f82d-acbd-4eec-a4ef-8677d01022be" version="1">Wild Shape: Giant Vulture</content>
+	<content contentuid="9bd9d83b-c9c9-4738-badd-3938808e9c8c" version="1">Giant Vulture</content>
 	<content contentuid="22e8936f-2d0c-43bf-afb0-944be3dd10d9" version="1">Take the shape of a giant vulture that can fly [1] and &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_GiantVulture_Wildshape"&gt;multiattack&lt;/LSTag&gt;. It has [2].</content>
 
 	<!-- Quetzalcoatlus -->
 	<content contentuid="64382aa4-b6d4-470b-b0f0-a30a124343b5" version="1">Wild Shape: Quetzalcoatlus</content>
+	<content contentuid="12d52d75-50a4-4390-9890-34bfe2e93da6" version="1">Quetzalcoatlus</content>
 	<content contentuid="16dc51af-41fc-4268-bde0-156c5506386f" version="1">Take the shape of a quetzalcoatlus that can fly [1] and &lt;LSTag Type="Spell" Tooltip="Target_Bite_Quetzalcoatlus_Wildshape"&gt;bite&lt;/LSTag&gt;. It has [2].</content>
 	<content contentuid="dfb07873-9823-41f7-892f-070971565991" version="1">Bite a target. If the quetzalcoatlus flew least [1] toward the target immediately before the hit, the target takes an extra [2].</content>
 	<content contentuid="b59e69c3-0ca8-47b9-bb9c-a1ca4ff2e051" version="1">quetzalcoatlus extra damage</content>
+
+	<!-- Air Elemental -->
+	<content contentuid="75e9312a-dea2-4433-b724-740706006621" version="1">Wild Shape: Air Elemental</content>	
+	<content contentuid="97a7d2a9-f2a1-48de-b41b-759b93f87c66" version="1">Take the shape of an air elemental that can fly [1], &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Elemental_Air"&gt;multiattack&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Shout_Whirlwind_Elemental_Air"&gt;whirlwind&lt;/LSTag&gt;.</content>	
+	<content contentuid="0578b06f-4224-49b0-80db-04b645d44dbb" version="1">Slam</content>	
+	<content contentuid="d9fd0008-dc75-490f-b9cb-e787e1e749aa" version="1">Whirlwind</content>	
+	<content contentuid="ca676de8-e5f0-49cd-b3a1-4a1d33f731c3" version="1">Each creature within [1] must make a DC 13 Strength saving throw. On a failure, a target takes [2] damage and is flung up [3] away from the elemental and knocked prone, taking [4].</content>	
+
+	<!-- Fire Elemental -->
+	<content contentuid="7c9d1841-e3a6-45fd-a1fa-1cda01170a4a" version="1">Wild Shape: Fire Elemental</content>	
+	<content contentuid="1e416864-745d-4502-8802-1c6cb6fbe8b4" version="1">Take the shape of an fire elemental that can fly [1], &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Elemental_Air"&gt;multiattack&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Shout_Whirlwind_Elemental_Air"&gt;whirlwind&lt;/LSTag&gt;.</content>	
+	<content contentuid="3ad066d7-cfd3-45dd-908d-327eca310d7c" version="1">Touch</content>	
+	<content contentuid="cc328c0f-badf-44d4-b9f1-998c56c7feac" version="1">Enter Target Space</content>	
+	<content contentuid="1c91ebc4-7a02-4ac9-9f17-27256a557ce2" version="1">The elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes [1] and catches fire. Until someone takes an action to douse the fire, the creature takes [2] at the start of each of its turns.</content>	
+
+	<!-- Water Elemental -->
+	<content contentuid="" version="1">Water Elemental</content>	
+
+	<!-- Earth Elemental -->
+	<content contentuid="" version="1">Earth Elemental</content>	
 
 	<!-- Passives -->
 	<content contentuid="31d7f3da-2568-420a-9d4b-de4d501cc932" version="1">Keen Smell</content>
@@ -150,5 +190,7 @@ Level 6: Polar Bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_
 	<content contentuid="b839ff12-5aa5-4428-9bf1-d39d7ef6a9f5" version="1">Flyby</content>
 	<content contentuid="e47e53e4-85f4-48cc-8a74-f0595569ba1b" version="1">Doesn't provoke opportunity attacks when it flies out of an enemy's reach.</content>
 	<content contentuid="f0981b84-ce2a-4b48-9643-5051a4799f60" version="1">When the attacker &lt;LSTag Tooltip="Downed"&gt;downs&lt;/LSTag&gt; another creature with a melee attack, it can use a bonus action to move up to half its &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; and make a bite attack.</content>
+	<content contentuid="f26c2954-28e5-4a37-ae8b-e16d2d34c250" version="1">Large Elemental Immunities</content>	
+	<content contentuid="bf4dd83b-3e00-48db-a795-29b390bd20c8" version="1">Immune to conditions: Paralyzed, Petrified, Prone, Webbed, Unconscious.</content>	
 
 </contentList>

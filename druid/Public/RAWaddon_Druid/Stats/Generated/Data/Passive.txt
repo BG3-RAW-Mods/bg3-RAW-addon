@@ -1,60 +1,67 @@
 // Movement speed 9m
-new entry "WildShapeSpeed30"
+new entry "WildShapeSpeed9"
 type "PassiveData"
 //data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,1.5,0);IF(isFasterMovementRace()):ActionResource(Movement,-1.5,0)"
 data "Properties" "IsHidden"
 
 // Movement speed 12m
-new entry "WildShapeSpeed40"
+new entry "WildShapeSpeed12"
 type "PassiveData"
 //data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,4.5,0);IF(isFasterMovementRace()):ActionResource(Movement,1.5,0);IF(isNormalMovementRace()):ActionResource(Movement,3,0)"
 data "Boosts" "ActionResource(Movement,3,0)"
 data "Properties" "IsHidden"
 
 // Movement speed 15m
-new entry "WildShapeSpeed50"
+new entry "WildShapeSpeed15"
 type "PassiveData"
 // data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,7.5,0);IF(isFasterMovementRace()):ActionResource(Movement,4.5,0);IF(isNormalMovementRace()):ActionResource(Movement,6,0)"
 data "Boosts" "ActionResource(Movement,6,0)"
 data "Properties" "IsHidden"
 
 // Movement speed 18m
-new entry "WildShapeSpeed60"
+new entry "WildShapeSpeed18"
 type "PassiveData"
 // data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,10.5,0);IF(isFasterMovementRace()):ActionResource(Movement,7.5,0);IF(isNormalMovementRace()):ActionResource(Movement,9,0)"
 data "Boosts" "ActionResource(Movement,9,0)"
 data "Properties" "IsHidden"
 
 // Movement speed 21m
-new entry "WildShapeSpeed70"
+new entry "WildShapeSpeed21"
 type "PassiveData"
 // data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,13.5,0);IF(isFasterMovementRace()):ActionResource(Movement,10.5,0);IF(isNormalMovementRace()):ActionResource(Movement,12,0)"
 data "Boosts" "ActionResource(Movement,12,0)"
 data "Properties" "IsHidden"
 
 // Movement speed 24m
-new entry "WildShapeSpeed80"
+new entry "WildShapeSpeed24"
 type "PassiveData"
 // data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,16.5,0);IF(isFasterMovementRace()):ActionResource(Movement,13.5,0);IF(isNormalMovementRace()):ActionResource(Movement,15,0)"
 data "Boosts" "ActionResource(Movement,15,0)"
 data "Properties" "IsHidden"
 
+// Movement speed 36m
+new entry "WildShapeSpeed36"
+type "PassiveData"
+// data "Boosts" "IF(isSlowerMovementRace()):ActionResource(Movement,26,5);IF(isFasterMovementRace()):ActionResource(Movement,23.5,0);IF(isNormalMovementRace()):ActionResource(Movement,25,0)"
+data "Boosts" "ActionResource(Movement,25,0)"
+data "Properties" "IsHidden"
+
 // Darkvision 9m
-new entry "Darkvision30"
+new entry "Darkvision9"
 type "PassiveData"
 using "Darkvision"
 data "DescriptionParams" "Distance(9)"
 data "Boosts" "DarkvisionRangeMin(9);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989)"
 
 // Darkvision 18m
-new entry "Darkvision60"
+new entry "Darkvision18"
 type "PassiveData"
 using "Darkvision"
 data "DescriptionParams" "Distance(18)"
 data "Boosts" "DarkvisionRangeMin(18);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989)"
 
 // Darkvision 36m
-new entry "Darkvision120"
+new entry "Darkvision36"
 type "PassiveData"
 using "Darkvision"
 data "DescriptionParams" "Distance(36)"
@@ -109,3 +116,19 @@ data "Description" "hb0d4eb86gf0d4g4ddcg8749g24e61ca08075;1"
 data "Icon" "statIcons_Gnoll_Rampage"
 data "StackId" "GNOLL_RAMPAGE"
 data "Boosts" "ActionResource(Movement,7.5,0);ActionResource(BonusActionPoint,1,0)"
+
+// Common Elemental Immunities:
+// - Damage Resistances Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
+// - Damage Immunities: Fire, Poison
+// - Condition Immunities: Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained (webbed), Unconscious
+// - Can not be disarmed
+// Missing immunities (don't exist in BG3): Exhaustion, Grappled
+// Removed BG3 immunities: Tag(CHARMED_ADV), BLEEDING, GAPING_WOUND, CHEST_TRAUMA, SCL_SHADOW_CURSE, SCL_SHADOW_CURSE_1, SCL_SHADOW_CURSE_2, SCL_SHADOW_CURSE_3, SCL_SHADOW_CURSE_4
+// 3rd edition missing immunities (just for note): bleed, stunning, critical hits, sneak attack (does not take additional damage)
+new entry "LargeElementalImmunities"
+type "PassiveData"
+data "Icon" "Status_Invulnerable"
+data "DisplayName" "f26c2954-28e5-4a37-ae8b-e16d2d34c250;1"
+data "Description" "bf4dd83b-3e00-48db-a795-29b390bd20c8;1"
+data "Boosts" "Resistance(Bludgeoning,ResistantToNonMagical);Resistance(Piercing,ResistantToNonMagical);Resistance(Slashing,ResistantToNonMagical);Resistance(Poison,Immune);StatusImmunity(SG_Poisoned);StatusImmunity(SG_Prone);StatusImmunity(PETRIFIED);StatusImmunity(PARALYZED);StatusImmunity(WEB)StatusImmunity(SLEEP);StatusImmunity(POISON_DROW_CONDITION);StatusImmunity(SG_Sleeping_Magical);CannotBeDisarmed();StatusImmunity(DISARM)"
+// data "Properties" "IsHidden"

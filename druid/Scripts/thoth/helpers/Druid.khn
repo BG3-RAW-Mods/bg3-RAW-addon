@@ -31,3 +31,21 @@ end
 function ProficiencyBonusEqual(bonus)
     return ConditionResult(context.Source.ProficiencyBonus == bonus)
 end
+
+function hasUsedFirstAttack(error)
+    local result = HasStatus('WILDSHAPE_OTHER_ATTACK_WILDSHAPE', context.Source).Result
+    return ConditionResult(result, {ConditionError(error)})
+end
+
+function hasMovedMoreThan6m()
+    local result = StatusDurationEqualOrMoreThan(context.Source,'WILDSHAPE_MOVEMENT_TRACKING',6).Result
+    return ConditionResult(result, {ConditionError('Require6MeterMovement')})
+end
+
+function isProneWithStatus(status)
+    local result = HasStatus(status,context.Source)
+    if not result then
+        return result
+    end
+    return ConditionResult(HasStatus('PRONE',context.Target).Result, {ConditionError('RequireProneTarget')})
+end

@@ -1,6 +1,7 @@
 new entry "Shout_Wildshape_BonusAction_Feline"
 type "SpellData"
-using "Shout_Wildshape_BonusAction_Panther"
+using "Shout_Wildshape_Panther"
+data "SpellContainerID" "Shout_WildShape_BonusAction"
 data "SpellProperties" "IF(DruidLevelEqual(2)):ApplyStatus(WILDSHAPE_PANTHER_PLAYER,100,-1);IF(DruidLevelEqual(3)):ApplyStatus(WILDSHAPE_PANTHER_PLAYER_2,100,-1);IF(DruidLevelBetween(4,5)):ApplyStatus(WILDSHAPE_PANTHER_PLAYER_3,100,-1);IF(DruidLevelEqual(6)):ApplyStatus(WILDSHAPE_SABERTOOTH_TIGER_PLAYER,100,-1);IF(DruidLevelEqual(7)):ApplyStatus(WILDSHAPE_SABERTOOTH_TIGER_PLAYER_2,100,-1);IF(DruidLevelEqual(8)):ApplyStatus(WILDSHAPE_SABERTOOTH_TIGER_PLAYER_3,100,-1);IF(DruidLevelEqual(9)):ApplyStatus(WILDSHAPE_SPOTTED_LION_PLAYER,100,-1);IF(DruidLevelHigherOrEqualThan(10)):ApplyStatus(WILDSHAPE_SPOTTED_LION_PLAYER_2,100,-1)"
 data "DisplayName" "1faba60e-1427-4fe4-9fc5-4df52527f4af;1"
 data "Description" "f002f137-1137-467d-9f65-46f2831429aa;1"

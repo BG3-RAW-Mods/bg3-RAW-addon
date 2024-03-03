@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="0"/>
+    <region id="ConditionErrors">
+        <node id="root">
+            <children>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="f4450a7e-2ee9-44df-a9d9-39d21e4af4e4" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="RequireClawsAttack"/>
+                    <attribute id="UUID" type="guid" value="f7d7ee91-85df-4872-832f-5e642eab24dd"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="ad6dfe6c-d8ce-4b34-85c0-d4376a408dd3" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="RequireBiteAttack"/>
+                    <attribute id="UUID" type="guid" value="c97447e7-d91f-4062-9d19-a5cc95156adb"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="ee968e11-d4e6-4dff-a57f-03b9f37e9d97" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="RequireTalonsAttack"/>
+                    <attribute id="UUID" type="guid" value="4f5e747d-08c5-4411-8b92-6e4a521e9179"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="3d0146df-cfc0-4399-ba59-b9ca64ba5515" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="Require6MeterMovement"/>
+                    <attribute id="UUID" type="guid" value="9dcd4e64-e58d-4b4e-bdf9-2c48bce67305"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="e5f69875-a2ee-4635-be21-2ed867435ef7" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="RequireProneTarget"/>
+                    <attribute id="UUID" type="guid" value="6f2821a1-aea5-421d-bfea-6428dac3195f"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

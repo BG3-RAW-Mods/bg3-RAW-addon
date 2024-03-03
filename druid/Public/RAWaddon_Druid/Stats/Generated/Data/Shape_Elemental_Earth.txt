@@ -1,0 +1,67 @@
+// new entry "Shout_WildShape_Myrmidon_Earth"
+// type "SpellData"
+// using "Shout_WildShape_Myrmidon_Earth"
+// data "SpellContainerID" "Shout_WildShape_BonusAction"
+// data "SpellProperties" "
+// IF(not ClassLevelHigherOrEqualThan(12,'Druid')):ApplyStatus(WILDSHAPE_MYRMIDON_EARTH_PLAYER,100,-1);
+// IF(ClassLevelHigherOrEqualThan(12,'Druid')):ApplyStatus(WILDSHAPE_MYRMIDON_EARTH_PLAYER_12,100,-1);
+// AI_ONLY:ApplyStatus(AI_HELPER_BUFF_LARGE,100,-1);
+// ApplyStatus(MYRMIDON_BUFF,100,-1);
+// ApplyStatus(WILDSHAPE_MYRMIDON_EARTH_VFX,100,-1)"
+// data "DisplayName" "h7ef910b7ga2ffg4ba2g8f3dg86fd10c06ef2;2"
+// data "Description" "hf21293c5gb5e1g4637g913ageeef6866e0c8;4"
+// data "ExtraDescription" "hbdbe3ba1ga649g4c29g80ceg3fc51a4dd5d3;5"
+// data "ExtraDescriptionParams" "RegainHitPoints(103)"
+// data "UseCosts" "BonusActionPoint:1;WildShape:2"
+
+// new entry "WILDSHAPE_ELEMENTAL_EARTH_PLAYER"
+// type "StatusData"
+// using "WILDSHAPE_MYRMIDON_EARTH_PLAYER"
+// data "DisplayName" "h4cc6e5dcgaf56g4e0bgbe22g2d1ebc0372e8;2"
+// data "Boosts" "
+// DarkvisionRangeMin(18);ActiveCharacterLight(233033a1-b43a-4ad9-976a-8a062b345e21);
+// Resistance(Bludgeoning,ResistantToNonMagical);Resistance(Slashing,ResistantToNonMagical);Resistance(Piercing,ResistantToNonMagical);Resistance(Poison,Immune);
+//     VoicebarkBlock();BlockSpellCast();UnlockSpell(Shout_WildShape_Dismiss);UnlockSpell(Shout_WildShape_Combat_Heal,AddChildren)"
+// data "OnRemoveFunctors" "ApplyStatus(SELF,WILDSHAPE_MYRMIDON_EARTH_REMOVE_VFX,100,1);ApplyStatus(SELF, WILDSHAPE_TECHNICAL,100,1)"
+// data "TemplateID" "86b5ed60-c0a8-41d0-88a5-ed77985820eb"
+
+// new entry "Earth_Myrmidon_WIldshape"
+// type "Character"
+// using "Earth_Myrmidon"
+// data "Vitality" "103"
+// data "SpellCastingAbility" "Strength"
+
+// new entry "Earth_Myrmidon"
+// type "Character"
+// using "_Elemental"
+// data "Strength" "18"
+// data "Constitution" "17"
+// data "Intelligence" "8"
+// data "Armor" "18"
+// data "Vitality" "127"
+// data "XPReward" "40806669-8c6b-4068-8bc4-07e4981bb020"
+// data "Weight" "150"
+// data "PersonalStatusImmunities" "BLEEDING;GAPING_WOUND;CHEST_TRAUMA;SG_Poisoned;SG_Prone;PETRIFIED;PARALYZED			;SCL_SHADOW_CURSE;SCL_SHADOW_CURSE_1;SCL_SHADOW_CURSE_2;SCL_SHADOW_CURSE_3;SCL_SHADOW_CURSE_4"
+// data "Passives" "ImmuneToDisarm;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ShortResting"
+// data "BludgeoningResistance" "ResistantToNonMagical"
+// data "SlashingResistance" "ResistantToNonMagical"
+// data "PiercingResistance" "ResistantToNonMagical"
+// data "PoisonResistance" "Immune"
+// data "DifficultyStatuses" "STATUS_EASY:PLAYER_BONUSES_EASYMODE"
+
+// // Strength: 20, Dexterity: 8, Constitution: 20, AC: 17 (natural), Movement Speed: 9
+// // Hit Points: 126 (level 10), 153 (level 11), 180 (level 12)
+// // Damage Vulnerabilities Thunder
+// // Damage Resistances Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
+// // Damage Immunities Poison
+// // Condition Immunities Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious
+// // Proficiencies: Perception
+// // Passives: Darkvision (18m)
+
+// // Earth Glide. The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.
+// // Siege Monster. The elemental deals double damage to objects and structures.
+
+// // Actions (adds *Strength modifier*): 
+// // - Multiattack. The elemental makes two slam attacks.
+// // - Slam. reach 10 feet, 2d8+5 Bludgeoning
+

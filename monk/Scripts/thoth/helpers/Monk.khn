@@ -1,0 +1,8 @@
+function MonkLevelHigherOrEqualThan(level)
+    local entity = context.Source
+    local error = 'RequireMonkLevel5'
+    if (level == 9) then
+        error = 'RequireMonkLevel9'
+    end
+    return ConditionResult(entity.GetClassLevel('Monk') >= level, {ConditionError(error)}, {ConditionError(error)})
+end

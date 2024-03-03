@@ -320,6 +320,7 @@ Also, it seem to be a random pick, maybe based on class performance. Draconic So
 
 - BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats, hinikuya, JuuM, GabeCamomescro)
 - Zerd for RAW which gave me inspiration and its config system
+- Zerd Discord community (dr kekyll, Celes)
 - Community Library and Compatibility Framework
 - jellytajm for Monk SlowFall damage reduction
 
