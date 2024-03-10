@@ -51,4 +51,3 @@ end
 if Ext.Mod.IsModLoaded("67fbbd53-7c7d-4cfa-9409-6d737b4d92a9") then
   Ext.Events.StatsLoaded:Subscribe(monkChanges)
 end
-

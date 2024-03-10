@@ -2,13 +2,33 @@
 	<content contentuid="49ee6ff4-0501-44da-9786-87ef4bc604b3" version="4">Affected entity has gained [1].&lt;br&gt;&lt;br&gt;As long as it has its &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt;, its melee weapon attacks and unarmed strikes deal an additional [2], and it deals double damage with &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Ends early if the entity uses &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wild Shape&lt;/LSTag&gt;.</content>
 	<content contentuid="3a82397f-cdd9-4078-bd1c-6caf5518b8bf" version="1">It has a starting health of [1] that increases over levels up to its maximum of [2].</content>
 
+	<!-- Grapple -->
+	<content contentuid="h6661e1acg2b5fg447agb3begc8f54b588a15" version="1">Grapple</content>
+	<content contentuid="h8749f53cg349eg49ecg8599gf37706840f57" version="1">Attempt to grapple a creature by making a &lt;LSTag Tooltip="Athletics"&gt;Strength (Athletics)&lt;/LSTag&gt; check opposed by the target's &lt;LSTag Tooltip="Athletics"&gt;Strength (Athletics)&lt;/LSTag&gt; or &lt;LSTag Tooltip="Acrobatics"&gt;Dexterity (Acrobatics)&lt;/LSTag&gt; check.</content>
+	<content contentuid="h52b3c132g4634g472cg9f97g6f81e30f1d95" version="1">Release Grapple</content>
+	<content contentuid="hd0077d67g6655g4fcbgbb67g441d902c1bc5" version="1">Release your grappled target.</content>
+	<content contentuid="h0eea139dgfa21g4b4bg9f68gb42c25c67d42" version="1">Carry</content>
+	<content contentuid="h0f605fddg1b03g444fgb705g8d9c377766b0" version="1">Carry the target to a new position.</content>
+	<content contentuid="h1bacca8cg28f0g482agb897ge457adc6f39e" version="1">Break Grapple</content>
+	<content contentuid="he5675308g65e6g4ac7gbe33g8ab8198b0bef" version="1">Attempt a &lt;LSTag Tooltip="Atheletics"&gt;Strength (Athletics)&lt;/LSTag&gt; or &lt;LSTag Tooltip="Acrobatics"&gt;Dexterity (Acrobatics)&lt;/LSTag&gt; check to escape a grapple.</content>
+	<content contentuid="h7e16ae91g00f6g4c89gb827g723c0f6321b4" version="1">Grappling</content>
+	<content contentuid="hb1175f34g9c7ag47acga2a1g13da5cf256fd" version="1">Speed reduced while grappling. You can release the target as a free action.</content>
+	<content contentuid="h1904b1ebg290eg4d39ga116g1ae6405a8e35" version="1">Grappled</content>
+	<content contentuid="h42a708c6g4f84g4ed4ga144g117a3b4634eb" version="1">Movement speed reduced to 0.</content>
+	<content contentuid="hea057202g6deag4ab2g928fg461a36421d52" version="1">Repositioning</content>
+	<content contentuid="h0ae0817cgd262g4216g9c4eg5413b6b101c9" version="1">Pin</content>
+	<content contentuid="h9a564365g3575g4470g84b8geb63a8b79e6c" version="1">Attempt to pin a grappled target.</content>
+	<content contentuid="h993c74cag9ebbg433dg9e88gf2cdf7d79b53" version="1">Pinned</content>
+	<content contentuid="h50b82f7agfeebg49e0gb93ag5050a673c8b4" version="1">Restrained (Pinning)</content>
+	<content contentuid="ha85790dbgbfe4g4807g8dd7gd5245703f192" version="1">Requires a free hand.</content>
+
 	<!-- Movement Tracking -->
 	<content contentuid="4f93a1b8-eeeb-484a-a937-cd7b5c42454c" version="1">Movement Tracking</content>
 	<content contentuid="40f43875-6158-4d7c-84f8-9c8cee0b5bae" version="1">Track how many meters you have moved this turn.</content>
 	<content contentuid="3d0146df-cfc0-4399-ba59-b9ca64ba5515" version="1">You need to move at least 6m before using this ability</content>
 
 	<content contentuid="e5f69875-a2ee-4635-be21-2ed867435ef7" version="1">Require a Prone target</content>
-	
+	<content contentuid="efa0363b-96c9-4759-b1e7-3e7739a98089" version="1">Depending on the intensity of the burning source, takes between [1] and [2] per turn.</content>	
 
 	<!-- Multiattack -->
 	<content contentuid="f4450a7e-2ee9-44df-a9d9-39d21e4af4e4" version="1">You can make a Bite attack after a Claws attack</content>
@@ -172,16 +192,28 @@ Level 6: Polar Bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_
 
 	<!-- Fire Elemental -->
 	<content contentuid="7c9d1841-e3a6-45fd-a1fa-1cda01170a4a" version="1">Wild Shape: Fire Elemental</content>	
-	<content contentuid="1e416864-745d-4502-8802-1c6cb6fbe8b4" version="1">Take the shape of an fire elemental that can fly [1], &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Elemental_Air"&gt;multiattack&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Shout_Whirlwind_Elemental_Air"&gt;whirlwind&lt;/LSTag&gt;.</content>	
+	<content contentuid="14b9bdaa-2cca-4084-9ce4-cef19ac4b0e5" version="1">Take the shape of an fire elemental that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Elemental_Fire"&gt;multiattack&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_Enter_Creature_Space_Elemental_Fire"&gt;enter space&lt;/LSTag&gt;.</content>	
 	<content contentuid="3ad066d7-cfd3-45dd-908d-327eca310d7c" version="1">Touch</content>	
 	<content contentuid="cc328c0f-badf-44d4-b9f1-998c56c7feac" version="1">Enter Target Space</content>	
 	<content contentuid="1c91ebc4-7a02-4ac9-9f17-27256a557ce2" version="1">The elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes [1] and catches fire. Until someone takes an action to douse the fire, the creature takes [2] at the start of each of its turns.</content>	
-
-	<!-- Water Elemental -->
-	<content contentuid="" version="1">Water Elemental</content>	
+	<content contentuid="1ff5f0e2-c077-4fce-bf81-098f72e1c2ca" version="1">Illumination</content>	
+	<content contentuid="f2b32900-bc92-479c-974d-0398937f5bf8" version="1">The elemental sheds bright light in a [1] radius and dim light in an additional [2].</content>	
+	<content contentuid="d4b236d7-a682-498e-b262-e8ac23d10888" version="1">Water Susceptibility</content>	
+	<content contentuid="8cda8971-2894-4d97-94f0-0a5751eb6ccf" version="1">Whenever the elemental moves in water, it takes [1].</content>	
 
 	<!-- Earth Elemental -->
-	<content contentuid="" version="1">Earth Elemental</content>	
+	<content contentuid="299412d1-e2ec-4e3c-85c4-202d3550b15a" version="1">Wild Shape: Earth Elemental</content>	
+	<content contentuid="16d2086b-d04d-4f57-9bdb-a734932e0f24" version="1">Take the shape of an earth elemental that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Elemental_Earth_Wildshape"&gt;multiattack&lt;/LSTag&gt;.</content>	
+
+	<!-- Water Elemental -->
+	<content contentuid="7692e57d-8c38-4a8d-afe1-7465449aaf81" version="1">Wild Shape: Water Elemental</content>	
+	<content contentuid="143bef40-fece-42ba-88a3-939f60c1b00d" version="1">Take the shape of a water elemental that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_Elemental_Water_Wildshape"&gt;multiattack&lt;/LSTag&gt;.</content>	
+	<content contentuid="abff6b7c-0807-4ed7-85c0-ee9be7d7ced0" version="1">Whelm</content>
+	<content contentuid="f6c1155a-537e-4775-9b60-8b72483ca6e2" version="1">Can't grapple more than one target</content>
+	<content contentuid="b36d6782-ed55-424e-b33f-1c412313d461" version="1">The elemental can enter a hostile creature's space and stop there. Target must make a DC 15 Strength saving throw. On a failure, a target takes [1] bludgeoning damage.
+If it is large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.</content>
+	<content contentuid="52b9be24-20ec-4a52-b09e-e25a377d795b" version="1">Water Elemental Grappling</content>
+	<content contentuid="a4a2e41b-1ffd-4e19-91ad-2b8bae637cae" version="1">Water Elemental Grappled</content>
 
 	<!-- Passives -->
 	<content contentuid="31d7f3da-2568-420a-9d4b-de4d501cc932" version="1">Keen Smell</content>

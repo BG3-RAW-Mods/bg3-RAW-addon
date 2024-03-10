@@ -34,6 +34,18 @@
                     <attribute id="Identifier" type="FixedString" value="RequireProneTarget"/>
                     <attribute id="UUID" type="guid" value="6f2821a1-aea5-421d-bfea-6428dac3195f"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="f6c1155a-537e-4775-9b60-8b72483ca6e2" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CannotGrappleMoreThanOneTarget"/>
+                    <attribute id="UUID" type="guid" value="1d373e86-0620-418f-8ff6-e74c711932ba"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="f6c1155a-537e-4775-9b60-8b72483ca6e2" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="TargetAlreadyGrappled"/>
+                    <attribute id="UUID" type="guid" value="1bd27ad9-f13e-40ec-bd9b-e760d8484a9f"/>
+                </node>
             </children>
         </node>
     </region>

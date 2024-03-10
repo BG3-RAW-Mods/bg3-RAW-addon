@@ -302,8 +302,10 @@ Condition Immunities: Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Pron
 Proficiencies: Perception
 Passives: Darkvision (18m)
 
-Water Form. The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
-Freeze. If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 feet until the end of its next turn.
+Water Form: 
+- The elemental can enter a hostile creature's space and stop there. *Not Implemented*
+- It can move through a space as narrow as 1 inch wide without squeezing.
+- Freeze. If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 feet until the end of its next turn. *Not Implemented*
 
 Actions (adds *Strength modifier*): 
 - Slam. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
@@ -326,10 +328,8 @@ Fire Form:
 - The elemental can move through a space as narrow as 1 inch wide without squeezing.
 - A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 1d10 fire damage. 
 - The elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 1d10 fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 1d10 fire damage at the start of each of its turns.
-
-Illumination. The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet.
-
-Water Susceptibility. For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.
+- Water Susceptibility. For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage. *Partially Implemented*
+- Illumination. The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet.
 
 Actions (adds *Dexterity modifier*): 
 - Touch. 2d6+3 Fire damage. ignites target. Until a creature takes an action to douse the fire, the target takes 1d10 fire damage at the start of each of its turns.
@@ -345,13 +345,13 @@ Condition Immunities: Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Pron
 Proficiencies: Perception
 Passives: Darkvision (18m)
 
-Air Form. The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
+Air Form:
+- The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
 
 Actions (adds *Dexterity modifier*): 
 - Multiattack. The elemental makes two slam attacks.
 - Slam. 2d8+5 Bludgeoning
-- Whirlwind (Recharge 4–6). Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 3d8+2 Bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 1d6 Bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.
-If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.
+- Whirlwind (Recharge 4–6). Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 3d8+2 Bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 1d6 Bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone. If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.
 
 ### Earth Elemental
 
@@ -364,8 +364,9 @@ Condition Immunities: Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious
 Proficiencies: Perception
 Passives: Darkvision (18m)
 
-Earth Glide. The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.
-Siege Monster. The elemental deals double damage to objects and structures.
+Earth form:
+- Earth Glide. The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through. *Not Implemented*
+- Siege Monster. The elemental deals double damage to objects and structures. *Not Implemented*
 
 Actions (adds *Strength modifier*): 
 - Multiattack. The elemental makes two slam attacks.

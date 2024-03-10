@@ -1,67 +1,68 @@
-// new entry "Shout_WildShape_Myrmidon_Earth"
-// type "SpellData"
-// using "Shout_WildShape_Myrmidon_Earth"
-// data "SpellContainerID" "Shout_WildShape_BonusAction"
-// data "SpellProperties" "
-// IF(not ClassLevelHigherOrEqualThan(12,'Druid')):ApplyStatus(WILDSHAPE_MYRMIDON_EARTH_PLAYER,100,-1);
-// IF(ClassLevelHigherOrEqualThan(12,'Druid')):ApplyStatus(WILDSHAPE_MYRMIDON_EARTH_PLAYER_12,100,-1);
-// AI_ONLY:ApplyStatus(AI_HELPER_BUFF_LARGE,100,-1);
-// ApplyStatus(MYRMIDON_BUFF,100,-1);
-// ApplyStatus(WILDSHAPE_MYRMIDON_EARTH_VFX,100,-1)"
-// data "DisplayName" "h7ef910b7ga2ffg4ba2g8f3dg86fd10c06ef2;2"
-// data "Description" "hf21293c5gb5e1g4637g913ageeef6866e0c8;4"
-// data "ExtraDescription" "hbdbe3ba1ga649g4c29g80ceg3fc51a4dd5d3;5"
-// data "ExtraDescriptionParams" "RegainHitPoints(103)"
-// data "UseCosts" "BonusActionPoint:1;WildShape:2"
+new entry "Shout_WildShape_Combat_Myrmidon_Earth"
+type "SpellData"
+using "Shout_WildShape_Combat_Myrmidon_Earth"
+data "SpellContainerID" "Shout_WildShape_BonusAction"
+data "SpellProperties" "ApplyStatus(WILDSHAPE_MYRMIDON_EARTH_VFX,100,-1);IF(DruidLevelEqual(10)):ApplyStatus(WILDSHAPE_ELEMENTAL_EARTH_PLAYER,100,-1);IF(DruidLevelEqual(11)):ApplyStatus(WILDSHAPE_ELEMENTAL_EARTH_PLAYER_2,100,-1);IF(DruidLevelHigherOrEqualThan(12)):ApplyStatus(WILDSHAPE_ELEMENTAL_EARTH_PLAYER_3,100,-1)"
+data "DisplayName" "299412d1-e2ec-4e3c-85c4-202d3550b15a;1"
+data "Description" "16d2086b-d04d-4f57-9bdb-a734932e0f24;1"
+data "ExtraDescription" "3a82397f-cdd9-4078-bd1c-6caf5518b8bf;1"
+data "ExtraDescriptionParams" "RegainHitPoints(126);RegainHitPoints(180)"
 
-// new entry "WILDSHAPE_ELEMENTAL_EARTH_PLAYER"
-// type "StatusData"
-// using "WILDSHAPE_MYRMIDON_EARTH_PLAYER"
-// data "DisplayName" "h4cc6e5dcgaf56g4e0bgbe22g2d1ebc0372e8;2"
-// data "Boosts" "
-// DarkvisionRangeMin(18);ActiveCharacterLight(233033a1-b43a-4ad9-976a-8a062b345e21);
-// Resistance(Bludgeoning,ResistantToNonMagical);Resistance(Slashing,ResistantToNonMagical);Resistance(Piercing,ResistantToNonMagical);Resistance(Poison,Immune);
-//     VoicebarkBlock();BlockSpellCast();UnlockSpell(Shout_WildShape_Dismiss);UnlockSpell(Shout_WildShape_Combat_Heal,AddChildren)"
-// data "OnRemoveFunctors" "ApplyStatus(SELF,WILDSHAPE_MYRMIDON_EARTH_REMOVE_VFX,100,1);ApplyStatus(SELF, WILDSHAPE_TECHNICAL,100,1)"
-// data "TemplateID" "86b5ed60-c0a8-41d0-88a5-ed77985820eb"
+new entry "WILDSHAPE_ELEMENTAL_EARTH_PLAYER"
+type "StatusData"
+using "WILDSHAPE_MYRMIDON_EARTH_PLAYER"
+data "DisplayName" "299412d1-e2ec-4e3c-85c4-202d3550b15a;1"
+data "Boosts" "Resistance(Thunder,Vulnerable);ProficiencyBonus(Skill,Perception); VoicebarkBlock();BlockSpellCast();UnlockSpell(Shout_WildShape_Dismiss);UnlockSpell(Shout_WildShape_Combat_Heal,AddChildren)"
+data "Passives" "WildShapeSpeed9;Darkvision18;LargeElementalImmunities"
+data "TemplateID" "7bb7eaad-c6e4-4cce-b970-76e4e9cffdb6"
+data "Rules" "6abaafdd-bc24-40c6-b970-f11dc2834b72"
 
-// new entry "Earth_Myrmidon_WIldshape"
-// type "Character"
-// using "Earth_Myrmidon"
-// data "Vitality" "103"
-// data "SpellCastingAbility" "Strength"
+new entry "WILDSHAPE_ELEMENTAL_EARTH_PLAYER_2"
+type "StatusData"
+using "WILDSHAPE_ELEMENTAL_EARTH_PLAYER"
+data "TemplateID" "1291f959-afd1-4fab-b465-e76870722776"
 
-// new entry "Earth_Myrmidon"
-// type "Character"
-// using "_Elemental"
-// data "Strength" "18"
-// data "Constitution" "17"
-// data "Intelligence" "8"
-// data "Armor" "18"
-// data "Vitality" "127"
-// data "XPReward" "40806669-8c6b-4068-8bc4-07e4981bb020"
-// data "Weight" "150"
-// data "PersonalStatusImmunities" "BLEEDING;GAPING_WOUND;CHEST_TRAUMA;SG_Poisoned;SG_Prone;PETRIFIED;PARALYZED			;SCL_SHADOW_CURSE;SCL_SHADOW_CURSE_1;SCL_SHADOW_CURSE_2;SCL_SHADOW_CURSE_3;SCL_SHADOW_CURSE_4"
-// data "Passives" "ImmuneToDisarm;AttackOfOpportunity;DarknessRules;DispelEvilAndGood_Charm_Check;DispelEvilAndGood_Frightened_Check;DispelEvilAndGood_Possessed_Check;ShortResting"
-// data "BludgeoningResistance" "ResistantToNonMagical"
-// data "SlashingResistance" "ResistantToNonMagical"
-// data "PiercingResistance" "ResistantToNonMagical"
-// data "PoisonResistance" "Immune"
-// data "DifficultyStatuses" "STATUS_EASY:PLAYER_BONUSES_EASYMODE"
+new entry "WILDSHAPE_ELEMENTAL_EARTH_PLAYER_3"
+type "StatusData"
+using "WILDSHAPE_ELEMENTAL_EARTH_PLAYER"
+data "TemplateID" "87eac7c3-38fd-4d02-a5e4-cb685a706d6d"
 
-// // Strength: 20, Dexterity: 8, Constitution: 20, AC: 17 (natural), Movement Speed: 9
-// // Hit Points: 126 (level 10), 153 (level 11), 180 (level 12)
-// // Damage Vulnerabilities Thunder
-// // Damage Resistances Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
-// // Damage Immunities Poison
-// // Condition Immunities Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious
-// // Proficiencies: Perception
-// // Passives: Darkvision (18m)
+new entry "Earth_Elemental_Wildshape_1"
+type "Character"
+using "Earth_Elemental"
+data "SpellCastingAbility" "Strength"
+data "UnarmedAttackAbility" "Strength"
+data "UnarmedRangedAttackAbility" "Strength"
+data "Vitality" "126"
 
-// // Earth Glide. The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.
-// // Siege Monster. The elemental deals double damage to objects and structures.
+new entry "Earth_Elemental_Wildshape_2"
+type "Character"
+using "Earth_Elemental_Wildshape_1"
+data "Vitality" "153"
 
-// // Actions (adds *Strength modifier*): 
-// // - Multiattack. The elemental makes two slam attacks.
-// // - Slam. reach 10 feet, 2d8+5 Bludgeoning
+new entry "Earth_Elemental_Wildshape_3"
+type "Character"
+using "Earth_Elemental_Wildshape_1"
+data "Vitality" "180"
 
+new entry "Target_Slam_Elemental_Earth_Wildshape"
+type "SpellData"
+using "Target_Slam_Elemental_Earth"
+data "SpellProperties" ""
+data "SpellSuccess" "DealDamage(2d8+UnarmedMeleeAbilityModifier,Bludgeoning,Magical)"
+data "SpellFlags" "IsAttack;IsMelee;Reach;IsHarmful;IsEnemySpell"
+data "TargetRadius" "2.5"
+data "Icon" "Action_Monster_ElementalEarth_Slam"
+data "Description" ""
+data "TooltipDamageList" "DealDamage(2d8+UnarmedMeleeAbilityModifier,Bludgeoning)"
+data "UseCosts" "ActionPoint:0.5"
+
+new entry "Target_Multiattack_Elemental_Earth_Wildshape"
+type "SpellData"
+using "Target_Multiattack_Elemental_Earth"
+data "SpellSuccess" "DealDamage(2d8+UnarmedMeleeAbilityModifier,Bludgeoning,Magical);Cast2[DealDamage(2d8+UnarmedMeleeAbilityModifier,Bludgeoning,Magical)]"
+data "SpellFlags" "IsAttack;IsMelee;Reach;IsHarmful;IsEnemySpell"
+data "TargetRadius" "2.5"
+data "Description" ""
+data "ExtraDescription" ""
+data "TooltipDamageList" "DealDamage(2d8+UnarmedMeleeAbilityModifier,Bludgeoning);DealDamage(2d8+UnarmedMeleeAbilityModifier,Bludgeoning)"

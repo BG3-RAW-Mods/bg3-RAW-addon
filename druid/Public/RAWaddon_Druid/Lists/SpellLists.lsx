@@ -21,7 +21,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Moon Druid Wild Shape Level 2"/>
-                    <attribute id="Spells" type="LSString" value="Shout_WildShape_BonusAction;Shout_WildShape_BonusAction_GiantBadger;Shout_WildShape_BonusAction_Cat;Shout_WildShape_BonusAction_Saurus;Shout_WildShape_BonusAction_GiantSpider;Shout_WildShape_BonusAction_Bear;Shout_WildShape_BonusAction_DireWolf;Shout_WildShape_BonusAction_GiantHyena;Shout_Wildshape_BonusAction_Feline"/>
+                    <attribute id="Spells" type="LSString" value="Shout_WildShape_BonusAction;Shout_WildShape_BonusAction_Cat;Shout_WildShape_BonusAction_Saurus;Shout_WildShape_BonusAction_GiantSpider;Shout_WildShape_BonusAction_Bear;Shout_WildShape_BonusAction_DireWolf;Shout_WildShape_BonusAction_GiantHyena;Shout_Wildshape_BonusAction_Feline"/>
                     <attribute id="UUID" type="guid" value="51f2ab56-4403-49c0-99e8-582b9069477d"/>
                 </node>
                 <node id="SpellList">
