@@ -7,42 +7,50 @@ Wildshape CR rating:
 | ----- | ------------------ | ------------ |
 |  2    | 1                  | 1/4          |
 |  3	| 1                  | 1/4          |
-|  4	| 1					 | 1/2          |
-|  5	| 1					 | 1/2          |
-|  6	| 2					 | 1/2          |
-|  7	| 2					 | 1/2          |
-|  8	| 2					 | 1            |
-|  9	| 3					 | 1            |
-|  10	| 3					 | 1            |
-|  11	| 3					 | 1            |
-|  12	| 4					 | 1            |
+|  4	| 1		     | 1/2          |
+|  5	| 1		     | 1/2          |
+|  6	| 2		     | 1/2          |
+|  7	| 2		     | 1/2          |
+|  8	| 2		     | 1            |
+|  9	| 3		     | 1            |
+|  10	| 3		     | 1            |
+|  11	| 3		     | 1            |
+|  12	| 4		     | 1            |
+|  13	| 4		     | 1            |
+|  14	| 4		     | 1            |
+|  15	| 5		     | 1            |
+|  16	| 5		     | 1            |
+|  17	| 5		     | 1            |
+|  18	| 6		     | 1            |
+|  19	| 6		     | 1            |
+|  20	| 6		     | 1            |
 
 Note: Remember that Druids (including Moon Druids) can't take forms with a swim speed until level 4, and can’t take forms with a fly speed until level 8.
 
 Wild Shape Forms by CR:
-| CR   | Beasts                                                                                               |
-| ---- | ---------------------------------------------------------------------------------------------------- |
-| 0    | Giant Badger, Cat                                                                                    |
-| 1/4  | Giant Wolf Spider, Panther, Velociraptor, Wolf                                                       |
-| 1/2  | Black Bear                                                                                           |
-| 1    | Brown Bear, Dire Wolf, Giant Eagle, Giant Hyena, Giant Spider, Giant vulture, Giant Raven, Giant Owl |
-| 2    | Giant Elk, Polar Bear, Quetzalcoatlus, Saber-Toothed Tiger                                           | 
-| 3    | Ankylosaurus, Spotted Lion                                                                           |
-| 4    | Stegosaurus                                                                                          |
-| 5    | Air Elemental, Earth Elemental, Fire elemental, Water Elemental                                      |
+| CR   | Beasts                                                                        |
+| ---- | ----------------------------------------------------------------------------- |
+| 0    | Giant Badger, Cat                                                             |
+| 1/4  | Giant Wolf Spider, Panther, Velociraptor, Wolf                                |
+| 1/2  | Black Bear                                                                    |
+| 1    | Brown Bear, Dire Wolf, Giant Hyena, Giant Spider, Giant Eagle, Giant vulture  |
+| 2    | Giant Elk, Polar Bear, Quetzalcoatlus, Saber-Toothed Tiger                    | 
+| 3    | Ankylosaurus, Spotted Lion                                                    |
+| 4    | Stegosaurus                                                                   |
+| 5    | Air Elemental, Earth Elemental, Fire elemental, Water Elemental               |
 
 | Lvl | Land and Spore Druid                                                                            |
 | --- | ----------------------------------------------------------------------------------------------- |
 | 2   | Giant Badger, Cat, Giant Wolf Spider, Panther, Velociraptor, Wolf                               |
 | 4   | Black Bear                                                                                      |
-| 8   | Brown Bear, Dire Wolf, Giant Hyena, Giant Spider, Raven, Owl, Giant Eagle, Giant vulture        |
+| 8   | Brown Bear, Dire Wolf, Giant Hyena, Giant Spider, Giant Eagle, Giant vulture                    |
 
 | Lvl | Moon Druid                                                                                      |
 | --- | ----------------------------------------------------------------------------------------------- |
-| 2   | Giant Badger, Cat, Panther, Velociraptor, Brown Bear, Dire Wolf, Giant Hyena, Giant Spider      |
+| 2   | Cat, Panther, Velociraptor, Brown Bear, Dire Wolf, Giant Hyena, Giant Spider                    |
 | 6   | Polar Bear, Saber-Toothed Tiger, Giant Elk                                                      |
-| 8   | Giant Raven, Giant Owl, Giant Eagle, Giant vulture, Quetzalcoatlus                              |
-| 9   | Ankylosaurus, Spotted Lion, Owlbear                                                             |
+| 8   | Giant vulture, Quetzalcoatlus                                                                   |
+| 9   | Ankylosaurus, Spotted Lion                                                                      |
 | 10  | Air Elemental, Earth Elemental, Fire elemental, Water Elemental                                 |
 | 12  | Stegosaurus                                                                                     |
 
@@ -52,6 +60,13 @@ Some shapes are straight upgrades from lower ones and will be a replacement inst
 - Giant Wolf Spider, Giant Spider
 - Panther, Saber-Toothed Tiger, Spotted Lion
 - Velociraptor, Ankylosaurus, Stegosaurus
+
+Some shapes have been removed:
+- Owlbear. It is a monstruosity, not allowed by druids
+- Deep Rothe. I haven't found anything about this monster. Replaces by Giant Elk.
+- Elemental Myrmidons. Druid can shape into Elementals at level 10, but not Myrmidons.
+
+**I didn't add any new models or animations. I have used what was available. So there are several shapes that don't have the correct model but everything else is RAW.**
 
 ## Shape Stats
 
@@ -80,6 +95,8 @@ For example, Panther Pounce rolls DC 10. It will be:
 Some shapes have multi-attacks, typically bite-claws. They will get two attack skills and a multi-attack skill.
 
 The notation "Recharge X- Y" means a monster can use a special ability once and that the ability then has a random chance of recharging during each subsequent round of combat. At the start of each of the monster's turns, roll a d6. If the roll is one of the numbers in the recharge notation, the monster regains the use of the special ability. The ability also recharges when the monster finishes a short or long rest. For the Giant Spider, that means you roll a d6 and if it comes up with 5 or 6, then it can use the web attack again.
+
+*Note*: Recharge doesn't seem to work for players, so these abilities are available every turns.
 
 ### Giant Badger
 
