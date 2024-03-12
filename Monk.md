@@ -33,8 +33,7 @@ Adjusted Ki and Unarmed damage table:
 RAW: you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.
 BG3: you gain immunity to all difficult terrains and your jump distance is increased by 6m.
 
-BG3 doesn't allow vertical movement, so I'm not sure how to implement this feature. It should allow Monk to climb wall or cliffs.
-It should not give immunity to difficult terrains, only allow you to walk over water surfaces.
+*Current implementation*: ability to move across any liquid surface such as water, mud, snow, quicksand as if it were harmless solid ground.
 
 ## Open Hand
 - Open Hand Techniques are now reactions with a passive toggle that can trigger on Flurry of Blows attacks

@@ -185,7 +185,7 @@ new entry "UnarmoredMovement_DifficultTerrain"
 type "PassiveData"
 using "UnarmoredMovement_DifficultTerrain"
 data "Description" "984d9c6f-f6be-4bc6-91af-317da55c5365;7"
-data "Boosts" "StatusImmunity(DIFFICULT_TERRAIN_DEEPWATER);StatusImmunity(DIFFICULT_TERRAIN_MUD);StatusImmunity(DIFFICULT_TERRAIN_GREASE);StatusImmunity(SHOCKED_SURFACE);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_SEWER);StatusImmunity(ACID);StatusImmunity(ALCH_TOXIN_BASIC_CONDITION)"
+data "Boosts" "StatusImmunity(DIFFICULT_TERRAIN_DEEPWATER);StatusImmunity(DIFFICULT_TERRAIN_MUD);StatusImmunity(DIFFICULT_TERRAIN_GREASE);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_SEWER)"
 
 // Stunning Strike
 new entry "Target_StunningStrike"
