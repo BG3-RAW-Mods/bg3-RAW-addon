@@ -25,7 +25,7 @@
 	<content contentuid="275e8029-c20c-4625-b628-03fdd1257466" version="7">You gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.</content>
 	<content contentuid="b9839978-40c8-482f-993f-15454c1e3b07" version="2">Stillness of Mind (Passive)</content>
 	<content contentuid="5d129e97-1e4b-44dd-a56a-3f3dd0aa65d4" version="3">If you are &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt;, you automatically cast &lt;LSTag Type="Spell" Tooltip="Shout_StillnessOfMind"&gt;Stillness of Mind&lt;/LSTag&gt; to remove the condition.</content>
-	<content contentuid="984d9c6f-f6be-4bc6-91af-317da55c5365" version="7">&lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt; doesn't slow you down while you are not wearing armour or using a shield.</content>
+	<content contentuid="984d9c6f-f6be-4bc6-91af-317da55c5365" version="7">Liquid surfaces don't slow you down while you are not wearing armour or using a shield.</content>
 	<content contentuid="20e0049c-c134-46d5-afd4-f7f3685bf794" version="2">Ki Resonation (Passive)</content>
 	<content contentuid="bcf9b273-5e86-436b-94f4-b539e6495c67" version="2">Ki Resonation</content>
 	<content contentuid="d13b42e1-0793-40eb-8e47-49e12b60baef" version="3">When you hit a creature with an unarmed strike, you can spend [1] ki points to set up lethal vibrations. The vibrations are harmless unless you use &lt;LSTag Type="Spell" Tooltip="Target_KiResonation_Blast"&gt;Lesser Quivering Palm&lt;/LSTag&gt; to end them.</content>

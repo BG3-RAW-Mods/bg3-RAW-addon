@@ -180,23 +180,12 @@ data "Boosts" "DamageReduction(Bludgeoning,Flat,(ClassLevel(Monk)*5))"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "OnRemoveFunctors" "UseActionResource(ReactionActionPoint,1)"
 
-// Unarmored Movement: you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.
-// Maybe add immunity to prone on slowfall ?
+//TODO: you gain the ability to move along vertical surfaces
 new entry "UnarmoredMovement_DifficultTerrain"
 type "PassiveData"
 using "UnarmoredMovement_DifficultTerrain"
 data "Description" "984d9c6f-f6be-4bc6-91af-317da55c5365;7"
-data "Boosts" "StatusImmunity(SG_DifficultTerrain)"
-
-// The Aspect of the Crocodile increases your agility in the water.&lt;br&gt;&lt;br&gt;Your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; increases by [1] while standing in water-based surfaces.&lt;br&gt;&lt;br&gt;On slippery surfaces, you also have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being knocked &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;.</content>
-// data "BoostConditions" "InSurface('SurfaceAlcohol') or InSurface('SurfaceBlood') or InSurface('SurfaceDeepWater') 
-// or InSurface('SurfaceDeepWaterRunning') or InSurface('SurfaceGrease') or InSurface('SurfaceOil') 
-// or InSurface('SurfaceWater') or InSurface('SurfaceWaterFrozen') or InSurface('SurfaceBloodFrozen')"
-// data "PersonalStatusImmunities" "
-// DIFFICULT_TERRAIN_MUD
-// PRONE_GREASE
-// SG_DifficultTerrain
-// data "Boosts" "StatusImmunity(DIFFICULT_TERRAIN);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_SEWER);"
+data "Boosts" "StatusImmunity(DIFFICULT_TERRAIN_DEEPWATER);StatusImmunity(DIFFICULT_TERRAIN_MUD);StatusImmunity(DIFFICULT_TERRAIN_GREASE);StatusImmunity(SHOCKED_SURFACE);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_SEWER);StatusImmunity(ACID);StatusImmunity(ALCH_TOXIN_BASIC_CONDITION)"
 
 // Stunning Strike
 new entry "Target_StunningStrike"

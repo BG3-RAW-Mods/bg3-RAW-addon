@@ -54,24 +54,3 @@ function HasStatusError(status, error)
     local result = HasStatus(status).Result
     return ConditionResult(result, {ConditionError(error)}, {ConditionError(error)})
 end
-
-function hasGrapplingWaterElemental(status)
-    local enemies = GetEnemiesWithinRange(1.5, context.Target, context.Source)
-    if enemies ~= nil and #enemies.Enemies >= 1 then
-        for _, entity in ipairs(enemies.Enemies) do
-            if HasStatus(status, entity).Result then
-                return ConditionResult(true)
-            end
-        end
-    end
-    return ConditionResult(false)
-end
-
-function hasGrapplingWaterElemental2(status)
-    local enemies = GetEnemiesWithinRange(1.5, context.Target, context.Source)
-    return ConditionResult(enemies ~= nil)
-end
-
-function hasGrapplingWaterElemental3(status)
-    return ConditionResult(true)
-end

@@ -191,9 +191,6 @@
 						<node id="Tags">
 							<children>
 								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
-								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
 							</children>
@@ -317,9 +314,6 @@
 						</node>
 						<node id="Tags">
 							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
@@ -445,9 +439,6 @@
 						</node>
 						<node id="Tags">
 							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
@@ -627,9 +618,6 @@
 						<node id="Tags">
 							<children>
 								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
-								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
 							</children>
@@ -740,11 +728,15 @@
 								</node>
 							</children>
 						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
+								</node>
+							</children>
+						</node>
 						<node id="Tags">
 							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
@@ -855,11 +847,15 @@
 								</node>
 							</children>
 						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
+								</node>
+							</children>
+						</node>
 						<node id="Tags">
 							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
@@ -943,11 +939,15 @@
 								</node>
 							</children>
 						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
+								</node>
+							</children>
+						</node>
 						<node id="Tags">
 							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
@@ -1024,13 +1024,17 @@
 								</node>
 							</children>
 						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
+								</node>
+							</children>
+						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
 								</node>
 							</children>
 						</node>
@@ -1117,13 +1121,17 @@
 								</node>
 							</children>
 						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
+								</node>
+							</children>
+						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
 								</node>
 							</children>
 						</node>
@@ -1198,13 +1206,17 @@
 								</node>
 							</children>
 						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
+								</node>
+							</children>
+						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
 								</node>
 							</children>
 						</node>
@@ -1305,9 +1317,6 @@
 						</node>
 						<node id="Tags">
 							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
@@ -1432,9 +1441,6 @@
 						</node>
 						<node id="Tags">
 							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
@@ -1652,9 +1658,6 @@
 						<node id="Tags">
 							<children>
 								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
-								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
 							</children>
@@ -1847,9 +1850,6 @@
 						<node id="Tags">
 							<children>
 								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
-								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
 							</children>
@@ -2041,9 +2041,6 @@
 						<node id="Tags">
 							<children>
 								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
-								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
 							</children>
@@ -2169,9 +2166,6 @@
 						</node>
 						<node id="Tags">
 							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
@@ -2380,9 +2374,6 @@
 						</node>
 						<node id="Tags">
 							<children>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
-								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
@@ -2616,20 +2607,20 @@
 						<node id="SpeakerGroupList">
 							<children>
 								<node id="SpeakerGroup">
-									<attribute id="Object" type="31" value="f27c125a-da67-4e80-9456-214c63672c84" />
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
 								</node>
 							</children>
 						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
+									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
+								</node>
+								<node id="Tag">
 									<attribute id="Object" type="31" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
 								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="8803503b-64e0-49dd-ba5b-0c4f2c5cc0b5" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="85f98951-5d9f-4beb-9cb3-4828340ed23f" />
 								</node>
 							</children>
 						</node>
@@ -2837,20 +2828,20 @@
 						<node id="SpeakerGroupList">
 							<children>
 								<node id="SpeakerGroup">
-									<attribute id="Object" type="31" value="f27c125a-da67-4e80-9456-214c63672c84" />
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
 								</node>
 							</children>
 						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
+									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
+								</node>
+								<node id="Tag">
 									<attribute id="Object" type="31" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
 								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="8803503b-64e0-49dd-ba5b-0c4f2c5cc0b5" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="85f98951-5d9f-4beb-9cb3-4828340ed23f" />
 								</node>
 							</children>
 						</node>
@@ -3004,20 +2995,20 @@
 						<node id="SpeakerGroupList">
 							<children>
 								<node id="SpeakerGroup">
-									<attribute id="Object" type="31" value="f27c125a-da67-4e80-9456-214c63672c84" />
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
 								</node>
 							</children>
 						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
+									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
+								</node>
+								<node id="Tag">
 									<attribute id="Object" type="31" value="801bd716-0666-4dd5-b449-45ffa9a52a0f" />
 								</node>
 								<node id="Tag">
 									<attribute id="Object" type="31" value="8803503b-64e0-49dd-ba5b-0c4f2c5cc0b5" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="85f98951-5d9f-4beb-9cb3-4828340ed23f" />
 								</node>
 							</children>
 						</node>
@@ -3149,20 +3140,17 @@
 								</node>
 							</children>
 						</node>
-						<node id="StatusList">
+						<node id="SpeakerGroupList">
 							<children>
-								<node id="Status">
-									<attribute id="Object" type="22" value="CONJURE_ELEMENTAL_AIR_VFX" />
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
 								</node>
 							</children>
 						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
-									<attribute id="Object" type="31" value="b9413db4-f096-4232-ae21-33ca0ac856af" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="26c78224-a4c1-43e4-b943-75e7fa1bfa41" />
+									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
 							</children>
 						</node>
@@ -3318,13 +3306,17 @@
 								</node>
 							</children>
 						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
+								</node>
+							</children>
+						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
-									<attribute id="Object" type="31" value="4a12b219-8eae-471b-8f3b-c388da29fc1e" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="26c78224-a4c1-43e4-b943-75e7fa1bfa41" />
+									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
 							</children>
 						</node>
@@ -3439,13 +3431,17 @@
 								</node>
 							</children>
 						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
+								</node>
+							</children>
+						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
-									<attribute id="Object" type="31" value="ea959210-d136-454b-bc6a-8c153cb4efa6" />
-								</node>
-								<node id="Tag">
-									<attribute id="Object" type="31" value="26c78224-a4c1-43e4-b943-75e7fa1bfa41" />
+									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
 							</children>
 						</node>
@@ -3574,10 +3570,17 @@
 								</node>
 							</children>
 						</node>
+						<node id="SpeakerGroupList">
+							<children>
+								<node id="SpeakerGroup">
+									<attribute id="Object" type="31" value="02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f" />
+								</node>
+							</children>
+						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
-									<attribute id="Object" type="31" value="c7fdad4f-2953-4de8-8a4f-109e36ec3640" />
+									<attribute id="Object" type="31" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
 								</node>
 							</children>
 						</node>

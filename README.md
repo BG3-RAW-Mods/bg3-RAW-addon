@@ -141,6 +141,14 @@ Concentration has been added to these spells:
 
 - Second-Story Work, adds an increased jump distance based on dexterity modifier  
 
+#### Monk
+
+[Monk changes](Monk.md)
+
+#### Druid
+
+[Druid changes](Druid.md)
+
 ### Weapon fixes
 
 - Torch is not a weapon, it only deals 1 fire damage (no ability modifier).
