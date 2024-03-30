@@ -153,3 +153,28 @@ function HasProficiencyIn(skill)
     local value = skillValue - modifier
     return ConditionResult(value > 0)
 end
+
+function hasMovedMoreThan(distance, status)
+    local status = status or 'RAW_MOVEMENT_TRACKING'
+    local result = StatusDurationEqualOrMoreThan(context.Source,status,distance).Result
+    if distance == 1 then
+        return ConditionResult(result, {ConditionError('Require1MeterMovement')})
+    elseif distance == 1.5 then
+        return ConditionResult(result, {ConditionError('Require5FeetMovement')})
+    elseif distance == 3 then
+        return ConditionResult(result, {ConditionError('Require3MeterMovement')})
+    elseif distance == 6 then
+        return ConditionResult(result, {ConditionError('Require6MeterMovement')})
+    else
+        return ConditionResult(result)
+    end
+end
+
+function canLongJump()
+    local isAthlete = HasPassive('Athlete_StandUp',context.Source).Result
+    if isAthlete then
+        return hasMovedMoreThan(1);
+    else
+        return hasMovedMoreThan(3);
+    end
+end

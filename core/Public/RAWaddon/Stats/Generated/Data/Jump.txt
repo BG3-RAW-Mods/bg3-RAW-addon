@@ -1,10 +1,26 @@
 new entry "Projectile_Jump"
 type "SpellData"
-data "SpellType" "Projectile"
 using "Projectile_Jump"
 data "UseCosts" "Movement:Distance"
 data "TargetRadius" "3.2"
 data "AddRangeFromAbility" "Strength,0.61"
+
+new entry "Projectile_ShortJump"
+type "SpellData"
+using "Projectile_Jump"
+data "UseCosts" "Movement:Distance"
+data "TargetRadius" "1.6"
+data "AddRangeFromAbility" "Strength,0.305"
+
+new entry "Projectile_LongJump"
+type "SpellData"
+using "Projectile_Jump"
+data "DisplayName" "4c549cac-6a4c-4da5-a154-37ceb3e4f6ab;1"
+data "TargetRadius" "3.2"
+data "AddRangeFromAbility" "Strength,0.61"
+data "SpellProperties" "GROUND:RemoveStatus(SELF,RAW_MOVEMENT_TRACKING)"
+data "RequirementConditions" "canLongJump()"
+data "RequirementEvents" "OnTurn;OnStatusApplied;OnStatusRemoved"
 
 // Do we want an impratical high jump ?
 // new entry "Projectile_High_Jump"
@@ -17,20 +33,20 @@ data "AddRangeFromAbility" "Strength,0.61"
 // data "AddRangeFromAbility" "Strength,0.304"
 // data "DisplayName" "e82d6bbb-2605-4800-8555-aca1a242d7e6"
 
+// Athlete feat: you can jump after moving 5 feet instead of 10. Currently, it improves jumping distance by 1.5 meters.
+new entry "Athlete_StandUp"
+type "PassiveData"
+using "Athlete_StandUp"
+data "Description" "51bcb59d-133a-44df-8d68-bf8cd65fc69d;1"
+data "DescriptionParams" "Distance(1.5);Distance(1);Distance(3)"
+data "Boosts" ""
+
 // Champion level 7 passive: distance increased by a number of feet equal to your Strength modifier.
 new entry "RemarkableAthlete_Jump"
 type "PassiveData"
 using "RemarkableAthlete_Jump"
 data "Description" "a3cddb60-5f33-4232-ad1c-9f52ad7c03fc;4"
 data "Boosts" "IF(StrengthModifier(1)):JumpMaxDistanceBonus(0.3);IF(StrengthModifier(2)):JumpMaxDistanceBonus(0.6);IF(StrengthModifier(3)):JumpMaxDistanceBonus(0.9);IF(StrengthModifier(4)):JumpMaxDistanceBonus(1.2);IF(StrengthModifier(5)):JumpMaxDistanceBonus(1.5);IF(StrengthModifier(6)):JumpMaxDistanceBonus(1.8);IF(StrengthModifier(7)):JumpMaxDistanceBonus(2.1);IF(StrengthModifier(8)):JumpMaxDistanceBonus(2.4);IF(StrengthModifier(9)):JumpMaxDistanceBonus(2.7);IF(StrengthModifier(10)):JumpMaxDistanceBonus(3)"
-
-// Athlete feat: you can jump after moving 5 feet instead of 10. Currently, it improves jumping distance by 1.5 meters.
-new entry "Athlete_StandUp"
-type "PassiveData"
-using "Athlete_StandUp"
-data "Description" "51bcb59d-133a-44df-8d68-bf8cd65fc69d;1"
-data "DescriptionParams" "Distance(1.5)"
-data "Boosts" "JumpMaxDistanceBonus(1.5)"
 
 // Barbarian Tiger Totem, jump increased by 3m instead of 4.5 (which was in fact a 50% multiplier instead of flat distance bonus)
 new entry "TotemSpirit_Tiger"

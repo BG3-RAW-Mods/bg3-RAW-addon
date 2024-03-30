@@ -23,12 +23,6 @@
                     <attribute id="UUID" type="guid" value="4f5e747d-08c5-4411-8b92-6e4a521e9179"/>
                 </node>
                 <node id="ConditionErrors">
-                    <attribute id="DisplayName" type="TranslatedString" handle="3d0146df-cfc0-4399-ba59-b9ca64ba5515" version="1"/>
-                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
-                    <attribute id="Identifier" type="FixedString" value="Require6MeterMovement"/>
-                    <attribute id="UUID" type="guid" value="9dcd4e64-e58d-4b4e-bdf9-2c48bce67305"/>
-                </node>
-                <node id="ConditionErrors">
                     <attribute id="DisplayName" type="TranslatedString" handle="e5f69875-a2ee-4635-be21-2ed867435ef7" version="1"/>
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Identifier" type="FixedString" value="RequireProneTarget"/>

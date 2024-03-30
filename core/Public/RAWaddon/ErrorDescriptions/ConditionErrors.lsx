@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="0"/>
+    <region id="ConditionErrors">
+        <node id="root">
+            <children>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="c323ef2b-86f9-4eda-9a04-3af468add0c9" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="Require1MeterMovement"/>
+                    <attribute id="UUID" type="guid" value="92f25082-c2a1-499c-afe4-dec89c508550"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="83a84471-9fce-4ecf-996c-71e25b61beac" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="Require5FeetMovement"/>
+                    <attribute id="UUID" type="guid" value="055d338a-b7c8-4268-bae7-61d149d6af98"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="c6c43f74-ddba-4c36-acdf-af12d9b91aac" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="Require3MeterMovement"/>
+                    <attribute id="UUID" type="guid" value="cfa60d01-404d-49a4-920b-5a48fca71b63"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="3d0146df-cfc0-4399-ba59-b9ca64ba5515" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="Require6MeterMovement"/>
+                    <attribute id="UUID" type="guid" value="9dcd4e64-e58d-4b4e-bdf9-2c48bce67305"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

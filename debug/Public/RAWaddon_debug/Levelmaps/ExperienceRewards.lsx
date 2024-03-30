@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="307"/>
+    <region id="ExperienceRewards">
+        <node id="root">
+            <children>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="0"/>
+                    <attribute id="Level10" type="uint32" value="0"/>
+                    <attribute id="Level2" type="uint32" value="0"/>
+                    <attribute id="Level3" type="uint32" value="0"/>
+                    <attribute id="Level4" type="uint32" value="0"/>
+                    <attribute id="Level5" type="uint32" value="0"/>
+                    <attribute id="Level6" type="uint32" value="0"/>
+                    <attribute id="Level7" type="uint32" value="0"/>
+                    <attribute id="Level8" type="uint32" value="0"/>
+                    <attribute id="Level9" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="Zero"/>
+                    <attribute id="RewardType" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="40806669-8c6b-4068-8bc4-07e4981bb020"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="1"/>
+                    <attribute id="Level10" type="uint32" value="1"/>
+                    <attribute id="Level2" type="uint32" value="1"/>
+                    <attribute id="Level3" type="uint32" value="1"/>
+                    <attribute id="Level4" type="uint32" value="1"/>
+                    <attribute id="Level5" type="uint32" value="1"/>
+                    <attribute id="Level6" type="uint32" value="1"/>
+                    <attribute id="Level7" type="uint32" value="1"/>
+                    <attribute id="Level8" type="uint32" value="1"/>
+                    <attribute id="Level9" type="uint32" value="1"/>
+                    <attribute id="Name" type="FixedString" value="Civilian"/>
+                    <attribute id="RewardType" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="c83d6caa-c5c3-4356-b55c-8d634535976c"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="LevelSource" type="uint8" value="1"/>
+                    <attribute id="Name" type="FixedString" value="Pack"/>
+                    <attribute id="RewardType" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="c1d87aaa-7548-44da-b9dd-d17b027a3885"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="LevelSource" type="uint8" value="1"/>
+                    <attribute id="Name" type="FixedString" value="Combatant"/>
+                    <attribute id="RewardType" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="810b5510-6748-4c8e-bef0-d990880ed1dd"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="LevelSource" type="uint8" value="1"/>
+                    <attribute id="Name" type="FixedString" value="Elite"/>
+                    <attribute id="RewardType" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="4ee02692-eb98-43a6-803f-2da645364568"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="LevelSource" type="uint8" value="1"/>
+                    <attribute id="Name" type="FixedString" value="Miniboss"/>
+                    <attribute id="RewardType" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="206b753f-bc3b-46af-98b9-0c711d98c678"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="LevelSource" type="uint8" value="1"/>
+                    <attribute id="Name" type="FixedString" value="Boss"/>
+                    <attribute id="RewardType" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="484393d9-eb7b-4b3b-b69b-5fdbfa940403"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="CloseBoosterEasy"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="ce7f8aea-6f9a-49b8-a3dd-7fb12d2eb745"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="ProgressBooster"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="bbac01c1-eddd-416a-837b-317944d09413"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="CloseBoosterHard"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="67439439-7cba-4077-81e8-3224086fc6f7"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="CombatcloseBooster"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="d28b13b0-e0c0-4b5c-b166-ff17e50322cf"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="ProgressMajor"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="85e62526-1d6d-4efb-8897-c602e530e7bf"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="CloseMajor"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="436a9e5d-2102-4048-964d-2055a295e73e"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="CombatCloseMajor"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="fae81b0d-9561-41c4-b71a-883272cfd3da"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="ProgressMain"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="0ccb6004-47e8-4356-9299-2f69fdfcb13d"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="CloseMain"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="572cc0bc-ecf3-4a85-84be-10bdd2d60f3b"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="CombatcloseMain"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="7aa9ef5d-b431-4a94-85d9-a68d915d3b64"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="BypassedCombatMedium"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="86b0c895-49cd-4152-9b1e-dc2acd224025"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="Small"/>
+                    <attribute id="RewardType" type="uint8" value="1"/>
+                    <attribute id="UUID" type="guid" value="4c4c1c60-3362-4e84-84ad-ae1a140b17ee"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="Medium"/>
+                    <attribute id="RewardType" type="uint8" value="1"/>
+                    <attribute id="UUID" type="guid" value="be4218ef-3a29-4fbf-911a-255ee71d2b35"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="Big"/>
+                    <attribute id="RewardType" type="uint8" value="1"/>
+                    <attribute id="UUID" type="guid" value="1e2436a8-309e-4c8f-b77a-a6b1e4889fd9"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="Name" type="FixedString" value="BackgroundGoal"/>
+                    <attribute id="RewardType" type="uint8" value="2"/>
+                    <attribute id="UUID" type="guid" value="90f636c0-2d85-46d8-9760-30b57c664f4b"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="60000"/>
+                    <attribute id="Level2" type="uint32" value="60000"/>
+                    <attribute id="Level3" type="uint32" value="60000"/>
+                    <attribute id="Level4" type="uint32" value="60000"/>
+                    <attribute id="Level5" type="uint32" value="60000"/>
+                    <attribute id="LevelSource" type="uint8" value="1"/>
+                    <attribute id="Name" type="FixedString" value="Boss"/>
+                    <attribute id="RewardType" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="0ac71fd4-79f9-48f1-8963-edbecf6032b9"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

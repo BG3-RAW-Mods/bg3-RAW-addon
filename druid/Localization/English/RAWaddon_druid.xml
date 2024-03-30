@@ -2,11 +2,6 @@
 	<content contentuid="49ee6ff4-0501-44da-9786-87ef4bc604b3" version="4">Affected entity has gained [1].&lt;br&gt;&lt;br&gt;As long as it has its &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt;, its melee weapon attacks and unarmed strikes deal an additional [2], and it deals double damage with &lt;LSTag Type="Spell" Tooltip="Target_HaloOfSpores"&gt;Halo of Spores&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Ends early if the entity uses &lt;LSTag Type="Spell" Tooltip="Shout_WildShape"&gt;Wild Shape&lt;/LSTag&gt;.</content>
 	<content contentuid="3a82397f-cdd9-4078-bd1c-6caf5518b8bf" version="1">It has a starting health of [1] that increases over levels up to its maximum of [2].</content>
 
-	<!-- Movement Tracking -->
-	<content contentuid="4f93a1b8-eeeb-484a-a937-cd7b5c42454c" version="1">Movement Tracking</content>
-	<content contentuid="40f43875-6158-4d7c-84f8-9c8cee0b5bae" version="1">Track how many meters you have moved this turn.</content>
-	<content contentuid="3d0146df-cfc0-4399-ba59-b9ca64ba5515" version="1">You need to move at least 6m before using this ability</content>
-
 	<content contentuid="e5f69875-a2ee-4635-be21-2ed867435ef7" version="1">Require a Prone target</content>
 	<content contentuid="efa0363b-96c9-4759-b1e7-3e7739a98089" version="1">Depending on the intensity of the burning source, takes between [1] and [2] per turn.</content>	
 
@@ -160,7 +155,7 @@ Level 6: Polar Bear that can &lt;LSTag Type="Spell" Tooltip="Target_Multiattack_
 	<content contentuid="64382aa4-b6d4-470b-b0f0-a30a124343b5" version="1">Wild Shape: Quetzalcoatlus</content>
 	<content contentuid="12d52d75-50a4-4390-9890-34bfe2e93da6" version="1">Quetzalcoatlus</content>
 	<content contentuid="16dc51af-41fc-4268-bde0-156c5506386f" version="1">Take the shape of a quetzalcoatlus that can fly [1] and &lt;LSTag Type="Spell" Tooltip="Target_Bite_Quetzalcoatlus_Wildshape"&gt;bite&lt;/LSTag&gt;. It has [2].</content>
-	<content contentuid="dfb07873-9823-41f7-892f-070971565991" version="1">Bite a target. If the quetzalcoatlus flew least [1] toward the target immediately before the hit, the target takes an extra [2].</content>
+	<content contentuid="dfb07873-9823-41f7-892f-070971565991" version="1">Bite a target. If the quetzalcoatlus flew at least [1], the target takes an extra [2].</content>
 	<content contentuid="b59e69c3-0ca8-47b9-bb9c-a1ca4ff2e051" version="1">quetzalcoatlus extra damage</content>
 
 	<!-- Air Elemental -->

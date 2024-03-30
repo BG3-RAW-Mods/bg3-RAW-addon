@@ -66,34 +66,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Poison_Destroy_Basic" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -152,34 +124,6 @@
 											<attribute id="Consume" type="19" value="True" />
 											<attribute id="StatsId" type="22" value="TOXIN_BASIC" />
 											<attribute id="StatusDuration" type="4" value="0" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="1" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Toxin_Destroy_Basic" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -249,34 +193,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Toxin_Destroy_SerpentVenom" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -341,34 +257,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Toxin_Destroy_PurpleWorm" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -427,34 +315,6 @@
 											<attribute id="Consume" type="19" value="True" />
 											<attribute id="StatsId" type="22" value="POISON_DROW" />
 											<attribute id="StatusDuration" type="4" value="0" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Poison_Destroy_Drow" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -524,34 +384,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Poison_Destroy_CrawlerMucus" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -611,34 +443,6 @@
 											<attribute id="Consume" type="bool" value="True" />
 											<attribute id="StatsId" type="FixedString" value="TOXIN_WYVERN" />
 											<attribute id="StatusDuration" type="int32" value="0" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="FixedString" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="FixedString" value="HardcoreOnly" />
-													<attribute id="Type" type="int32" value="1" />
-													<attribute id="Value" type="LSString" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="FixedString" value="LifeTime" />
-													<attribute id="Type" type="int32" value="2" />
-													<attribute id="Value" type="LSString" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="FixedString" value="ProjectileSpell" />
-													<attribute id="Type" type="int32" value="9" />
-													<attribute id="Value" type="LSString" value="Projectile_Toxin_Destroy_Wyvern" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>

@@ -84,6 +84,4 @@ function RAW_ApplyClientModOptions()
 end
 
 function RAW_ApplyServerModOptions() 
-    if RAW_CheckModOption(RAW_Globals.features.Classes) then
-    end
 end

@@ -1,17 +1,17 @@
 local function monkChanges()
     -- Monk receives 2 ki points at level 2, then 1 per level
-    Mods.SubclassCompatibilityFramework.Api.RemoveStrings(Mods.RAWaddon.removeString(RAW_Monk_1, "Boosts", { "ActionResource(KiPoint,2,0)" }))
-    Mods.SubclassCompatibilityFramework.Api.RemoveStrings(Mods.RAWaddon.removeString(RAW_Monk_Multi_1, "Boosts", { "ActionResource(KiPoint,2,0)" }))
-    Mods.SubclassCompatibilityFramework.Api.RemoveStrings(Mods.RAWaddon.removeString(RAW_Monk_2, "Boosts", { "ActionResource(KiPoint,1,0)" }))
-    Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Monk_2, "Boosts", { "ActionResource(KiPoint,2,0)" }))
+    Mods.SubclassCompatibilityFramework.Api.RemoveStrings(Mods.RAWaddon.removeString(Mods.RAWaddon.RAW_Monk_1, "Boosts", { "ActionResource(KiPoint,2,0)" }))
+    Mods.SubclassCompatibilityFramework.Api.RemoveStrings(Mods.RAWaddon.removeString(Mods.RAWaddon.RAW_Monk_Multi_1, "Boosts", { "ActionResource(KiPoint,2,0)" }))
+    Mods.SubclassCompatibilityFramework.Api.RemoveStrings(Mods.RAWaddon.removeString(Mods.RAWaddon.RAW_Monk_2, "Boosts", { "ActionResource(KiPoint,1,0)" }))
+    Mods.SubclassCompatibilityFramework.Api.InsertStrings(Mods.RAWaddon.addString(Mods.RAWaddon.RAW_Monk_2, "Boosts", { "ActionResource(KiPoint,2,0)" }))
     -- Flurry of Blows is unlocked after you take the Attack action on your turn
-    Mods.SubclassCompatibilityFramework.Api.RemovePassives(Mods.RAWaddon.removeString(RAW_Monk_1, "PassivesAdded", { "FlurryOfBlowsUnlock" }))
-    Mods.SubclassCompatibilityFramework.Api.RemovePassives(Mods.RAWaddon.removeString(RAW_Monk_Multi_1, "PassivesAdded", { "FlurryOfBlowsUnlock" }))
+    Mods.SubclassCompatibilityFramework.Api.RemovePassives(Mods.RAWaddon.removeString(Mods.RAWaddon.RAW_Monk_1, "PassivesAdded", { "FlurryOfBlowsUnlock" }))
+    Mods.SubclassCompatibilityFramework.Api.RemovePassives(Mods.RAWaddon.removeString(Mods.RAWaddon.RAW_Monk_Multi_1, "PassivesAdded", { "FlurryOfBlowsUnlock" }))
     -- Open Hand Technique are interrupts
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(Mods.RAWaddon.removeSelector(Mods.RAWaddon.RAW_Monk_OpenHand_3, "AddSpells", "6566d841-ef96-4e13-ac40-c40f44c5e08b"))  
     Mods.SubclassCompatibilityFramework.Api.InsertStrings(Mods.RAWaddon.addString(Mods.RAWaddon.RAW_Monk_OpenHand_3, "PassivesAdded", { "OpenHandTechnique_Passive" }))
     -- Stunning Strikes are interrupts
-    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(Mods.RAWaddon.removeSelector(RAW_Monk_5, "AddSpells", "3ba6090a-a8be-4938-82ef-40eba0083441"))  
+    Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(Mods.RAWaddon.removeSelector(Mods.RAWaddon.RAW_Monk_5, "AddSpells", "3ba6090a-a8be-4938-82ef-40eba0083441"))  
     Mods.SubclassCompatibilityFramework.Api.InsertStrings(Mods.RAWaddon.addString(Mods.RAWaddon.RAW_Monk_5, "PassivesAdded", { "StunningStrike_Passive" }))
     -- Shadow doesn't have access to Hide bonus action
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(Mods.RAWaddon.removeSelector(Mods.RAWaddon.RAW_Monk_Shadow_3, "AddSpells", "e050fe59-a8f0-4c03-a7f4-569ac747c80e"))  
@@ -22,14 +22,14 @@ local function monkChanges()
     Mods.SubclassCompatibilityFramework.Api.InsertSelectors(Mods.RAWaddon.addAddSpells(Mods.RAWaddon.RAW_Monk_7, "90d61529-d390-4d39-a84a-58dfc94c90aa", {}))
     -- Cloak of Shadows is granted at level 11, not 5
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(Mods.RAWaddon.removeSelector(Mods.RAWaddon.RAW_Monk_Shadow_5, "AddSpells", "e1f0e927-0711-4644-8745-af2b02434cfd"))  
-    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(Mods.RAWaddon.RAW_Monk_Shadow_11, "e1f0e927-0711-4644-8745-af2b02434cfd", {}))
+    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(Mods.RAWaddon.addAddSpells(Mods.RAWaddon.RAW_Monk_Shadow_11, "e1f0e927-0711-4644-8745-af2b02434cfd", {}))
     -- Shadow doesn't have Shadow Strike ability
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(Mods.RAWaddon.removeSelector(Mods.RAWaddon.RAW_Monk_Shadow_11, "AddSpells", "6c0c93e7-d43a-43ca-8f36-43eff7a5ccdb"))  
     -- Open Hand doesn't get Ki Resonation at level 9
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(Mods.RAWaddon.removeSelector(Mods.RAWaddon.RAW_Monk_OpenHand_9, "AddSpells", "0ffe7be9-d826-42d7-b59e-d1924ad28ffc"))  
-    -- Mods.SubclassCompatibilityFramework.Api.InsertStrings(addString(RAW_Monk_OpenHand_9, "PassivesAdded", { "KiResonation_Passive" }))
-    -- Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addAddSpells(RAW_Monk_OpenHand_9, "f4d4e906-0c7e-4459-ab49-f135bdb7a961", {}))
-    -- Four Element only select 2 spells at level 3
+    Mods.SubclassCompatibilityFramework.Api.InsertStrings(Mods.RAWaddon.addString(Mods.RAWaddon.RAW_Monk_OpenHand_9, "PassivesAdded", { "KiResonation_Passive" }))
+    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(Mods.RAWaddon.addAddSpells(Mods.RAWaddon.RAW_Monk_OpenHand_9, "f4d4e906-0c7e-4459-ab49-f135bdb7a961", {}))
+    -- -- Four Element only select 2 spells at level 3
     Mods.SubclassCompatibilityFramework.Api.InsertStrings(Mods.RAWaddon.addString(Mods.RAWaddon.RAW_Monk_FourElements_3, "PassivesAdded", { "FourElementsDisciplines" }))
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(Mods.RAWaddon.removeSelector(Mods.RAWaddon.RAW_Monk_FourElements_3, "AddSpells", "de3d347b-69f4-43ac-915d-26e7cbb912bc"))  
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(Mods.RAWaddon.removeSelector(Mods.RAWaddon.RAW_Monk_FourElements_3, "SelectSpells", "9da8ef4f-676b-46f1-81e4-f7c3cfd1c34c"))  

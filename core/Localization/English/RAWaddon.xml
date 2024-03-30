@@ -1,8 +1,17 @@
 ﻿<contentList date="29/12/2023 11:20">
+	<!-- Movement Tracking -->
+	<content contentuid="4f93a1b8-eeeb-484a-a937-cd7b5c42454c" version="1">Movement Tracking</content>
+	<content contentuid="40f43875-6158-4d7c-84f8-9c8cee0b5bae" version="1">Track how many meters you have moved this turn.</content>
+	<content contentuid="c323ef2b-86f9-4eda-9a04-3af468add0c9" version="1">You need to move at least 1m before using this ability</content>
+	<content contentuid="83a84471-9fce-4ecf-996c-71e25b61beac" version="1">You need to move at least 1.5m before using this ability</content>
+	<content contentuid="c6c43f74-ddba-4c36-acdf-af12d9b91aac" version="1">You need to move at least 3m before using this ability</content>
+	<content contentuid="3d0146df-cfc0-4399-ba59-b9ca64ba5515" version="1">You need to move at least 6m before using this ability</content>
+
 	<!-- Jump -->
-	<content contentuid="h4b921d5bg6e70g455cga6fcg68c4e67f9067" version="7">Your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; or &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; increases by 1, to a maximum of 20.&lt;br&gt;&lt;br&gt;When you are Prone, standing up uses only [1] of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed.&lt;br&gt;Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance also increases by [1].</content>
-	<content contentuid="51bcb59d-133a-44df-8d68-bf8cd65fc69d" version="1">When you are &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, standing up uses only [1] of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;.&lt;br&gt;Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance is increased by [1].</content>
+	<content contentuid="h4b921d5bg6e70g455cga6fcg68c4e67f9067" version="7">Your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; or &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; increases by 1, to a maximum of 20.&lt;br&gt;&lt;br&gt;When you are Prone, standing up uses only 1.5m of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;.&lt;br&gt;You can make a running long jump or a running high jump after moving only 1 meter on foot, rather than 3 meters.</content>
+	<content contentuid="51bcb59d-133a-44df-8d68-bf8cd65fc69d" version="1">When you are &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, standing up uses only [1] of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;.&lt;br&gt;You can make a running long jump or a running high jump after moving only [2] on foot, rather than [3].</content>
 	<content contentuid="a3cddb60-5f33-4232-ad1c-9f52ad7c03fc" version="4">You're a master of your own body, your athletic prowess extended beyond the usual.&lt;br&gt;&lt;br&gt;Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance increases by a number of feet equal to your Strength modifier.</content>
+	<content contentuid="4c549cac-6a4c-4da5-a154-37ceb3e4f6ab" version="1">Long Jump</content>
 
 	<!-- Feats -->
 	<content contentuid="0611a12f-914c-473a-8eac-9c1dd042fc4d" version="3">Skilled at mimicry and dramatics, you gain the following benefits:&lt;br&gt;- your &lt;LSTag Tooltip="Charisma"&gt;Charisma&lt;/LSTag&gt; increases by [1], to a maximum of [2].&lt;br&gt;- you have an advantage on Deception and Performance &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>

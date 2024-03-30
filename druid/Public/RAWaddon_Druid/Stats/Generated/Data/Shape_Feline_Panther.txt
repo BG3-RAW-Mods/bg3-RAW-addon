@@ -59,7 +59,7 @@ data "Icon" "Action_Cat_Claws"
 data "TooltipDamageList" "DealDamage(1d4+UnarmedMeleeAbilityModifier,Piercing);"
 data "TooltipStatusApply" "ApplyStatus(PRONE,100,1)"
 data "TooltipAttackSave" "MeleeUnarmedAttack;Strength"
-data "RequirementConditions" "hasMovedMoreThan6m()"
+data "RequirementConditions" "hasMovedMoreThan(6,'WILDSHAPE_MOVEMENT_TRACKING')"
 
 new entry "WILDSHAPE_PANTHER_POUNCE"
 type "StatusData"

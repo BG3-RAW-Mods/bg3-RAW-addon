@@ -99,34 +99,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Healing" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
@@ -235,34 +207,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Healing_Greater" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
@@ -366,34 +310,6 @@
 											<attribute id="Consume" type="19" value="True" />
 											<attribute id="StatsId" type="22" value="POTION_OF_HEALING_SUPERIOR" />
 											<attribute id="StatusDuration" type="4" value="0" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Healing_Superior" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -508,34 +424,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Healing_Supreme" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
@@ -641,34 +529,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_AnimalSpeaking" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -763,34 +623,6 @@
 											<attribute id="IsHiddenStatus" type="19" value="False" />
 											<attribute id="StatsId" type="22" value="POTION_OF_STRENGTH_HILL_GIANT" />
 											<attribute id="StatusDuration" type="4" value="600" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Strength_HillGiant" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -893,34 +725,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Strength_CloudGiant" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -1010,34 +814,6 @@
 											<attribute id="Consume" type="19" value="True" />
 											<attribute id="StatsId" type="22" value="REDUCE" />
 											<attribute id="StatusDuration" type="4" value="600" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Shrinking" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -1230,34 +1006,6 @@
 											<attribute id="Consume" type="19" value="True" />
 											<attribute id="StatsId" type="22" value="POTION_OF_SPEED" />
 											<attribute id="StatusDuration" type="4" value="10" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Speed" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -1465,34 +1213,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Sleep" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 						<node id="Tags">
 							<children>
 								<node id="Tag">
@@ -1592,34 +1312,6 @@
 											<attribute id="IsHiddenStatus" type="19" value="False" />
 											<attribute id="StatsId" type="22" value="SLEEP" />
 											<attribute id="StatusDuration" type="4" value="10" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Sleep" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -1731,34 +1423,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Resistance_Acid" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -1851,34 +1515,6 @@
 											<attribute id="Consume" type="19" value="True" />
 											<attribute id="StatsId" type="22" value="POTION_OF_RESISTANCE_POISON" />
 											<attribute id="StatusDuration" type="4" value="600" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Resistance_Poison" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -1981,34 +1617,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Resistance_Fire" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -2101,34 +1709,6 @@
 											<attribute id="Consume" type="19" value="True" />
 											<attribute id="StatsId" type="22" value="POTION_OF_RESISTANCE_COLD" />
 											<attribute id="StatusDuration" type="4" value="600" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Resistance_Cold" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -2231,34 +1811,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Resistance_Lightning" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -2351,34 +1903,6 @@
 											<attribute id="Consume" type="19" value="True" />
 											<attribute id="StatsId" type="22" value="POTION_OF_RESISTANCE_THUNDER" />
 											<attribute id="StatusDuration" type="4" value="600" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Resistance_Thunder" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -2481,34 +2005,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Resistance_Force" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -2601,34 +2097,6 @@
 											<attribute id="Consume" type="19" value="True" />
 											<attribute id="StatsId" type="22" value="POTION_OF_RESISTANCE_PSYCHIC" />
 											<attribute id="StatusDuration" type="4" value="600" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Resistance_Psychic" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>
@@ -2731,34 +2199,6 @@
 								</node>
 							</children>
 						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Resistance_Necrotic" />
-												</node>
-											</children>
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
 					</children>
 				</node>
 				<node id="GameObjects">
@@ -2851,34 +2291,6 @@
 											<attribute id="Consume" type="19" value="True" />
 											<attribute id="StatsId" type="22" value="POTION_OF_RESISTANCE_RADIANT" />
 											<attribute id="StatusDuration" type="4" value="600" />
-										</node>
-									</children>
-								</node>
-							</children>
-						</node>
-						<node id="Scripts">
-							<children>
-								<node id="Script">
-									<attribute id="UUID" type="22" value="a557ab71-77f3-4b0c-8174-f605e51c90c7" />
-									<children>
-										<node id="Parameters">
-											<children>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="HardcoreOnly" />
-													<attribute id="Type" type="4" value="1" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="LifeTime" />
-													<attribute id="Type" type="4" value="2" />
-													<attribute id="Value" type="23" value="0" />
-												</node>
-												<node id="Parameter">
-													<attribute id="MapKey" type="22" value="ProjectileSpell" />
-													<attribute id="Type" type="4" value="9" />
-													<attribute id="Value" type="23" value="Projectile_Potion_Destroy_Resistance_Radiant" />
-												</node>
-											</children>
 										</node>
 									</children>
 								</node>

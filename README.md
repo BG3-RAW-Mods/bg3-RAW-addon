@@ -19,6 +19,8 @@ I'm doing my best to improve compatibility with other mods. CF is a fantastic wa
 I recommend using [BG3ModManager](https://github.com/LaughingLeader/BG3ModManager).
 I would put RAW mods on the bottom of order list, just before CompatibilityFramework.
 
+Classes PAKs (monk, druid) should be installed after RAW-addon. Only install them if you want these classes changes.
+
 ## User-config
 
 You can create this file if it doesn't exist: `%localappdata%\Larian Studios\Baldur's Gate 3\Script Extender\ModOptions.json`.
@@ -37,8 +39,7 @@ Each UUID is a mod configuration and its value is mod configuration. You can cop
 		"ItemPotion": { "enabled": true, "value": 7 },
 		"ItemPoison": { "enabled": true, "value": 15 },
 		"Spells": { "enabled": true },
-		"Feats": { "enabled": true },
-		"CustomRules": { "enabled": true }		
+		"Feats": { "enabled": true }
 	}
 }
 ```
@@ -301,16 +302,11 @@ Restored PHB abilities and stats. I also made my own version of weak monsters in
 
 ### Custom Ruleset defaults
 
-RAW changes:
+It is a standalone PAK without any requirement, it makes rules closer to PnP:
 - Hide NPC health
 - Hide failed perception rolls
 - Hide passive rolls in dialogues
 - Hide difficulty class during rolls
-
-Other changes:
-- Enemy aggression: Tactician
-- Camp cost multiplier: 1.5
-- Trader price multiplier: 3
 
 ## Future plans
 
@@ -334,6 +330,4 @@ Also, it seem to be a random pick, maybe based on class performance. Draconic So
 
 ## Known bugs
 
-- Throwing Wyvern Poison still works when disabled, can't find a way to fix this
 - Variant Human Skilled Expert subrace not working yet
-- Administering a potion is not implemented yet. It is something I want to replace throwing but changing RootTemplate is sensible.

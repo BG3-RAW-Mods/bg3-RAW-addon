@@ -101,7 +101,7 @@ data "SpellFlags" "IsAttack;IsMelee;IsHarmful"
 data "CastEffect" "cf3a1359-4c90-44e0-b1a4-67e23b9cd807"
 data "TargetEffect" "03828481-1042-4796-be00-76678bc941a3"
 data "Sheathing" "DontChange"
-data "RequirementConditions" "hasMovedMoreThan6m()"
+data "RequirementConditions" "hasMovedMoreThan(6,'WILDSHAPE_MOVEMENT_TRACKING')"
 
 new entry "WILDSHAPE_ELK_CHARGE"
 type "StatusData"
