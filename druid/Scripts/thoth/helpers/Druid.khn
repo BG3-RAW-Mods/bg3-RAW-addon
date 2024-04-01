@@ -28,10 +28,6 @@ function DruidLevelBetween(levelMin, levelMax)
     return RawClassLevelBetween('Druid',levelMin,levelMax)
 end
 
-function ProficiencyBonusEqual(bonus)
-    return ConditionResult(context.Source.ProficiencyBonus == bonus)
-end
-
 function hasUsedFirstAttack(error)
     local result = HasStatus('WILDSHAPE_OTHER_ATTACK_WILDSHAPE', context.Source).Result
     return ConditionResult(result, {ConditionError(error)})
@@ -45,7 +41,3 @@ function isProneWithStatus(status)
     return ConditionResult(HasStatus('PRONE',context.Target).Result, {ConditionError('RequireProneTarget')})
 end
 
-function HasStatusError(status, error)
-    local result = HasStatus(status).Result
-    return ConditionResult(result, {ConditionError(error)}, {ConditionError(error)})
-end

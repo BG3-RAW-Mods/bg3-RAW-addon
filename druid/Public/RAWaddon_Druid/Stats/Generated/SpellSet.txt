@@ -1,5 +1,6 @@
 new spellset "CommonWildshapeActions"
-add spell "Shout_Dash_NPC"
-add spell "Projectile_Jump"
+add spell "Shout_Dash"
 add spell "Shout_Hide"
 add spell "Shout_Disengage"
+add spell "Projectile_ShortJump"
+add spell "Projectile_LongJump"

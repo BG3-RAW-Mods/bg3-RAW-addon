@@ -88,7 +88,7 @@ As Human only get +1 to all ability scores, I have put this in Human race. Then,
 
 I didn't implement Long and High Jump because it would make jumps too complex and high jump would probably be useless in BG3. However, this is still something I might consider in a future release. With High Jump "neutralized", it would make Fly and Teleport more powerful. They were already powerful, but Jump was so powerful that it could almost do the same thing for free.
 
-For now, I have updated Jump to match Long Jump Range. On top of that, Jump now cost movement instead of bonus action. 
+For now, I have updated Jump to match Long Jump Range. On top of that, Jump now cost movement instead of bonus action. Additionally, a long jump requires to move 3 meters. If not, it will be a simple jump (half distance).
 
 As a result, Jump range is roughly divided by 2, there are many jumps you won't make without a ritual spell like Enhanced Leap.
 Even high strength characters won't fly over the battlefield. While Enhanced Leap would allow them to jump about 20 meters, they are still limited by their movement speed. 9 meters by default for most, 18 with dash. It opens a possibility for a 18m jump using dash and enhanced leap.
@@ -97,9 +97,9 @@ Please note there are several jumps that now impossible without Enhanced Leap.
 
 Remarkable Athlete has been adjusted to 1 foot per strength modifier.
 
-Athlete feat has been changed. In RAW, you can make a long jump after moving 1.5m instead of 3. Since it is not implemented, it increases jump range by 1.5m.
+Athlete feat has been changed. you can make a long jump after moving 1m instead of 3m. It is 1.5m in RAW, but I couldn't do it.
 
-Barbarian Tiger Jump has been changed from 4.5 to 3m.
+Barbarian Tiger Jump has been changed from 4.5m to 3m.
 
 ### Spell changes
 
@@ -322,7 +322,7 @@ Also, it seem to be a random pick, maybe based on class performance. Draconic So
 
 ## Credits
 
-- BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats, hinikuya, JuuM, GabeCamomescro)
+- BG3 Discord Modding community (lostsoul, Velnir, Athera, ghostboats, hinikuya, JuuM, GabeCamomescro, Headbobbie)
 - Zerd for RAW which gave me inspiration and its config system
 - Zerd Discord community (dr kekyll, Celes)
 - Community Library and Compatibility Framework

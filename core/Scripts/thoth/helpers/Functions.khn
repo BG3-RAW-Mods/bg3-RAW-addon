@@ -155,7 +155,6 @@ function HasProficiencyIn(skill)
 end
 
 function hasMovedMoreThan(distance, status)
-    local status = status or 'RAW_MOVEMENT_TRACKING'
     local result = StatusDurationEqualOrMoreThan(context.Source,status,distance).Result
     if distance == 1 then
         return ConditionResult(result, {ConditionError('Require1MeterMovement')})
@@ -173,8 +172,17 @@ end
 function canLongJump()
     local isAthlete = HasPassive('Athlete_StandUp',context.Source).Result
     if isAthlete then
-        return hasMovedMoreThan(1);
+        return hasMovedMoreThan(1, 'RAW_JUMP_MOVEMENT_TRACKING');
     else
-        return hasMovedMoreThan(3);
+        return hasMovedMoreThan(3, 'RAW_JUMP_MOVEMENT_TRACKING');
     end
+end
+
+function HasStatusError(status, error)
+    local result = HasStatus(status).Result
+    return ConditionResult(result, {ConditionError(error)}, {ConditionError(error)})
+end
+
+function ProficiencyBonusEqual(bonus)
+    return ConditionResult(context.Source.ProficiencyBonus == bonus)
 end
