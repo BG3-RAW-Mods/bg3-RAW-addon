@@ -1,0 +1,60 @@
+// RAW: When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian
+// Throw damage is not included
+new entry "Shout_Rage"
+type "SpellData"
+using "Shout_Rage"
+data "Description" "408fad2a-a125-422c-b96f-891b45778211;1"
+data "ExtraDescription" ""
+data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
+
+new entry "RAGE"
+type "StatusData"
+using "RAGE"
+data "Description" "408fad2a-a125-422c-b96f-891b45778211;1"
+
+new entry "Rage_Rage_Boosts"
+type "PassiveData"
+using "Rage_Rage_Boosts"
+data "Boosts" "Advantage(Ability, Strength); Advantage(SavingThrow, Strength); FallDamageMultiplier(0.5); CharacterUnarmedDamage(LevelMapValue(RageDamage)); IF(WeaponAttackRollAbility(Ability.Strength)):CharacterWeaponDamage(LevelMapValue(RageDamage)); Resistance(Slashing, Resistant); Resistance(Piercing, Resistant); Resistance(Bludgeoning, Resistant)"
+
+// Feral Instinct:
+// you have advantage on initiative rolls and if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.
+// for the 1st part, can't give advantage to initiative, but +3 seems more or less the same
+// for the 2nd part, it seems difficult to implement, immunity to surprise is cheap but probably the best we can get
+// new entry "FeralInstinct"
+// type "PassiveData"
+// using "FeralInstinct"
+// data "Description" "h4412581eg59ccg45cega74cg82e59953d71b;5"
+// data "DescriptionParams" "3"
+// data "Boosts" "Initiative(3);StatusImmunity(SURPRISED);"
+
+new entry "Target_RecklessAttack"
+type "SpellData"
+using "Target_RecklessAttack"
+data "Description" "272ce73a-01a7-47a5-9c50-53d454d40f95;1"
+data "RequirementConditions" "not HasStatusError('FIRST_ATTACK_TURN','FirstAttackTurn') and WeaponAttackRollAbility(Ability.Strength)"
+// data "SpellProperties" "ApplyStatus(SELF,RECKLESS_ATTACK,100,1);GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand)"
+// data "SpellProperties" "ApplyStatus(SELF,RECKLESS_ATTACK,100,1);ApplyStatus(SELF,RAW_RECKLESS_ATTACK_SELF,100,1);GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand)"
+// data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack,true)"
+data "SpellRoll" "Attack(AttackType.MeleeWeaponAttack)"
+
+new entry "Interrupt_RecklessAttack"
+type "InterruptData"
+using "Interrupt_RecklessAttack"
+data "Description" "272ce73a-01a7-47a5-9c50-53d454d40f95;1"
+//data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and IsMeleeWeaponAttack() and WeaponAttackRollAbility(Ability.Strength) and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and not HasStatus('FIRST_ATTACK_TURN',context.Observer) and (HasStatus('RAW_CURRENT_TURN',context.Observer) or not Combat(context.Observer))"
+//data "Properties" "SetAdvantage();ApplyStatus(OBSERVER_OBSERVER,RECKLESS_ATTACK,100,1);ApplyStatus(OBSERVER_OBSERVER,RAW_RECKLESS_ATTACK_SELF,100,1)"
+// data "Properties" "ApplyStatus(OBSERVER_OBSERVER,RECKLESS_ATTACK,100,1);ApplyStatus(OBSERVER_OBSERVER,RAW_RECKLESS_ATTACK_SELF,100,1)"
+data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and IsMeleeWeaponAttack() and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and not HasStatus('FIRST_ATTACK_TURN',context.Observer) and (HasStatus('RAW_CURRENT_TURN',context.Observer) or not Combat(context.Observer))"
+data "Properties" "IF(WeaponAttackRollAbility(Ability.Strength)):SetAdvantage();ApplyStatus(OBSERVER_OBSERVER,RECKLESS_ATTACK,100,1);ApplyStatus(OBSERVER_OBSERVER,RAW_RECKLESS_ATTACK_SELF,100,1)"
+
+new entry "RECKLESS_ATTACK"
+type "StatusData"
+using "RECKLESS_ATTACK"
+data "Description" "8d00037f-9013-4390-aa4e-b9de5eeeee88;1"
+data "Boosts" "Advantage(AttackTarget)"
+
+new entry "RAW_RECKLESS_ATTACK_SELF"
+type "StatusData"
+using "RAW_RECKLESS_ATTACK_SELF"
+data "Boosts" "IF(IsMeleeAttack() and WeaponAttackRollAbility(Ability.Strength)):Advantage(AttackRoll)"

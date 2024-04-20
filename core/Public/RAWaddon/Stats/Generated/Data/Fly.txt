@@ -8,10 +8,4 @@
 new entry "Projectile_Fly"
 type "SpellData"
 using "Projectile_Fly"
-data "UseCosts" "FlyMovement:Distance"
-
-new entry "FLY"
-type "StatusData"
-using "FLY"
-data "Boosts" "ActionResource(FlyMovement,18,0);UnlockSpell(Projectile_Fly_Spell)"
-data "StatsFunctorContext" "OnActionResourcesChanged"
+data "UseCosts" "Movement:Distance"

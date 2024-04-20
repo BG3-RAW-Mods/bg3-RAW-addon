@@ -22,5 +22,3 @@ new entry "Projectile_Potion_Destroy_Sleep"
 type "SpellData"
 using "Projectile_Potion_Destroy_Sleep"
 data "SpellProperties" "ApplyStatus(SLEEP,100,10,,,,not SavingThrow(Ability.Constitution,11, AdvantageOnPoisoned()))"
-
-//TODO: PHB: Drinking a potion or administering a potion to another character requires an action

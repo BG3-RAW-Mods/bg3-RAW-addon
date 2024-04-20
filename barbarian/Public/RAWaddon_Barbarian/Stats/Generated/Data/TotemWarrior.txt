@@ -1,0 +1,4 @@
+new entry "TotemSpirit_Bear_Rage_Boosts"
+type "PassiveData"
+using "TotemSpirit_Bear_Rage_Boosts"
+data "Boosts" "Advantage(Ability, Strength); Advantage(SavingThrow, Strength); FallDamageMultiplier(0.5); CharacterUnarmedDamage(LevelMapValue(RageDamage)); IF(WeaponAttackRollAbility(Ability.Strength)):CharacterWeaponDamage(LevelMapValue(RageDamage))"

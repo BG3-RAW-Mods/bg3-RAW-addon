@@ -1,0 +1,25 @@
+﻿<contentList date="15/04/2024 11:20">
+    <content contentuid="272ce73a-01a7-47a5-9c50-53d454d40f95" version="1">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Melee Strength &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; until the end of your turn, but enemies also have Advantage against you.&lt;br&gt;Can only be used on first attack.</content>
+    <content contentuid="8d00037f-9013-4390-aa4e-b9de5eeeee88" version="1">Affected entity has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Melee Strength &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;. Enemies have Advantage on Attack Rolls against it.</content>
+    <content contentuid="3ca60425-baa3-4d2c-900f-0b5aa2cd5367" version="1">Must be the first attack of your turn.</content>
+
+    <content contentuid="dfe3cf4d-af12-40a4-8818-ce7565feae2e" version="1">Must be Frenzied.</content>
+    <content contentuid="408fad2a-a125-422c-b96f-891b45778211" version="1">Deals an additional [1] damage with melee strength weapons.&lt;br&gt;&lt;br&gt;Has Resistance to physical damage, and &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. &lt;br&gt;&lt;br&gt;Cannot cast or concentrate on spells.</content>
+    <content contentuid="408fad2a-a125-422c-b96f-891b45778211" version="1">Deals an additional [1] damage with melee strength weapons. You can make a single &lt;LSTag Type="Spell" Tooltip="Target_FrenziedStrike"&gt;melee weapon attack&lt;/LSTag&gt; as a bonus action on each of your turns.&lt;br&gt;&lt;br&gt;Has Resistance to physical damage, and &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. &lt;br&gt;&lt;br&gt;Cannot cast or concentrate on spells.</content>
+    
+    <content contentuid="9f402adc-eb91-46ad-897e-010a31d82550" version="1">Exhaustion level 1</content>
+    <content contentuid="12e42f34-b000-414c-ba97-99d4c8a57c69" version="1">Exhaustion level 2</content>
+    <content contentuid="492ea229-bdf6-40a3-919c-bfda78d01f85" version="1">Exhaustion level 3</content>
+    <content contentuid="bf37a071-7846-4797-a4c8-5a67598c63bc" version="1">Exhaustion level 4</content>
+    <content contentuid="833b0b79-7c44-48cf-a1ee-7e8a7ac06032" version="1">Exhaustion level 5</content>
+    <content contentuid="9ffa7bbc-2317-4786-823a-38b80745095d" version="1">Disadvantage on ability checks</content>
+    <content contentuid="32585cb2-4129-4a80-8f14-773ff0d66c54" version="1">Disadvantage on ability checks, Speed halved</content>
+    <content contentuid="f2564bea-304d-4471-a307-ed9bb9fae10b" version="1">Disadvantage on ability checks, Speed halved, Disadvantage on attack rolls and saving throws</content>
+    <content contentuid="851c0a3b-5d3e-4b4b-b168-87ee08fd6421" version="1">Disadvantage on ability checks, Speed halved, Disadvantage on attack rolls and saving throws, Hit point maximum halved</content>
+    <content contentuid="c812c914-aed0-4571-b0a7-6a77860325d5" version="1">Disadvantage on ability checks, Speed halved, Disadvantage on attack rolls and saving throws, Hit point maximum halved, Speed reduced to 0</content>
+
+    <content contentuid="h71cf10b1gadf1g4be5gbe40g466322d942f4" version="2">Totem Warrior</content>
+	<content contentuid="f809a90b-29d6-4558-b6cc-6761e92d3784" version="1">If you drop to 0 &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; while &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Enraged&lt;/LSTag&gt;, you can make a DC [1] Constitution saving throw. If you succeed, you drop to 1 hit point instead.
+Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</content>
+<content contentuid="bf90d85f-81ce-4645-a193-73b04da13bfd" version="1">Will cause a stack of &lt;LSTag Type="Status" Tooltip="RAGE_FRENZY_BURNOUT"&gt;Frenzied Strain&lt;/LSTag&gt; on the barbarian.</content>
+</contentList>

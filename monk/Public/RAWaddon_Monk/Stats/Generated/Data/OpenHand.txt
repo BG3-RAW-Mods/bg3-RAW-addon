@@ -101,7 +101,6 @@ data "TooltipStatusApply" "ApplyStatus(KI_RESONATION, 100, -1)"
 data "TooltipUseCosts" "KiPoint:2"
 data "Icon" "Action_KiResonation_Punch"
 data "Conditions" "not Item() and Self(context.Source,context.Observer) and not Self(context.Source,context.Target) and IsMeleeAttack() and IsUnarmedAttack() and not HasStatus('KI_RESONATION') and HasDamageEffectFlag(DamageFlags.Hit) and not IsKillingBlow()"
-//data "Properties" "UseSpell(OBSERVER_TARGET,Target_KiResonation_Punch,true,true,true)"
 data "Properties" "ApplyStatus(KI_RESONATION, 100, -1)
 data "Cost" "KiPoint:2"
 data "EnableCondition" "not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise')"

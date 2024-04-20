@@ -10,18 +10,17 @@
 				"command": "Start-Process",
 				"args": [
 					"-FilePath",
-					"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin\\bg3.exe",
-					"-ArgumentList",
-					"--skip-launcher", // Starts the last game you had loaded automagically
+					"D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\bin\\bg3_dx11.exe",
 					"-WorkingDirectory",
-					"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin"
+					"D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\bin"
 				],
 				"options": {
 					"shell": {
 						"executable": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 					}
-				},
-			}
+				}
+			},
+			"problemMatcher": []
 		},
 		{
 			"label": "bg3Continue",
@@ -30,18 +29,19 @@
 				"command": "Start-Process",
 				"args": [
 					"-FilePath",
-					"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin\\bg3.exe",
+					"D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\bin\\bg3_dx11.exe",
 					"-ArgumentList",
-					"-continueGame --skip-launcher", // Starts the last game you had loaded automagically
+					"-continueGame",
 					"-WorkingDirectory",
-					"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin"
+					"D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\bin"
 				],
 				"options": {
 					"shell": {
 						"executable": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 					}
-				},
-			}
+				}
+			},
+			"problemMatcher": []
 		},
 		{
 			"label": "bg3Kill",
@@ -56,7 +56,7 @@
 					"shell": {
 						"executable": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 					}
-				},
+				}
 			}
 		}
 	]

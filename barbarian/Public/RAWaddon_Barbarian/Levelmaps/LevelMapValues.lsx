@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="2" revision="0" build="100" lslib_meta="v1,bswap_guids" />
+	<region id="LevelMapValues">
+		<node id="root">
+			<children>
+				<node id="LevelMapSeries">
+					<attribute id="FallbackValue" type="LSString" value="2" />
+					<attribute id="Level1" type="LSString" value="2" />
+					<attribute id="Level9" type="LSString" value="3" />
+					<attribute id="Level16" type="LSString" value="4" />
+					<attribute id="Name" type="FixedString" value="RageDamage" />
+					<attribute id="PreferredClassUUID" type="guid" value="d8cadb42-0ff9-4049-afaf-e5d78d06a399" />
+					<attribute id="UUID" type="guid" value="47925e09-30f6-4549-8252-60ea7f87b7a6" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

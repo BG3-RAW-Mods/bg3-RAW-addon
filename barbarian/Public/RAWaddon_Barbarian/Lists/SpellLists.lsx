@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="3" revision="0" build="300" lslib_meta="v1,bswap_guids" />
+	<region id="SpellLists">
+		<node id="root">
+			<children>
+				<node id="SpellList">
+					<attribute id="Comment" type="LSString" value="Berserker Barbarian level 3" />
+					<attribute id="Spells" type="LSString" value="Target_FrenziedStrike" />
+					<attribute id="UUID" type="guid" value="17803035-4762-4143-8f2f-1143d47e4f40" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

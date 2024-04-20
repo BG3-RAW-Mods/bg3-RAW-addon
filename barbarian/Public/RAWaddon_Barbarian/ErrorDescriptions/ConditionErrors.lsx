@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="0"/>
+    <region id="ConditionErrors">
+        <node id="root">
+            <children>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="dfe3cf4d-af12-40a4-8818-ce7565feae2e" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="MustBeFrenzied"/>
+                    <attribute id="UUID" type="guid" value="47715f9b-fb1a-4140-bc14-e58429f6249c"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="3ca60425-baa3-4d2c-900f-0b5aa2cd5367" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="FirstAttackTurn"/>
+                    <attribute id="UUID" type="guid" value="7e7acd0a-e7ee-4c63-a663-d54a956717ed"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

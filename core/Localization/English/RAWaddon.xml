@@ -23,9 +23,6 @@
 	<content contentuid="10f71f69-a978-479e-b6e8-276101e46c43" version="1">Armor's weight</content>
 	<content contentuid="5e96a7f7-7799-4c45-912e-d38c562850ba" version="1">The armor reduces the wearer’s &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; by [1] unless the wearer has a Strength score equal to or higher than [2].&lt;br&gt;This effect is not applied if you are encumbered.</content>
 
-	<!-- Fly -->
-	<content contentuid="h8eaa5f4bg6731g47c4g983ag2bcb6488497a" version="1">Fly to a target position, using your movement speed.</content>
-
 	<!-- Encumbrance -->
 	<content contentuid="h04852025ga3c0g47b2gbe02g7d22a3d12ab8" version="4">Carrying too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is reduced by [1].</content>
 	<content contentuid="hde40b598g2937g47f5ga342g2480628c8106" version="3">Carrying far too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; heavily reduced by [1], and you can no longer run. You also have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;, as well as Strength, Dexterity, and Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
@@ -139,8 +136,4 @@
 	<!-- Slower Race -->
 	<content contentuid="12c27790-88d2-44fb-92cc-806373422cad" version="1">Slower Race</content>
 	<content contentuid="1871a9cf-7ac4-4823-a517-3783c5595790" version="1">Your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; is decreased by [1].</content>
-
-	<!-- Fly -->
-	<content contentuid="b8119aa2-c1be-4429-87c2-6fe3924ae751" version="3">Flying speed determines how far you can fly per turn.</content>
-	<content contentuid="34df0c25-ed49-4e7e-83b3-2f66f9bd7a94" version="2">Flying Speed</content>
 </contentList>
