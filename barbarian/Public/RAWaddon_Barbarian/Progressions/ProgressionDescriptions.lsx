@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="0" build="49"/>
+    <region id="ProgressionDescriptions">
+        <node id="root">
+            <children>
+                <node id="ProgressionDescription">
+                    <attribute id="DisplayName" type="TranslatedString" handle="712605fe-77ce-4e40-a0b0-beb4a84e66cb" version="1"/>
+                    <attribute id="Description" type="TranslatedString" handle="cbee3133-a6a0-4703-b97a-3e173aae6f58" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="5ac36542-4f17-4e8a-9ac7-5fb40ecb9edd"/>
+                    <attribute id="SelectorId" type="FixedString" value="AspectOfTheBeast_Tiger_Skills"/>
+                    <attribute id="UUID" type="guid" value="f59cfe13-342f-4a92-ab65-bb4a862bc8c5"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

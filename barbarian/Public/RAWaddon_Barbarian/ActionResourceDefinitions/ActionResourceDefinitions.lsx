@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="3" revision="0" build="302"/>
+    <region id="ActionResourceDefinitions">
+        <node id="root">
+            <children>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="39fc5eca-3607-4d06-a5ab-622c056c15bc" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="hd971f0d3g006ag46a2g8d13gf42b13a7537a" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="MagicAwareness"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="5afb9721-176d-43ed-95a1-66ee5be4c1ac"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="ad753f30-aa5e-4617-99de-9f98239c4ad4" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="abd71842-58db-4e4c-b30f-c1f750eddfcb" version="1"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="BolsteringMagic"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="c624f2d7-ee42-4942-b65e-567da26b6bfc"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

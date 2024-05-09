@@ -5,9 +5,24 @@
 		<node id="root">
 			<children>
 				<node id="SpellList">
+					<attribute id="Comment" type="LSString" value="Barbarian level 1" />
+					<attribute id="Spells" type="LSString" value="Target_WildMagicBarbarian_ExplodingFlumph" />
+					<attribute id="UUID" type="guid" value="55485562-e709-4828-bce4-f8c000ab5b4e" />
+				</node>
+				<node id="SpellList">
 					<attribute id="Comment" type="LSString" value="Berserker Barbarian level 3" />
 					<attribute id="Spells" type="LSString" value="Target_FrenziedStrike" />
 					<attribute id="UUID" type="guid" value="17803035-4762-4143-8f2f-1143d47e4f40" />
+				</node>
+				<node id="SpellList">
+					<attribute id="Comment" type="LSString" value="Totem Warrior Barbarian level 10" />
+					<attribute id="Spells" type="LSString" value="Shout_CommuneWithNature" />
+					<attribute id="UUID" type="guid" value="f7317f7f-4486-4462-b8e1-4fb4f6e6360d" />
+				</node>
+				<node id="SpellList">
+					<attribute id="Comment" type="LSString" value="Barbarian Wildmagic 6" />
+					<attribute id="Spells" type="LSString" value="Target_BolsteringMagic_Boost;Shout_BolsteringMagic_SpellSlot" />
+					<attribute id="UUID" type="guid" value="9e604f0f-ec60-402d-b8c8-7707a1caefd8" />
 				</node>
 			</children>
 		</node>

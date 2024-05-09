@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="319" lslib_meta="v1,bswap_guids" />
+	<region id="Outcomes">
+		<node id="root">
+			<children>
+				<node id="Outcome">
+					<attribute id="GroupName" type="FixedString" value="BolsteringMagicSpellSlot" />
+					<attribute id="Spell" type="FixedString" value="BolsteringMagic_SpellSlot_Activate_Group1" />
+					<attribute id="UUID" type="guid" value="47c60109-ad09-423f-a4ae-f2f44ea22efe" />
+				</node>
+				<node id="Outcome">
+					<attribute id="GroupName" type="FixedString" value="BolsteringMagicSpellSlot" />
+					<attribute id="Spell" type="FixedString" value="BolsteringMagic_SpellSlot_Activate_Group2" />
+					<attribute id="UUID" type="guid" value="dd827580-bfce-4008-b67e-85c405bbb742" />
+				</node>
+				<node id="Outcome">
+					<attribute id="GroupName" type="FixedString" value="BolsteringMagicSpellSlot" />
+					<attribute id="Spell" type="FixedString" value="BolsteringMagic_SpellSlot_Activate_Group3" />
+					<attribute id="UUID" type="guid" value="b7805ddb-aad8-43df-8d7a-6870c1f20da4" />
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

@@ -16,6 +16,12 @@
                     <attribute id="Identifier" type="FixedString" value="FirstAttackTurn"/>
                     <attribute id="UUID" type="guid" value="7e7acd0a-e7ee-4c63-a663-d54a956717ed"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="3b451cae-f596-483b-b98a-2bd4c1ae5473" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="BolsteringMagicSpellSlot"/>
+                    <attribute id="UUID" type="guid" value="56b773c6-0772-48c3-9d03-cd1af9990207"/>
+                </node>
             </children>
         </node>
     </region>

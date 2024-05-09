@@ -68,6 +68,13 @@ function CharismaModifier(value, entity)
     return ConditionResult(GetModifier(entity.Charisma) == value)
 end
 
+function isStrengthWeapon(entity)
+    entity = entity or context.Source
+    local strMod = GetModifier(entity.Strength)
+    local dexMod = GetModifier(entity.Dexterity)
+    return ConditionResult(strMod >= dexMod)
+end
+
 function NotHasActiveAstralKnowledge(entity)
     local entity = entity or context.Source
     local result = HasStatus('ASTRAL_KNOWLEDGE_ACROBATICS', entity) | HasStatus('ASTRAL_KNOWLEDGE_ANIMALHANDLING', entity) | HasStatus('ASTRAL_KNOWLEDGE_ATHLETICS', entity) | HasStatus('ASTRAL_KNOWLEDGE_ARCANA', entity) | HasStatus('ASTRAL_KNOWLEDGE_DECEPTION', entity) | HasStatus('ASTRAL_KNOWLEDGE_HISTORY', entity) | HasStatus('ASTRAL_KNOWLEDGE_INSIGHT', entity) | HasStatus('ASTRAL_KNOWLEDGE_INTIMIDATION', entity) | HasStatus('ASTRAL_KNOWLEDGE_INVESTIGATION', entity) | HasStatus('ASTRAL_KNOWLEDGE_MEDICINE', entity) | HasStatus('ASTRAL_KNOWLEDGE_NATURE', entity) | HasStatus('ASTRAL_KNOWLEDGE_PERCEPTION', entity) | HasStatus('ASTRAL_KNOWLEDGE_PERFORMANCE', entity) | HasStatus('ASTRAL_KNOWLEDGE_PERSUASION', entity) | HasStatus('ASTRAL_KNOWLEDGE_RELIGION', entity) | HasStatus('ASTRAL_KNOWLEDGE_SLEIGHTOFHAND', entity) | HasStatus('ASTRAL_KNOWLEDGE_STEALTH', entity) | HasStatus('ASTRAL_KNOWLEDGE_SURVIVAL', entity)
@@ -183,6 +190,12 @@ function HasStatusError(status, error)
     return ConditionResult(result, {ConditionError(error)}, {ConditionError(error)})
 end
 
-function ProficiencyBonusEqual(bonus)
-    return ConditionResult(context.Source.ProficiencyBonus == bonus)
+function ProficiencyBonusEqual(value, entity)
+    local entity = entity or context.Source
+    return ConditionResult(entity.ProficiencyBonus == value)
+end
+
+function ConstitutionSaveDC(entity)
+    local entity = entity or context.Source
+    return 8 + context.Source.ProficiencyBonus + GetModifier(entity.Constitution)
 end

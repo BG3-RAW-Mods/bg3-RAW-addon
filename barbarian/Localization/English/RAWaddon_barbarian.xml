@@ -1,12 +1,107 @@
 ﻿<contentList date="15/04/2024 11:20">
+    <!-- Reckless Attack -->
     <content contentuid="272ce73a-01a7-47a5-9c50-53d454d40f95" version="1">Gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Melee Strength &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; until the end of your turn, but enemies also have Advantage against you.&lt;br&gt;Can only be used on first attack.</content>
     <content contentuid="8d00037f-9013-4390-aa4e-b9de5eeeee88" version="1">Affected entity has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Melee Strength &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;. Enemies have Advantage on Attack Rolls against it.</content>
     <content contentuid="3ca60425-baa3-4d2c-900f-0b5aa2cd5367" version="1">Must be the first attack of your turn.</content>
 
+    <!-- Rage -->
+    <content contentuid="a36668d0-01ee-4d8b-a889-556c60212310" version="1">Deals an additional [1] damage with melee strength weapons.
+Has Resistance to physical damage.
+Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.
+Cannot cast or concentrate on spells.</content>
+
+    <!-- Frenzy -->
     <content contentuid="dfe3cf4d-af12-40a4-8818-ce7565feae2e" version="1">Must be Frenzied.</content>
-    <content contentuid="408fad2a-a125-422c-b96f-891b45778211" version="1">Deals an additional [1] damage with melee strength weapons.&lt;br&gt;&lt;br&gt;Has Resistance to physical damage, and &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. &lt;br&gt;&lt;br&gt;Cannot cast or concentrate on spells.</content>
-    <content contentuid="408fad2a-a125-422c-b96f-891b45778211" version="1">Deals an additional [1] damage with melee strength weapons. You can make a single &lt;LSTag Type="Spell" Tooltip="Target_FrenziedStrike"&gt;melee weapon attack&lt;/LSTag&gt; as a bonus action on each of your turns.&lt;br&gt;&lt;br&gt;Has Resistance to physical damage, and &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. &lt;br&gt;&lt;br&gt;Cannot cast or concentrate on spells.</content>
+    <content contentuid="bf90d85f-81ce-4645-a193-73b04da13bfd" version="1">When your rage ends, you suffer one level of &lt;LSTag Type="Status" Tooltip="EXHAUSTION"&gt;exhaustion&lt;/LSTag&gt;.</content>
+    <content contentuid="1d9f01fd-4387-48a0-9d9d-cb5e9e47fe96" version="1">You can make a single &lt;LSTag Type="Spell" Tooltip="Target_FrenziedStrike"&gt;melee weapon attack&lt;/LSTag&gt; as a bonus action on each of your turns.
+When your rage ends, you suffer one level of &lt;LSTag Type="Status" Tooltip="EXHAUSTION"&gt;exhaustion&lt;/LSTag&gt;.</content>
+
+    <!-- Totem Warrior -->
+    <content contentuid="h7c18a1a0g9906g4c20gb3a4gb0130128574d" version="3">Choose your Totem Animal.</content>
+	<content contentuid="h757146a1g8d6bg4752gbf41gabee1a1cdf19" version="1">Totem Animal</content>
+
+    <!-- Bear Totem -->
+    <content contentuid="hd0b27adfgaa71g4825ga7efg6e3383010023" version="2">Bear Totem</content>
+    <content contentuid="h5ec27404gaae0g48adgaf6egec96c58981e0" version="5">The spirit of the bear makes you tough enough to stand up to any punishment. 
+While &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Raging&lt;/LSTag&gt;, you have Resistance to all damage except Psychic damage.</content>
+    <content contentuid="h7056f3edg3197g40b0g9a17g6f3dd5109a13" version="3">Rage: Bear</content>
+    <content contentuid="h500090e3gc513g496cg88d4gc3ea56f7ee7f" version="14">Deals an additional [1] damage with strength melee weapons.
+Has Resistance to all damage except Psychic damage.
+Has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.
+Cannot cast or concentrate on spells.</content>
     
+    <!-- Eagle Totem -->
+    <content contentuid="h58a40738g192bg4fb1gb176g481b6124307b" version="2">Eagle Totem</content>    
+    <content contentuid="h00ad4110g05c2g4670ga040gfc83664b069d" version="5">The spirit of the eagle makes you into a predator who can weave through the fray with ease.
+While &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Raging&lt;/LSTag&gt;, you can use &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Dash&lt;/LSTag&gt; as a bonus action.
+Foes also have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt; against you.</content>
+    <content contentuid="hfdbcceb4g9eb7g4a79g9bf3g0b2fda24b93e" version="3">Rage: Eagle</content>
+    <content contentuid="3e6f7207-80cb-4a29-9244-2a76015a4620" version="1">Can use &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Dash&lt;/LSTag&gt; as a bonus action.
+Foes also have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="OpportunityAttack"&gt;Opportunity Attacks&lt;/LSTag&gt; against you.</content>
+
+    <!-- Elk -->
+    <content contentuid="h0e4c4086g8840g4b5fgafc2gcd76f7f041ed" version="2">Elk Totem</content>
+    <content contentuid="h88b61799gb44fg4e40g8ea4ge8c7b57e04b5" version="6">The spirit of the elk makes you extraordinarily swift.
+While &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Raging&lt;/LSTag&gt;, your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; increases by [1]. </content>
+    <content contentuid="h374b9a42g0806g40edg8c5dg672f002728c0" version="3">Rage: Elk</content>
+    <content contentuid="8d9d1209-7946-4676-90fd-46d436013bd1" version="1">Your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is increased by [1].</content>
+
+    <!-- Tiger -->
+    <content contentuid="hdaee651bgf061g450dg8467g21ad059d385e" version="2">Tiger Totem</content>
+    <content contentuid="hafd0b00eg8b49g426fgb68eg540f3d7964ed" version="5">The spirit of the tiger empowers your leaps.
+While &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Raging&lt;/LSTag&gt;, your jump distance increases by [1].</content>    
+    <content contentuid="h3c7be02eg8a51g4495gbff4g1acb39894bbc" version="3">Rage: Tiger</content>
+    <content contentuid="5490201b-42bc-46f2-a722-1b4e3c6b49a0" version="1">Your Jump distance increased by [1].</content>
+
+    <!-- Wolf -->
+    <content contentuid="h3ad6d59fgc8f5g4b75gaa4fg222f4140a545" version="2">Wolf Totem</content>
+    <content contentuid="h81c1b4b7g0474g41ebgb565g7342d82c0e58" version="5">The spirit of the wolf makes you a leader of hunters.
+While &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Raging&lt;/LSTag&gt;, your allies have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on melee &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against enemies within [1] of you.</content>
+    <content contentuid="h1ba96df1gc4bag48e5gb23bgb11b92cdd48a" version="3">Rage: Wolf</content>
+    <content contentuid="cb98f749-808f-4d07-93bb-125f5d3eed25" version="1">Allies have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on melee &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against enemies within [1].</content>
+
+	<content contentuid="h0e251e0dge87fg4ceag9de5g25b19de77df3" version="1">Totem Animal: Tiger Rage Bonuses</content>
+	<content contentuid="h4bd64c8cgdacbg4094g9d0fg780cd0fe3c90" version="1">Totem Animal: Elk Rage Bonuses</content>
+	<content contentuid="h908aa582ge98eg4d26gb984g0c7e609d3e9d" version="1">Totem Animal: Eagle Rage Bonuses</content>
+	<content contentuid="ha944ea38gf571g4c04ga6a0g6fa68c45daa3" version="1">Totem Animal: Bear Rage Bonuses</content>
+	<content contentuid="hb4c2c70cg2221g41c0gb063g3edc61d41a40" version="1">Totem Animal: Wolf Rage Bonuses</content>
+	<content contentuid="h0e251e0dge87fg4ceag9de5g25b19de77df3" version="1">Totem Animal: Tiger Rage Bonuses</content>
+
+    <!-- Aspect of the beast -->
+    <content contentuid="h5de410eeg11f9g4431ga49cg1a16ae5c3492" version="1">Aspect of the Beast</content>
+    <content contentuid="hb0b1827fg4852g4aaeg9967g977485cc556e" version="8">The Aspect of the Tiger hones your survival instincts.&lt;br&gt;&lt;br&gt;You gain proficiency in two skills from the following list: Athletics, Acrobatics, Stealth, and Survival.</content>
+    <content contentuid="h2d3dad0dgf019g4f64g8b08gd3e98cb6aa7a" version="3">The Aspect of the Eagle enhances your eyesight.&lt;br&gt;&lt;br&gt;You gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Perception &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
+    <content contentuid="h52a66fd1g9928g4369ga3c3gcbefefb22b29" version="4">The Aspect of the Elk helps you roam far and fast.&lt;br&gt;&lt;br&gt;You can use &lt;LSTag Type="Spell" Tooltip="Shout_AspectOfTheElk"&gt;Aspect of the Elk&lt;/LSTag&gt;, giving yourself and nearby allies extra &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;.</content>
+    <content contentuid="h7a3a08fdg2bd3g44fagb968g10713a0175f4" version="5">The Aspect of the Wolf provides the hunting sensibilities of a wolf.&lt;br&gt;&lt;br&gt;You gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in &lt;LSTag Tooltip="Stealth"&gt;Stealth&lt;/LSTag&gt;, and can use &lt;LSTag Type="Spell" Tooltip="Shout_AspectOfTheWolf"&gt;Aspect of the Wolf&lt;/LSTag&gt;.</content>
+	<content contentuid="712605fe-77ce-4e40-a0b0-beb4a84e66cb" version="1">Aspect of the Tiger</content>
+	<content contentuid="cbee3133-a6a0-4703-b97a-3e173aae6f58" version="1">Choose two skills. You gain proficiency with these skills.&lt;br&gt;If you didn't select Aspect of the Tiger, choices won't be effective.</content>
+
+    <!-- Wild Magic -->
+    <content contentuid="h3350d646g2443g4a19g8be7g55dbe4538a3b" version="5">Anyone within [1] adds their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells.</content>
+    <content contentuid="h9e3e9f60g17c7g4cecga7dcg350af50ea61c" version="2">Tapping into their innate magic to visualise the Weave.&lt;br&gt;&lt;br&gt;The barbarian and all creatures within [1] add their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells.</content>
+    <content contentuid="hdc764779gf229g4503g97a3g88ced327ab6c" version="3">A nearby barbarian is visualising the Weave. &lt;br&gt;&lt;br&gt;Adds their &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; to &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells, as long as they stay within [1] of the barbarian.</content>
+    <content contentuid="39fc5eca-3607-4d06-a5ab-622c056c15bc" version="1">The number of times you can use &lt;LSTag Type="Spell" Tooltip="Shout_MagicAwareness"&gt;Magic Awareness&lt;/LSTag&gt;. It is equal to your proficiency bonus.</content>
+    <content contentuid="h3cea4c46gbdd3g4aabga40fg7def94962e10" version="4">Magic infuses your weapon. Until the end of your &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Rage&lt;/LSTag&gt;, it deals force damage and gains the &lt;LSTag Tooltip="Light"&gt;Light&lt;/LSTag&gt; and &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; properties.</content>
+    <content contentuid="h97303850g72e7g4513g9d6ag0b0982c830b2" version="2">Magic infuses this weapon. &lt;br&gt;&lt;br&gt;Until the end of the barbarian's &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Rage&lt;/LSTag&gt;, it deals force damage and gains the &lt;LSTag Tooltip="Light"&gt;Light&lt;/LSTag&gt; and &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; properties. &lt;br&gt;&lt;br&gt;If thrown, it immediately reappears in the barbarian's hand.</content>
+    <content contentuid="hc105bd90g32f2g4986gaeeegbad28fab888b" version="5">Until the end of your &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Rage&lt;/LSTag&gt;, flowers and vines sprout around you, making the ground &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt; for your enemies.</content>
+    <content contentuid="h1a1575ecgc144g4498ga4d3g6f14317ddf06" version="2">Surrounded by flowers and vines. &lt;br&gt;&lt;br&gt;Until the end of the barbarian's &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Rage&lt;/LSTag&gt;, the ground within [1] of them is Difficult Terrain for your enemies, halving &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;.</content>
+
+    <content contentuid="abd71842-58db-4e4c-b30f-c1f750eddfcb" version="1">Bolstering Magic</content>
+    <content contentuid="ad753f30-aa5e-4617-99de-9f98239c4ad4" version="1">The number of times you can use &lt;LSTag Type="Spell" Tooltip="Target_BolsteringMagic_Boost"&gt;Bolstering Magic&lt;/LSTag&gt;. It is equal to your proficiency bonus.</content>
+    <content contentuid="581664b2-050a-4d68-a724-22f6a7e84045" version="1">Bolstering Magic: Spell Slot</content>
+    <content contentuid="6db0925d-5cd2-4aa8-9029-976f75616a22" version="1">Roll a d3. You or an ally regains one expended spell slot, the level of which equals the number rolled or lower.</content>
+    <content contentuid="80b67f3c-f236-4810-bfe5-fa26fbd58a8e" version="1">Once a creature receives this benefit, that creature can't receive it again until after a long rest.</content>
+    <content contentuid="3b451cae-f596-483b-b98a-2bd4c1ae5473" version="1">Can't recover a spell slot until after a long rest.</content>
+
+    <!-- Exhaustion -->
+    <content contentuid="a55a3567-5d13-4cee-a399-ca2d5cfe25ad" version="1">Exhaustion</content>
+    <content contentuid="b1154400-8661-4d77-80e2-554af56137be" version="1">Exhaustion is measured in six levels:
+- Disadvantage on ability checks
+- Speed halved
+- Disadvantage on attack rolls and saving throws
+- Hit point maximum halved
+- Speed reduced to 0
+- Death</content>
     <content contentuid="9f402adc-eb91-46ad-897e-010a31d82550" version="1">Exhaustion level 1</content>
     <content contentuid="12e42f34-b000-414c-ba97-99d4c8a57c69" version="1">Exhaustion level 2</content>
     <content contentuid="492ea229-bdf6-40a3-919c-bfda78d01f85" version="1">Exhaustion level 3</content>
@@ -21,5 +116,4 @@
     <content contentuid="h71cf10b1gadf1g4be5gbe40g466322d942f4" version="2">Totem Warrior</content>
 	<content contentuid="f809a90b-29d6-4558-b6cc-6761e92d3784" version="1">If you drop to 0 &lt;LSTag Tooltip="HitPoints"&gt;hit point&lt;/LSTag&gt; while &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Enraged&lt;/LSTag&gt;, you can make a DC [1] Constitution saving throw. If you succeed, you drop to 1 hit point instead.
 Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</content>
-<content contentuid="bf90d85f-81ce-4645-a193-73b04da13bfd" version="1">Will cause a stack of &lt;LSTag Type="Status" Tooltip="RAGE_FRENZY_BURNOUT"&gt;Frenzied Strain&lt;/LSTag&gt; on the barbarian.</content>
 </contentList>

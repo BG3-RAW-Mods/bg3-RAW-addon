@@ -1,17 +1,7 @@
-new entry "Shout_Rage_Frenzy"
-type "SpellData"
-using "Shout_Rage_Frenzy"
-data "Description" "408fad2a-a125-422c-b96f-891b45778211;1"
-data "ExtraDescription" "bf90d85f-81ce-4645-a193-73b04da13bfd;1"
-data "RequirementConditions" "not HasStatus('SG_Rage') and not HasStatus('CALM_EMOTIONS')"
-
-new entry "RAGE_FRENZY"
-type "StatusData"
-using "RAGE_FRENZY"
-data "Description" "408fad2a-a125-422c-b96f-891b45778211;1"
-data "ExtraDescription" "bf90d85f-81ce-4645-a193-73b04da13bfd;1"
-data "Boosts" "Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Frightened);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Charmed)"
-data "OnRemoveFunctors" "ApplyStatus(EXHAUSTION,100,0);RemoveStatus(RAGE_MUTE);RemoveStatus(RAGE_STOP_REMOVE);RemoveStatus(RAGE_FRENZY_NO_HEAVY_ARMOUR_VFX);RemoveStatus(RAGE_FRENZY_BURNOUT);IF(RemoveCause(StatusRemoveCause.TimeOut) or RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(RAGE_ENDED,100,1);IF(RemoveCause(StatusRemoveCause.TimeOut) or RemoveCause(StatusRemoveCause.Condition)):UseSpell(Shout_EndRage,true,true,true)"
+new entry "RageFrenzyUnlock"
+type "PassiveData"
+using "RageFrenzyUnlock"
+data "Properties" "IsHidden"
 
 new entry "Target_FrenziedStrike"
 type "SpellData"
@@ -19,3 +9,15 @@ using "Target_FrenziedStrike"
 data "SpellProperties" "GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand)"
 data "RequirementConditions" "HasStatusError('RAGE_FRENZY','MustBeFrenzied')"
 data "ExtraDescription" ""
+
+new entry "Target_IntimidatingPresence"
+type "SpellData"
+using "Target_IntimidatingPresence"
+data "SpellRoll" "not SavingThrow(Ability.Wisdom, 8 + context.Source.ProficiencyBonus + GetModifier(context.Source.Charisma))"
+
+// TODO: This effect ends if the creature ends its turn more than 18 meters away from you.
+new entry "INTIMIDATING_PRESENCE"
+type "StatusData"
+using "INTIMIDATING_PRESENCE"
+data "RemoveConditions" "not CanSee(context.Target, context.Source)"
+

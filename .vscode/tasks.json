@@ -10,9 +10,9 @@
 				"command": "Start-Process",
 				"args": [
 					"-FilePath",
-					"D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\bin\\bg3_dx11.exe",
+					"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin\\bg3_dx11.exe",
 					"-WorkingDirectory",
-					"D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\bin"
+					"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin"
 				],
 				"options": {
 					"shell": {
@@ -29,11 +29,11 @@
 				"command": "Start-Process",
 				"args": [
 					"-FilePath",
-					"D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\bin\\bg3_dx11.exe",
+					"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin\\bg3_dx11.exe",
 					"-ArgumentList",
 					"-continueGame",
 					"-WorkingDirectory",
-					"D:\\SteamLibrary\\steamapps\\common\\Baldurs Gate 3\\bin"
+					"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Baldurs Gate 3\\bin"
 				],
 				"options": {
 					"shell": {

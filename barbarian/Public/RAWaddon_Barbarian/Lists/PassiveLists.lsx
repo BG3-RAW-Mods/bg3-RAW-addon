@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="328" lslib_meta="v1,bswap_guids" />
+	<region id="PassiveLists">
+		<node id="root">
+			<children>
+				<node id="PassiveList">
+					<attribute id="Passives" type="LSString" value="AspectOfTheBeast_Bear,AspectOfTheBeast_Eagle,AspectOfTheBeast_Elk,AspectOfTheBeast_Tiger,AspectOfTheBeast_Wolf" />
+					<attribute id="UUID" type="guid" value="fb9ea4a2-a1ce-4242-a893-84a088ac1145" />
+				</node>
+                <node id="PassiveList">
+                    <attribute id="Passives" type="LSString" value="AspectOfTheBeast_Tiger_Athletics,AspectOfTheBeast_Tiger_Acrobatics,AspectOfTheBeast_Tiger_Stealth,AspectOfTheBeast_Tiger_Survival" />
+                    <attribute id="UUID" type="guid" value="5ac36542-4f17-4e8a-9ac7-5fb40ecb9edd" />
+                </node>
+			</children>
+		</node>
+	</region>
+</save>
