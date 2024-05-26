@@ -1,4 +1,9 @@
 ﻿<contentList date="29/12/2023 11:20">
+	<!-- [1] needs [2] to hit. They rolled [3] -->
+	<content contentuid="hce280aaag3a21g44f4g8076g9e5084933c3c" version="1">Roll: [3].</content>
+	<content contentuid="h5dce5131g0e79g417cg9df9g0f3a11ab5f8f" version="1">Roll: [3] (Critical Hit).</content>
+	<content contentuid="h24ce20fcgf0c7g496dgace7g22bd43f88dc8" version="1">Roll: [3] (Critical Miss).</content>
+	
 	<!-- Movement Tracking -->
 	<content contentuid="4f93a1b8-eeeb-484a-a937-cd7b5c42454c" version="1">Movement Tracking</content>
 	<content contentuid="40f43875-6158-4d7c-84f8-9c8cee0b5bae" version="1">Track how many meters you have moved this turn.</content>
@@ -7,6 +12,15 @@
 	<content contentuid="c6c43f74-ddba-4c36-acdf-af12d9b91aac" version="1">You need to move at least 3m before using this ability</content>
 	<content contentuid="3d0146df-cfc0-4399-ba59-b9ca64ba5515" version="1">You need to move at least 6m before using this ability</content>
 
+	<!-- Hit Die (short rest healing) -->
+	<content contentuid="1c16cea6-b593-49f4-ad4f-d4ee782e4c99" version="1">Hit Die</content>
+	<content contentuid="17ab7545-cf2c-4655-8b44-0986c5fb988f" version="1">The number of times you can use a hit die to recover hit points when short resting.</content>
+	<content contentuid="e0173d1b-7e4b-4474-b9ff-2c32fff68285" version="1">Tend to your wounds</content>
+	<content contentuid="62a3b41e-5c6c-4524-8ae2-9dbdee05f806" version="1">Tend to your wounds. You recover [1]% of your &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;. You can use this ability when taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h71165ff5g7a9bg4779g8c39g4897776fe026" version="4">You can use &lt;LSTag Type="Spell" Tooltip="Shout_Raw_Short_Rest_Recovering_33"&gt;Tend to your wounds&lt;/LSTag&gt; when taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.
+Your &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; score is increased by 1, to a maximum of 20.</content>
+	<content contentuid="hba1b3efag40e4g45e6gb775g4523353b4dbb" version="3">Your &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; increases by 1, to a maximum of 20.&lt;br&gt;&lt;br&gt;You can use &lt;LSTag Type="Spell" Tooltip="Shout_Raw_Short_Rest_Recovering_33"&gt;Tending to wounds&lt;/LSTag&gt; when taking a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.</content>
+	
 	<!-- Jump -->
 	<content contentuid="h4b921d5bg6e70g455cga6fcg68c4e67f9067" version="7">Your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; or &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; increases by 1, to a maximum of 20.&lt;br&gt;&lt;br&gt;When you are Prone, standing up uses only 1.5m of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;.&lt;br&gt;You can make a running long jump or a running high jump after moving only 1 meter on foot, rather than 3 meters.</content>
 	<content contentuid="51bcb59d-133a-44df-8d68-bf8cd65fc69d" version="1">When you are &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, standing up uses only [1] of your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;.&lt;br&gt;You can make a running long jump or a running high jump after moving only [2] on foot, rather than [3].</content>
@@ -21,7 +35,7 @@
 	
 	<!-- Heavy Armor requirement -->
 	<content contentuid="10f71f69-a978-479e-b6e8-276101e46c43" version="1">Armor's weight</content>
-	<content contentuid="5e96a7f7-7799-4c45-912e-d38c562850ba" version="1">The armor reduces the wearer’s &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; by [1] unless the wearer has a Strength score equal to or higher than [2].&lt;br&gt;This effect is not applied if you are encumbered.</content>
+	<content contentuid="5e96a7f7-7799-4c45-912e-d38c562850ba" version="1">The armor reduces the wearer's &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; by [1] unless the wearer has a Strength score equal to or higher than [2].&lt;br&gt;This effect is not applied if you are encumbered.</content>
 
 	<!-- Encumbrance -->
 	<content contentuid="h04852025ga3c0g47b2gbe02g7d22a3d12ab8" version="4">Carrying too much weight. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is reduced by [1].</content>

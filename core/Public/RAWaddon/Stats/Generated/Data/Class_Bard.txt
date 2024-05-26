@@ -1,5 +1,0 @@
-new entry "BardicInspirationScaling"
-type "PassiveData"
-data "Boosts" "IF(CharismaModifier(1)):ActionResource(BardicInspiration,1,0);IF(CharismaModifier(2)):ActionResource(BardicInspiration,2,0);IF(CharismaModifier(3)):ActionResource(BardicInspiration,3,0);IF(CharismaModifier(4)):ActionResource(BardicInspiration,4,0);IF(CharismaModifier(5)):ActionResource(BardicInspiration,5,0);IF(CharismaModifier(6)):ActionResource(BardicInspiration,6,0);IF(CharismaModifier(7)):ActionResource(BardicInspiration,7,0);IF(CharismaModifier(8)):ActionResource(BardicInspiration,8,0);IF(CharismaModifier(9)):ActionResource(BardicInspiration,9,0);IF(CharismaModifier(10)):ActionResource(BardicInspiration,10,0)"
-data "BoostContext" "OnStatusApply;OnStatusRemove;OnEquip;OnShortRest;OnCreate;OnLongRest;OnInventoryChanged"
-data "Properties" "IsHidden"

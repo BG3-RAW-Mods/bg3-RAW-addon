@@ -24,10 +24,6 @@
         "enabled": true,
         "files": ["Public/RAWaddon/Stats/Generated/Data/Jump.txt"]
     },
-    "Monsters": {
-        "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Monsters.txt"]
-    },
     "ItemWeapon": {
         "enabled": true,
         "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Weapon.txt"]

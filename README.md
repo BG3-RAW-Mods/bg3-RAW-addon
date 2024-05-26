@@ -21,6 +21,8 @@ I would put RAW mods on the bottom of order list, just before CompatibilityFrame
 
 Classes PAKs (monk, druid) should be installed after RAW-addon. Only install them if you want these classes changes.
 
+**Don't install RAW-addon-debug. It is meant for testing purpose. It allows you to reach level 12 by killing a few monsters.**
+
 ## User-config
 
 You can create this file if it doesn't exist: `%localappdata%\Larian Studios\Baldur's Gate 3\Script Extender\ModOptions.json`.
@@ -33,7 +35,6 @@ Each UUID is a mod configuration and its value is mod configuration. You can cop
 		"Classes": { "enabled": true },
 		"Encumbrance": { "enabled": true, "value": "Mix" },
 		"Jump": { "enabled": true },
-		"Monsters": { "enabled": true },
 		"ItemWeapon": { "enabled": true },
 		"ItemWeight": { "enabled": true },
 		"ItemPotion": { "enabled": true, "value": 7 },
@@ -83,6 +84,15 @@ Please note that these requirements are not listed in description. I might add t
 
 Human racials have been transfered to standard human's subrace. However, this created an issue for all other humans that would loose their racials.
 As Human only get +1 to all ability scores, I have put this in Human race. Then, Variant Human get -1 to all ability scores. I think it is easier this way, instead of changing every race references by standard human subrace.
+
+### Short Rest
+
+BG3: heals 50% of Max HP.
+
+RAW: A character can spend one or more Hit Dice at the end of a short rest, up to the character’s maximum number of Hit Dice, which is equal to the character’s level. For each Hit Die spent in this way, the player rolls the die and adds the character’s Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll. At the end of a long rest, a character regains spent Hit Dice, up to a number of dice equal to half of the character’s total number of them (minimum of one die). 
+
+Implementation: during short rest (requires Zerd RAW Short Rest), you can cast Tend to your wounds, which heals 25% of Max HP. You can use it twice per long rest. If you have Durable feat, it become 33% of Max HP.
+This is as close as possible to RAW. Hit dice implementation is hard for several reasons including multiclass. Durable feat can't be RAW without true hit dice.
 
 ### Jump
 
@@ -134,7 +144,7 @@ Concentration has been added to these spells:
 
 #### Bard
 
-- Bardic Inspiration uses charisma modifier (instead of a set number)
+[Bard changes](Bard.md)
 
 #### Rogue
 

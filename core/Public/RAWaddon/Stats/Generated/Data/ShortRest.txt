@@ -1,0 +1,33 @@
+// ----------------------------------------------------
+// -------------------- Short Rest --------------------
+// ----------------------------------------------------
+
+new entry "ShortResting"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctors" "ApplyStatus(SELF,RAW_SHORT_REST,100,-1)"
+data "StatsFunctorContext" "OnShortRest"
+
+new entry "RAW_SHORT_REST"
+type "StatusData"
+using "RAW_SHORT_REST"
+data "Boosts" "ActionResourceBlock(Movement);ActionResourceBlock(ActionPoint);ActionResourceBlock(BonusActionPoint);UnlockSpell(RAW_Shout_EndShortRest);IF(not HasPassive('Durable',context.Source)):UnlockSpell(Shout_Raw_Short_Rest_Recovering_25);IF(HasPassive('Durable',context.Source)):UnlockSpell(Shout_Raw_Short_Rest_Recovering_33)"
+
+new entry "Shout_Raw_Short_Rest_Recovering_25"
+type "SpellData"
+using "Shout_SecondWind"
+data "SpellType" "Shout"
+data "Cooldown" ""
+data "SpellProperties" "RegainHitPoints(MaxHP/4);ApplyStatus(BARD_SONG_OF_REST_HEAL,100,-1)"
+data "DisplayName" "e0173d1b-7e4b-4474-b9ff-2c32fff68285;1"
+data "Description" "62a3b41e-5c6c-4524-8ae2-9dbdee05f806;1"
+data "DescriptionParams" "25"
+data "TooltipDamageList" ""
+data "UseCosts" "HitDie:1"
+data "SpellFlags" "Temporary"
+
+new entry "Shout_Raw_Short_Rest_Recovering_33"
+type "SpellData"
+using "Shout_Raw_Short_Rest_Recovering_25"
+data "SpellProperties" "RegainHitPoints(MaxHP/3);ApplyStatus(BARD_SONG_OF_REST_HEAL,100,-1)"
+data "DescriptionParams" "33"

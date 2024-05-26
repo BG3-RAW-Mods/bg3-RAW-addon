@@ -13,6 +13,11 @@ function RawClassLevelHigherOrEqualThan(class, level, entity)
     return ConditionResult(entity.GetClassLevel(class) >= level)
 end
 
+function RawClassLevelHigherThan(class, level, entity)
+    local entity = entity or context.Source
+    return ConditionResult(entity.GetClassLevel(class) > level)
+end
+
 function RawClassLevelEqual(class, level, entity)
     local entity = entity or context.Source
     return ConditionResult(entity.GetClassLevel(class) == level)
