@@ -12,6 +12,10 @@
 	<content contentuid="c6c43f74-ddba-4c36-acdf-af12d9b91aac" version="1">You need to move at least 3m before using this ability</content>
 	<content contentuid="3d0146df-cfc0-4399-ba59-b9ca64ba5515" version="1">You need to move at least 6m before using this ability</content>
 
+	<!-- Partial Rest -->
+	<content contentuid="h7e75fd8fgc164g436fgbbf7gc0b993f7fee8" version="1">Story Rest</content>
+	<content contentuid="hae826c89g4f7eg4a64g976fgf6cbebab7564" version="1">You won't recover anything with a story rest. It is only usefull to progress through story because it is tied to resting.</content>
+
 	<!-- Hit Die (short rest healing) -->
 	<content contentuid="1c16cea6-b593-49f4-ad4f-d4ee782e4c99" version="1">Hit Die</content>
 	<content contentuid="17ab7545-cf2c-4655-8b44-0986c5fb988f" version="1">The number of times you can use a hit die to recover hit points when short resting.</content>

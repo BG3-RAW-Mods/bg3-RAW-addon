@@ -1,0 +1,5 @@
+// TODO: The creature is immune if it can't hear you or if it's immune to being charmed.
+new entry "Interrupt_CuttingWords"
+type "InterruptData"
+using "Interrupt_CuttingWords"
+data "Conditions" "IsAbleToReact(context.Observer) and ((HasInterruptedAttack() and Enemy(context.Source,context.Observer)) or (HasInterruptedSavingThrow() and Enemy(context.Target,context.Observer))) and not AnyEntityIsItem()"

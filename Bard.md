@@ -9,3 +9,11 @@ If you or any friendly creatures who can hear your performance regain hit points
 RAW: Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time. You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.
 
 Implementation: per RAW
+
+## Countercharm
+
+Duration reduced to 2 turns (from 3).
+
+## Blade Flourish
+
+This mod has already fixed them: [College of Swords Bard Blade Flourish Fixes](https://www.nexusmods.com/baldursgate3/mods/1314?tab=description)

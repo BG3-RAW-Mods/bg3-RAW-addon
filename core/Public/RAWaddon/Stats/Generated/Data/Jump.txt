@@ -38,6 +38,14 @@ using "Projectile_Jump"
 data "UseCosts" "Movement:Distance"
 data "TargetRadius" "1.6"
 data "AddRangeFromAbility" "Strength,0.305"
+data "SpellProperties" "GROUND:ApplyStatus(SELF,RAW_AFTER_JUMP_TERRAIN_CHECK,100,0)"
+
+// When you land in difficult terrain, you must succeed on a DC 10 Dexterity (Acrobatics) check to land on your feet. Otherwise, you land prone
+new entry "RAW_AFTER_JUMP_TERRAIN_CHECK"
+type "StatusData"
+data "StatusType" "BOOST"
+data "OnRemoveFunctors" "IF(HasStatus('SG_DifficultTerrain') and not SkillCheck(Skill.Acrobatics, 10)):ApplyStatus(PRONE_FALLEN,100,2)"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
 // Do we want an impratical high jump ?
 // new entry "Projectile_High_Jump"

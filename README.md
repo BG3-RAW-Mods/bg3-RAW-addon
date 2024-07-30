@@ -85,6 +85,12 @@ Please note that these requirements are not listed in description. I might add t
 Human racials have been transfered to standard human's subrace. However, this created an issue for all other humans that would loose their racials.
 As Human only get +1 to all ability scores, I have put this in Human race. Then, Variant Human get -1 to all ability scores. I think it is easier this way, instead of changing every race references by standard human subrace.
 
+### Partial Rest
+
+BG3: Restores 50% of all resources.
+
+RAW: since it doesn't exist, it has been renamed to *Story Rest*. It doesn't restore anymore but it allows to rest to progress through story when necessary.
+
 ### Short Rest
 
 BG3: heals 50% of Max HP.
@@ -99,6 +105,7 @@ This is as close as possible to RAW. Hit dice implementation is hard for several
 I didn't implement High Jump because RAW would probably make it useless in BG3. However, this is still something I might consider in a future release. With High Jump "neutralized", it would make Fly and Teleport more powerful. They are already powerful, but BG3 Jump is so powerful that it can almost do the same thing for free.
 
 For now, I have updated Jump to match Long Jump Range. On top of that, Jump now cost movement instead of bonus action. Additionally, a long jump requires to move 3 meters. If not, it will be a simple jump (half distance).
+When you land in difficult terrain, you must succeed on a DC 10 Dexterity (Acrobatics) check to land on your feet. Otherwise, you land prone.
 
 As a result, Jump range is roughly divided by 2 and twice more if you didn't move 3 meters, there are many jumps you won't make without a ritual spell like Enhanced Leap.
 Even high strength characters won't fly over the battlefield. While Enhanced Leap would allow them to jump about 20 meters, they are still limited by their movement speed. 9 meters by default for most, 18 with dash. It opens a possibility for a 18m jump using dash and enhanced leap.
