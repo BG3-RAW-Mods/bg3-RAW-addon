@@ -330,19 +330,6 @@ type "StatusData"
 using "VARIANT_HUMAN_FEAT"
 data "Passives" "AgonizingBlast"
 
-// Skill Expert
-new entry "VariantHumanSkillExpert"
-type "PassiveData"
-data "DisplayName" "3bc82a68-bb5f-43c0-a07e-7658672b4f5c;1"
-data "Description" "35dd6443-fc25-465c-9ba1-34d53f997e82;1"
-data "Properties" "IsHidden"
-data "StatsFunctors" "IF(not HasStatus('VARIANT_HUMAN_SKILL_EXPERT',context.Source)):ApplyStatus(VARIANT_HUMAN_SKILL_EXPERT,100,-1)"
-data "StatsFunctorContext" "OnCreate"
-
-new entry "VARIANT_HUMAN_SKILL_EXPERT"
-type "StatusData"
-using "VARIANT_HUMAN_FEAT"
-
 new entry "VariantHumanNone"
 type "PassiveData"
 data "DisplayName" "h020d9431g05f9g426dga8f9gc2834654972f"
