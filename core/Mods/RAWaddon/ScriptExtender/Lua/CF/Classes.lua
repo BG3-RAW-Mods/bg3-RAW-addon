@@ -9,8 +9,6 @@
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Sorcerer_3, "SelectPassives", "c3506532-36eb-4d18-823e-497a537a9619"))
     -- Add 2 MetaMagic selection at level 3
     Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addSelectPassives(RAW_Sorcerer_3, "c3506532-36eb-4d18-823e-497a537a9619", "2", "Metamagic" ))
-    -- Add 1 MetaMagic selection at level 10
-    Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addSelectPassives(RAW_Sorcerer_10, "c3506532-36eb-4d18-823e-497a537a9619", "1", "Metamagic" ))
     -- Draconic get fly at level 14, not 11
     Mods.SubclassCompatibilityFramework.Api.RemoveSelectors(removeSelector(RAW_Sorcerer_Draconic_11, "AddSpells", "12150e11-267a-4ecc-a3cc-292c9e2a198d"))  
     -- Storm doesn't get free spells at level 6

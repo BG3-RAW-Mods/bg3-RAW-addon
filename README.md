@@ -47,6 +47,37 @@ Each UUID is a mod configuration and its value is mod configuration. You can cop
 
 ## Features
 
+### Interrupts
+
+There are many interrupts that print a message like this one: Goblin needs 16 to hit. They rolled 18.
+In this case, the game gives you 2 informations:
+- How much it needs to hit, which let you deduce his bonuses
+- Roll number
+
+Players should not see these informations, only a DM can.
+
+However, when an interrupt is tied to your own roll, you need to know what you rolled, just not how much you need.
+Let's say you have a bardic inspiration and makes an attack. Vanilla prompts a bardic inspiration interrupt if you will miss and bardic inspiration can make you hit.
+Something like: Astarion need 16 to hit. They rolled 14.
+
+As a reminder, Bardic inspiration: the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, **but must decide before the DM says whether the roll succeeds or fails.**
+Larian probably omitted this rule to only pop up interrupts when it is really needed. If not, it would pop up every hits. **I have changed it to be RAW and it will popup interrupts everytime, slowing battle's pace.**
+
+Because both cases share the same string and I don't know yet if it can be separated, I made a partial fix.
+This text is changed to: Roll: 18.
+
+In the first case, you know what enemy rolled, but you don't know if he will hit or not. You already know too much, but it might not be enough.
+In the second case, it is entirely RAW. You know you made a good roll, but is it enough to hit ? Does enemy has very high AC ?
+
+There are also a dozen of similar text that I haven't changed yet until I figure out when they are used:
+- [1] needs [2] to save. They rolled [3] (Critical Success).
+- [1] needs [2] to save. They rolled [3] (Critical Failure).
+- [1] needs [3] to pass. They rolled [2].
+- [1] needs [3] to succeed. They rolled [2].
+- [1] needs [3] to save. They rolled [2].
+
+I will probably remove first phrase.
+
 ### Racials
 
 I have restored races abilities and traits. There are 2 possible values (config value in parenthesis):

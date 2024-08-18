@@ -1,9 +1,4 @@
 ﻿<contentList date="04/08/2024 11:20">
-	<!-- Interrupts -->
-	<content contentuid="hce280aaag3a21g44f4g8076g9e5084933c3c" version="1">Roll: [3].</content>
-	<content contentuid="h5dce5131g0e79g417cg9df9g0f3a11ab5f8f" version="1">Roll: [3] (Critical Hit).</content>
-	<content contentuid="h24ce20fcgf0c7g496dgace7g22bd43f88dc8" version="1">Roll: [3] (Critical Miss).</content>
-	
 	<!-- Movement Tracking -->
 	<content contentuid="4f93a1b8-eeeb-484a-a937-cd7b5c42454c" version="1">Movement Tracking</content>
 	<content contentuid="40f43875-6158-4d7c-84f8-9c8cee0b5bae" version="1">Track how many meters you have moved this turn.</content>
