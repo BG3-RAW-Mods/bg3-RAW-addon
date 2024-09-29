@@ -1,3 +1,5 @@
 Ext.Require("RAW/RAW_BootstrapShared.lua")
 
-RAW_ApplyServerModOptions()
+if Ext.Mod.IsModLoaded(RAW_MCM) then
+    RAW_ApplyServerModOptions()
+end

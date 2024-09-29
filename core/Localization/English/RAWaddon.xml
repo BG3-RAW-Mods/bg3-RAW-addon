@@ -29,9 +29,6 @@ Your &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; score is inc
 	<!-- Feats -->
 	<content contentuid="0611a12f-914c-473a-8eac-9c1dd042fc4d" version="3">Skilled at mimicry and dramatics, you gain the following benefits:&lt;br&gt;- your &lt;LSTag Tooltip="Charisma"&gt;Charisma&lt;/LSTag&gt; increases by [1], to a maximum of [2].&lt;br&gt;- you have an advantage on Deception and Performance &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
 
-	<!-- Warding Flare -->
-	<content contentuid="535775a1-af4f-4b51-b039-e722d3b7f478" version="1">The number of times you can use your warding flare's reaction. It is equal to your Wisdom modifier.</content>
-	
 	<!-- Heavy Armor requirement -->
 	<content contentuid="10f71f69-a978-479e-b6e8-276101e46c43" version="1">Armor's weight</content>
 	<content contentuid="5e96a7f7-7799-4c45-912e-d38c562850ba" version="1">The armor reduces the wearer's &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; by [1] unless the wearer has a Strength score equal to or higher than [2].&lt;br&gt;This effect is not applied if you are encumbered.</content>
@@ -42,9 +39,6 @@ Your &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; score is inc
 
 	<!-- Potions-->
 	<content contentuid="3b9ac5d3-ecf2-424b-832e-f63a8366829c" version="1">Heals.</content>
-
-	<!-- Rogue -->
-	<content contentuid="af8e4a50-2f1f-42ba-880f-242f2e5ea4f2" version="1">You've mastered the art of falling and gain resistance to Falling damage. Your &lt;LSTag Type="Spell" Tooltip="Projectile_Jump"&gt;Jump&lt;/LSTag&gt; distance increases by a number of feet equal to your Dexterity modifier.</content>	
 
 	<!-- Astral Knowledge -->
 	<content contentuid="2733f3a2-5492-4d93-a57c-6c310b545397" version="3">Gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in one &lt;LSTag Tooltip="Skill"&gt;Skill&lt;/LSTag&gt; of your choice as you momentarily project your consciousness into the Astral Plane.</content>

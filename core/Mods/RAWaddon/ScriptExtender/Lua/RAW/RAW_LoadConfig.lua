@@ -82,7 +82,7 @@ local function RAW_PrintConfig()
     local options = {}
     for optionName, attributes in pairs(RAW_Globals.modOptions) do
         local text = "\27[36m"
-        if IsModOptionEnabled(optionName) then
+        if RAW_GetModOptionEnabled(optionName) then
             text = text .. optionName .. ":\27[32m enabled"
             if attributes.value ~= nil then
                 text = text .. "\27[36m value:\27[32m " .. attributes.value

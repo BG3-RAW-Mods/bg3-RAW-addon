@@ -1,55 +1,30 @@
 {
-    "RacialTraits": {
+    "feats": { "enabled": true },
+    "itemWeapon": { "enabled": true },
+    "jump": { "enabled": true },
+    "racialTraits": {
         "enabled": true,
         "value": "PHB",
-        "allowedValues": ["PHB", "Tasha"],
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Race_Core.txt"]
+        "allowedValues": ["PHB", "Tasha"]
     },
-    "Classes": {
-        "enabled": true,
-        "files": [
-            "Public/RAWaddon/Stats/Generated/Data/Class_Bard.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Cleric.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Rogue.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Sorcerer.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Class_Warlock.txt"
-        ]
-    },
-    "Encumbrance": {
+    "spells": { "enabled": true },
+
+    "encumbrance": {
         "enabled": true,
         "value": "Mix",
         "allowedValues": ["Standard", "Variant", "Mix"]
     },
-    "Jump": {
-        "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Jump.txt"]
-    },
-    "ItemWeapon": {
-        "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Weapon.txt"]
-    },
-    "ItemWeight": {
-        "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Item_Weight.txt"]
-    },
-    "ItemPotion": {
-        "enabled": true,
-        "value": 7
-    },
-    "ItemPoison": {
-        "enabled": true,
-        "value": 15
-    },
-    "Spells": {
-        "enabled": true,
-        "files": [
-            "Public/RAWaddon/Stats/Generated/Data/Spells_Concentration.txt", 
-            "Public/RAWaddon/Stats/Generated/Data/Spells_Knowledge.txt",
-            "Public/RAWaddon/Stats/Generated/Data/Spells_Misc.txt"
-        ]
-    },
-    "Feats": {
-        "enabled": true,
-        "files": ["Public/RAWaddon/Stats/Generated/Data/Feats.txt"]
-    }
+    "itemWeight": { "enabled": true },
+
+    "itemPotionAction": { "enabled": true },
+    "itemPotionThrow": { "enabled": true },
+    "itemPotionPrice": { "enabled": true },
+
+    "itemPoisonAction": { "enabled": true },
+    "itemPoisonThrow": { "enabled": true },
+    "itemPoisonDamage": { "enabled": true },
+    "itemPoisonPrice": { "enabled": true },
+
+    "restPartial": { "enabled": true },
+    "restShort": { "enabled": true }
 }

@@ -100,7 +100,7 @@ local function applyRaceTashaChanges()
 end
 
 local function onStatsLoaded()
-  local value = RAW_Globals.modOptions[RAW_Globals.features.RacialTraits].value
+  local value = MCM.Get(RAW_Globals.features.RacialTraits)
   applyRaceCoreChanges()
   if value == "Tasha" then
     applyRaceTashaChanges()
@@ -110,7 +110,7 @@ local function onStatsLoaded()
 end
 
 function RAW_RacialTraits()
-  if RAW_CheckModOption(RAW_Globals.features.RacialTraits) and Ext.Mod.IsModLoaded(RAW_ModCompatibilityFramework) then
+  if MCM.Get(RAW_Globals.features.RacialTraits) and Ext.Mod.IsModLoaded(RAW_ModCompatibilityFramework) then
     Ext.Events.StatsLoaded:Subscribe(onStatsLoaded)
   end
 end

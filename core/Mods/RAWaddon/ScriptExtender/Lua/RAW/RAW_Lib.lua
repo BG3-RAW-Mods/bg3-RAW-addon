@@ -70,13 +70,15 @@ function RAW_IsValueInList(list, value)
     return result
 end
 
-function IsModOptionEnabled(modOption)
-    return RAW_Globals.modOptions[modOption] ~= nil and RAW_Globals.modOptions[modOption].enabled
+function RAW_GetModOptionEnabled(id)
+    -- local value = MCM.Get(id)
+    local value = RAW_Globals.modOptions[id].enabled
+    RAW_Print(id .. " : " .. RAW_BooleanToString(value))
+    return value
 end
 
-function RAW_CheckModOption(option)
-    RAW_Print("\n====================================================================================================")
-    local enabled = IsModOptionEnabled(option)
-    RAW_Print(option .. " : " .. RAW_BooleanToString(enabled))
-    return enabled
+function RAW_GetModOptionValue(id)
+    -- local value = MCM.Get(id)
+    local value = RAW_Globals.modOptions[id].value
+    return value
 end

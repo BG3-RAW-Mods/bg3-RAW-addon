@@ -1,0 +1,171 @@
+{
+    "SchemaVersion": 1,
+    "Tabs": [
+        {
+        "TabId": "Settings",
+        "TabName": "Settings",   
+        "Sections": [
+            {
+                "SectionId": "misc",
+                "SectionName": "Misc.",
+                "Settings": [
+                    {
+                        "Id": "feats",
+                        "Name": "Feats",
+                        "Description": "Fix a few feats that were not RAW",
+                        "Type": "checkbox",
+                        "Default": true
+                    },
+                    {
+                        "Id": "itemWeapon",
+                        "Name": "Weapon fixes",
+                        "Description": "Proper range for ranged weapons and torch is now RAW.",
+                        "Type": "checkbox",
+                        "Default": true
+                    },
+                    {
+                        "Id": "jump",
+                        "Name": "Jump",
+                        "Description": "It will drastically reduce ability to jump far since RAW rules are brutals.",
+                        "Type": "checkbox",
+                        "Default": true
+                    },
+                    {
+                        "Id": "racialTraits",
+                        "Name": "Racial Traits",
+                        "Description": "- PHB: as it was before release.\n- Tasha's Cauldron: close to current BG3 but full RAW implementation.",
+                        "Type": "enum",
+                        "Default": "PHB",
+                        "Options": {
+                            "Choices": [
+                                "Disabled",
+                                "PHB",
+                                "Tasha"
+                            ]
+                        }
+                    },
+                    {
+                        "Id": "spells",
+                        "Name": "RAW Spells",
+                        "Description": "A few fixes on several spells to make them closer to RAW",
+                        "Type": "checkbox",
+                        "Default": true
+                    }
+                ]
+            },
+            {
+                "SectionId": "carryWeight",
+                "SectionName": "Carry weights",
+                "Settings": [
+                    {
+                        "Id": "encumbrance",
+                        "Name": "Encumbrance",
+                        "Description": "- Standard: Strength requirement for Heavy Armor with proper carry weights.\n- Variant: encumbrance rule.\n- Mix: an alleviated encumbrance rule with added Heavy Armor requirement.",
+                        "Type": "enum",
+                        "Default": "Mix",
+                        "Options": {
+                            "Choices": [
+                                "Disabled",
+                                "Standard",
+                                "Variant",
+                                "Mix"
+                            ]
+                        }
+                    },
+                    {
+                        "Id": "itemWeight",
+                        "Name": "Item weights",
+                        "Description": "Proper weights for most items, which is a lot heavier than current values.",
+                        "Type": "checkbox",
+                        "Default": true
+                    }
+                ]
+            },
+            {
+                "SectionId": "potions",
+                "SectionName": "Potions",
+                "Settings": [
+                    {
+                        "Id": "itemPotionAction",
+                        "Name": "Potions now use an action instead of bonus action",
+                        "Type": "checkbox",
+                        "Default": true
+                    },
+                    {
+                        "Id": "itemPotionThrow",
+                        "Name": "Disable potion throw effects. PHB clearly says 'When you drink this potion...'",
+                        "Type": "checkbox",
+                        "Default": true
+                    },
+                    {
+                        "Id": "itemPotionPrice",
+                        "Name": "RAW Prices, may break economy since expensive loots are very abundant.",
+                        "Type": "checkbox",
+                        "Default": false
+                    }
+                ]
+            },
+            {
+                "SectionId": "poisons",
+                "SectionName": "Poisons",
+                "Settings": [
+                    {
+                        "Id": "itemPoisonAction",
+                        "Name": "Poisons now use an action instead of bonus action",
+                        "Type": "checkbox",
+                        "Default": true
+                    },
+                    {
+                        "Id": "itemPoisonThrow",
+                        "Name": "Disable poison throw effects",
+                        "Description": "Most poisons are applied by injury (a creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects).",
+                        "Type": "checkbox",
+                        "Default": true
+                    },
+                    {
+                        "Id": "ItemPoisonDamage",
+                        "Name": "RAW damage and duration",
+                        "Description": "It might be overpowered because it is easy to get powerful poisons and poisons lasts 10 turns.",
+                        "Type": "checkbox",
+                        "Default": true
+                    },
+                    {
+                        "Id": "itemPoisonPrice",
+                        "Name": "RAW Prices",
+                        "Description": "May break economy since expensive loots are very abundant.",
+                        "Type": "checkbox",
+                        "Default": false
+                    }
+               ]
+            },
+            {
+                "SectionId": "rest",
+                "SectionName": "Resting",
+                "Settings": [
+                    {
+                        "Id": "restPartial",
+                        "Name": "Short Rest",
+                        "Description": "- Simple: you get 2 heals per long rest and per character. Each one heals for 50% HP.\n- RAW 2024: full hit dices implementation, all recovered on long rest.",
+                        "Type": "enum",
+                        "Default": "RAW (2024)",
+                        "Options": {
+                            "Choices": [
+                                "Disabled",
+                                "Simple",
+                                "RAW (2024)"
+                            ]
+                        }
+                    },
+                    {
+                        "Id": "restShort",
+                        "Name": "Partial Rest",
+                        "Description": "Renamed to Story Rest. It doesn't restore anything but it allows to progress through story when necessary.",
+                        "Type": "checkbox",
+                        "Default": true
+                    }
+                ]
+            }
+        ]
+        }
+    ]
+}

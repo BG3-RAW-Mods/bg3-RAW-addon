@@ -23,28 +23,38 @@ Classes PAKs (monk, druid) should be installed after RAW-addon. Only install the
 
 **Don't install RAW-addon-debug. It is meant for testing purpose. It allows you to reach level 12 by killing a few monsters.**
 
-## User-config
+## Configuration
 
-You can create this file if it doesn't exist: `%localappdata%\Larian Studios\Baldur's Gate 3\Script Extender\ModOptions.json`.
+MCM has been integrated but I am not sure it can work with my settings.
+
+You can create this file if it doesn't exist: %localappdata%\Larian Studios\Baldur's Gate 3\Script Extender\ModOptions.json.
 
 Each UUID is a mod configuration and its value is mod configuration. You can copy and paste the following block:
-```json
+
 {
 	"a5799115-ef11-457b-92cd-2c927de09b02": {
-		"RacialTraits": { "enabled": true, "value": "PHB" },
-		"Classes": { "enabled": true },
-		"Encumbrance": { "enabled": true, "value": "Mix" },
-		"Jump": { "enabled": true },
-		"ItemWeapon": { "enabled": true },
-		"ItemWeight": { "enabled": true },
-		"ItemPotion": { "enabled": true, "value": 7 },
-		"ItemPoison": { "enabled": true, "value": 15 },
-		"Spells": { "enabled": true },
-		"Feats": { "enabled": true }
+        "feats": { "enabled": true },
+        "itemWeapon": { "enabled": true },
+        "jump": { "enabled": true },
+        "racialTraits": { "enabled": true, "value": "PHB" },
+        "spells": { "enabled": true },
+
+        "encumbrance": { "enabled": true, "value": "Mix" },
+        "itemWeight": { "enabled": true },
+
+        "itemPotionAction": { "enabled": true },
+        "itemPotionThrow": { "enabled": true },
+        "itemPotionPrice": { "enabled": true },
+
+        "itemPoisonAction": { "enabled": true },
+        "itemPoisonThrow": { "enabled": true },
+        "itemPoisonDamage": { "enabled": true },
+        "itemPoisonPrice": { "enabled": true },
+
+        "restPartial": { "enabled": true },
+        "restShort": { "enabled": true }
 	}
 }
-```
-
 ## Features
 
 ### Interrupts
@@ -84,7 +94,7 @@ I have restored races abilities and traits. There are 2 possible values (config 
 - PHB *(PHB)*
 - Tasha's Cauldron *(Tasha)*
 
-BG3 was initially using PHB then switched to Tasha's Cauldron. However, it didn't respect the new rule and gave every races +2/+1. I have implemented the exact rule which gives the same increase in numbers but you chan choose attributes now:
+BG3 was initially using PHB then switched to Tasha's Cauldron. However, it didn't fully respect the new rule and gave every races +2/+1. I have implemented the exact rule which gives the same increase in numbers but you chan choose attributes now:
 - Human and Variant Human don't have any change.
 - Shield Dward get +2/+2
 - Half-Elf get +2/+1/+1
@@ -120,7 +130,7 @@ As Human only get +1 to all ability scores, I have put this in Human race. Then,
 
 BG3: Restores 50% of all resources.
 
-RAW: since it doesn't exist, it has been renamed to *Story Rest*. It doesn't restore anymore but it allows to rest to progress through story when necessary.
+RAW: since it doesn't exist, it has been renamed to *Story Rest*. It doesn't restore anything but it allows to progress through story when necessary.
 
 ### Short Rest
 
@@ -161,44 +171,6 @@ Concentration has been added to these spells:
 - Conjure Woodland Being
 - Conjure Elemental
 - Gust of Wind
-
-### Class adjustements
-
-#### Sorcerer
-
-- Sorcerers gain two Metamagic options of your choice at level 3. You gain another one at 10th.
-- Tempestuous Magic, fly range reduced to 3m
-- Dragon Wings, distance is based on movement speed, without armor, and at level 14 (so removed from game)
-- Draconic Blood, ancestry's spell removed
-- Storm Sorcerey, level 6 free spells removed
-
-#### Warlock
-
-- Repelling Blast, distance is 3m, not 4.5m
-
-#### Cleric
-
-- Warding Flare uses wisdom modifier (instead of unlimited uses)
-
-#### Bard
-
-[Bard changes](Bard.md)
-
-#### Rogue
-
-- Second-Story Work, adds an increased jump distance based on dexterity modifier  
-
-#### Monk
-
-[Monk changes](Monk.md)
-
-#### Druid
-
-[Druid changes](Druid.md)
-
-#### Barbarian
-
-[Barbarian changes](Barbarian.md)
 
 ### Weapon fixes
 
@@ -244,7 +216,7 @@ I have adjusted most items to RAW valuess:
 | Grenade          | 0,1  | 0,23     | 0,13 |
 | Potion           | 0,1  | 0,23     | 0,13 |
 
-Additionally, Flame Blade and Pact weapons will their corresponding item weights.
+Additionally, Flame Blade and Pact weapons will get their corresponding item weights.
 
 ### Encumbrance
 
@@ -267,18 +239,19 @@ BG3 partially use Variant: Encumbrance optional rule but it is far less strict t
 
  ** RAW doesn't specify that you can't run while beeing heavily encumbered, but I think it should be obvious.
 
-There are 3 options here, numbers are relative to carry weight:
+There are 3 options here, ratios are relative to carry weight:
 
-| Config value | Lightly enc. | Heavily enc. | Str HA | Comment                                                     |
-| ------------ | ------------ | ------------ | ------ | ----------------------------------------------------------- |
-| Standard     | 81%          | 93%          | Yes    | Encumbrance ratio are identical to vanilla, easiest setting |
-| Variant      | 33%          | 66%          | No     | Hardest setting, I don't recommend it                       |
-| Mix          | 51%          | 81%          | Yes    | A mix of both rules, medium and default setting             | 
+| Config value | Lightly enc. | Heavily enc. | Str HA* | Comment                                                     |
+| ------------ | ------------ | ------------ | ------- | ----------------------------------------------------------- |
+| Standard     | 81%          | 93%          | Yes     | Encumbrance ratio are identical to vanilla, easiest setting |
+| Variant      | 33%          | 66%          | No      | Hardest setting, I don't recommend it                       |
+| Mix          | 51%          | 81%          | Yes     | A mix of both rules, medium and default setting             | 
 
-- Str HA is Strength requirement for Heavy Armor 
-- Standard is RAW for Strength requirement for Heavy Armor. I have kept BG3 encumbrance ratio with RAW carry weight.
-- RAW Variant: Encumbrance rule is very difficult to play. You have been warned !
-- Mix is an alleviated Variant rule with added Heavy Armor requirement. I think it is the best compromise.
+* Strength requirement for Heavy Armor 
+
+- Standard: Strength requirement for Heavy Armor along with proper carry weights. I have kept BG3 encumbrance ratios.
+- Variant: Encumbrance rule, very difficult to play.
+- Mix: an alleviated encumbrance rule with added Heavy Armor requirement. Probably the best compromise.
 
 ### Feats
 
@@ -334,7 +307,7 @@ You can enable optional rules with config value:
 
 - Action: poisons now use an action
 - Price: set PHB Prices, may break economy since expensive loots are very abundant
-- Throw: throwing a poison doesn't apply its effect. Most poisons are apply by injury (a creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects)
+- Throw: throwing a poison doesn't apply its effect. Most poisons are applied by injury (a creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects)
 - Damage: set PHB damage for all poisons. It might be overpowered because it is easy to get powerful poisons and a poison lasts 10 turns
 
 | Poison              | BG3  | RAW  |
@@ -342,6 +315,44 @@ You can enable optional rules with config value:
 | Serpent Venom Toxin | 1d6  | 3d6  |
 | Wyvern Toxin        | 1d8  | 7d6  |
 | Purple Worm Toxin   | 1d10 | 12d6 |
+
+### Class adjustements
+
+#### Sorcerer
+
+- Sorcerers gain two Metamagic options of your choice at level 3. You gain another one at 10th.
+- Tempestuous Magic, fly range reduced to 3m
+- Dragon Wings, distance is based on movement speed, without armor, and at level 14 (so removed from game)
+- Draconic Blood, ancestry's spell removed
+- Storm Sorcerey, level 6 free spells removed
+
+#### Warlock
+
+- Repelling Blast, distance is 3m, not 4.5m
+
+#### Cleric
+
+- Warding Flare uses wisdom modifier (instead of unlimited uses)
+
+#### Bard
+
+[Bard changes](Bard.md)
+
+#### Rogue
+
+- Second-Story Work, adds an increased jump distance based on dexterity modifier  
+
+#### Monk
+
+[Monk changes](Monk.md)
+
+#### Druid
+
+[Druid changes](Druid.md)
+
+#### Barbarian
+
+[Barbarian changes](Barbarian.md)
 
 ### Monsters
 
