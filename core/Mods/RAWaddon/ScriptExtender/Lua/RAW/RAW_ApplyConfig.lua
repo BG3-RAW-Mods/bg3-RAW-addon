@@ -63,6 +63,8 @@ local function RAW_Poison()
 end
 
 local function RAW_Rest()
+    local disabled = not RAW_GetModOptionEnabled(RAW_Globals.features.RestShort)
+    local value = RAW_GetModOptionValue(RAW_Globals.features.RestShort)
     local list = {}
     if RAW_GetModOptionEnabled(RAW_Globals.features.RestPartial) then
         Ext.Loca.UpdateTranslatedString("h7e75fd8fgc164g436fgbbf7gc0b993f7fee8", "Story Rest")
@@ -70,10 +72,10 @@ local function RAW_Rest()
     else
         table.insert(list, RAW_TxtFolder..'Rest_Partial.txt')
     end
-    if RAW_GetModOptionEnabled(RAW_Globals.features.RestShort) then
+    if not disabled then
         -- Durable Feat
-        Ext.Loca.UpdateTranslatedString("h71165ff5g7a9bg4779g8c39g4897776fe026", "You can use <LSTag Type='Spell' Tooltip='Shout_Raw_Short_Rest_Recovering_33'>Tend to your wounds</LSTag> when taking a <LSTag Tooltip='ShortRest'>Short Rest</LSTag>. Your <LSTag Tooltip='Constitution'>Constitution</LSTag> score is increased by 1, to a maximum of 20.")
-        Ext.Loca.UpdateTranslatedString("hba1b3efag40e4g45e6gb775g4523353b4dbb", "Your <LSTag Tooltip='Constitution'>Constitution</LSTag> increases by 1, to a maximum of 20.<br><br>You can use <LSTag Type='Spell' Tooltip='Shout_Raw_Short_Rest_Recovering_33'>Tending to wounds</LSTag> when taking a <LSTag Tooltip='ShortRest'>Short Rest</LSTag>.")
+        Ext.Loca.UpdateTranslatedString("h71165ff5g7a9bg4779g8c39g4897776fe026", "Defy Death. You have Advantage on Death Saving Throws.<br><br>Speedy Recovery. As a Bonus Action, you can expend one of your Hit Point Dice.<br><br>Your <LSTag Tooltip='Constitution'>Constitution</LSTag> score is increased by 1, to a maximum of 20.")
+        Ext.Loca.UpdateTranslatedString("hba1b3efag40e4g45e6gb775g4523353b4dbb", "Your <LSTag Tooltip='Constitution'>Constitution</LSTag> increases by 1, to a maximum of 20.<br><br>Defy Death. You have Advantage on Death Saving Throws.<br><br>Speedy Recovery. As a Bonus Action, you can expend one of your Hit Point Dice.")
     else
         table.insert(list, RAW_TxtFolder..'Rest_Short.txt')
     end
@@ -94,7 +96,6 @@ function RAW_ApplyModOptions()
     RAW_SimpleSetting(RAW_Globals.features.Jump, RAW_TxtFolder..'Jump.txt')
     RAW_SimpleSetting(RAW_Globals.features.RacialTraits, RAW_TxtFolder..'Race_Core.txt')
     RAW_SimpleSetting(RAW_Globals.features.RestPartial, RAW_TxtFolder..'Rest_Partial.txt')
-    RAW_SimpleSetting(RAW_Globals.features.RestShort, RAW_TxtFolder..'Rest_Short.txt')
     RAW_SimpleSetting(RAW_Globals.features.Spells, RAW_TxtFolder..'Spells_Concentration.txt')
     RAW_SimpleSetting(RAW_Globals.features.Spells, RAW_TxtFolder..'Spells_Knowledge.txt')
     RAW_SimpleSetting(RAW_Globals.features.Spells, RAW_TxtFolder..'Spells_Misc.txt')
@@ -105,7 +106,8 @@ function RAW_ApplyModOptions()
 end
 
 function RAW_ApplyClientModOptions() 
-    RAW_RacialTraits()
+    RAW_CF_RacialTraits()
+    RAW_CF_Rest()
 end
 
 function RAW_ApplyServerModOptions() 

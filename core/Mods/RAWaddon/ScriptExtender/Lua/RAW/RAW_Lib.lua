@@ -71,14 +71,12 @@ function RAW_IsValueInList(list, value)
 end
 
 function RAW_GetModOptionEnabled(id)
-    -- local value = MCM.Get(id)
     local value = RAW_Globals.modOptions[id].enabled
     RAW_Print(id .. " : " .. RAW_BooleanToString(value))
     return value
 end
 
 function RAW_GetModOptionValue(id)
-    -- local value = MCM.Get(id)
     local value = RAW_Globals.modOptions[id].value
     return value
 end

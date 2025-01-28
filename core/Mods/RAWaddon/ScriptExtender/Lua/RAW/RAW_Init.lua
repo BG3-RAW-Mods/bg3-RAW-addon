@@ -5,15 +5,13 @@ RAW_Globals.features = {}
 
 RAW_ModRawAddon = "a5799115-ef11-457b-92cd-2c927de09b02"
 RAW_ModCompatibilityFramework = "67fbbd53-7c7d-4cfa-9409-6d737b4d92a9"
-RAW_MCM = "755a8a72-407f-4f0d-9a33-274ac0f0b53d"
-
 
 RAW_Globals.features.Encumbrance = "encumbrance"
 RAW_Globals.features.Feats = "feats"
 RAW_Globals.features.ItemWeapon = "itemWeapon"
 RAW_Globals.features.ItemPoisonAction = "itemPoisonAction"
 RAW_Globals.features.ItemPoisonThrow = "itemPoisonThrow"
-RAW_Globals.features.ItemPoisonDamage = "ItemPoisonDamage"
+RAW_Globals.features.ItemPoisonDamage = "itemPoisonDamage"
 RAW_Globals.features.ItemPoisonPrice = "itemPoisonPrice"
 RAW_Globals.features.ItemPotionAction = "itemPotionAction"
 RAW_Globals.features.ItemPotionThrow = "itemPotionThrow"

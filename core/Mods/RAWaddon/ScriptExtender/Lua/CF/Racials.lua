@@ -99,18 +99,16 @@ local function applyRaceTashaChanges()
   Mods.SubclassCompatibilityFramework.Api.InsertSelectors(addSelectAbilityBonus(RAW_Gnome_1, RAW_Abilities_Bonus, { "2", "1" }))
 end
 
-local function onStatsLoaded()
-  local value = MCM.Get(RAW_Globals.features.RacialTraits)
-  applyRaceCoreChanges()
-  if value == "Tasha" then
-    applyRaceTashaChanges()
-  else
-    applyRacePHBChanges()
-  end
-end
-
-function RAW_RacialTraits()
-  if MCM.Get(RAW_Globals.features.RacialTraits) and Ext.Mod.IsModLoaded(RAW_ModCompatibilityFramework) then
-    Ext.Events.StatsLoaded:Subscribe(onStatsLoaded)
+function RAW_CF_RacialTraits()
+  if RAW_GetModOptionEnabled(RAW_Globals.features.RacialTraits) and Ext.Mod.IsModLoaded(RAW_ModCompatibilityFramework) then
+    Ext.Events.StatsLoaded:Subscribe(function(e)
+      local value = RAW_GetModOptionValue(RAW_Globals.features.RacialTraits)
+      applyRaceCoreChanges()
+      if value == "Tasha" then
+        applyRaceTashaChanges()
+      else
+        applyRacePHBChanges()
+      end
+    end)
   end
 end

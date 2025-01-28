@@ -21,6 +21,38 @@
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true" />
                     <attribute id="UUID" type="guid" value="eb4a37f9-03ec-4466-acb3-fb00c2b8249b" />
                 </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="3aece8d5-ac2f-4625-b4fe-b099791a1e69" version="1" />
+                    <attribute id="Description" type="TranslatedString" handle="17ab7545-cf2c-4655-8b44-0986c5fb988f" version="1" />
+                    <attribute id="Name" type="FixedString" value="HitDie6" />
+                    <attribute id="ReplenishType" type="FixedString" value="Rest" />
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true" />
+                    <attribute id="UUID" type="guid" value="16d69c21-44d4-4601-a1bb-99751a75ea11" />
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="ec3aa017-944a-48f9-9b77-afd6cc3c2925" version="1" />
+                    <attribute id="Description" type="TranslatedString" handle="17ab7545-cf2c-4655-8b44-0986c5fb988f" version="1" />
+                    <attribute id="Name" type="FixedString" value="HitDie8" />
+                    <attribute id="ReplenishType" type="FixedString" value="Rest" />
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true" />
+                    <attribute id="UUID" type="guid" value="7f8bf9c3-a251-42fd-ae9a-0a5ec1eec605" />
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="7ed9c2c9-52fe-4181-aab8-3560be8b82ec" version="1" />
+                    <attribute id="Description" type="TranslatedString" handle="17ab7545-cf2c-4655-8b44-0986c5fb988f" version="1" />
+                    <attribute id="Name" type="FixedString" value="HitDie10" />
+                    <attribute id="ReplenishType" type="FixedString" value="Rest" />
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true" />
+                    <attribute id="UUID" type="guid" value="78f31cd4-0945-4833-8920-2e607d465578" />
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="145022b2-c465-400d-b4a8-0943321d52fe" version="1" />
+                    <attribute id="Description" type="TranslatedString" handle="17ab7545-cf2c-4655-8b44-0986c5fb988f" version="1" />
+                    <attribute id="Name" type="FixedString" value="HitDie12" />
+                    <attribute id="ReplenishType" type="FixedString" value="Rest" />
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true" />
+                    <attribute id="UUID" type="guid" value="f3bd4693-5cc9-4b5e-ad44-57a4be65ead6" />
+                </node>
             </children>
         </node>
     </region>

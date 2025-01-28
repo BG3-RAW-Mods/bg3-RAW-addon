@@ -25,8 +25,6 @@ Classes PAKs (monk, druid) should be installed after RAW-addon. Only install the
 
 ## Configuration
 
-MCM has been integrated but I am not sure it can work with my settings.
-
 You can create this file if it doesn't exist: %localappdata%\Larian Studios\Baldur's Gate 3\Script Extender\ModOptions.json.
 
 Each UUID is a mod configuration and its value is mod configuration. You can copy and paste the following block:
@@ -136,10 +134,19 @@ RAW: since it doesn't exist, it has been renamed to *Story Rest*. It doesn't res
 
 BG3: heals 50% of Max HP.
 
-RAW: A character can spend one or more Hit Dice at the end of a short rest, up to the character’s maximum number of Hit Dice, which is equal to the character’s level. For each Hit Die spent in this way, the player rolls the die and adds the character’s Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll. At the end of a long rest, a character regains spent Hit Dice, up to a number of dice equal to half of the character’s total number of them (minimum of one die). 
+RAW: A character can spend one or more Hit Dice at the end of a short rest, up to the character’s maximum number of Hit Dice, which is equal to the character’s level. For each Hit Die spent in this way, the player rolls the die and adds the character’s Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll. At the end of a long rest, a character regains all spent Hit Dice. 
 
-Implementation: during short rest (requires Zerd RAW Short Rest), you can cast Tend to your wounds, which heals 25% of Max HP. You can use it twice per long rest. If you have Durable feat, it become 33% of Max HP.
-This is as close as possible to RAW. Hit dice implementation is hard for several reasons including multiclass. Durable feat can't be RAW without true hit dice.
+Implementation: RAW (requires Zerd RAW Short Rest). Since BG3 uses fixed value for hit dice, it uses the same values.
+
+Durable feat is also changed to RAW since it can't work anymore.
+
+BG3: +1 Constitution. Regain full Hit Points every time you take a Short Rest.
+RAW: 
+- +1 Constitution
+- Defy Death. You have Advantage on Death Saving Throws.
+- Speedy Recovery. As a Bonus Action, you can expend one of your Hit Point Dice (same behavior as if you were using it during Short Rest).
+
+As it doesn't seem possible to give advantage on death saving throws, DC is lowered from 10 to 5 which is roughly the same.
 
 ### Jump
 
@@ -275,7 +282,7 @@ You can enable optional rules with config value:
 | 6            |        |   X   |   X   |
 | 7            |    X   |   X   |   X   |
 
-- Action: potions now use an action
+- Action: potions now use an action (disabled by default as it has been changed to Bonus Action in 2024 rules)
 - Price: set PHB Prices, may break economy since expensive loots are very abundant
 - Throw: throwing a potion doesn't apply its effect. PHB clearly says "When you drink this potion..."
 
@@ -305,7 +312,7 @@ You can enable optional rules with config value:
 | 14           |        |   X   |   X   |   X    |
 | 15           |    X   |   X   |   X   |   X    |
 
-- Action: poisons now use an action
+- Action: poisons now use an action (disabled by default as it has been changed to Bonus Action in 2024 rules)
 - Price: set PHB Prices, may break economy since expensive loots are very abundant
 - Throw: throwing a poison doesn't apply its effect. Most poisons are applied by injury (a creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects)
 - Damage: set PHB damage for all poisons. It might be overpowered because it is easy to get powerful poisons and a poison lasts 10 turns
