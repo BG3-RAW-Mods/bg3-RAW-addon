@@ -141,6 +141,7 @@ Implementation: RAW (requires Zerd RAW Short Rest). Since BG3 uses fixed value f
 Durable feat is also changed to RAW since it can't work anymore.
 
 BG3: +1 Constitution. Regain full Hit Points every time you take a Short Rest.
+
 RAW: 
 - +1 Constitution
 - Defy Death. You have Advantage on Death Saving Throws.
